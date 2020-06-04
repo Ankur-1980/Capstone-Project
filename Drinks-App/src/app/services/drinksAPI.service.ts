@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root',
 })
-export class ApiService {
+export class DrinksApiService {
   baseUrl = 'https://www.thecocktaildb.com/api/json/v2/9973533/';
 
   constructor(private http: HttpClient) {}
