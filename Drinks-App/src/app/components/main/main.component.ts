@@ -53,7 +53,7 @@ export class MainComponent implements OnInit {
     });
 
     this.drinksApi.getLetterA().subscribe((data) => {
-      // console.log(data);
+      console.log(data);
     });
 
     navigator.geolocation.getCurrentPosition((position) => {
