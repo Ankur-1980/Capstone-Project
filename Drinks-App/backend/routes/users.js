@@ -1,8 +1,8 @@
 const users = require("express").Router();
-const pool = require("../connection");
+const database = require("../connection");
 
 users.get("/", (req, res) => {
-  pool.query("SELECT * FROM users").then((result) => {
+  database.query("SELECT * FROM users").then((result) => {
     res.json(result.rows);
   });
 });
