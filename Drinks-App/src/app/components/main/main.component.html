@@ -1,13 +1,3 @@
-<p>latitude: {{ latitude | number }}</p>
-<p>longitude: {{ longitude | number }}</p>
-<google-map
-  height="500px"
-  width="100%"
-  [zoom]="zoom"
-  [center]="center"
-  [options]="options"
-></google-map>
-
 <ul>
   <h1>Categories</h1>
   <li *ngFor="let category of categories">{{ category.strCategory }}</li>
@@ -20,7 +10,7 @@
 
 <!-- <ul>
   <h1>Ingredients</h1>
-  <li *ngFor="let category of categories">{{ category.strCategory }}</li>
+  <li *ngFor="let ingredient of ingredients">{{ ingredients.strCategory }}</li>
 </ul> -->
 
 <ul>

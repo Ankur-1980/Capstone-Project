@@ -44,7 +44,7 @@ export class MainComponent implements OnInit {
 
     this.drinksApi.getIngredients().subscribe((data) => {
       this.ingredients = data['drinks'];
-      // console.log(this.ingredients);
+      console.log('Ingredients', this.ingredients);
     });
 
     this.drinksApi.getAlcoholic().subscribe((data) => {
@@ -53,7 +53,7 @@ export class MainComponent implements OnInit {
     });
 
     this.drinksApi.getLetterA().subscribe((data) => {
-      console.log(data);
+      console.log('letter A', data);
     });
 
     navigator.geolocation.getCurrentPosition((position) => {
