@@ -2,15 +2,31 @@ const users = require("express").Router();
 const database = require("../connection");
 
 users.get("/", (req, res) => {
-  database.query("SELECT * FROM users").then((result) => {
-    res.json(result.rows);
+  database.query("SELECT * FROM users").then((response) => {
+    res.status(200).json({ message: "Users Fetched", users: response.rows });
   });
 });
 
 users.post("/", (req, res) => {
-  database.query(
-    "INSERT INTO users (user_id, first_name, last_name, username, email password) VALUES (uuid_generate_v4(), $2::text, $3::text,$4::text, $5::text)"
-  );
+  // console.log(req.body);
+
+  database
+    .query(
+      "INSERT INTO users (user_id, first_name, last_name, username, email, password, age) VALUES (uuid_generate_v4(), $1::text, $2::text,$3::text, $4::int, $5::text, $6::text)",
+      [
+        req.body.firstName,
+        req.body.lastName,
+        req.body.userName,
+        req.body.age,
+        req.body.email,
+        req.body.password,
+      ]
+    )
+    .then(() => {
+      database.query("SELECT * FROM users").then((response) => {
+        res.status(201).json({ message: "User Added", users: response.rows });
+      });
+    });
 });
 
 module.exports = users;

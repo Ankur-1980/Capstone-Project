@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DrinksApiService } from '../../services/drinksAPI.service';
 import { LocationAPIService } from '../../services/location-api.service';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-main',
@@ -28,10 +29,13 @@ export class MainComponent implements OnInit {
 
   constructor(
     private drinksApi: DrinksApiService,
-    private locationApi: LocationAPIService
+    private locationApi: LocationAPIService,
+    private loginService: LoginService
   ) {}
 
   ngOnInit(): void {
+    this.loginService.getUsers().subscribe((data) => console.log(data));
+
     this.drinksApi.getCategories().subscribe((data) => {
       this.categories = data['drinks'];
       // console.log(this.categories);
