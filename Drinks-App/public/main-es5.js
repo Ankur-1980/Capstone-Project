@@ -316,17 +316,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_google_maps__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! @angular/google-maps */
-    "./node_modules/@angular/google-maps/__ivy_ngcc__/fesm2015/google-maps.js");
-    /* harmony import */
-
-
-    var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
-    function MainComponent_li_10_Template(rf, ctx) {
+    function MainComponent_li_3_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li");
 
@@ -344,7 +338,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function MainComponent_li_14_Template(rf, ctx) {
+    function MainComponent_li_7_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li");
 
@@ -362,7 +356,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function MainComponent_li_18_Template(rf, ctx) {
+    function MainComponent_li_11_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li");
 
@@ -409,13 +403,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             _this.glasses = data['drinks']; // console.log(this.glasses);
           });
           this.drinksApi.getIngredients().subscribe(function (data) {
-            _this.ingredients = data['drinks']; // console.log(this.ingredients);
+            _this.ingredients = data['drinks'];
+            console.log('Ingredients', _this.ingredients);
           });
           this.drinksApi.getAlcoholic().subscribe(function (data) {
             _this.alcoholics = data['drinks']; // console.log(this.alcoholics);
           });
           this.drinksApi.getLetterA().subscribe(function (data) {
-            console.log(data);
+            console.log('letter A', data);
           });
           navigator.geolocation.getCurrentPosition(function (position) {
             _this.center = {
@@ -448,80 +443,50 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     MainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: MainComponent,
       selectors: [["app-main"]],
-      decls: 19,
-      vars: 12,
-      consts: [["height", "500px", "width", "100%", 3, "zoom", "center", "options"], [4, "ngFor", "ngForOf"]],
+      decls: 12,
+      vars: 3,
+      consts: [[4, "ngFor", "ngForOf"]],
       template: function MainComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ul");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](2, "number");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](5, "number");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Categories");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "google-map", 0);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "ul");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "h1");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Categories");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, MainComponent_li_3_Template, 2, 1, "li", 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, MainComponent_li_10_Template, 2, 1, "li", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "ul");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h1");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Glasses");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "ul");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "h1");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "Glasses");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, MainComponent_li_7_Template, 2, 1, "li", 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](14, MainComponent_li_14_Template, 2, 1, "li", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "ul");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "h1");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Alcoholic");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "ul");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "h1");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Alcoholic");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](18, MainComponent_li_18_Template, 2, 1, "li", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](11, MainComponent_li_11_Template, 2, 1, "li", 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
 
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("latitude: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](2, 8, ctx.latitude), "");
-
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("longitude: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](5, 10, ctx.longitude), "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("zoom", ctx.zoom)("center", ctx.center)("options", ctx.options);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.categories);
 
@@ -534,8 +499,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.alcoholics);
         }
       },
-      directives: [_angular_google_maps__WEBPACK_IMPORTED_MODULE_3__["GoogleMap"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"]],
-      pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["DecimalPipe"]],
+      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]],
       styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbWFpbi9tYWluLmNvbXBvbmVudC5jc3MifQ== */"]
     });
     /*@__PURE__*/
