@@ -41,4 +41,17 @@ export class RecipeApiService {
   filterNA(something) {
     return this.http.get(`${this.baseUrl}filter.php?a=Alcoholic`);
   }
+
+  filterCocktailType() {
+    return this.http.get(`${this.baseUrl}filter.php?g=Cocktail_glass`);
+  }
+
+  searchByName(name) {
+    return this.http.get(`${this.baseUrl}search.php?s=${name.searchName}`);
+  }
+
+  searchByLetter(letter) {
+    // console.log(letter);
+    return this.http.get(`${this.baseUrl}search.php?f=${letter.letter}`);
+  }
 }

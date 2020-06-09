@@ -17,4 +17,9 @@ export class RecipeMainComponent implements OnInit {
       console.log(this.recipes);
     });
   }
+
+  nameSearch(results) {
+    // console.log(results);
+    this.recipes = results;
+  }
 }
