@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { RecipeApiService } from '../../../services/recipeAPI.service';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { ALPHABET } from './alphabet';
 
 @Component({
   selector: 'recipe-search',
@@ -11,6 +12,12 @@ export class RecipeSearchComponent implements OnInit {
   glassware: any;
   alcoholic: any;
   categories: any;
+  alphabet: string[] = ALPHABET;
+  filterForm: FormGroup;
+  nameSearch: FormGroup;
+  letterSearch: FormGroup;
+  @Output() searchResults = new EventEmitter();
+
   constructor(private fb: FormBuilder, private recipeAPI: RecipeApiService) {}
 
   ngOnInit(): void {
@@ -23,5 +30,39 @@ export class RecipeSearchComponent implements OnInit {
     this.recipeAPI.getCategories().subscribe((data) => {
       this.categories = data['drinks'];
     });
+
+    this.recipeAPI.filterCocktailType().subscribe((data) => {
+      console.log('filter cocktails', data['drinks']);
+    });
+
+    // this.filterForm = this.fb.group({
+    //   glassware: [''],
+    //   categories: [''],
+    //   booze: [''],
+    //   alphabet: [''],
+    // });
+    this.nameSearch = this.fb.group({
+      searchName: [''],
+    });
+
+    this.letterSearch = this.fb.group({
+      letter: [''],
+    });
+  }
+
+  searchByName() {
+    this.recipeAPI
+      .searchByName(this.nameSearch.value)
+      .subscribe((data) => this.searchResults.emit(data['drinks']));
+  }
+
+  searchByLetter() {
+    this.recipeAPI.searchByLetter(this.letterSearch.value).subscribe((data) => {
+      this.searchResults.emit(data['drinks']);
+    });
+  }
+
+  resetForm() {
+    this.filterForm.reset();
   }
 }
