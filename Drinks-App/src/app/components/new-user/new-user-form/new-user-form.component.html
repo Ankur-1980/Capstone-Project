@@ -1,11 +1,11 @@
-<h1>Login Form</h1>
+<h1>New User Form</h1>
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
   <!-- first name - required-->
   <div class="form-group">
     <label for="firstName" for="label-control"> First Name:</label>
     <input type="text" formControlName="firstName" class="form-control" />
-    <!-- <div *ngIf="loginForm?.firstName">
-      <div *ngIf="loginForm.firstName.errors.required">
+    <!-- <div *ngIf="firstName.invalid && firstName.touched">
+      <div *ngIf="firstName.errors.required">
         First Name is required
       </div>
     </div> -->
