@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DrinksApiService } from '../../services/drinksAPI.service';
-import { LocationAPIService } from '../../services/location-api.service';
+import { RecipeApiService } from '../../services/recipeAPI.service';
 import { LoginService } from 'src/app/services/login.service';
 
 @Component({
@@ -28,8 +27,7 @@ export class MainComponent implements OnInit {
   longitude;
 
   constructor(
-    private drinksApi: DrinksApiService,
-    private locationApi: LocationAPIService,
+    private drinksApi: RecipeApiService,
     private loginService: LoginService
   ) {}
 
@@ -60,34 +58,13 @@ export class MainComponent implements OnInit {
       console.log('letter A', data);
     });
 
-    navigator.geolocation.getCurrentPosition((position) => {
-      this.center = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude,
-      };
-      this.latitude = position.coords.latitude;
-      this.longitude = position.coords.longitude;
-    });
+    // navigator.geolocation.getCurrentPosition((position) => {
+    //   this.center = {
+    //     lat: position.coords.latitude,
+    //     lng: position.coords.longitude,
+    //   };
+    //   this.latitude = position.coords.latitude;
+    //   this.longitude = position.coords.longitude;
+    // });
   }
-
-  zoomIn() {
-    if (this.zoom < this.options.maxZoom) this.zoom++;
-  }
-
-  zoomOut() {
-    if (this.zoom > this.options.minZoom) this.zoom--;
-  }
-
-  // getGeoLocation() {
-  //   if ('geolocation' in navigator) {
-  //     console.log('geolocation available');
-  //     navigator.geolocation.getCurrentPosition((position) => {
-  //       console.log(position);
-  //       this.latitude = position.coords.latitude;
-  //       this.longitude = position.coords.longitude;
-  //     });
-  //   } else {
-  //     console.log('geolocation not available');
-  //   }
-  // }
 }

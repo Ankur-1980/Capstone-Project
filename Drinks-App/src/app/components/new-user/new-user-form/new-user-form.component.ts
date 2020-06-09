@@ -14,10 +14,10 @@ export class NewUserFormComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
-      firstName: [''],
-      lastName: [''],
+      firstName: ['', [Validators.required]],
+      lastName: ['', [Validators.required]],
       userName: ['', [Validators.required]],
-      age: ['21', [Validators.min(21), Validators.required]],
+      age: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
       password: [
         '',
@@ -26,8 +26,20 @@ export class NewUserFormComponent implements OnInit {
           Validators.pattern('^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$'),
         ],
       ],
-      bio: [''],
+      bio: ['', [Validators.maxLength(255)]],
     });
+  }
+
+  validateDOB(dob) {
+    console.log(dob.target.value);
+
+    let year = new Date(dob.target.value).getFullYear();
+    let today = new Date().getFullYear();
+    if (today - year >= 21) {
+      console.log(`you can drink`);
+    } else {
+      console.log(`you are not old enough`);
+    }
   }
 
   getFirstName() {

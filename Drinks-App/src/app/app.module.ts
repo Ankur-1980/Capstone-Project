@@ -6,11 +6,16 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './components/main/main.component';
 import { GoogleMapsModule } from '@angular/google-maps';
-import { NewUserFormComponent } from './components/login/new-user-form/new-user-form.component';
+import { NewUserFormComponent } from './components/new-user/new-user-form/new-user-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RecipeMainComponent } from './components/recipe-book/recipe-main/recipe-main.component';
+import { RecipeFavoritesComponent } from './components/recipe-book/recipe-favorites/recipe-favorites.component';
+import { RecipeDetailsComponent } from './components/recipe-book/recipe-details/recipe-details.component';
+import { RecipeCardComponent } from './components/recipe-book/recipe-card/recipe-card.component';
+import { RecipeSearchComponent } from './components/recipe-book/recipe-search/recipe-search.component';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, NewUserFormComponent],
+  declarations: [AppComponent, MainComponent, NewUserFormComponent, RecipeMainComponent, RecipeFavoritesComponent, RecipeDetailsComponent, RecipeCardComponent, RecipeSearchComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
