@@ -7,12 +7,9 @@ import { HttpClient } from '@angular/common/http';
 export class LoginService {
   constructor(private http: HttpClient) {}
   users = [];
+
   getUsers(): any {
-    this.http
-      .get<{ message: string; users }>('http://localhost:3000/users')
-      .subscribe((response) => {
-        console.log(response.users);
-      });
+    return this.http.get('http://localhost:3000/users');
   }
 
   addNewUser(formValue) {

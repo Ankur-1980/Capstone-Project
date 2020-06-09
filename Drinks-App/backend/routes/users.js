@@ -12,7 +12,7 @@ users.post("/", (req, res) => {
 
   database
     .query(
-      "INSERT INTO users (user_id, first_name, last_name, username, email, password, age) VALUES (uuid_generate_v4(), $1::text, $2::text,$3::text, $4::int, $5::text, $6::text)",
+      "INSERT INTO users (user_id, first_name, last_name, username, email, password, age) VALUES (uuid_generate_v4(), $1::text, $2::text,$3::text, $5::text, $6::text, $4::int)",
       [
         req.body.firstName,
         req.body.lastName,
