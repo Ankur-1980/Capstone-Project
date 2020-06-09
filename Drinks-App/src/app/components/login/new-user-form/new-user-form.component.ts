@@ -3,11 +3,11 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { LoginService } from 'src/app/services/login.service';
 
 @Component({
-  selector: 'login-form',
-  templateUrl: './login-form.component.html',
-  styleUrls: ['./login-form.component.css'],
+  selector: 'new-user-form',
+  templateUrl: './new-user-form.component.html',
+  styleUrls: ['./new-user-form.component.css'],
 })
-export class LoginFormComponent implements OnInit {
+export class NewUserFormComponent implements OnInit {
   loginForm: FormGroup;
 
   constructor(private fb: FormBuilder, private loginService: LoginService) {}
@@ -26,6 +26,7 @@ export class LoginFormComponent implements OnInit {
           Validators.pattern('^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$'),
         ],
       ],
+      bio: [''],
     });
   }
 

@@ -6,11 +6,11 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './components/main/main.component';
 import { GoogleMapsModule } from '@angular/google-maps';
-import { LoginFormComponent } from './components/login/login-form/login-form.component';
+import { NewUserFormComponent } from './components/login/new-user-form/new-user-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, LoginFormComponent],
+  declarations: [AppComponent, MainComponent, NewUserFormComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
