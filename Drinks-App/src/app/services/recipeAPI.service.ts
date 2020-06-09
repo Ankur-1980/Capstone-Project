@@ -9,23 +9,36 @@ export class RecipeApiService {
 
   constructor(private http: HttpClient) {}
 
+  // list the categories
   getCategories() {
     return this.http.get(`${this.baseUrl}list.php?c=list`);
   }
 
+  // glassware
   getGlassware() {
     return this.http.get(`${this.baseUrl}list.php?g=list`);
+  }
+
+  getAlcoholic() {
+    return this.http.get(`${this.baseUrl}list.php?a=list`);
+  }
+  getLetterA() {
+    return this.http.get(`${this.baseUrl}search.php?f=a`);
+  }
+
+  getLetter(letter) {
+    return this.http.get(`${this.baseUrl}search.php?f=${letter}`);
   }
 
   getIngredients() {
     return this.http.get(`${this.baseUrl}list.php?i=list`);
   }
 
-  getAlcoholic() {
-    return this.http.get(`${this.baseUrl}list.php?a=list`);
+  getDetails(recipeId) {
+    return this.http.get(`${this.baseUrl}lookup.php?i=${recipeId}`);
   }
 
-  getLetterA() {
-    return this.http.get(`${this.baseUrl}search.php?f=a`);
+  filterNA(something) {
+    return this.http.get(`${this.baseUrl}filter.php?a=Alcoholic`);
   }
 }
