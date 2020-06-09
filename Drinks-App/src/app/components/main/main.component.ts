@@ -27,34 +27,34 @@ export class MainComponent implements OnInit {
   longitude;
 
   constructor(
-    private drinksApi: RecipeApiService,
+    private recipeApi: RecipeApiService,
     private loginService: LoginService
   ) {}
 
   ngOnInit(): void {
     this.loginService.getUsers().subscribe((data) => console.log(data));
 
-    this.drinksApi.getCategories().subscribe((data) => {
+    this.recipeApi.getCategories().subscribe((data) => {
       this.categories = data['drinks'];
       // console.log(this.categories);
     });
 
-    this.drinksApi.getGlassware().subscribe((data) => {
+    this.recipeApi.getGlassware().subscribe((data) => {
       this.glasses = data['drinks'];
       // console.log(this.glasses);
     });
 
-    this.drinksApi.getIngredients().subscribe((data) => {
+    this.recipeApi.getIngredients().subscribe((data) => {
       this.ingredients = data['drinks'];
       console.log('Ingredients', this.ingredients);
     });
 
-    this.drinksApi.getAlcoholic().subscribe((data) => {
+    this.recipeApi.getAlcoholic().subscribe((data) => {
       this.alcoholics = data['drinks'];
       // console.log(this.alcoholics);
     });
 
-    this.drinksApi.getLetterA().subscribe((data) => {
+    this.recipeApi.getLetterA().subscribe((data) => {
       console.log('letter A', data);
     });
 

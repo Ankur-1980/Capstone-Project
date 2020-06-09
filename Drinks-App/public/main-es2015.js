@@ -210,8 +210,8 @@ function MainComponent_li_11_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](alcoholic_r5.strAlcoholic);
 } }
 class MainComponent {
-    constructor(drinksApi, loginService) {
-        this.drinksApi = drinksApi;
+    constructor(recipeApi, loginService) {
+        this.recipeApi = recipeApi;
         this.loginService = loginService;
         this.zoom = 12;
         this.options = {
@@ -225,23 +225,23 @@ class MainComponent {
     }
     ngOnInit() {
         this.loginService.getUsers().subscribe((data) => console.log(data));
-        this.drinksApi.getCategories().subscribe((data) => {
+        this.recipeApi.getCategories().subscribe((data) => {
             this.categories = data['drinks'];
             // console.log(this.categories);
         });
-        this.drinksApi.getGlassware().subscribe((data) => {
+        this.recipeApi.getGlassware().subscribe((data) => {
             this.glasses = data['drinks'];
             // console.log(this.glasses);
         });
-        this.drinksApi.getIngredients().subscribe((data) => {
+        this.recipeApi.getIngredients().subscribe((data) => {
             this.ingredients = data['drinks'];
             console.log('Ingredients', this.ingredients);
         });
-        this.drinksApi.getAlcoholic().subscribe((data) => {
+        this.recipeApi.getAlcoholic().subscribe((data) => {
             this.alcoholics = data['drinks'];
             // console.log(this.alcoholics);
         });
-        this.drinksApi.getLetterA().subscribe((data) => {
+        this.recipeApi.getLetterA().subscribe((data) => {
             console.log('letter A', data);
         });
         // navigator.geolocation.getCurrentPosition((position) => {
@@ -554,13 +554,21 @@ RecipeFavoritesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ�
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecipeMainComponent", function() { return RecipeMainComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var src_app_services_recipeAPI_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/recipeAPI.service */ "./src/app/services/recipeAPI.service.ts");
+
 
 
 class RecipeMainComponent {
-    constructor() { }
-    ngOnInit() { }
+    constructor(recipeApi) {
+        this.recipeApi = recipeApi;
+    }
+    ngOnInit() {
+        this.recipeApi.getLetterA().subscribe((data) => {
+            console.log('letter A', data);
+        });
+    }
 }
-RecipeMainComponent.ɵfac = function RecipeMainComponent_Factory(t) { return new (t || RecipeMainComponent)(); };
+RecipeMainComponent.ɵfac = function RecipeMainComponent_Factory(t) { return new (t || RecipeMainComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_recipeAPI_service__WEBPACK_IMPORTED_MODULE_1__["RecipeApiService"])); };
 RecipeMainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: RecipeMainComponent, selectors: [["recipe-main"]], decls: 2, vars: 0, template: function RecipeMainComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "recipe-main works!");
@@ -573,7 +581,7 @@ RecipeMainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
                 templateUrl: './recipe-main.component.html',
                 styleUrls: ['./recipe-main.component.css'],
             }]
-    }], function () { return []; }, null); })();
+    }], function () { return [{ type: src_app_services_recipeAPI_service__WEBPACK_IMPORTED_MODULE_1__["RecipeApiService"] }]; }, null); })();
 
 
 /***/ }),
@@ -677,20 +685,31 @@ class RecipeApiService {
         this.http = http;
         this.baseUrl = 'https://www.thecocktaildb.com/api/json/v2/9973533/';
     }
+    // list the categories
     getCategories() {
         return this.http.get(`${this.baseUrl}list.php?c=list`);
     }
+    // glassware
     getGlassware() {
         return this.http.get(`${this.baseUrl}list.php?g=list`);
-    }
-    getIngredients() {
-        return this.http.get(`${this.baseUrl}list.php?i=list`);
     }
     getAlcoholic() {
         return this.http.get(`${this.baseUrl}list.php?a=list`);
     }
     getLetterA() {
         return this.http.get(`${this.baseUrl}search.php?f=a`);
+    }
+    getLetter(letter) {
+        return this.http.get(`${this.baseUrl}search.php?f=${letter}`);
+    }
+    getIngredients() {
+        return this.http.get(`${this.baseUrl}list.php?i=list`);
+    }
+    getDetails(recipeId) {
+        return this.http.get(`${this.baseUrl}lookup.php?i=${recipeId}`);
+    }
+    filterNA(something) {
+        return this.http.get(`${this.baseUrl}filter.php?a=Alcoholic`);
     }
 }
 RecipeApiService.ɵfac = function RecipeApiService_Factory(t) { return new (t || RecipeApiService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };

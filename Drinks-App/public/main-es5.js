@@ -417,10 +417,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }
 
     var MainComponent = /*#__PURE__*/function () {
-      function MainComponent(drinksApi, loginService) {
+      function MainComponent(recipeApi, loginService) {
         _classCallCheck(this, MainComponent);
 
-        this.drinksApi = drinksApi;
+        this.recipeApi = recipeApi;
         this.loginService = loginService;
         this.zoom = 12;
         this.options = {
@@ -441,20 +441,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.loginService.getUsers().subscribe(function (data) {
             return console.log(data);
           });
-          this.drinksApi.getCategories().subscribe(function (data) {
+          this.recipeApi.getCategories().subscribe(function (data) {
             _this.categories = data['drinks']; // console.log(this.categories);
           });
-          this.drinksApi.getGlassware().subscribe(function (data) {
+          this.recipeApi.getGlassware().subscribe(function (data) {
             _this.glasses = data['drinks']; // console.log(this.glasses);
           });
-          this.drinksApi.getIngredients().subscribe(function (data) {
+          this.recipeApi.getIngredients().subscribe(function (data) {
             _this.ingredients = data['drinks'];
             console.log('Ingredients', _this.ingredients);
           });
-          this.drinksApi.getAlcoholic().subscribe(function (data) {
+          this.recipeApi.getAlcoholic().subscribe(function (data) {
             _this.alcoholics = data['drinks']; // console.log(this.alcoholics);
           });
-          this.drinksApi.getLetterA().subscribe(function (data) {
+          this.recipeApi.getLetterA().subscribe(function (data) {
             console.log('letter A', data);
           }); // navigator.geolocation.getCurrentPosition((position) => {
           //   this.center = {
@@ -1075,22 +1075,34 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_services_recipeAPI_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! src/app/services/recipeAPI.service */
+    "./src/app/services/recipeAPI.service.ts");
 
     var RecipeMainComponent = /*#__PURE__*/function () {
-      function RecipeMainComponent() {
+      function RecipeMainComponent(recipeApi) {
         _classCallCheck(this, RecipeMainComponent);
+
+        this.recipeApi = recipeApi;
       }
 
       _createClass(RecipeMainComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          this.recipeApi.getLetterA().subscribe(function (data) {
+            console.log('letter A', data);
+          });
+        }
       }]);
 
       return RecipeMainComponent;
     }();
 
     RecipeMainComponent.ɵfac = function RecipeMainComponent_Factory(t) {
-      return new (t || RecipeMainComponent)();
+      return new (t || RecipeMainComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_recipeAPI_service__WEBPACK_IMPORTED_MODULE_1__["RecipeApiService"]));
     };
 
     RecipeMainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -1120,7 +1132,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           styleUrls: ['./recipe-main.component.css']
         }]
       }], function () {
-        return [];
+        return [{
+          type: src_app_services_recipeAPI_service__WEBPACK_IMPORTED_MODULE_1__["RecipeApiService"]
+        }];
       }, null);
     })();
     /***/
@@ -1326,22 +1340,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         this.http = http;
         this.baseUrl = 'https://www.thecocktaildb.com/api/json/v2/9973533/';
-      }
+      } // list the categories
+
 
       _createClass(RecipeApiService, [{
         key: "getCategories",
         value: function getCategories() {
           return this.http.get("".concat(this.baseUrl, "list.php?c=list"));
-        }
+        } // glassware
+
       }, {
         key: "getGlassware",
         value: function getGlassware() {
           return this.http.get("".concat(this.baseUrl, "list.php?g=list"));
-        }
-      }, {
-        key: "getIngredients",
-        value: function getIngredients() {
-          return this.http.get("".concat(this.baseUrl, "list.php?i=list"));
         }
       }, {
         key: "getAlcoholic",
@@ -1352,6 +1363,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "getLetterA",
         value: function getLetterA() {
           return this.http.get("".concat(this.baseUrl, "search.php?f=a"));
+        }
+      }, {
+        key: "getLetter",
+        value: function getLetter(letter) {
+          return this.http.get("".concat(this.baseUrl, "search.php?f=").concat(letter));
+        }
+      }, {
+        key: "getIngredients",
+        value: function getIngredients() {
+          return this.http.get("".concat(this.baseUrl, "list.php?i=list"));
+        }
+      }, {
+        key: "getDetails",
+        value: function getDetails(recipeId) {
+          return this.http.get("".concat(this.baseUrl, "lookup.php?i=").concat(recipeId));
+        }
+      }, {
+        key: "filterNA",
+        value: function filterNA(something) {
+          return this.http.get("".concat(this.baseUrl, "filter.php?a=Alcoholic"));
         }
       }]);
 

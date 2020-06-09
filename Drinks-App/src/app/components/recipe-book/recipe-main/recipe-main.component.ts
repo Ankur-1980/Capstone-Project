@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RecipeApiService } from 'src/app/services/recipeAPI.service';
 
 @Component({
   selector: 'recipe-main',
@@ -6,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipe-main.component.css'],
 })
 export class RecipeMainComponent implements OnInit {
-  constructor() {}
+  recipes: any[];
 
-  ngOnInit(): void {}
+  constructor(private recipeApi: RecipeApiService) {}
+
+  ngOnInit(): void {
+    this.recipeApi.getLetterA().subscribe((data) => {
+      this.recipes = data['drinks'];
+      console.log(this.recipes);
+    });
+  }
 }

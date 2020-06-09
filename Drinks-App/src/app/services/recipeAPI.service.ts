@@ -34,8 +34,8 @@ export class RecipeApiService {
     return this.http.get(`${this.baseUrl}list.php?i=list`);
   }
 
-  getDetails(recipeId) {
-    return this.http.get(`${this.baseUrl}lookup.php?i=${recipeId}`);
+  getDetails(recipeID) {
+    return this.http.get(`${this.baseUrl}lookup.php?i=${recipeID}`);
   }
 
   filterNA(something) {
