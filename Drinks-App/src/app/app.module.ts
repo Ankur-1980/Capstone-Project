@@ -13,9 +13,11 @@ import { RecipeFavoritesComponent } from './components/recipe-book/recipe-favori
 import { RecipeDetailsComponent } from './components/recipe-book/recipe-details/recipe-details.component';
 import { RecipeCardComponent } from './components/recipe-book/recipe-card/recipe-card.component';
 import { RecipeSearchComponent } from './components/recipe-book/recipe-search/recipe-search.component';
+import { UserRecipesMainComponent } from './components/user-recipes/user-recipes-main/user-recipes-main.component';
+import { UserRecipesCreateComponent } from './components/user-recipes/user-recipes-create/user-recipes-create.component';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, NewUserFormComponent, RecipeMainComponent, RecipeFavoritesComponent, RecipeDetailsComponent, RecipeCardComponent, RecipeSearchComponent],
+  declarations: [AppComponent, MainComponent, NewUserFormComponent, RecipeMainComponent, RecipeFavoritesComponent, RecipeDetailsComponent, RecipeCardComponent, RecipeSearchComponent, UserRecipesMainComponent, UserRecipesCreateComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
