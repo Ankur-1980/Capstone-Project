@@ -16,9 +16,10 @@ import { RecipeSearchComponent } from './components/recipe-book/recipe-search/re
 import { UserRecipesMainComponent } from './components/user-recipes/user-recipes-main/user-recipes-main.component';
 import { UserRecipesCreateComponent } from './components/user-recipes/user-recipes-create/user-recipes-create.component';
 import { LoginFormComponent } from './components/new-user/login-form/login-form.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, NewUserFormComponent, RecipeMainComponent, RecipeFavoritesComponent, RecipeDetailsComponent, RecipeCardComponent, RecipeSearchComponent, UserRecipesMainComponent, UserRecipesCreateComponent, LoginFormComponent],
+  declarations: [AppComponent, MainComponent, NewUserFormComponent, RecipeMainComponent, RecipeFavoritesComponent, RecipeDetailsComponent, RecipeCardComponent, RecipeSearchComponent, UserRecipesMainComponent, UserRecipesCreateComponent, LoginFormComponent, NavbarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
