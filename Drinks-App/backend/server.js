@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 const recipes = require("./routes/recipes");
 const users = require("./routes/users");
@@ -10,4 +10,4 @@ app.use(express.static(__dirname + "/public"));
 app.use("/users", users);
 app.use("/recipes", recipes);
 
-app.listen(port, () => console.log(`Listening on port: ${port}`));
+app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));

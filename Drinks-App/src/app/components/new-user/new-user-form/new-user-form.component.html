@@ -1,12 +1,12 @@
-<h1>Login Form</h1>
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+<h1>New User Form</h1>
+<form [formGroup]="newUserForm" (ngSubmit)="onSubmit()">
   <!-- first name - required-->
   <div class="form-group">
     <label for="firstName" for="label-control"> First Name:</label>
     <input type="text" formControlName="firstName" class="form-control" />
-    <!-- <div *ngIf="loginForm?.firstName">
-      <div *ngIf="loginForm.firstName.errors.required">
-        First Name is required
+    <!-- <div *ngIf="firstName.invalid && firstName.touched">
+      <div *ngIf="firstName.errors.required">
+        first Name is required
       </div>
     </div> -->
   </div>
@@ -55,17 +55,28 @@
   <!-- password - required -->
   <div class="form-group">
     <label for="password" for="label-control">Password:</label>
-    <input type="password" formControlName="password" class="form-control" />
-    <!-- <div *ngIf="userName.invalid && userName.touched">
-      <div *ngIf="userName.errors.required">
-        Username is required
-      </div>
-    </div> -->
+    <input
+      type="password"
+      formControlName="password"
+      class="form-control"
+      placeholder="password"
+    />
   </div>
-  <!-- bio - no required -->
+  <!-- password -2 - required -->
+  <div class="form-group">
+    <label for="password" for="label-control">Password:</label>
+    <input
+      type="password"
+      formControlName="password"
+      class="form-control"
+      placeholder="Confirm Password"
+    />
+  </div>
+  <!-- bio - not required -->
   <div class="form-group">
     <label for="bio" for="label-control" rows="4" cols="50">Biography:</label>
     <textarea formControlName="bio" class="form-control"> </textarea>
   </div>
   <button type="submit">Submit</button>
 </form>
+<a href="#">Already registered? Click here to login</a>

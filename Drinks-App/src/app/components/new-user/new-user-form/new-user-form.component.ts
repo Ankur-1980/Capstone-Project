@@ -8,12 +8,12 @@ import { LoginService } from 'src/app/services/login.service';
   styleUrls: ['./new-user-form.component.css'],
 })
 export class NewUserFormComponent implements OnInit {
-  loginForm: FormGroup;
+  newUserForm: FormGroup;
 
   constructor(private fb: FormBuilder, private loginService: LoginService) {}
 
   ngOnInit(): void {
-    this.loginForm = this.fb.group({
+    this.newUserForm = this.fb.group({
       firstName: ['', [Validators.required]],
       lastName: ['', [Validators.required]],
       userName: ['', [Validators.required]],
@@ -26,7 +26,15 @@ export class NewUserFormComponent implements OnInit {
           Validators.pattern('^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$'),
         ],
       ],
+      password2: [
+        '',
+        [
+          Validators.required,
+          Validators.pattern('^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$'),
+        ],
+      ],
       bio: ['', [Validators.maxLength(255)]],
+      date: this.fb.control(new Date()),
     });
   }
 
@@ -42,21 +50,21 @@ export class NewUserFormComponent implements OnInit {
     }
   }
 
-  getFirstName() {
-    return this.loginForm.get('firstName');
-  }
-  getUserName() {
-    return this.loginForm.get('userName');
-  }
-  getAge() {
-    return this.loginForm.get('age');
-  }
-  getEmail() {
-    return this.loginForm.get('getEmail');
-  }
+  // getFirstName() {
+  //   return this.newUserForm.get('firstName');
+  // }
+  // getUserName() {
+  //   return this.newUserForm.get('userName');
+  // }
+  // getAge() {
+  //   return this.newUserForm.get('age');
+  // }
+  // getEmail() {
+  //   return this.newUserForm.get('getEmail');
+  // }
 
   onSubmit() {
-    // console.log('form', this.loginForm.value);
-    this.loginService.addNewUser(this.loginForm.value);
+    // console.log('form', this.newUserForm.value);
+    this.loginService.addNewUser(this.newUserForm.value);
   }
 }
