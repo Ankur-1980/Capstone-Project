@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-preferences-main',
+  selector: 'preferences-main',
   templateUrl: './preferences-main.component.html',
-  styleUrls: ['./preferences-main.component.css']
+  styleUrls: ['./preferences-main.component.css'],
 })
 export class PreferencesMainComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
