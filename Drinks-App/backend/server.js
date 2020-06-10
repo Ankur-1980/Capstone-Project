@@ -13,8 +13,8 @@ app.use(express.json());
 app.use(express.static(__dirname + "/public"));
 
 // where to send information from the front end to the back end
-app.use("/users", users);
-app.use("/recipes", recipes);
+app.use("/api/users", users);
+app.use("/api/recipes", recipes);
 
 // starting the server
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
