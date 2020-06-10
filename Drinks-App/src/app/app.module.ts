@@ -23,9 +23,10 @@ import { PreferencesLocationsComponent } from './components/preferences/preferen
 import { PreferencesBartendersComponent } from './components/preferences/preferences-bartenders/preferences-bartenders.component';
 import { PreferencesDrinksComponent } from './components/preferences/preferences-drinks/preferences-drinks.component';
 import { PreferencesInputComponent } from './components/preferences/preferences-input/preferences-input.component';
+import { PreferencesPostComponent } from './components/preferences/preferences-post/preferences-post.component';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, NewUserFormComponent, RecipeMainComponent, RecipeFavoritesComponent, RecipeDetailsComponent, RecipeCardComponent, RecipeSearchComponent, UserRecipesMainComponent, UserRecipesCreateComponent, LoginFormComponent, NavbarComponent, PreferencesMainComponent, PreferencesHomebarComponent, PreferencesLocationsComponent, PreferencesBartendersComponent, PreferencesDrinksComponent, PreferencesInputComponent],
+  declarations: [AppComponent, MainComponent, NewUserFormComponent, RecipeMainComponent, RecipeFavoritesComponent, RecipeDetailsComponent, RecipeCardComponent, RecipeSearchComponent, UserRecipesMainComponent, UserRecipesCreateComponent, LoginFormComponent, NavbarComponent, PreferencesMainComponent, PreferencesHomebarComponent, PreferencesLocationsComponent, PreferencesBartendersComponent, PreferencesDrinksComponent, PreferencesInputComponent, PreferencesPostComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

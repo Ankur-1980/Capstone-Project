@@ -6,7 +6,6 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LoginService {
   constructor(private http: HttpClient) {}
-  users = [];
 
   getUsers(): any {
     return this.http.get('/api/users');

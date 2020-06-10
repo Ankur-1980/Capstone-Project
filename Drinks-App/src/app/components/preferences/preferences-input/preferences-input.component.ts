@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
@@ -8,6 +8,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class PreferencesInputComponent implements OnInit {
   preferenceInput: FormGroup;
+  @Output() prefInput: EventEmitter<any> = new EventEmitter();
 
   constructor(private fb: FormBuilder) {}
 
@@ -19,5 +20,7 @@ export class PreferencesInputComponent implements OnInit {
 
   onSubmit() {
     console.log(this.preferenceInput.value);
+
+    this.prefInput.emit(this.preferenceInput.value);
   }
 }
