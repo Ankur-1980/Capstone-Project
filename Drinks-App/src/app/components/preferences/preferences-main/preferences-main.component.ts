@@ -13,8 +13,8 @@ export class PreferencesMainComponent implements OnInit {
   ngOnInit(): void {
     this.preferencesService.getHomeBar().subscribe((data) => {
       // console.log(data);
-      this.homeBar = [data];
-      console.log(this.homeBar);
+      this.homeBar = data;
+      console.log('db', this.homeBar);
     });
   }
 

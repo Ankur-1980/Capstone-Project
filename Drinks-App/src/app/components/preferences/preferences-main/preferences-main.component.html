@@ -1,2 +1,5 @@
 <preferences-input (prefInput)="prefInput($event)"></preferences-input>
-<preferences-post *ngFor="let item of homeBar" [item]="item"></preferences-post>
+<div *ngFor="let item of homeBar">
+  <p>{{ item.home_bar_info }}</p>
+</div>
+<!-- <preferences-post *ngFor="let item of homeBar" [item]="item"></preferences-post> -->
