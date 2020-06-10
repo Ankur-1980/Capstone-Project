@@ -84,6 +84,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _components_recipe_book_recipe_main_recipe_main_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./components/recipe-book/recipe-main/recipe-main.component */
     "./src/app/components/recipe-book/recipe-main/recipe-main.component.ts");
+    /* harmony import */
+
+
+    var _components_preferences_preferences_main_preferences_main_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./components/preferences/preferences-main/preferences-main.component */
+    "./src/app/components/preferences/preferences-main/preferences-main.component.ts");
 
     var routes = [{
       path: '',
@@ -94,6 +100,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }, {
       path: 'recipe-book',
       component: _components_recipe_book_recipe_main_recipe_main_component__WEBPACK_IMPORTED_MODULE_4__["RecipeMainComponent"]
+    }, {
+      path: 'preferences',
+      component: _components_preferences_preferences_main_preferences_main_component__WEBPACK_IMPORTED_MODULE_5__["PreferencesMainComponent"]
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -160,15 +169,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _components_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! ./components/new-user/login-form/login-form.component */
-    "./src/app/components/new-user/login-form/login-form.component.ts");
-    /* harmony import */
-
-
-    var _components_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ./components/new-user/new-user-form/new-user-form.component */
-    "./src/app/components/new-user/new-user-form/new-user-form.component.ts");
+    var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 
     var AppComponent = function AppComponent() {
       _classCallCheck(this, AppComponent);
@@ -181,16 +184,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: AppComponent,
       selectors: [["app-root"]],
-      decls: 2,
+      decls: 1,
       vars: 0,
       template: function AppComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "login-form");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "new-user-form");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "router-outlet");
         }
       },
-      directives: [_components_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_1__["LoginFormComponent"], _components_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_2__["NewUserFormComponent"]],
+      directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterOutlet"]],
       styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"]
     });
     /*@__PURE__*/
@@ -330,6 +331,48 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _components_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! ./components/new-user/login-form/login-form.component */
     "./src/app/components/new-user/login-form/login-form.component.ts");
+    /* harmony import */
+
+
+    var _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    /*! ./components/navbar/navbar.component */
+    "./src/app/components/navbar/navbar.component.ts");
+    /* harmony import */
+
+
+    var _components_preferences_preferences_main_preferences_main_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    /*! ./components/preferences/preferences-main/preferences-main.component */
+    "./src/app/components/preferences/preferences-main/preferences-main.component.ts");
+    /* harmony import */
+
+
+    var _components_preferences_preferences_homebar_preferences_homebar_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    /*! ./components/preferences/preferences-homebar/preferences-homebar.component */
+    "./src/app/components/preferences/preferences-homebar/preferences-homebar.component.ts");
+    /* harmony import */
+
+
+    var _components_preferences_preferences_locations_preferences_locations_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    /*! ./components/preferences/preferences-locations/preferences-locations.component */
+    "./src/app/components/preferences/preferences-locations/preferences-locations.component.ts");
+    /* harmony import */
+
+
+    var _components_preferences_preferences_bartenders_preferences_bartenders_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
+    /*! ./components/preferences/preferences-bartenders/preferences-bartenders.component */
+    "./src/app/components/preferences/preferences-bartenders/preferences-bartenders.component.ts");
+    /* harmony import */
+
+
+    var _components_preferences_preferences_drinks_preferences_drinks_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
+    /*! ./components/preferences/preferences-drinks/preferences-drinks.component */
+    "./src/app/components/preferences/preferences-drinks/preferences-drinks.component.ts");
+    /* harmony import */
+
+
+    var _components_preferences_preferences_input_preferences_input_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
+    /*! ./components/preferences/preferences-input/preferences-input.component */
+    "./src/app/components/preferences/preferences-input/preferences-input.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -349,7 +392,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_main_main_component__WEBPACK_IMPORTED_MODULE_5__["MainComponent"], _components_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_7__["NewUserFormComponent"], _components_recipe_book_recipe_main_recipe_main_component__WEBPACK_IMPORTED_MODULE_9__["RecipeMainComponent"], _components_recipe_book_recipe_favorites_recipe_favorites_component__WEBPACK_IMPORTED_MODULE_10__["RecipeFavoritesComponent"], _components_recipe_book_recipe_details_recipe_details_component__WEBPACK_IMPORTED_MODULE_11__["RecipeDetailsComponent"], _components_recipe_book_recipe_card_recipe_card_component__WEBPACK_IMPORTED_MODULE_12__["RecipeCardComponent"], _components_recipe_book_recipe_search_recipe_search_component__WEBPACK_IMPORTED_MODULE_13__["RecipeSearchComponent"], _components_user_recipes_user_recipes_main_user_recipes_main_component__WEBPACK_IMPORTED_MODULE_14__["UserRecipesMainComponent"], _components_user_recipes_user_recipes_create_user_recipes_create_component__WEBPACK_IMPORTED_MODULE_15__["UserRecipesCreateComponent"], _components_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_16__["LoginFormComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_main_main_component__WEBPACK_IMPORTED_MODULE_5__["MainComponent"], _components_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_7__["NewUserFormComponent"], _components_recipe_book_recipe_main_recipe_main_component__WEBPACK_IMPORTED_MODULE_9__["RecipeMainComponent"], _components_recipe_book_recipe_favorites_recipe_favorites_component__WEBPACK_IMPORTED_MODULE_10__["RecipeFavoritesComponent"], _components_recipe_book_recipe_details_recipe_details_component__WEBPACK_IMPORTED_MODULE_11__["RecipeDetailsComponent"], _components_recipe_book_recipe_card_recipe_card_component__WEBPACK_IMPORTED_MODULE_12__["RecipeCardComponent"], _components_recipe_book_recipe_search_recipe_search_component__WEBPACK_IMPORTED_MODULE_13__["RecipeSearchComponent"], _components_user_recipes_user_recipes_main_user_recipes_main_component__WEBPACK_IMPORTED_MODULE_14__["UserRecipesMainComponent"], _components_user_recipes_user_recipes_create_user_recipes_create_component__WEBPACK_IMPORTED_MODULE_15__["UserRecipesCreateComponent"], _components_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_16__["LoginFormComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_17__["NavbarComponent"], _components_preferences_preferences_main_preferences_main_component__WEBPACK_IMPORTED_MODULE_18__["PreferencesMainComponent"], _components_preferences_preferences_homebar_preferences_homebar_component__WEBPACK_IMPORTED_MODULE_19__["PreferencesHomebarComponent"], _components_preferences_preferences_locations_preferences_locations_component__WEBPACK_IMPORTED_MODULE_20__["PreferencesLocationsComponent"], _components_preferences_preferences_bartenders_preferences_bartenders_component__WEBPACK_IMPORTED_MODULE_21__["PreferencesBartendersComponent"], _components_preferences_preferences_drinks_preferences_drinks_component__WEBPACK_IMPORTED_MODULE_22__["PreferencesDrinksComponent"], _components_preferences_preferences_input_preferences_input_component__WEBPACK_IMPORTED_MODULE_23__["PreferencesInputComponent"]],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"]]
       });
     })();
@@ -360,7 +403,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_main_main_component__WEBPACK_IMPORTED_MODULE_5__["MainComponent"], _components_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_7__["NewUserFormComponent"], _components_recipe_book_recipe_main_recipe_main_component__WEBPACK_IMPORTED_MODULE_9__["RecipeMainComponent"], _components_recipe_book_recipe_favorites_recipe_favorites_component__WEBPACK_IMPORTED_MODULE_10__["RecipeFavoritesComponent"], _components_recipe_book_recipe_details_recipe_details_component__WEBPACK_IMPORTED_MODULE_11__["RecipeDetailsComponent"], _components_recipe_book_recipe_card_recipe_card_component__WEBPACK_IMPORTED_MODULE_12__["RecipeCardComponent"], _components_recipe_book_recipe_search_recipe_search_component__WEBPACK_IMPORTED_MODULE_13__["RecipeSearchComponent"], _components_user_recipes_user_recipes_main_user_recipes_main_component__WEBPACK_IMPORTED_MODULE_14__["UserRecipesMainComponent"], _components_user_recipes_user_recipes_create_user_recipes_create_component__WEBPACK_IMPORTED_MODULE_15__["UserRecipesCreateComponent"], _components_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_16__["LoginFormComponent"]],
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_main_main_component__WEBPACK_IMPORTED_MODULE_5__["MainComponent"], _components_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_7__["NewUserFormComponent"], _components_recipe_book_recipe_main_recipe_main_component__WEBPACK_IMPORTED_MODULE_9__["RecipeMainComponent"], _components_recipe_book_recipe_favorites_recipe_favorites_component__WEBPACK_IMPORTED_MODULE_10__["RecipeFavoritesComponent"], _components_recipe_book_recipe_details_recipe_details_component__WEBPACK_IMPORTED_MODULE_11__["RecipeDetailsComponent"], _components_recipe_book_recipe_card_recipe_card_component__WEBPACK_IMPORTED_MODULE_12__["RecipeCardComponent"], _components_recipe_book_recipe_search_recipe_search_component__WEBPACK_IMPORTED_MODULE_13__["RecipeSearchComponent"], _components_user_recipes_user_recipes_main_user_recipes_main_component__WEBPACK_IMPORTED_MODULE_14__["UserRecipesMainComponent"], _components_user_recipes_user_recipes_create_user_recipes_create_component__WEBPACK_IMPORTED_MODULE_15__["UserRecipesCreateComponent"], _components_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_16__["LoginFormComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_17__["NavbarComponent"], _components_preferences_preferences_main_preferences_main_component__WEBPACK_IMPORTED_MODULE_18__["PreferencesMainComponent"], _components_preferences_preferences_homebar_preferences_homebar_component__WEBPACK_IMPORTED_MODULE_19__["PreferencesHomebarComponent"], _components_preferences_preferences_locations_preferences_locations_component__WEBPACK_IMPORTED_MODULE_20__["PreferencesLocationsComponent"], _components_preferences_preferences_bartenders_preferences_bartenders_component__WEBPACK_IMPORTED_MODULE_21__["PreferencesBartendersComponent"], _components_preferences_preferences_drinks_preferences_drinks_component__WEBPACK_IMPORTED_MODULE_22__["PreferencesDrinksComponent"], _components_preferences_preferences_input_preferences_input_component__WEBPACK_IMPORTED_MODULE_23__["PreferencesInputComponent"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"]],
           providers: [],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -605,6 +648,114 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }, {
           type: src_app_services_login_service__WEBPACK_IMPORTED_MODULE_2__["LoginService"]
         }];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/navbar/navbar.component.ts":
+  /*!*******************************************************!*\
+    !*** ./src/app/components/navbar/navbar.component.ts ***!
+    \*******************************************************/
+
+  /*! exports provided: NavbarComponent */
+
+  /***/
+  function srcAppComponentsNavbarNavbarComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "NavbarComponent", function () {
+      return NavbarComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var NavbarComponent = /*#__PURE__*/function () {
+      function NavbarComponent() {
+        _classCallCheck(this, NavbarComponent);
+      }
+
+      _createClass(NavbarComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return NavbarComponent;
+    }();
+
+    NavbarComponent.ɵfac = function NavbarComponent_Factory(t) {
+      return new (t || NavbarComponent)();
+    };
+
+    NavbarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: NavbarComponent,
+      selectors: [["app-navbar"]],
+      decls: 12,
+      vars: 0,
+      consts: [["href", "#"]],
+      template: function NavbarComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h1");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "NavBar");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "a", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Posts");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "a", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Drinks");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "User");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "a", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Favorites");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "a", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Quiz");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbmF2YmFyL25hdmJhci5jb21wb25lbnQuY3NzIn0= */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NavbarComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-navbar',
+          templateUrl: './navbar.component.html',
+          styleUrls: ['./navbar.component.css']
+        }]
+      }], function () {
+        return [];
       }, null);
     })();
     /***/
@@ -1031,6 +1182,468 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }, {
           type: src_app_services_login_service__WEBPACK_IMPORTED_MODULE_2__["LoginService"]
         }];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/preferences/preferences-bartenders/preferences-bartenders.component.ts":
+  /*!***************************************************************************************************!*\
+    !*** ./src/app/components/preferences/preferences-bartenders/preferences-bartenders.component.ts ***!
+    \***************************************************************************************************/
+
+  /*! exports provided: PreferencesBartendersComponent */
+
+  /***/
+  function srcAppComponentsPreferencesPreferencesBartendersPreferencesBartendersComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PreferencesBartendersComponent", function () {
+      return PreferencesBartendersComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var PreferencesBartendersComponent = /*#__PURE__*/function () {
+      function PreferencesBartendersComponent() {
+        _classCallCheck(this, PreferencesBartendersComponent);
+      }
+
+      _createClass(PreferencesBartendersComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return PreferencesBartendersComponent;
+    }();
+
+    PreferencesBartendersComponent.ɵfac = function PreferencesBartendersComponent_Factory(t) {
+      return new (t || PreferencesBartendersComponent)();
+    };
+
+    PreferencesBartendersComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: PreferencesBartendersComponent,
+      selectors: [["app-preferences-bartenders"]],
+      decls: 2,
+      vars: 0,
+      template: function PreferencesBartendersComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "preferences-bartenders works!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtYmFydGVuZGVycy9wcmVmZXJlbmNlcy1iYXJ0ZW5kZXJzLmNvbXBvbmVudC5jc3MifQ== */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PreferencesBartendersComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-preferences-bartenders',
+          templateUrl: './preferences-bartenders.component.html',
+          styleUrls: ['./preferences-bartenders.component.css']
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/preferences/preferences-drinks/preferences-drinks.component.ts":
+  /*!*******************************************************************************************!*\
+    !*** ./src/app/components/preferences/preferences-drinks/preferences-drinks.component.ts ***!
+    \*******************************************************************************************/
+
+  /*! exports provided: PreferencesDrinksComponent */
+
+  /***/
+  function srcAppComponentsPreferencesPreferencesDrinksPreferencesDrinksComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PreferencesDrinksComponent", function () {
+      return PreferencesDrinksComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var PreferencesDrinksComponent = /*#__PURE__*/function () {
+      function PreferencesDrinksComponent() {
+        _classCallCheck(this, PreferencesDrinksComponent);
+      }
+
+      _createClass(PreferencesDrinksComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return PreferencesDrinksComponent;
+    }();
+
+    PreferencesDrinksComponent.ɵfac = function PreferencesDrinksComponent_Factory(t) {
+      return new (t || PreferencesDrinksComponent)();
+    };
+
+    PreferencesDrinksComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: PreferencesDrinksComponent,
+      selectors: [["app-preferences-drinks"]],
+      decls: 2,
+      vars: 0,
+      template: function PreferencesDrinksComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "preferences-drinks works!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtZHJpbmtzL3ByZWZlcmVuY2VzLWRyaW5rcy5jb21wb25lbnQuY3NzIn0= */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PreferencesDrinksComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-preferences-drinks',
+          templateUrl: './preferences-drinks.component.html',
+          styleUrls: ['./preferences-drinks.component.css']
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/preferences/preferences-homebar/preferences-homebar.component.ts":
+  /*!*********************************************************************************************!*\
+    !*** ./src/app/components/preferences/preferences-homebar/preferences-homebar.component.ts ***!
+    \*********************************************************************************************/
+
+  /*! exports provided: PreferencesHomebarComponent */
+
+  /***/
+  function srcAppComponentsPreferencesPreferencesHomebarPreferencesHomebarComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PreferencesHomebarComponent", function () {
+      return PreferencesHomebarComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var PreferencesHomebarComponent = /*#__PURE__*/function () {
+      function PreferencesHomebarComponent() {
+        _classCallCheck(this, PreferencesHomebarComponent);
+      }
+
+      _createClass(PreferencesHomebarComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return PreferencesHomebarComponent;
+    }();
+
+    PreferencesHomebarComponent.ɵfac = function PreferencesHomebarComponent_Factory(t) {
+      return new (t || PreferencesHomebarComponent)();
+    };
+
+    PreferencesHomebarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: PreferencesHomebarComponent,
+      selectors: [["app-preferences-homebar"]],
+      decls: 2,
+      vars: 0,
+      template: function PreferencesHomebarComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "preferences-homebar works!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtaG9tZWJhci9wcmVmZXJlbmNlcy1ob21lYmFyLmNvbXBvbmVudC5jc3MifQ== */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PreferencesHomebarComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-preferences-homebar',
+          templateUrl: './preferences-homebar.component.html',
+          styleUrls: ['./preferences-homebar.component.css']
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/preferences/preferences-input/preferences-input.component.ts":
+  /*!*****************************************************************************************!*\
+    !*** ./src/app/components/preferences/preferences-input/preferences-input.component.ts ***!
+    \*****************************************************************************************/
+
+  /*! exports provided: PreferencesInputComponent */
+
+  /***/
+  function srcAppComponentsPreferencesPreferencesInputPreferencesInputComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PreferencesInputComponent", function () {
+      return PreferencesInputComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var PreferencesInputComponent = /*#__PURE__*/function () {
+      function PreferencesInputComponent() {
+        _classCallCheck(this, PreferencesInputComponent);
+      }
+
+      _createClass(PreferencesInputComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return PreferencesInputComponent;
+    }();
+
+    PreferencesInputComponent.ɵfac = function PreferencesInputComponent_Factory(t) {
+      return new (t || PreferencesInputComponent)();
+    };
+
+    PreferencesInputComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: PreferencesInputComponent,
+      selectors: [["app-preferences-input"]],
+      decls: 2,
+      vars: 0,
+      template: function PreferencesInputComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "preferences-input works!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtaW5wdXQvcHJlZmVyZW5jZXMtaW5wdXQuY29tcG9uZW50LmNzcyJ9 */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PreferencesInputComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-preferences-input',
+          templateUrl: './preferences-input.component.html',
+          styleUrls: ['./preferences-input.component.css']
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/preferences/preferences-locations/preferences-locations.component.ts":
+  /*!*************************************************************************************************!*\
+    !*** ./src/app/components/preferences/preferences-locations/preferences-locations.component.ts ***!
+    \*************************************************************************************************/
+
+  /*! exports provided: PreferencesLocationsComponent */
+
+  /***/
+  function srcAppComponentsPreferencesPreferencesLocationsPreferencesLocationsComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PreferencesLocationsComponent", function () {
+      return PreferencesLocationsComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var PreferencesLocationsComponent = /*#__PURE__*/function () {
+      function PreferencesLocationsComponent() {
+        _classCallCheck(this, PreferencesLocationsComponent);
+      }
+
+      _createClass(PreferencesLocationsComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return PreferencesLocationsComponent;
+    }();
+
+    PreferencesLocationsComponent.ɵfac = function PreferencesLocationsComponent_Factory(t) {
+      return new (t || PreferencesLocationsComponent)();
+    };
+
+    PreferencesLocationsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: PreferencesLocationsComponent,
+      selectors: [["app-preferences-locations"]],
+      decls: 2,
+      vars: 0,
+      template: function PreferencesLocationsComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "preferences-locations works!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtbG9jYXRpb25zL3ByZWZlcmVuY2VzLWxvY2F0aW9ucy5jb21wb25lbnQuY3NzIn0= */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PreferencesLocationsComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-preferences-locations',
+          templateUrl: './preferences-locations.component.html',
+          styleUrls: ['./preferences-locations.component.css']
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/preferences/preferences-main/preferences-main.component.ts":
+  /*!***************************************************************************************!*\
+    !*** ./src/app/components/preferences/preferences-main/preferences-main.component.ts ***!
+    \***************************************************************************************/
+
+  /*! exports provided: PreferencesMainComponent */
+
+  /***/
+  function srcAppComponentsPreferencesPreferencesMainPreferencesMainComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PreferencesMainComponent", function () {
+      return PreferencesMainComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var PreferencesMainComponent = /*#__PURE__*/function () {
+      function PreferencesMainComponent() {
+        _classCallCheck(this, PreferencesMainComponent);
+      }
+
+      _createClass(PreferencesMainComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return PreferencesMainComponent;
+    }();
+
+    PreferencesMainComponent.ɵfac = function PreferencesMainComponent_Factory(t) {
+      return new (t || PreferencesMainComponent)();
+    };
+
+    PreferencesMainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: PreferencesMainComponent,
+      selectors: [["preferences-main"]],
+      decls: 2,
+      vars: 0,
+      template: function PreferencesMainComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "preferences-main works!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtbWFpbi9wcmVmZXJlbmNlcy1tYWluLmNvbXBvbmVudC5jc3MifQ== */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PreferencesMainComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'preferences-main',
+          templateUrl: './preferences-main.component.html',
+          styleUrls: ['./preferences-main.component.css']
+        }]
+      }], function () {
+        return [];
       }, null);
     })();
     /***/
