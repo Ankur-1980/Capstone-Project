@@ -5,21 +5,19 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class PreferencesService {
-  homeBarItems = [];
+  preferencesItems = [];
   constructor(private http: HttpClient) {}
 
-  getHomeBar() {
-    // this takes everything already in the array and adds to it.
-    // return [...this.homeBarItems];
-    return this.http.get('/api/preferences/home-bar');
+  getItems() {
+    return this.http.get('/api/preferences');
   }
 
-  addHomeBar(formValue) {
+  addItems(formValue) {
     // console.log('service', formValue);
-    this.homeBarItems.push(formValue);
+    this.preferencesItems.push(formValue);
 
     this.http
-      .post<{ message: string }>('/api/preferences/home-bar', formValue)
+      .post<{ message: string }>('/api/preferences', formValue)
       .subscribe((response) => {
         console.log(response.message);
       });
