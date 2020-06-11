@@ -18,13 +18,6 @@ import { UserRecipesCreateComponent } from './components/user-recipes/user-recip
 import { LoginFormComponent } from './components/new-user/login-form/login-form.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
-import { PreferencesHomebarComponent } from './components/preferences/preferences-homebar/preferences-homebar.component';
-import { PreferencesLocationsComponent } from './components/preferences/preferences-locations/preferences-locations.component';
-import { PreferencesBartendersComponent } from './components/preferences/preferences-bartenders/preferences-bartenders.component';
-import { PreferencesDrinksComponent } from './components/preferences/preferences-drinks/preferences-drinks.component';
-import { PreferencesInputComponent } from './components/preferences/preferences-input/preferences-input.component';
-import { PreferencesPostComponent } from './components/preferences/preferences-post/preferences-post.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,12 +32,6 @@ import { PreferencesPostComponent } from './components/preferences/preferences-p
     UserRecipesCreateComponent,
     LoginFormComponent,
     NavbarComponent,
-    PreferencesHomebarComponent,
-    PreferencesLocationsComponent,
-    PreferencesBartendersComponent,
-    PreferencesDrinksComponent,
-    PreferencesInputComponent,
-    PreferencesPostComponent,
   ],
   imports: [
     BrowserModule,
