@@ -9,7 +9,18 @@ const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'recipe-details/:recipeID', component: RecipeDetailsComponent },
   { path: 'recipe-book', component: RecipeMainComponent },
-  { path: 'preferences', component: PreferencesMainComponent },
+  {
+    path: 'preferences',
+    loadChildren: () =>
+      import('./components/preferences/preferences.module').then(
+        (m) => m.PreferencesModule
+      ),
+  },
+  {
+    path: '',
+    redirectTo: '',
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({

@@ -17,7 +17,7 @@ import { UserRecipesMainComponent } from './components/user-recipes/user-recipes
 import { UserRecipesCreateComponent } from './components/user-recipes/user-recipes-create/user-recipes-create.component';
 import { LoginFormComponent } from './components/new-user/login-form/login-form.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { PreferencesMainComponent } from './components/preferences/preferences-main/preferences-main.component';
+
 import { PreferencesHomebarComponent } from './components/preferences/preferences-homebar/preferences-homebar.component';
 import { PreferencesLocationsComponent } from './components/preferences/preferences-locations/preferences-locations.component';
 import { PreferencesBartendersComponent } from './components/preferences/preferences-bartenders/preferences-bartenders.component';
@@ -26,7 +26,26 @@ import { PreferencesInputComponent } from './components/preferences/preferences-
 import { PreferencesPostComponent } from './components/preferences/preferences-post/preferences-post.component';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, NewUserFormComponent, RecipeMainComponent, RecipeFavoritesComponent, RecipeDetailsComponent, RecipeCardComponent, RecipeSearchComponent, UserRecipesMainComponent, UserRecipesCreateComponent, LoginFormComponent, NavbarComponent, PreferencesMainComponent, PreferencesHomebarComponent, PreferencesLocationsComponent, PreferencesBartendersComponent, PreferencesDrinksComponent, PreferencesInputComponent, PreferencesPostComponent],
+  declarations: [
+    AppComponent,
+    MainComponent,
+    NewUserFormComponent,
+    RecipeMainComponent,
+    RecipeFavoritesComponent,
+    RecipeDetailsComponent,
+    RecipeCardComponent,
+    RecipeSearchComponent,
+    UserRecipesMainComponent,
+    UserRecipesCreateComponent,
+    LoginFormComponent,
+    NavbarComponent,
+    PreferencesHomebarComponent,
+    PreferencesLocationsComponent,
+    PreferencesBartendersComponent,
+    PreferencesDrinksComponent,
+    PreferencesInputComponent,
+    PreferencesPostComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
