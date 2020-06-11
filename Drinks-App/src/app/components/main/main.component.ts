@@ -33,31 +33,25 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginService.getUsers().subscribe((data) => console.log(data));
-
     this.recipeApi.getCategories().subscribe((data) => {
       this.categories = data['drinks'];
       // console.log(this.categories);
     });
-
     this.recipeApi.getGlassware().subscribe((data) => {
       this.glasses = data['drinks'];
       // console.log(this.glasses);
     });
-
     this.recipeApi.getIngredients().subscribe((data) => {
       this.ingredients = data['drinks'];
       console.log('Ingredients', this.ingredients);
     });
-
     this.recipeApi.getAlcoholic().subscribe((data) => {
       this.alcoholics = data['drinks'];
       // console.log(this.alcoholics);
     });
-
     this.recipeApi.getLetterA().subscribe((data) => {
       console.log('letter A', data);
     });
-
     // navigator.geolocation.getCurrentPosition((position) => {
     //   this.center = {
     //     lat: position.coords.latitude,
