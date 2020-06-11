@@ -42,7 +42,6 @@ export class UserRecipesCreateComponent implements OnInit {
       ingredient3: element,
       ingredient4: element,
       ingredient5: element,
-
       date: this.fb.control(new Date()),
     });
   }

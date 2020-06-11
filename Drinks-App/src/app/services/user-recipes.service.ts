@@ -11,13 +11,13 @@ export class UserRecipesService {
     console.log(formValue);
 
     this.http
-      .post<{ message: string }>('http://localhost:3000/recipes', formValue)
+      .post<{ message: string }>('/api/recipes', formValue)
       .subscribe((response) => {
         console.log(response.message);
       });
   }
 
   getRecipes() {
-    return this.http.get('http://localhost:3000/recipes');
+    return this.http.get('/api/recipes');
   }
 }
