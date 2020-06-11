@@ -1,1 +1,3 @@
-<p>preferences-main works!</p>
+<preferences-input (prefInput)="prefInput($event)"></preferences-input>
+<h1>Preferences Main</h1>
+<preferences-post *ngFor="let item of homeBar" [item]="item"></preferences-post>
