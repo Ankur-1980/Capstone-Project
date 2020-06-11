@@ -25,12 +25,8 @@ export class PreferencesCreateComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.itemForm.value);
-
-    // if (form.invalid) {
-    //   return;
-    // }
-    // this.preferService.addItems(form.value);
-    // form.resetForm();
+    // console.log(this.itemForm.value);
+    this.preferService.addItems(this.itemForm.value);
+    this.itemForm.reset();
   }
 }

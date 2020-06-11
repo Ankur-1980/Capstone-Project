@@ -26,20 +26,26 @@ export class PreferencesService {
   }
 
   addItems(formValue) {
-    const item = formValue.value;
+    console.log(formValue);
+
     this.http
-      .post<{ message: string }>('/api/preferences', item)
+      .post<{ message: string; items: any }>('/api/preferences', formValue)
       .subscribe((response) => {
         console.log(response.message);
-        this.items.push(item);
-        this.itemsUpdated.next([...this.items]);
+        this.itemsUpdated.next(response.items);
       });
   }
 
   deleteItem(itemId) {
-    this.http.delete(`/api/preferences/${itemId}`).subscribe(() => {
-      this.items = this.items.filter((item) => item.preference_id !== itemId);
-      this.itemsUpdated.next([...this.items]);
-    });
+    this.http
+      .delete<{ message: string; items: any }>(`/api/preferences/${itemId}`)
+      .subscribe((response) => {
+        // console.log(response.message);
+        // console.log('service', response.items);
+
+        this.items = response.items;
+        this.items = this.items.filter((item) => item.preference_id !== itemId);
+        this.itemsUpdated.next([...this.items]);
+      });
   }
 }

@@ -8,17 +8,29 @@ preferences.get("/", (req, res) => {
 });
 
 preferences.post("/", (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
+  database
+    .query(
+      "INSERT INTO preferences (preference_info, preference_cat) VALUES($1::text, $2::text)",
+      [req.body.info, req.body.category]
+    )
+    .then(() => {
+      database.query("SELECT * FROM preferences").then((response) => {
+        res.status(201).json({ message: "Item Added", items: response.rows });
+      });
+    });
+});
 
-  // database
-  //   .query("INSERT INTO home_bar (home_bar_info) VALUES($1::text)", [
-  //     req.body.textInput,
-  //   ])
-  //   .then(() => {
-  //     database.query("SELECT * FROM preferences").then((response) => {
-  //       res.status(201).json({ message: "Item Added", items: response.rows });
-  //     });
-  //   });
+preferences.delete("/:id", (req, res) => {
+  database
+    .query(`DELETE FROM preferences WHERE preference_id=$1::INT`, [
+      req.params.id,
+    ])
+    .then(() => {
+      database.query("SELECT * FROM preferences").then((response) => {
+        res.status(200).json({ message: "Item Deleted", items: response.rows });
+      });
+    });
 });
 
 module.exports = preferences;
