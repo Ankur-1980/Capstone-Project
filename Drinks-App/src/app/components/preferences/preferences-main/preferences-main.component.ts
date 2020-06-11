@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PreferencesService } from 'src/app/services/preferences.service';
 
 @Component({
   selector: 'preferences-main',
@@ -7,18 +6,7 @@ import { PreferencesService } from 'src/app/services/preferences.service';
   styleUrls: ['./preferences-main.component.css'],
 })
 export class PreferencesMainComponent implements OnInit {
-  constructor(private preferencesService: PreferencesService) {}
-  homeBar;
+  constructor() {}
 
-  ngOnInit(): void {
-    this.preferencesService.getHomeBar().subscribe((data) => {
-      // console.log(data);
-      this.homeBar = data;
-      console.log('db', this.homeBar);
-    });
-  }
-
-  prefInput(value) {
-    this.preferencesService.addHomeBar(value);
-  }
+  ngOnInit(): void {}
 }
