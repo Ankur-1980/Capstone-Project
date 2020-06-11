@@ -1,1 +1,46 @@
 <p>post-drink-form works!</p>
+<form [formGroup]="drinkPostForm" (ngSubmit)="onSubmit()">
+  <!-- <div>
+        upload/take a picture
+    </div> -->
+  <!-- drink name -->
+  <div class="form-group">
+    <label for="name">Drink Name</label>
+    <input type="text" formControlName="name" placeholder="Drink Name" />
+  </div>
+  <!-- ratings slider -->
+  <div class="form-group">
+    <input
+      type="range"
+      min="1"
+      max="5"
+      value="0"
+      step=".5"
+      class="slider"
+      id="rating-slider"
+      formControlName="rating"
+    />
+  </div>
+  <!-- glassware dropdown -->
+  <div class="form-group">
+    <select formControlName="glassware" name="glassware" id="glassware">
+      <option value="">Glassware</option>
+      <option *ngFor="let glass of glassware" value="{{ glass.strGlass }}">{{
+        glass.strGlass
+      }}</option>
+    </select>
+  </div>
+  <!-- description -->
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <textarea
+      name="description"
+      class="description"
+      formControlName="description"
+      id="description"
+      cols="25"
+      rows="4"
+    ></textarea>
+  </div>
+  <button type="submit">Submit</button>
+</form>

@@ -14,6 +14,7 @@ import { RecipeBookModule } from './components/recipe-book/recipe-book.module';
 import { PreferencesModule } from './components/preferences/preferences.module';
 import { UserRecipesModule } from './components/user-recipes/user-recipes.module';
 import { PostDrinkFormComponent } from './components/post-drink-form/post-drink-form.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { PostDrinkFormComponent } from './components/post-drink-form/post-drink-
     LoginFormComponent,
     NavbarComponent,
     PostDrinkFormComponent,
+    UserProfileComponent,
   ],
   imports: [
     BrowserModule,
