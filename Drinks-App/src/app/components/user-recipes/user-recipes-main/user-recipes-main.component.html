@@ -1,1 +1,8 @@
-<user-recipes-create></user-recipes-create>
+<!-- form doesn't live here it's here for easy access -->
+<!-- <user-recipes-create></user-recipes-create> -->
+<section>
+  <h1>User Inputted Recipes</h1>
+  <div *ngFor="let item of recipes">
+    <p>{{ item.drink_name }}</p>
+  </div>
+</section>

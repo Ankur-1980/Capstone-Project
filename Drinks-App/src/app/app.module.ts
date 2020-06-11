@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { RecipeBookModule } from './components/recipe-book/recipe-book.module';
 import { PreferencesModule } from './components/preferences/preferences.module';
 import { UserRecipesModule } from './components/user-recipes/user-recipes.module';
+import { PostDrinkFormComponent } from './components/post-drink-form/post-drink-form.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { UserRecipesModule } from './components/user-recipes/user-recipes.module
     NewUserFormComponent,
     LoginFormComponent,
     NavbarComponent,
+    PostDrinkFormComponent,
   ],
   imports: [
     BrowserModule,

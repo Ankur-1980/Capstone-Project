@@ -7,11 +7,14 @@ import { UserRecipesService } from 'src/app/components/user-recipes/user-recipes
   styleUrls: ['./user-recipes-main.component.css'],
 })
 export class UserRecipesMainComponent implements OnInit {
+  recipes;
+
   constructor(private userRecipeService: UserRecipesService) {}
 
   ngOnInit(): void {
-    this.userRecipeService
-      .getRecipes()
-      .subscribe((data) => console.log('User Recipes', data));
+    this.userRecipeService.getRecipes().subscribe((data) => {
+      this.recipes = data;
+      console.log(this.recipes);
+    });
   }
 }
