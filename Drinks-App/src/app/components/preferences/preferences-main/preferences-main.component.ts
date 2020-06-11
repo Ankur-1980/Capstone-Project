@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PreferencesService } from 'src/app/components/preferences/preferences.service';
 
 @Component({
   selector: 'preferences-main',

@@ -1,20 +1,34 @@
 const preferences = require("express").Router();
 const database = require("../connection");
 
-preferences.get("/home-bar", (req, res) => {
-  database.query("SELECT * FROM home_bar").then((result) => {
-    res.status(200).json(result.rows);
+preferences.get("/", (req, res) => {
+  database.query("SELECT * FROM preferences").then((result) => {
+    res.status(200).json({ message: "Fetched Items", items: result.rows });
   });
 });
 
-preferences.post("/home-bar", (req, res) => {
+preferences.post("/", (req, res) => {
+  // console.log(req.body);
   database
-    .query("INSERT INTO home_bar (home_bar_info) VALUES($1::text)", [
-      req.body.textInput,
+    .query(
+      "INSERT INTO preferences (preference_info, preference_cat) VALUES($1::text, $2::text)",
+      [req.body.info, req.body.category]
+    )
+    .then(() => {
+      database.query("SELECT * FROM preferences").then((response) => {
+        res.status(201).json({ message: "Item Added", items: response.rows });
+      });
+    });
+});
+
+preferences.delete("/:id", (req, res) => {
+  database
+    .query(`DELETE FROM preferences WHERE preference_id=$1::INT`, [
+      req.params.id,
     ])
     .then(() => {
-      database.query("SELECT * FROM home_bar").then((response) => {
-        res.status(201).json({ message: "Item Added", items: response.rows });
+      database.query("SELECT * FROM preferences").then((response) => {
+        res.status(200).json({ message: "Item Deleted", items: response.rows });
       });
     });
 });

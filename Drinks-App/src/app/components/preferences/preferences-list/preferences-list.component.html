@@ -1,0 +1,11 @@
+<section>
+  <div class="container" *ngIf="items.length > 0">
+    <div *ngFor="let item of items">
+      <p>{{ item.preference_id }}</p>
+      <p>{{ item.preference_info }}</p>
+      <p>{{ item.preference_cat }}</p>
+      <button (click)="onDelete(item.preference_id)">Delete</button>
+    </div>
+  </div>
+  <p *ngIf="items.length < 0">No posts yet</p>
+</section>
