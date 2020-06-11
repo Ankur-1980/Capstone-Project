@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PreferencesService } from 'src/app/services/preferences.service';
+import { PreferencesService } from 'src/app/components/preferences/preferences.service';
 
 @Component({
   selector: 'preferences-main',
@@ -7,11 +7,7 @@ import { PreferencesService } from 'src/app/services/preferences.service';
   styleUrls: ['./preferences-main.component.css'],
 })
 export class PreferencesMainComponent implements OnInit {
-  constructor(private preferService: PreferencesService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.preferService.getItems().subscribe((data) => {
-      console.log(data);
-    });
-  }
+  ngOnInit(): void {}
 }

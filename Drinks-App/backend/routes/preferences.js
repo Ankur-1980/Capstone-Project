@@ -3,7 +3,7 @@ const database = require("../connection");
 
 preferences.get("/", (req, res) => {
   database.query("SELECT * FROM preferences").then((result) => {
-    res.status(200).json(result.rows);
+    res.status(200).json({ message: "Fetched Items", items: result.rows });
   });
 });
 
