@@ -5,25 +5,17 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class PreferencesService {
-  homeBar = [
-    { home_bar_id: 1, home_bar_info: 'Vodka' },
-    { home_bar_id: 2, home_bar_info: 'Gin' },
-    { home_bar_id: 3, home_bar_info: 'Whiskey' },
-  ];
-
   constructor(private http: HttpClient) {}
 
   getHomeBar() {
-    return this.http.get('api/preferences/home-bar');
+    return this.http.get('/api/preferences/home-bar');
   }
 
   addHomeBar(formValue) {
-    console.log('service', formValue);
-
-    // this.http
-    //   .post<{ message: string }>('/api/preferences', formValue)
-    //   .subscribe((response) => {
-    //     console.log(response.message);
-    //   });
+    this.http
+      .post<{ message: string }>('/api/preferences/home-bar', formValue)
+      .subscribe((response) => {
+        console.log(response.message);
+      });
   }
 }

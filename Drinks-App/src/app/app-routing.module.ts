@@ -19,6 +19,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'user-recipes',
+    loadChildren: () =>
+      import('./components/user-recipes/user-recipes.module').then(
+        (m) => m.UserRecipesModule
+      ),
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full',

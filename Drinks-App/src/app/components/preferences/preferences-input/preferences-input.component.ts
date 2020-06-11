@@ -19,8 +19,6 @@ export class PreferencesInputComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.preferenceInput.value);
-
     this.prefInput.emit(this.preferenceInput.value);
   }
 }
