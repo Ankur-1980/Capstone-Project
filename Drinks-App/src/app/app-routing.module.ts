@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { TheFeedMainComponent } from './components/the-feed/the-feed-main/the-feed-main.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -9,6 +10,9 @@ const routes: Routes = [
     path: 'profile',
     component: UserProfileComponent,
   },
+  {
+    path: 'the-feed', component: TheFeedMainComponent
+  }
   {
     path: 'preferences',
     loadChildren: () =>

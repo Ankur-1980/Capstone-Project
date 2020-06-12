@@ -16,6 +16,7 @@ import { UserRecipesModule } from './components/user-recipes/user-recipes.module
 import { PostDrinkFormComponent } from './components/post-drink-form/post-drink-form.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { TheFeedMainComponent } from './components/the-feed/the-feed-main/the-feed-main.component';
+import { TheFeedPostsComponent } from './components/the-feed/the-feed-posts/the-feed-posts.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { TheFeedMainComponent } from './components/the-feed/the-feed-main/the-fe
     PostDrinkFormComponent,
     UserProfileComponent,
     TheFeedMainComponent,
+    TheFeedPostsComponent,
   ],
   imports: [
     BrowserModule,
