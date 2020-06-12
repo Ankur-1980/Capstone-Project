@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DrinkPostService } from 'src/app/services/drink-post.service';
+import { MOCK_POSTS } from '../../MOCK_DATA/mock-posts';
 
 @Component({
   selector: 'user-profile',
@@ -12,10 +13,10 @@ export class UserProfileComponent implements OnInit {
   constructor(private drinkPosts: DrinkPostService) {}
 
   ngOnInit(): void {
-    this.drinkPosts.getDrinks().subscribe((data) => {
-      // console.log(data);
-      this.posts = data;
-      console.log(this.posts);
-    });
+    // this.drinkPosts.getDrinks().subscribe((data) => {
+    //   // console.log(data);
+    //   this.posts = data;
+    //   console.log(this.posts);
+    // });
   }
 }
