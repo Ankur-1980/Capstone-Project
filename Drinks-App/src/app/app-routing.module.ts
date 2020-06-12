@@ -11,8 +11,9 @@ const routes: Routes = [
     component: UserProfileComponent,
   },
   {
-    path: 'the-feed', component: TheFeedMainComponent
-  }
+    path: 'the-feed',
+    component: TheFeedMainComponent,
+  },
   {
     path: 'preferences',
     loadChildren: () =>

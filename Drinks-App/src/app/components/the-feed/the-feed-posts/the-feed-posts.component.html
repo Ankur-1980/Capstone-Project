@@ -1,1 +1,32 @@
-<p>the-feed-posts works!</p>
+<section>
+  <div *ngFor="let item of theFeed">
+    <img
+      width="200px"
+      src="../../../../assets/lefteris-kallergis-QsmdVT5pTMw-unsplash.jpg"
+      alt="{{ item.drink_name }}"
+    />
+    <h2>{{ item.drink_name }}</h2>
+    <p>Rating: {{ item.rating }}</p>
+    <p>glassware: {{ item.glassware }}</p>
+    <p>description: {{ item.description }}</p>
+    <p>location: {{ item.location }}</p>
+    <p>username: {{ item.username }}</p>
+    <div class="comments-container">
+      <button (click)="toggle()">read comments</button>
+      <div *ngIf="!hide" class="comments">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+          dignissimos molestiae assumenda at, dolor voluptatum!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+          dignissimos molestiae assumenda at, dolor voluptatum!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+          dignissimos molestiae assumenda at, dolor voluptatum!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
