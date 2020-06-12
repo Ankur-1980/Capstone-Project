@@ -35,6 +35,8 @@ export class RecipeApiService {
   }
 
   getDetails(recipeID) {
+    console.log('service', recipeID);
+
     return this.http.get(`${this.baseUrl}lookup.php?i=${recipeID}`);
   }
 
