@@ -2,9 +2,8 @@
   margin-top: 30px;
   background-image: url(./Margarita/margarita.svg);
   background-repeat: no-repeat;
-  background-color: rgb(52, 43, 56);
   height: 115vh;
-  width: 125vw;
+  width: 100vw;
 }
 
 .body {
@@ -36,6 +35,8 @@ label {
   display: flex;
   flex-direction: column;
 }
+
+/* Input Styling */
 input {
   padding: 10px 5px;
   color: hsl(0, 0%, 100%);
@@ -46,6 +47,12 @@ input:hover {
   border: 2pt solid #80bdad;
 }
 
+::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* button Style */
 button {
   margin-top: 30px;
   padding: 10px 0px;
@@ -54,6 +61,26 @@ button {
 }
 button:hover {
   background-color: #80bdad;
+}
+
+/* link Style */
+.resetPW {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkInfo {
+  align-self: center;
+  margin-top: 20px;
+  color: hsl(0, 0%, 100%);
+}
+a {
+  align-self: center;
+  margin-top: 8px;
+  color: #80bdad;
+}
+a:hover {
+  color: #204051;
 }
 
 /* media Query for Tablets */

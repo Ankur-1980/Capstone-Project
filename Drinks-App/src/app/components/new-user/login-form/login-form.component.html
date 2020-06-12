@@ -4,13 +4,27 @@
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <label for="userName">Username</label>
-        <input type="text" name="userName" formControlName="userName" />
+        <input
+          type="text"
+          name="userName"
+          formControlName="userName"
+          placeholder="Enter Username"
+        />
       </div>
       <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" name="password" formControlName="password" />
+        <input
+          type="password"
+          name="password"
+          formControlName="password"
+          placeholder="Enter Password"
+        />
       </div>
       <button type="submit">Log In</button>
     </form>
+    <div class="resetPW">
+      <div class="linkInfo">New to DrinksOnMe?</div>
+      <a href="#">Click Here to Create a Profile</a>
+    </div>
   </div>
 </div>
