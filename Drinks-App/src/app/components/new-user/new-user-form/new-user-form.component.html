@@ -1,17 +1,16 @@
-<h1 class="center-mob">New User Form</h1>
+<h1 class="center">New User Form</h1>
 <form [formGroup]="newUserForm" (ngSubmit)="onSubmit()">
   <!-- first name & last name- required-->
   <div class="form-group inline">
-    <div>
+    <div class="two-col">
       <label for="firstName" for="label-control">First Name</label>
       <input type="text" formControlName="firstName" class="form-control" />
       <!-- <div *ngIf="firstName.invalid && firstName.touched">
         <div *ngIf="firstName.errors.required">
-   
         </div>
       </div> -->
     </div>
-    <div>
+    <div class="two-col">
       <label for="lastName" for="label-control">Last Name</label>
       <input type="text" formControlName="lastName" class="form-control" />
       <!-- <div *ngIf="lastName.invalid && lastName.touched">
@@ -79,5 +78,5 @@
     <textarea formControlName="bio" class="form-control"> </textarea>
   </div>
   <button type="submit">Submit</button>
-  <p class="center-mob">Already registered? Click <a href="#"> here </a> to login</p>
+  <p class="center">Already registered? Click <a href="#"> here </a> to login</p>
 </form>
