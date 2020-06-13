@@ -4,11 +4,12 @@ body {
 
 * {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: rgb(236, 184, 92);
+    color:#ffffff;
 }
 
 a {
     text-decoration: none;
+    color: #80bdad;
 }
 
 a:hover {
@@ -28,21 +29,17 @@ p, a {
 
 input, textarea, select {
     padding: 10px 0;
-    margin: 5px 0 5px 0;
+    margin: 5px 0;
     color: hsl(0, 0%, 100%);
     background-color: rgb(236, 184, 92, 0.5);
-    border: 1pt solid rgb(236, 184, 92);
+    border: 2px solid rgb(236, 184, 92);
     transition: all 0.3s ease 0s;
     font-size: 12px;
     width: 100%;
 }
 
-input::placeholder {
-    padding: 10px;
-} 
-
 input:hover {
-    border: 1pt solid #80bdad;
+    border: 2px solid #80bdad;
 }
 
 label {
@@ -64,15 +61,15 @@ button:hover{
     background-color: #80bdad;
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-}
-
 .hidden {
     display: none;
 }
 
+.inline {
+    display: flex;
+    justify-content: space-evenly;
+
+}
 @media screen and (max-width: 360px) {
     h1 {
         font-size: 40px;
@@ -81,8 +78,7 @@ button:hover{
     p, label, button, a {
         font-size: 12px;
     }
-
-    a {
-        margin-top: 10px;
+    .center-mob {
+        text-align: center;
     }
 }
