@@ -1,6 +1,18 @@
 body {
   background-color: #342b38;
 }
+.background {
+  height: 115vh;
+  width: 125vw;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 60vw;
+}
 
 * {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -9,11 +21,11 @@ body {
 
 a {
   text-decoration: none;
-  color: rgb(236, 184, 92);
+  color: #80bdad;
 }
 
 a:hover {
-  color: #80bdad;
+  color: #204051;
   transition: all 0.3s ease 0s;
 }
 
