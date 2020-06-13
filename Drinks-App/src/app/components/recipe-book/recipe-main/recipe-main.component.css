@@ -1,0 +1,24 @@
+.background {
+  margin-top: 50px;
+  margin-left: 10vw;
+  background-image: url(../Hurricane/Hurricane.svg);
+  background-repeat: no-repeat;
+  height: 125vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  gap: 10px;
+  justify-content: center;
+}

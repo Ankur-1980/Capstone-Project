@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 import { RecipeApiService } from 'src/app/services/recipeAPI.service';
-import { UserRecipesService } from 'src/app/services/user-recipes.service';
+import { UserRecipesService } from 'src/app/components/user-recipes/user-recipes.service';
 
 @Component({
   selector: 'user-recipes-create',
@@ -42,8 +42,7 @@ export class UserRecipesCreateComponent implements OnInit {
       ingredient3: element,
       ingredient4: element,
       ingredient5: element,
-
-      date: this.fb.control(new Date()),
+      // date: this.fb.control(new Date()),
     });
   }
 
