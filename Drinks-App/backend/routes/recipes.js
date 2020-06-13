@@ -1,10 +1,25 @@
 const recipes = require("express").Router();
-const pool = require("../connection");
+const database = require("../connection");
 
 recipes.get("/", (req, res) => {
-  pool.query("SELECT * FROM users").then((result) => {
+  database.query("SELECT * FROM user_recipes").then((result) => {
     res.json(result.rows);
   });
+});
+
+recipes.post("/", (req, res) => {
+  console.log(req.body);
+
+  // Function for time stamp PG
+  // NOW()
+
+  // database
+  //   .query()
+  //   .then(() => {
+  //     database.query("SELECT * FROM recipes").then((response) => {
+  //       res.status(201).json({ message: "User Added", recipes: response.rows });
+  //     });
+  //   });
 });
 
 module.exports = recipes;

@@ -1,19 +1,24 @@
-<ul>
-  <h1>Categories</h1>
-  <li *ngFor="let category of categories">{{ category.strCategory }}</li>
-</ul>
+<new-user-form></new-user-form>
+<app-quiz></app-quiz>
+<app-navbar></app-navbar>
 
-<ul>
-  <h1>Glasses</h1>
-  <li *ngFor="let glass of glasses">{{ glass.strGlass }}</li>
-</ul>
+<post-drink-form></post-drink-form>
 
-<!-- <ul>
-  <h1>Ingredients</h1>
-  <li *ngFor="let ingredient of ingredients">{{ ingredients.strCategory }}</li>
-</ul> -->
+<section>
+  <h1>Testing Routing</h1>
 
-<ul>
-  <h1>Alcoholic</h1>
-  <li *ngFor="let alcoholic of alcoholics">{{ alcoholic.strAlcoholic }}</li>
-</ul>
+  <ul>
+    Nav Bar Links
+    <li><a routerLink="/preferences">Preferences</a></li>
+    <li><a routerLink="/profile">User Profile</a></li>
+    <li><a routerLink="/the-feed">The Feed</a></li>
+  </ul>
+
+  <!-- user side links -->
+  <ul>
+    User Side Links
+    <li><a routerLink="/user-recipes">User Recipes</a></li>
+    <li><a routerLink="/recipe-book">Recipe Book</a></li>
+  </ul>
+  <br />
+</section>
