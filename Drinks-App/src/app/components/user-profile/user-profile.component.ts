@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DrinkPostService } from 'src/app/services/drink-post.service';
-import { MOCK_POSTS } from '../../MOCK_DATA/mock-posts';
+import { MOCK_POSTS } from 'src/app/MOCK_DATA/mock-posts';
 
 @Component({
   selector: 'user-profile',
@@ -9,6 +9,7 @@ import { MOCK_POSTS } from '../../MOCK_DATA/mock-posts';
 })
 export class UserProfileComponent implements OnInit {
   posts;
+  mockPosts = MOCK_POSTS;
 
   constructor(private drinkPosts: DrinkPostService) {}
 

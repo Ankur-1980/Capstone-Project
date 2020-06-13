@@ -48,6 +48,1558 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/app/MOCK_DATA/mock-feed.ts":
+  /*!****************************************!*\
+    !*** ./src/app/MOCK_DATA/mock-feed.ts ***!
+    \****************************************/
+
+  /*! exports provided: MOCK_FEED */
+
+  /***/
+  function srcAppMOCK_DATAMockFeedTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "MOCK_FEED", function () {
+      return MOCK_FEED;
+    });
+
+    var MOCK_FEED = [{
+      picture_id: '942c426f-c44e-43e0-aa42-22b8227a496b',
+      drink_name: 'Lotlux',
+      rating: 3.7,
+      glassware: 'model',
+      description: 'Up-sized real-time alliance',
+      location: 'Khatsyezhyna',
+      username: 'cmailey0'
+    }, {
+      picture_id: '04c33d68-4486-4456-bf72-028e05b010f5',
+      drink_name: 'Greenlam',
+      rating: 3.7,
+      glassware: 'Realigned',
+      description: 'Quality-focused next generation projection',
+      location: 'Bous',
+      username: 'slabrow1'
+    }, {
+      picture_id: '6dd3aacf-018d-40e5-8f54-7b50c7de4e9a',
+      drink_name: 'Bitwolf',
+      rating: 1.0,
+      glassware: 'focus group',
+      description: 'Centralized full-range monitoring',
+      location: 'Sagara',
+      username: 'pwear2'
+    }, {
+      picture_id: '70ce4a05-9351-4f70-a73a-da4a3bc46b85',
+      drink_name: 'Tempsoft',
+      rating: 4.0,
+      glassware: 'value-added',
+      description: 'Distributed reciprocal initiative',
+      location: 'Toulouse',
+      username: 'grushmare3'
+    }, {
+      picture_id: '080c4296-1cd7-4b59-a69a-4220a3d9cc1d',
+      drink_name: 'Daltfresh',
+      rating: 4.7,
+      glassware: 'Cross-platform',
+      description: 'Expanded uniform Graphical User Interface',
+      location: 'Gafsa',
+      username: 'yullyott4'
+    }, {
+      picture_id: '8595aaa5-60cd-44e0-bdcf-85fc4d12a85c',
+      drink_name: 'Cardguard',
+      rating: 3.5,
+      glassware: '24/7',
+      description: 'Enterprise-wide needs-based capability',
+      location: 'Smyga',
+      username: 'mburburough5'
+    }, {
+      picture_id: '31590b68-8234-4fb8-b2ea-59898c534d33',
+      drink_name: 'Zamit',
+      rating: 1.4,
+      glassware: 'bifurcated',
+      description: 'Reactive zero tolerance database',
+      location: 'Chotepe',
+      username: 'tspykings6'
+    }, {
+      picture_id: 'a92945e9-bf80-4930-b3d8-7d6b914e5975',
+      drink_name: 'Tempsoft',
+      rating: 3.0,
+      glassware: 'database',
+      description: 'Right-sized 6th generation definition',
+      location: 'Bom Sucesso',
+      username: 'tsavidge7'
+    }, {
+      picture_id: '713bba95-e890-49d0-9588-fb39fe3d21a2',
+      drink_name: 'Cardguard',
+      rating: 1.4,
+      glassware: 'task-force',
+      description: 'Public-key heuristic pricing structure',
+      location: 'Jauja',
+      username: 'rseagrove8'
+    }, {
+      picture_id: 'f665bbb0-2821-41bc-8a81-9d05fca713b8',
+      drink_name: 'Domainer',
+      rating: 1.7,
+      glassware: 'Down-sized',
+      description: 'Devolved intangible application',
+      location: 'Karadaglije',
+      username: 'mmckeaney9'
+    }];
+    /***/
+  },
+
+  /***/
+  "./src/app/MOCK_DATA/mock-posts.ts":
+  /*!*****************************************!*\
+    !*** ./src/app/MOCK_DATA/mock-posts.ts ***!
+    \*****************************************/
+
+  /*! exports provided: MOCK_POSTS */
+
+  /***/
+  function srcAppMOCK_DATAMockPostsTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "MOCK_POSTS", function () {
+      return MOCK_POSTS;
+    });
+
+    var MOCK_POSTS = [{
+      post_id: '3e4b9ea8-9370-4842-b2e3-e2cda2a3453f',
+      post_name: 'Fully-configurable needs-based challenge',
+      rating: 4.4,
+      glassware: 'composite',
+      description: 'Persevering hybrid framework',
+      post_location: 'Pan de Azúcar',
+      post_date: '05/14/2020',
+      post_modified: '2020-04-08 00:55:09'
+    }, {
+      post_id: 'd2dcb170-1aa9-4105-95a8-17e744c94925',
+      post_name: 'Open-source 6th generation workforce',
+      rating: 2.8,
+      glassware: 'artificial intelligence',
+      description: 'Assimilated fresh-thinking project',
+      post_location: 'Volzhskiy',
+      post_date: '10/13/2019',
+      post_modified: '2019-10-07 00:09:10'
+    }, {
+      post_id: '5574ae49-b5dd-4412-b3e2-0d19b19b02bc',
+      post_name: 'Self-enabling encompassing moderator',
+      rating: 1.8,
+      glassware: '6th generation',
+      description: 'Implemented zero defect architecture',
+      post_location: 'Az Zawr',
+      post_date: '07/25/2019',
+      post_modified: '2019-12-22 10:44:36'
+    }, {
+      post_id: '0a42cb2f-a4af-4181-afa8-bde15302d7fb',
+      post_name: 'Stand-alone context-sensitive customer loyalty',
+      rating: 2.2,
+      glassware: 'multi-state',
+      description: 'User-centric zero administration framework',
+      post_location: 'Yanglin',
+      post_date: '03/07/2020',
+      post_modified: '2020-03-15 04:57:57'
+    }, {
+      post_id: '543a6b1f-c3c3-4877-a26a-c34434dcbb05',
+      post_name: 'Automated directional architecture',
+      rating: 1.5,
+      glassware: 'time-frame',
+      description: 'User-friendly bandwidth-monitored task-force',
+      post_location: 'Cabano',
+      post_date: '01/18/2020',
+      post_modified: '2019-12-03 07:47:06'
+    }, {
+      post_id: '488e9300-c28e-4695-87fc-4202ae31ce4d',
+      post_name: 'Universal user-facing challenge',
+      rating: 4.0,
+      glassware: 'clear-thinking',
+      description: 'Organic foreground productivity',
+      post_location: 'General Luna',
+      post_date: '04/19/2020',
+      post_modified: '2020-04-27 04:02:01'
+    }, {
+      post_id: '40c352a7-c6f2-4456-8a26-49689c7a0905',
+      post_name: 'Reduced intangible Graphic Interface',
+      rating: 1.3,
+      glassware: 'Sharable',
+      description: 'Focused well-modulated orchestration',
+      post_location: 'Xirikxiy',
+      post_date: '10/29/2019',
+      post_modified: '2020-05-01 07:31:26'
+    }, {
+      post_id: 'ee5912b8-5c3d-4cb5-9ba8-e1b69af996b8',
+      post_name: 'Customer-focused directional internet solution',
+      rating: 1.1,
+      glassware: 'systemic',
+      description: 'Vision-oriented explicit definition',
+      post_location: 'Kushiro',
+      post_date: '07/25/2019',
+      post_modified: '2019-12-09 19:29:20'
+    }, {
+      post_id: 'da375e18-2397-48f0-b1a5-4460f59dba3b',
+      post_name: 'Streamlined directional functionalities',
+      rating: 4.3,
+      glassware: 'human-resource',
+      description: 'Vision-oriented heuristic help-desk',
+      post_location: 'Jinqu',
+      post_date: '07/30/2019',
+      post_modified: '2019-12-30 04:26:12'
+    }, {
+      post_id: '334ae42c-005a-4324-ba71-5a94bf135d6a',
+      post_name: 'Re-contextualized multimedia support',
+      rating: 1.2,
+      glassware: 'pricing structure',
+      description: 'Polarised well-modulated hierarchy',
+      post_location: 'Cibunar',
+      post_date: '06/20/2019',
+      post_modified: '2019-09-12 04:30:21'
+    }, {
+      post_id: '30207fe8-9617-43f2-ac61-9485ad4ca1bd',
+      post_name: 'Advanced analyzing benchmark',
+      rating: 4.5,
+      glassware: 'Fully-configurable',
+      description: 'Open-architected executive adapter',
+      post_location: 'Al Qūşīyah',
+      post_date: '07/23/2019',
+      post_modified: '2020-03-31 08:08:50'
+    }, {
+      post_id: 'b31bb4c6-916e-407c-b1b8-5f8f290e7915',
+      post_name: 'Fundamental well-modulated interface',
+      rating: 1.2,
+      glassware: 'disintermediate',
+      description: 'Innovative radical info-mediaries',
+      post_location: 'Mendeleyevsk',
+      post_date: '12/16/2019',
+      post_modified: '2019-08-04 17:37:01'
+    }, {
+      post_id: '2faae4b4-9f7a-43dc-a693-0f21ff064f61',
+      post_name: 'Proactive bifurcated internet solution',
+      rating: 3.9,
+      glassware: 'pricing structure',
+      description: 'Seamless disintermediate database',
+      post_location: 'Burhānuddin',
+      post_date: '02/13/2020',
+      post_modified: '2019-11-25 22:08:13'
+    }, {
+      post_id: 'e4b01167-df1c-4332-b9f7-eae87306005d',
+      post_name: 'User-friendly methodical interface',
+      rating: 1.6,
+      glassware: 'monitoring',
+      description: 'Synchronised 24 hour intranet',
+      post_location: 'Utrecht',
+      post_date: '08/02/2019',
+      post_modified: '2020-04-19 15:38:14'
+    }, {
+      post_id: '00e144cc-fcd4-4b6c-b513-1fd89372bb54',
+      post_name: 'Switchable modular process improvement',
+      rating: 4.8,
+      glassware: 'value-added',
+      description: 'Diverse clear-thinking firmware',
+      post_location: 'Velikovechnoye',
+      post_date: '03/20/2020',
+      post_modified: '2020-01-05 20:29:52'
+    }, {
+      post_id: 'c66d5683-9ac7-4fa4-862c-48ccea4dce7c',
+      post_name: 'Business-focused zero defect protocol',
+      rating: 2.0,
+      glassware: 'projection',
+      description: 'Diverse well-modulated standardization',
+      post_location: 'La Foa',
+      post_date: '11/09/2019',
+      post_modified: '2019-08-04 17:53:06'
+    }, {
+      post_id: 'e516dab2-a3f3-4683-8ed8-83b33d08e359',
+      post_name: 'Expanded bi-directional paradigm',
+      rating: 1.9,
+      glassware: 'Synergistic',
+      description: 'Optimized systematic policy',
+      post_location: 'Ilhéus',
+      post_date: '04/22/2020',
+      post_modified: '2020-01-26 14:42:21'
+    }, {
+      post_id: '01531c0c-a037-4672-8cf4-d08570069a3d',
+      post_name: 'Expanded motivating firmware',
+      rating: 2.5,
+      glassware: 'modular',
+      description: 'Switchable 24/7 policy',
+      post_location: 'Luhansk',
+      post_date: '04/09/2020',
+      post_modified: '2019-08-24 22:50:29'
+    }, {
+      post_id: '1f9cac8b-9818-4a09-a289-8222c9aba114',
+      post_name: 'Upgradable user-facing toolset',
+      rating: 2.2,
+      glassware: 'Quality-focused',
+      description: 'Visionary web-enabled firmware',
+      post_location: 'Águas de Lindóia',
+      post_date: '12/18/2019',
+      post_modified: '2019-10-02 10:53:06'
+    }, {
+      post_id: '9ba3e166-2df9-42de-9e37-f151112968fb',
+      post_name: 'Reverse-engineered real-time emulation',
+      rating: 2.1,
+      glassware: 'info-mediaries',
+      description: 'Vision-oriented secondary open system',
+      post_location: 'Bakovci',
+      post_date: '01/31/2020',
+      post_modified: '2019-06-24 16:12:37'
+    }, {
+      post_id: '9bbca1eb-cd70-4659-b3ca-fd919963b6c4',
+      post_name: 'Enterprise-wide maximized time-frame',
+      rating: 1.4,
+      glassware: 'systemic',
+      description: 'Synergized intangible function',
+      post_location: 'Jinja',
+      post_date: '04/14/2020',
+      post_modified: '2019-07-08 16:51:46'
+    }, {
+      post_id: '3e0f1680-5211-467f-b5d5-b3295eafe61c',
+      post_name: 'Robust full-range concept',
+      rating: 3.5,
+      glassware: 'human-resource',
+      description: 'Team-oriented demand-driven software',
+      post_location: 'Acaraú',
+      post_date: '06/20/2019',
+      post_modified: '2019-07-14 14:09:58'
+    }, {
+      post_id: '6ade3cca-af78-4f52-b4d2-d9831b99db24',
+      post_name: 'Multi-tiered encompassing groupware',
+      rating: 1.9,
+      glassware: 'encompassing',
+      description: 'Extended analyzing secured line',
+      post_location: 'Zdounky',
+      post_date: '09/04/2019',
+      post_modified: '2020-05-01 09:17:15'
+    }, {
+      post_id: '3c621d70-ef93-4ee3-8001-fadbc3663831',
+      post_name: 'Synergized 4th generation flexibility',
+      rating: 3.1,
+      glassware: 'systemic',
+      description: 'Persevering bandwidth-monitored middleware',
+      post_location: 'Paphos',
+      post_date: '08/26/2019',
+      post_modified: '2020-05-06 02:37:17'
+    }, {
+      post_id: 'f61b0bba-e528-4a7f-85d9-d838941e9c36',
+      post_name: 'Expanded web-enabled archive',
+      rating: 2.3,
+      glassware: 'workforce',
+      description: 'Function-based multimedia approach',
+      post_location: 'Eldoret',
+      post_date: '08/07/2019',
+      post_modified: '2019-11-13 12:27:27'
+    }, {
+      post_id: '1ed3b3b1-80c7-4391-b92f-e7caf5c4f342',
+      post_name: 'Decentralized next generation emulation',
+      rating: 4.0,
+      glassware: 'moderator',
+      description: 'Realigned discrete adapter',
+      post_location: 'Krutja e Poshtme',
+      post_date: '08/01/2019',
+      post_modified: '2020-04-21 12:02:06'
+    }, {
+      post_id: '6f7464a0-3da3-4ebe-b64a-40bebce4471a',
+      post_name: 'Cross-group context-sensitive process improvement',
+      rating: 3.1,
+      glassware: 'bandwidth-monitored',
+      description: 'Expanded optimizing attitude',
+      post_location: 'Fornos',
+      post_date: '05/06/2020',
+      post_modified: '2019-06-24 03:11:06'
+    }, {
+      post_id: '6254cfb6-79cd-4b50-8978-07babf4f277c',
+      post_name: 'Networked bi-directional data-warehouse',
+      rating: 1.3,
+      glassware: 'Diverse',
+      description: 'Team-oriented logistical architecture',
+      post_location: 'Kindersley',
+      post_date: '11/02/2019',
+      post_modified: '2019-10-12 16:39:08'
+    }, {
+      post_id: '78b62284-51af-4090-9a5e-7d1081704ee5',
+      post_name: 'Quality-focused client-server attitude',
+      rating: 3.7,
+      glassware: 'functionalities',
+      description: 'Assimilated bifurcated knowledge base',
+      post_location: 'Lakkha Nëvre',
+      post_date: '06/26/2019',
+      post_modified: '2019-07-21 14:52:49'
+    }, {
+      post_id: '88b4bf10-d18d-488f-91d2-bab9e088ea93',
+      post_name: 'Implemented client-server support',
+      rating: 2.5,
+      glassware: 'Adaptive',
+      description: 'Seamless clear-thinking infrastructure',
+      post_location: 'Kungsör',
+      post_date: '08/21/2019',
+      post_modified: '2020-04-24 21:01:52'
+    }, {
+      post_id: '3d74580a-3ce2-4a9b-9d68-54d89e6836fe',
+      post_name: 'Profit-focused didactic hub',
+      rating: 1.4,
+      glassware: 'Focused',
+      description: 'Re-contextualized reciprocal strategy',
+      post_location: 'Cibeureum',
+      post_date: '02/01/2020',
+      post_modified: '2020-04-12 17:28:13'
+    }, {
+      post_id: 'f8a46ea0-7580-43df-ae1c-2d21829054e3',
+      post_name: 'Multi-channelled contextually-based secured line',
+      rating: 3.5,
+      glassware: 'Ergonomic',
+      description: 'Customizable fault-tolerant website',
+      post_location: 'Duzhenwan',
+      post_date: '10/02/2019',
+      post_modified: '2019-12-03 03:03:50'
+    }, {
+      post_id: '6cf76e68-eb3e-48b5-82f7-a6a16dd9da4c',
+      post_name: 'Monitored non-volatile strategy',
+      rating: 2.5,
+      glassware: 'Monitored',
+      description: 'Adaptive multi-state help-desk',
+      post_location: 'Indaial',
+      post_date: '09/24/2019',
+      post_modified: '2020-05-26 18:23:22'
+    }, {
+      post_id: '020ff351-c7fe-42b2-9d56-ab4f4b8251ad',
+      post_name: 'Realigned well-modulated paradigm',
+      rating: 3.0,
+      glassware: 'attitude-oriented',
+      description: 'Proactive modular firmware',
+      post_location: 'Köpingsvik',
+      post_date: '05/24/2020',
+      post_modified: '2019-12-27 09:04:45'
+    }, {
+      post_id: '4cacbcd6-b554-4a23-b00a-859acc3b38c4',
+      post_name: 'Customer-focused methodical implementation',
+      rating: 1.6,
+      glassware: 'open architecture',
+      description: 'Synergistic radical hardware',
+      post_location: 'Le Hochet',
+      post_date: '10/12/2019',
+      post_modified: '2019-12-23 15:31:08'
+    }, {
+      post_id: '3d2f9511-c10f-4384-8c4a-38d267030b56',
+      post_name: 'Implemented high-level instruction set',
+      rating: 1.8,
+      glassware: 'Profound',
+      description: 'Public-key analyzing alliance',
+      post_location: 'Luotang',
+      post_date: '09/05/2019',
+      post_modified: '2020-01-27 13:19:09'
+    }, {
+      post_id: '919607e9-9ea9-452a-b26c-b0b2db69d6ff',
+      post_name: 'Business-focused bandwidth-monitored service-desk',
+      rating: 2.7,
+      glassware: 'matrix',
+      description: 'Fundamental optimal ability',
+      post_location: 'Rybnoye',
+      post_date: '02/07/2020',
+      post_modified: '2019-10-12 02:14:48'
+    }, {
+      post_id: '49059181-23ff-45c6-8ee3-50e78494d362',
+      post_name: 'Synergistic hybrid analyzer',
+      rating: 4.9,
+      glassware: 'Decentralized',
+      description: 'Secured upward-trending middleware',
+      post_location: 'Itauguá',
+      post_date: '01/02/2020',
+      post_modified: '2020-02-19 13:00:35'
+    }, {
+      post_id: 'aa24b95a-2d24-4ac2-b773-4c32b4b81b00',
+      post_name: 'Realigned user-facing process improvement',
+      rating: 3.3,
+      glassware: 'paradigm',
+      description: 'Seamless 4th generation emulation',
+      post_location: 'Pingzhuang',
+      post_date: '08/29/2019',
+      post_modified: '2019-08-19 22:01:47'
+    }, {
+      post_id: '6083d2ea-a653-4d17-b912-39ebd250162b',
+      post_name: 'Organized systemic internet solution',
+      rating: 1.0,
+      glassware: 'scalable',
+      description: 'Automated regional attitude',
+      post_location: 'Gawul',
+      post_date: '08/05/2019',
+      post_modified: '2019-11-05 02:16:44'
+    }, {
+      post_id: '92fd4ef9-fd2f-4d04-a095-9335e76af415',
+      post_name: 'Robust mobile structure',
+      rating: 1.9,
+      glassware: 'policy',
+      description: 'Profound impactful concept',
+      post_location: 'Francisco Villa',
+      post_date: '06/07/2020',
+      post_modified: '2020-01-06 22:27:29'
+    }, {
+      post_id: '2444945b-4f48-4bd7-854d-98d7ed99cedf',
+      post_name: 'Focused tangible complexity',
+      rating: 2.7,
+      glassware: '5th generation',
+      description: 'Fully-configurable asynchronous system engine',
+      post_location: 'Zarzal',
+      post_date: '03/06/2020',
+      post_modified: '2020-04-01 15:02:03'
+    }, {
+      post_id: '9268f649-f029-41a1-88f0-c0fca9ee4f42',
+      post_name: 'Open-architected multi-tasking complexity',
+      rating: 1.7,
+      glassware: 'strategy',
+      description: 'Reduced uniform encryption',
+      post_location: 'Cheongsong gun',
+      post_date: '09/01/2019',
+      post_modified: '2019-10-12 09:05:06'
+    }, {
+      post_id: 'fe092e3b-fb59-4d8a-9baf-f762a0369fe2',
+      post_name: 'Streamlined needs-based collaboration',
+      rating: 3.3,
+      glassware: 'client-driven',
+      description: 'Adaptive motivating matrix',
+      post_location: 'Pohrebyshche',
+      post_date: '01/09/2020',
+      post_modified: '2019-08-27 12:02:53'
+    }, {
+      post_id: '74b21799-1e3a-431a-855d-d69986261611',
+      post_name: 'Re-contextualized exuding utilisation',
+      rating: 4.7,
+      glassware: 'Grass-roots',
+      description: 'Networked upward-trending extranet',
+      post_location: 'Xincheng',
+      post_date: '04/06/2020',
+      post_modified: '2019-07-19 18:40:55'
+    }, {
+      post_id: 'bf7d2f77-ae0a-4a18-9226-6c7489377f2a',
+      post_name: 'Universal asynchronous alliance',
+      rating: 3.1,
+      glassware: 'moderator',
+      description: 'Open-source content-based attitude',
+      post_location: 'Bielice',
+      post_date: '09/10/2019',
+      post_modified: '2020-05-13 00:47:11'
+    }, {
+      post_id: 'eabf7910-987a-4e82-9150-298135b5754f',
+      post_name: 'Switchable mission-critical definition',
+      rating: 3.2,
+      glassware: 'support',
+      description: 'Compatible fault-tolerant capability',
+      post_location: 'Ogurugu',
+      post_date: '08/13/2019',
+      post_modified: '2020-02-04 11:50:46'
+    }, {
+      post_id: 'd8d85bae-cf12-4005-a97f-1d0992fd516c',
+      post_name: 'Versatile impactful flexibility',
+      rating: 1.2,
+      glassware: 'function',
+      description: 'Operative responsive ability',
+      post_location: 'Montemor-o-Velho',
+      post_date: '10/17/2019',
+      post_modified: '2020-02-10 08:26:03'
+    }, {
+      post_id: 'bff729fc-f141-4a63-8763-048c5c9c04f1',
+      post_name: 'Down-sized mission-critical artificial intelligence',
+      rating: 2.4,
+      glassware: 'optimal',
+      description: 'Ergonomic high-level leverage',
+      post_location: 'Almaznyy',
+      post_date: '08/16/2019',
+      post_modified: '2020-06-01 14:19:18'
+    }, {
+      post_id: 'b3db9b86-22d1-444d-a035-945f8929ef9a',
+      post_name: 'Integrated client-driven ability',
+      rating: 3.8,
+      glassware: 'client-server',
+      description: 'Expanded content-based open system',
+      post_location: 'Berlin',
+      post_date: '05/11/2020',
+      post_modified: '2019-11-10 14:45:32'
+    }];
+    /***/
+  },
+
+  /***/
+  "./src/app/MOCK_DATA/mock-recipes.ts":
+  /*!*******************************************!*\
+    !*** ./src/app/MOCK_DATA/mock-recipes.ts ***!
+    \*******************************************/
+
+  /*! exports provided: MOCK_RECIPES */
+
+  /***/
+  function srcAppMOCK_DATAMockRecipesTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "MOCK_RECIPES", function () {
+      return MOCK_RECIPES;
+    });
+
+    var MOCK_RECIPES = [{
+      recipe_id: '03982017-e5b1-4e9f-8bff-bfe8f799b99b',
+      drink_name: 'pricing structure',
+      rating: 4.2,
+      glassware: 'Asteraceae',
+      location: 'Tangzi',
+      ingredient_1: 'Cheese - St. Paulin',
+      ingredient_2: 'Beef - Bones, Marrow',
+      ingredient_3: 'Shrimp - 16/20, Peeled Deviened',
+      ingredient_4: 'Nut - Walnut, Chopped',
+      ingredient_5: 'Cheese - Brie, Cups 125g',
+      amount_1: 1.28,
+      amount_2: 1.95,
+      amount_3: 0.41,
+      amount_4: 0.89,
+      amount_5: 0.5,
+      date_created: '06/24/2019',
+      date_modified: '2019-06-28 20:11:44',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '6d8fd2cd-c40a-488d-b420-88c2079dd84d',
+      drink_name: 'Virtual',
+      rating: 3.2,
+      glassware: 'Brassicaceae',
+      location: 'N’dalatando',
+      ingredient_1: 'Olive - Spread Tapenade',
+      ingredient_2: 'Curry Powder',
+      ingredient_3: 'Munchies Honey Sweet Trail Mix',
+      ingredient_4: 'Oil - Shortening,liqud, Fry',
+      ingredient_5: 'Duck - Fat',
+      amount_1: 2.39,
+      amount_2: 1.99,
+      amount_3: 0.73,
+      amount_4: 0.46,
+      amount_5: 0.5,
+      date_created: '07/29/2019',
+      date_modified: '2019-07-21 17:16:54',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '206a3460-7920-4c29-8861-122c24deef7c',
+      drink_name: 'focus group',
+      rating: 3.9,
+      glassware: 'Cyperaceae',
+      location: 'Tourcoing',
+      ingredient_1: 'Cut Wakame - Hanawakaba',
+      ingredient_2: 'Turnip - Wax',
+      ingredient_3: 'Syrup - Monin - Blue Curacao',
+      ingredient_4: 'Tuna - Loin',
+      ingredient_5: 'Cheese - Ricotta',
+      amount_1: 2.5,
+      amount_2: 1.76,
+      amount_3: 0.65,
+      amount_4: 0.68,
+      amount_5: null,
+      date_created: '03/13/2020',
+      date_modified: '2020-05-07 02:41:22',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '28a40354-04fa-4a06-a711-7d421f56f834',
+      drink_name: 'attitude',
+      rating: 4.0,
+      glassware: 'Dryopteridaceae',
+      location: 'Fryazino',
+      ingredient_1: 'Pickles - Gherkins',
+      ingredient_2: 'Savory',
+      ingredient_3: 'Chevere Logs',
+      ingredient_4: 'Lid - 10,12,16 Oz',
+      ingredient_5: 'Pepper - Paprika, Spanish',
+      amount_1: 1.88,
+      amount_2: 1.73,
+      amount_3: 0.44,
+      amount_4: 0.65,
+      amount_5: 0.3,
+      date_created: '09/17/2019',
+      date_modified: '2020-03-06 11:05:50',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '3266897f-339d-467d-aaa8-7d28b7da035b',
+      drink_name: 'Public-key',
+      rating: 4.7,
+      glassware: 'Dryopteridaceae',
+      location: 'Shangxing',
+      ingredient_1: 'Milk - Chocolate 500ml',
+      ingredient_2: 'Bread - Bistro White',
+      ingredient_3: 'Ice Cream - Life Savers',
+      ingredient_4: 'Otomegusa Dashi Konbu',
+      ingredient_5: 'Chocolate - Milk',
+      amount_1: 1.71,
+      amount_2: 1.24,
+      amount_3: 0.94,
+      amount_4: 0.7,
+      amount_5: 0.8,
+      date_created: '08/22/2019',
+      date_modified: '2019-06-27 01:54:02',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '85efa5c4-99f6-4dcf-9239-ae3b6ed2ac23',
+      drink_name: 'Horizontal',
+      rating: 2.3,
+      glassware: 'Asteraceae',
+      location: 'Sumbergedong',
+      ingredient_1: 'Peach - Fresh',
+      ingredient_2: 'Cakes Assorted',
+      ingredient_3: 'Sea Bass - Whole',
+      ingredient_4: 'Cleaner - Lime Away',
+      ingredient_5: 'Mussels - Cultivated',
+      amount_1: 1.61,
+      amount_2: 1.43,
+      amount_3: 0.6,
+      amount_4: 0.33,
+      amount_5: 0.6,
+      date_created: '04/14/2020',
+      date_modified: '2019-08-11 11:14:49',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '56ca6112-1513-44f5-8fff-4a5de8ca2d90',
+      drink_name: 'capability',
+      rating: 3.5,
+      glassware: 'Rubiaceae',
+      location: 'Shuiji',
+      ingredient_1: 'Dates',
+      ingredient_2: 'Squid - U - 10 Thailand',
+      ingredient_3: 'Lettuce - Green Leaf',
+      ingredient_4: 'Soup - Knorr, Veg / Beef',
+      ingredient_5: 'Veal - Brisket, Provimi,bnls',
+      amount_1: 2.83,
+      amount_2: 1.82,
+      amount_3: 0.68,
+      amount_4: 0.63,
+      amount_5: 0.3,
+      date_created: '04/27/2020',
+      date_modified: '2020-03-29 12:59:36',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'd05a2c8a-ec0d-438d-b59e-dbebeab1dd37',
+      drink_name: 'open architecture',
+      rating: 3.9,
+      glassware: 'Lemnaceae',
+      location: 'Chociwel',
+      ingredient_1: 'Apples - Sliced / Wedge',
+      ingredient_2: 'Liners - Banana, Paper',
+      ingredient_3: 'Rosemary - Fresh',
+      ingredient_4: 'Sausage - Andouille',
+      ingredient_5: 'Tofu - Soft',
+      amount_1: 2.42,
+      amount_2: 1.9,
+      amount_3: 0.29,
+      amount_4: 0.31,
+      amount_5: 0.7,
+      date_created: '11/04/2019',
+      date_modified: '2020-01-16 17:32:43',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'cc2d686e-0919-48b3-ad56-c39f2d77eef3',
+      drink_name: 'alliance',
+      rating: 2.8,
+      glassware: 'Asteraceae',
+      location: 'Kīevka',
+      ingredient_1: 'Cognac - Courvaisier',
+      ingredient_2: 'Beans - Green',
+      ingredient_3: 'Compound - Passion Fruit',
+      ingredient_4: 'Sausage - Meat',
+      ingredient_5: 'Madeira',
+      amount_1: 2.65,
+      amount_2: 1.7,
+      amount_3: 0.27,
+      amount_4: 0.29,
+      amount_5: 0.5,
+      date_created: '04/07/2020',
+      date_modified: '2019-06-22 02:46:24',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'ce7ced37-9dfa-4ed7-932e-893e6625e14e',
+      drink_name: 'info-mediaries',
+      rating: 1.9,
+      glassware: 'Salicaceae',
+      location: 'Augustów',
+      ingredient_1: 'Lettuce - Spring Mix',
+      ingredient_2: 'Liners - Baking Cups',
+      ingredient_3: 'Soup - Knorr, Ministrone',
+      ingredient_4: 'Oil - Shortening,liqud, Fry',
+      ingredient_5: 'Soup - Campbells - Tomato',
+      amount_1: 1.72,
+      amount_2: 1.09,
+      amount_3: 0.51,
+      amount_4: 0.77,
+      amount_5: 0.5,
+      date_created: '05/03/2020',
+      date_modified: '2019-12-01 03:13:26',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'c7ed632f-d706-4493-ad30-a9a34c1d8e6f',
+      drink_name: 'foreground',
+      rating: 4.3,
+      glassware: 'Fabaceae',
+      location: 'La Rochelle',
+      ingredient_1: 'Sauce - Fish 25 Ozf Bottle',
+      ingredient_2: 'Wine - Cabernet Sauvignon',
+      ingredient_3: 'Stock - Beef, White',
+      ingredient_4: 'Clams - Canned',
+      ingredient_5: 'Towel Multifold',
+      amount_1: 2.44,
+      amount_2: 1.14,
+      amount_3: 0.49,
+      amount_4: 0.26,
+      amount_5: null,
+      date_created: '07/25/2019',
+      date_modified: '2019-12-25 00:42:03',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '8efd8c1f-454d-4cd1-8563-5c31694f0b37',
+      drink_name: 'Persevering',
+      rating: 1.9,
+      glassware: 'Asteraceae',
+      location: 'Niushou',
+      ingredient_1: 'Wine - Harrow Estates, Vidal',
+      ingredient_2: 'Bread - Bagels, Plain',
+      ingredient_3: 'Petite Baguette',
+      ingredient_4: 'Black Currants',
+      ingredient_5: 'Pepper Squash',
+      amount_1: 1.54,
+      amount_2: 1.05,
+      amount_3: 0.32,
+      amount_4: 1.0,
+      amount_5: null,
+      date_created: '07/16/2019',
+      date_modified: '2020-01-11 23:56:44',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '4885a9a8-01d8-4353-956b-f08f2d732eb7',
+      drink_name: 'capacity',
+      rating: 4.3,
+      glassware: 'Capparaceae',
+      location: 'Reno',
+      ingredient_1: 'Beer - Sleemans Honey Brown',
+      ingredient_2: 'Bouq All Italian - Primerba',
+      ingredient_3: 'Cheese - Brick With Onion',
+      ingredient_4: 'Mushroom - Crimini',
+      ingredient_5: 'Chocolate Bar - Reese Pieces',
+      amount_1: 1.71,
+      amount_2: 1.28,
+      amount_3: 0.71,
+      amount_4: 0.96,
+      amount_5: 1.0,
+      date_created: '04/14/2020',
+      date_modified: '2020-03-17 18:05:49',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'aa264d68-23fe-4a40-84bd-55f67167ddc4',
+      drink_name: 'encryption',
+      rating: 3.7,
+      glassware: 'Saxifragaceae',
+      location: 'Lian',
+      ingredient_1: 'Jolt Cola - Red Eye',
+      ingredient_2: 'Vector Energy Bar',
+      ingredient_3: 'Pepper - Black, Ground',
+      ingredient_4: 'Chocolate - Mi - Amere Semi',
+      ingredient_5: 'Cheese - Gouda Smoked',
+      amount_1: 1.66,
+      amount_2: 1.21,
+      amount_3: 0.42,
+      amount_4: 0.28,
+      amount_5: 0.5,
+      date_created: '06/30/2019',
+      date_modified: '2020-04-18 14:59:38',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'a53b4394-528c-4c02-b9e5-cd6cf271f7e1',
+      drink_name: 'regional',
+      rating: 1.8,
+      glassware: 'Fabaceae',
+      location: 'Luga',
+      ingredient_1: 'Pepper - Black, Whole',
+      ingredient_2: 'Wine - Casillero Del Diablo',
+      ingredient_3: 'Ginger - Ground',
+      ingredient_4: 'Rambutan',
+      ingredient_5: 'Eggplant - Baby',
+      amount_1: 1.57,
+      amount_2: 1.64,
+      amount_3: 0.48,
+      amount_4: 0.68,
+      amount_5: 0.3,
+      date_created: '06/06/2020',
+      date_modified: '2020-03-13 17:29:31',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '47622535-3bf4-45fd-bebe-7b473eea80f5',
+      drink_name: 'Open-architected',
+      rating: 3.3,
+      glassware: 'Capparaceae',
+      location: 'Finiq',
+      ingredient_1: 'Beef - Shank',
+      ingredient_2: 'Eggroll',
+      ingredient_3: 'Ginger - Pickled',
+      ingredient_4: 'Quail - Whole, Bone - In',
+      ingredient_5: 'Sour Cream',
+      amount_1: 2.01,
+      amount_2: 1.07,
+      amount_3: 0.48,
+      amount_4: 0.35,
+      amount_5: 0.5,
+      date_created: '07/20/2019',
+      date_modified: '2019-12-27 11:55:05',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '01dd5a39-5247-4e64-ab67-0fceb45dfb2a',
+      drink_name: 'Sharable',
+      rating: 3.0,
+      glassware: 'Graphidaceae',
+      location: 'Villefontaine',
+      ingredient_1: 'Artichokes - Knobless, White',
+      ingredient_2: 'Bread Cranberry Foccacia',
+      ingredient_3: 'Beef - Diced',
+      ingredient_4: 'Mushroom Morel Fresh',
+      ingredient_5: 'Taro Leaves',
+      amount_1: 1.8,
+      amount_2: 1.25,
+      amount_3: 0.8,
+      amount_4: 0.85,
+      amount_5: null,
+      date_created: '12/17/2019',
+      date_modified: '2019-12-19 13:38:50',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '867e9c56-b9d1-4558-b37a-94cdc9f4a516',
+      drink_name: 'Mandatory',
+      rating: 3.2,
+      glassware: 'Candelariaceae',
+      location: 'Santong',
+      ingredient_1: 'Cake - Mini Cheesecake',
+      ingredient_2: 'Scampi Tail',
+      ingredient_3: 'Pepper - Chipotle, Canned',
+      ingredient_4: 'Chips Potato All Dressed - 43g',
+      ingredient_5: 'Muskox - French Rack',
+      amount_1: 2.16,
+      amount_2: 1.59,
+      amount_3: 1.0,
+      amount_4: 0.67,
+      amount_5: 0.8,
+      date_created: '11/27/2019',
+      date_modified: '2020-03-07 00:16:19',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '8bccb5a0-c3c8-408d-ae80-1c9ba874cdda',
+      drink_name: 'functionalities',
+      rating: 4.4,
+      glassware: 'Alismataceae',
+      location: 'Nanxia',
+      ingredient_1: 'Beer - Maudite',
+      ingredient_2: 'Wine - Magnotta, Merlot Sr Vqa',
+      ingredient_3: 'Wine - Conde De Valdemar',
+      ingredient_4: 'Wine - Zonnebloem Pinotage',
+      ingredient_5: 'Onions Granulated',
+      amount_1: 2.97,
+      amount_2: 1.54,
+      amount_3: 0.57,
+      amount_4: 0.28,
+      amount_5: 0.8,
+      date_created: '02/29/2020',
+      date_modified: '2019-12-18 18:29:56',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'a54f2c8a-8500-4aca-b932-099e8d4c1f86',
+      drink_name: 'pricing structure',
+      rating: 1.2,
+      glassware: 'Orchidaceae',
+      location: 'Sarreguemines',
+      ingredient_1: 'Wine - Wyndham Estate Bin 777',
+      ingredient_2: 'Nut - Pine Nuts, Whole',
+      ingredient_3: 'Melon - Cantaloupe',
+      ingredient_4: 'Raisin - Dark',
+      ingredient_5: 'Lotus Root',
+      amount_1: 2.43,
+      amount_2: 1.68,
+      amount_3: 0.36,
+      amount_4: 0.66,
+      amount_5: null,
+      date_created: '10/08/2019',
+      date_modified: '2019-10-17 23:02:24',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'b1bd1a52-d0f6-403b-8710-db65a0fae73a',
+      drink_name: 'Multi-lateral',
+      rating: 2.5,
+      glassware: 'Saxifragaceae',
+      location: 'Paulista',
+      ingredient_1: 'Cup - Translucent 7 Oz Clear',
+      ingredient_2: 'Rum - Mount Gay Eclipes',
+      ingredient_3: 'Coffee Decaf Colombian',
+      ingredient_4: 'Dome Lid Clear P92008h',
+      ingredient_5: 'Knife Plastic - White',
+      amount_1: 2.88,
+      amount_2: 1.93,
+      amount_3: 0.8,
+      amount_4: 0.7,
+      amount_5: 0.6,
+      date_created: '06/26/2019',
+      date_modified: '2019-07-08 06:41:29',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'b5993b7d-51c3-4d0a-bee3-b7371c896d7f',
+      drink_name: 'Synchronised',
+      rating: 4.0,
+      glassware: 'Taxaceae',
+      location: 'Martyush',
+      ingredient_1: 'Vinegar - White',
+      ingredient_2: 'Sambuca - Opal Nera',
+      ingredient_3: 'Guava',
+      ingredient_4: 'Cheese - Wine',
+      ingredient_5: 'Kolrabi',
+      amount_1: 1.99,
+      amount_2: 1.54,
+      amount_3: 0.79,
+      amount_4: 0.68,
+      amount_5: 0.3,
+      date_created: '05/19/2020',
+      date_modified: '2019-07-02 06:22:39',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'b032eb06-fd95-48fb-8059-c0afc072342c',
+      drink_name: 'circuit',
+      rating: 3.9,
+      glassware: 'Poaceae',
+      location: 'Preko',
+      ingredient_1: 'Food Colouring - Green',
+      ingredient_2: 'Chinese Lemon Pork',
+      ingredient_3: 'Cheese - Perron Cheddar',
+      ingredient_4: 'Red Cod Fillets - 225g',
+      ingredient_5: 'Sun - Dried Tomatoes',
+      amount_1: 1.91,
+      amount_2: 1.7,
+      amount_3: 0.43,
+      amount_4: 0.35,
+      amount_5: 0.9,
+      date_created: '04/26/2020',
+      date_modified: '2019-09-02 20:33:50',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'eb2ed546-dc61-4bd2-b504-938b88bca52f',
+      drink_name: 'systemic',
+      rating: 2.7,
+      glassware: 'Acanthaceae',
+      location: 'Ambositra',
+      ingredient_1: 'Lobster - Base',
+      ingredient_2: 'Cheese - Le Cheve Noir',
+      ingredient_3: 'Sauce - Gravy, Au Jus, Mix',
+      ingredient_4: 'Wine - Harrow Estates, Vidal',
+      ingredient_5: 'Bread - White Epi Baguette',
+      amount_1: 2.89,
+      amount_2: 1.82,
+      amount_3: 0.32,
+      amount_4: 0.63,
+      amount_5: 0.7,
+      date_created: '01/18/2020',
+      date_modified: '2019-11-12 12:29:17',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'c14355dc-0a20-4da7-93fa-b2ee2c678512',
+      drink_name: 'Multi-lateral',
+      rating: 3.5,
+      glassware: 'Blechnaceae',
+      location: 'Kuafeu',
+      ingredient_1: 'Butter Balls Salted',
+      ingredient_2: 'Squid - U 5',
+      ingredient_3: 'Carroway Seed',
+      ingredient_4: 'Cheese - Havarti, Roasted Garlic',
+      ingredient_5: 'Bread Base - Goodhearth',
+      amount_1: 2.78,
+      amount_2: 1.24,
+      amount_3: 0.67,
+      amount_4: 0.79,
+      amount_5: 0.3,
+      date_created: '11/15/2019',
+      date_modified: '2019-09-12 18:53:31',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '7d831c8e-0123-499c-ab22-cdef1cef5bf1',
+      drink_name: 'cohesive',
+      rating: 4.8,
+      glassware: 'Collemataceae',
+      location: 'Ţubarjal',
+      ingredient_1: 'Fennel',
+      ingredient_2: 'Sachet',
+      ingredient_3: 'Muffin Batt - Choc Chk',
+      ingredient_4: 'Piping - Bags Quizna',
+      ingredient_5: 'Hagen Daza - Dk Choocolate',
+      amount_1: 1.27,
+      amount_2: 1.6,
+      amount_3: 0.4,
+      amount_4: 0.97,
+      amount_5: 0.5,
+      date_created: '03/01/2020',
+      date_modified: '2020-02-14 01:35:59',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '8fdd8b3c-b16f-4d47-ad53-e00aafbff6a1',
+      drink_name: 'project',
+      rating: 1.6,
+      glassware: 'Chenopodiaceae',
+      location: 'Mendefera',
+      ingredient_1: 'Wine - Champagne Brut Veuve',
+      ingredient_2: 'Nut - Chestnuts, Whole',
+      ingredient_3: 'Wine - White, Mosel Gold',
+      ingredient_4: 'Beans - Green',
+      ingredient_5: 'Bread - Raisin Walnut Oval',
+      amount_1: 1.08,
+      amount_2: 1.25,
+      amount_3: 0.29,
+      amount_4: 0.42,
+      amount_5: 0.5,
+      date_created: '09/02/2019',
+      date_modified: '2019-12-31 08:27:47',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '5764f24f-2a2a-4aba-8fc6-9d01b25635ec',
+      drink_name: 'Object-based',
+      rating: 2.2,
+      glassware: 'Pertusariaceae',
+      location: 'Dawuhan',
+      ingredient_1: 'Yokaline',
+      ingredient_2: 'Toothpick Frilled',
+      ingredient_3: 'Pepper - Scotch Bonnet',
+      ingredient_4: 'Spinach - Spinach Leaf',
+      ingredient_5: 'Muffin Mix - Carrot',
+      amount_1: 2.87,
+      amount_2: 1.54,
+      amount_3: 0.32,
+      amount_4: 0.57,
+      amount_5: 0.5,
+      date_created: '11/27/2019',
+      date_modified: '2020-02-22 10:16:34',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'd5d9078d-b006-4792-bbaa-93bef4645812',
+      drink_name: 'full-range',
+      rating: 2.9,
+      glassware: 'Capparaceae',
+      location: 'Selianítika',
+      ingredient_1: 'Juice - Cranberry, 341 Ml',
+      ingredient_2: 'Jam - Blackberry, 20 Ml Jar',
+      ingredient_3: 'Flour - Whole Wheat',
+      ingredient_4: 'Wine - Red, Lurton Merlot De',
+      ingredient_5: 'Wine - Balbach Riverside',
+      amount_1: 1.56,
+      amount_2: 1.09,
+      amount_3: 0.38,
+      amount_4: 0.46,
+      amount_5: 0.9,
+      date_created: '09/21/2019',
+      date_modified: '2019-12-27 15:57:24',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '0c72f151-ec42-4bb9-91a4-550bf3baa566',
+      drink_name: 'projection',
+      rating: 4.3,
+      glassware: 'Hymeneliaceae',
+      location: 'Baisha',
+      ingredient_1: 'Energy Drink Red Bull',
+      ingredient_2: 'Chutney Sauce - Mango',
+      ingredient_3: 'Beans - Green',
+      ingredient_4: 'Sauce - Alfredo',
+      ingredient_5: 'Juice - Lime',
+      amount_1: 2.91,
+      amount_2: 1.02,
+      amount_3: 0.79,
+      amount_4: 0.93,
+      amount_5: 0.9,
+      date_created: '09/27/2019',
+      date_modified: '2019-10-13 00:02:46',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'ad04c9c8-b49e-4129-acd9-22e6a3c7711c',
+      drink_name: 'frame',
+      rating: 4.4,
+      glassware: 'Poaceae',
+      location: 'Tysmenytsya',
+      ingredient_1: 'Calvados - Boulard',
+      ingredient_2: 'Cheese - Gouda',
+      ingredient_3: 'Onion - Dried',
+      ingredient_4: 'Wine - Beaujolais Villages',
+      ingredient_5: 'Toamtoes 6x7 Select',
+      amount_1: 1.41,
+      amount_2: 1.79,
+      amount_3: 0.88,
+      amount_4: 0.74,
+      amount_5: 1.0,
+      date_created: '09/20/2019',
+      date_modified: '2019-09-25 06:40:54',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'c7541453-d2c1-4c59-9600-53501ea056e8',
+      drink_name: 'Persevering',
+      rating: 3.4,
+      glassware: 'Ranunculaceae',
+      location: 'Aras-asan',
+      ingredient_1: 'Mousse - Banana Chocolate',
+      ingredient_2: 'Potatoes - Peeled',
+      ingredient_3: 'Napkin Colour',
+      ingredient_4: 'Shortbread - Cookie Crumbs',
+      ingredient_5: 'Bread - Hamburger Buns',
+      amount_1: 1.89,
+      amount_2: 1.16,
+      amount_3: 0.74,
+      amount_4: 0.37,
+      amount_5: null,
+      date_created: '05/25/2020',
+      date_modified: '2019-10-17 20:48:27',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '2c524165-1ad5-4b06-94c9-beeead889d83',
+      drink_name: 'utilisation',
+      rating: 4.2,
+      glassware: 'Polygonaceae',
+      location: 'Grivenskaya',
+      ingredient_1: 'Pastry - Baked Scones - Mini',
+      ingredient_2: 'Lamb - Pieces, Diced',
+      ingredient_3: 'Bread Crumbs - Panko',
+      ingredient_4: 'Gherkin',
+      ingredient_5: 'Energy Drink',
+      amount_1: 1.2,
+      amount_2: 1.81,
+      amount_3: 0.31,
+      amount_4: 0.8,
+      amount_5: 0.6,
+      date_created: '02/14/2020',
+      date_modified: '2019-11-29 08:00:05',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'd33e9676-f8ef-44d3-b147-6096aab7bc0a',
+      drink_name: 'projection',
+      rating: 3.8,
+      glassware: 'Polygalaceae',
+      location: 'Matagalpa',
+      ingredient_1: 'Hot Choc Vending',
+      ingredient_2: 'Wine - Ruffino Chianti',
+      ingredient_3: 'Table Cloth 53x53 White',
+      ingredient_4: 'Ham - Cooked Bayonne Tinned',
+      ingredient_5: 'Spring Roll Veg Mini',
+      amount_1: 2.2,
+      amount_2: 1.76,
+      amount_3: 0.82,
+      amount_4: 0.73,
+      amount_5: 0.4,
+      date_created: '02/13/2020',
+      date_modified: '2019-08-08 10:57:35',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '5bbea3ff-33c3-4c9e-8222-9e626a99e962',
+      drink_name: 'workforce',
+      rating: 2.3,
+      glassware: 'Onagraceae',
+      location: 'Bacalan',
+      ingredient_1: 'Mayonnaise',
+      ingredient_2: 'Drambuie',
+      ingredient_3: 'Stock - Veal, Brown',
+      ingredient_4: 'Bok Choy - Baby',
+      ingredient_5: 'Broccoli - Fresh',
+      amount_1: 2.19,
+      amount_2: 1.82,
+      amount_3: 0.92,
+      amount_4: 0.6,
+      amount_5: 0.5,
+      date_created: '02/24/2020',
+      date_modified: '2020-03-17 10:06:51',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '93515416-84d1-4bcd-a0e6-8fa444b043fe',
+      drink_name: 'Fundamental',
+      rating: 1.0,
+      glassware: 'Asclepiadaceae',
+      location: 'Cumaná',
+      ingredient_1: 'Flour - Corn, Fine',
+      ingredient_2: 'Syrup - Kahlua Chocolate',
+      ingredient_3: 'Milk - Homo',
+      ingredient_4: 'Onions - Dried, Chopped',
+      ingredient_5: 'Cheese - Cheddarsliced',
+      amount_1: 2.92,
+      amount_2: 1.9,
+      amount_3: 0.41,
+      amount_4: 0.28,
+      amount_5: 0.5,
+      date_created: '05/23/2020',
+      date_modified: '2019-12-12 03:23:31',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '199aa472-3928-4eb7-b761-4111f3f79760',
+      drink_name: 'methodical',
+      rating: 2.6,
+      glassware: 'Fabaceae',
+      location: 'Parang',
+      ingredient_1: 'Wine - Fontanafredda Barolo',
+      ingredient_2: 'Bread Base - Toscano',
+      ingredient_3: 'Sugar - Sweet N Low, Individual',
+      ingredient_4: 'Beef - Texas Style Burger',
+      ingredient_5: 'Cookies Cereal Nut',
+      amount_1: 1.78,
+      amount_2: 1.35,
+      amount_3: 0.98,
+      amount_4: 0.97,
+      amount_5: null,
+      date_created: '02/09/2020',
+      date_modified: '2020-05-15 21:52:11',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '15654459-7021-4685-adc4-9f19240388db',
+      drink_name: 'Persistent',
+      rating: 4.2,
+      glassware: 'Gyalectaceae',
+      location: 'Khawr Maksar',
+      ingredient_1: 'Ice Cream Bar - Drumstick',
+      ingredient_2: 'Muffin Carrot - Individual',
+      ingredient_3: 'Zucchini - Mini, Green',
+      ingredient_4: 'Steam Pan - Half Size Deep',
+      ingredient_5: 'Bread - Mini Hamburger Bun',
+      amount_1: 1.7,
+      amount_2: 1.93,
+      amount_3: 0.71,
+      amount_4: 0.69,
+      amount_5: 0.8,
+      date_created: '12/20/2019',
+      date_modified: '2019-08-29 04:11:33',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'c68ea54d-5f06-4048-a8b5-0c33a07a7ed0',
+      drink_name: 'interactive',
+      rating: 1.4,
+      glassware: 'Polygonaceae',
+      location: 'Xinrong',
+      ingredient_1: 'Crush - Grape, 355 Ml',
+      ingredient_2: 'Lamb - Rack',
+      ingredient_3: 'Rootbeer',
+      ingredient_4: 'Table Cloth 91x91 Colour',
+      ingredient_5: 'French Pastry - Mini Chocolate',
+      amount_1: 2.88,
+      amount_2: 1.39,
+      amount_3: 0.29,
+      amount_4: 0.91,
+      amount_5: 0.6,
+      date_created: '03/27/2020',
+      date_modified: '2019-09-27 20:04:01',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '3b932085-f637-4059-903f-59a639e3ebe8',
+      drink_name: 'internet solution',
+      rating: 3.9,
+      glassware: 'Papaveraceae',
+      location: 'Giebułtów',
+      ingredient_1: 'Cloves - Ground',
+      ingredient_2: 'Fond - Neutral',
+      ingredient_3: 'Aspic - Amber',
+      ingredient_4: 'Onions - Green',
+      ingredient_5: 'Pastry - Chocolate Chip Muffin',
+      amount_1: 2.54,
+      amount_2: 1.74,
+      amount_3: 0.79,
+      amount_4: 0.69,
+      amount_5: null,
+      date_created: '03/31/2020',
+      date_modified: '2019-08-26 14:41:41',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '2156d499-3ae5-4966-96a6-b1d468d91dec',
+      drink_name: 'internet solution',
+      rating: 3.2,
+      glassware: 'Asteraceae',
+      location: 'Shimen',
+      ingredient_1: 'Whmis - Spray Bottle Trigger',
+      ingredient_2: 'Country Roll',
+      ingredient_3: 'Orange Roughy 6/8 Oz',
+      ingredient_4: 'Soup - Campbells Chicken',
+      ingredient_5: 'Marjoram - Fresh',
+      amount_1: 1.46,
+      amount_2: 1.58,
+      amount_3: 0.75,
+      amount_4: 0.97,
+      amount_5: 0.6,
+      date_created: '10/15/2019',
+      date_modified: '2019-09-24 15:41:23',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'a462334a-ae23-458f-b711-300ab36d833b',
+      drink_name: 'Innovative',
+      rating: 4.2,
+      glassware: 'Caryophyllaceae',
+      location: 'Đoan Hùng',
+      ingredient_1: 'Cheese - Mix',
+      ingredient_2: 'Wine - White, Riesling, Henry Of',
+      ingredient_3: 'Silicone Paper 16.5x24',
+      ingredient_4: 'Guinea Fowl',
+      ingredient_5: 'Sesame Seed Black',
+      amount_1: 1.19,
+      amount_2: 1.37,
+      amount_3: 0.66,
+      amount_4: 0.64,
+      amount_5: 0.8,
+      date_created: '04/02/2020',
+      date_modified: '2020-05-13 08:04:11',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'd3429ef3-e8db-4161-9e7c-4fdb03b04bcd',
+      drink_name: 'Synchronised',
+      rating: 1.5,
+      glassware: 'Poaceae',
+      location: 'Kalidawe',
+      ingredient_1: 'Wine - Ice Wine',
+      ingredient_2: 'Cup Translucent 9 Oz',
+      ingredient_3: 'Soup - Tomato Mush. Florentine',
+      ingredient_4: 'Wine - White, Concha Y Toro',
+      ingredient_5: 'Coffee Cup 16oz Foam',
+      amount_1: 2.92,
+      amount_2: 1.69,
+      amount_3: 0.85,
+      amount_4: 0.52,
+      amount_5: 0.7,
+      date_created: '04/15/2020',
+      date_modified: '2019-07-04 19:29:16',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '1f26fa5c-e81f-4e7b-880f-e4a10178acae',
+      drink_name: 'model',
+      rating: 2.4,
+      glassware: 'Liliaceae',
+      location: 'Bungsuan',
+      ingredient_1: 'Corn Shoots',
+      ingredient_2: 'Split Peas - Green, Dry',
+      ingredient_3: 'Chinese Lemon Pork',
+      ingredient_4: 'Sponge Cake Mix - Chocolate',
+      ingredient_5: 'Dry Ice',
+      amount_1: 2.34,
+      amount_2: 1.67,
+      amount_3: 0.84,
+      amount_4: 0.67,
+      amount_5: null,
+      date_created: '10/28/2019',
+      date_modified: '2019-11-22 23:05:01',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'd2b13a38-6940-4534-9b52-50bf9d9ff649',
+      drink_name: 'Polarised',
+      rating: 2.5,
+      glassware: 'Cyperaceae',
+      location: 'Longhe',
+      ingredient_1: 'Spoon - Soup, Plastic',
+      ingredient_2: 'Lamb - Whole, Frozen',
+      ingredient_3: 'Shiro Miso',
+      ingredient_4: 'Pastry - Raisin Muffin - Mini',
+      ingredient_5: 'Tortillas - Flour, 10',
+      amount_1: 1.51,
+      amount_2: 1.66,
+      amount_3: 0.5,
+      amount_4: 0.44,
+      amount_5: 0.8,
+      date_created: '10/12/2019',
+      date_modified: '2019-12-07 08:50:35',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '146d0f5c-08ed-4edf-971e-d715db3eb63d',
+      drink_name: 'emulation',
+      rating: 1.3,
+      glassware: 'Salicaceae',
+      location: 'Samajie Ewenkeminzu',
+      ingredient_1: 'Pears - Bartlett',
+      ingredient_2: 'Bread - Kimel Stick Poly',
+      ingredient_3: 'Chef Hat 25cm',
+      ingredient_4: 'Sobe - Tropical Energy',
+      ingredient_5: 'Cherries - Frozen',
+      amount_1: 2.42,
+      amount_2: 1.74,
+      amount_3: 0.72,
+      amount_4: 0.66,
+      amount_5: 1.0,
+      date_created: '05/03/2020',
+      date_modified: '2020-01-23 19:48:41',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: 'ec8ac615-f701-42fb-a207-86f8aa452f5c',
+      drink_name: 'Multi-tiered',
+      rating: 3.3,
+      glassware: 'Mycocaliciaceae',
+      location: 'Funza',
+      ingredient_1: 'Muffin Hinge Container 6',
+      ingredient_2: 'Island Oasis - Ice Cream Mix',
+      ingredient_3: 'Juice - Apple Cider',
+      ingredient_4: 'Pork - Side Ribs',
+      ingredient_5: 'Wine - Vovray Sec Domaine Huet',
+      amount_1: 2.96,
+      amount_2: 1.13,
+      amount_3: 0.82,
+      amount_4: 0.81,
+      amount_5: 1.0,
+      date_created: '08/31/2019',
+      date_modified: '2019-07-08 08:39:21',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '3458e93c-9ceb-4419-a280-7f25326ef899',
+      drink_name: 'Managed',
+      rating: 2.1,
+      glassware: 'Grossulariaceae',
+      location: 'Gyangkar',
+      ingredient_1: 'Blouse / Shirt / Sweater',
+      ingredient_2: 'Cabbage - Savoy',
+      ingredient_3: 'Currants',
+      ingredient_4: 'Coffee Swiss Choc Almond',
+      ingredient_5: 'Wine - Casillero Del Diablo',
+      amount_1: 2.6,
+      amount_2: 1.17,
+      amount_3: 0.79,
+      amount_4: 0.67,
+      amount_5: 0.8,
+      date_created: '06/04/2020',
+      date_modified: '2019-12-27 02:31:53',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '0f99f649-4323-4a24-b76b-47a6ee28c872',
+      drink_name: 'Balanced',
+      rating: 2.0,
+      glassware: 'Sapotaceae',
+      location: 'Mbanga',
+      ingredient_1: 'Juice - Lime',
+      ingredient_2: 'Langers - Mango Nectar',
+      ingredient_3: 'Yoghurt Tubes',
+      ingredient_4: 'Scallops - 20/30',
+      ingredient_5: 'Irish Cream - Butterscotch',
+      amount_1: 1.77,
+      amount_2: 2.0,
+      amount_3: 0.5,
+      amount_4: 0.79,
+      amount_5: null,
+      date_created: '09/24/2019',
+      date_modified: '2020-05-02 22:32:15',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }, {
+      recipe_id: '46fc2d48-2c9e-4f34-8e3f-8b59ab734a98',
+      drink_name: '4th generation',
+      rating: 2.4,
+      glassware: 'Asteraceae',
+      location: 'Ridderkerk',
+      ingredient_1: 'Soup Knorr Chili With Beans',
+      ingredient_2: 'Halibut - Whole, Fresh',
+      ingredient_3: 'Puree - Pear',
+      ingredient_4: 'Longos - Burritos',
+      ingredient_5: 'Rabbit - Frozen',
+      amount_1: 2.42,
+      amount_2: 1.64,
+      amount_3: 0.65,
+      amount_4: 0.63,
+      amount_5: null,
+      date_created: '04/15/2020',
+      date_modified: '2019-11-05 06:32:09',
+      picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg'
+    }];
+    /***/
+  },
+
+  /***/
   "./src/app/app-routing.module.ts":
   /*!***************************************!*\
     !*** ./src/app/app-routing.module.ts ***!
@@ -90,6 +1642,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _components_user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ./components/user-profile/user-profile.component */
     "./src/app/components/user-profile/user-profile.component.ts");
+    /* harmony import */
+
+
+    var _components_the_feed_the_feed_main_the_feed_main_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./components/the-feed/the-feed-main/the-feed-main.component */
+    "./src/app/components/the-feed/the-feed-main/the-feed-main.component.ts");
 
     var routes = [{
       path: '',
@@ -97,6 +1655,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }, {
       path: 'profile',
       component: _components_user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_3__["UserProfileComponent"]
+    }, {
+      path: 'the-feed',
+      component: _components_the_feed_the_feed_main_the_feed_main_component__WEBPACK_IMPORTED_MODULE_4__["TheFeedMainComponent"]
     }, {
       path: 'preferences',
       loadChildren: function loadChildren() {
@@ -350,6 +1911,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _components_user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! ./components/user-profile/user-profile.component */
     "./src/app/components/user-profile/user-profile.component.ts");
+    /* harmony import */
+
+
+    var _components_the_feed_the_feed_main_the_feed_main_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    /*! ./components/the-feed/the-feed-main/the-feed-main.component */
+    "./src/app/components/the-feed/the-feed-main/the-feed-main.component.ts");
+    /* harmony import */
+
+
+    var _components_the_feed_the_feed_posts_the_feed_posts_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    /*! ./components/the-feed/the-feed-posts/the-feed-posts.component */
+    "./src/app/components/the-feed/the-feed-posts/the-feed-posts.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -369,7 +1942,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_main_main_component__WEBPACK_IMPORTED_MODULE_5__["MainComponent"], _components_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_7__["NewUserFormComponent"], _components_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_9__["LoginFormComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_10__["NavbarComponent"], _components_post_drink_form_post_drink_form_component__WEBPACK_IMPORTED_MODULE_14__["PostDrinkFormComponent"], _components_user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_15__["UserProfileComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_main_main_component__WEBPACK_IMPORTED_MODULE_5__["MainComponent"], _components_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_7__["NewUserFormComponent"], _components_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_9__["LoginFormComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_10__["NavbarComponent"], _components_post_drink_form_post_drink_form_component__WEBPACK_IMPORTED_MODULE_14__["PostDrinkFormComponent"], _components_user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_15__["UserProfileComponent"], _components_the_feed_the_feed_main_the_feed_main_component__WEBPACK_IMPORTED_MODULE_16__["TheFeedMainComponent"], _components_the_feed_the_feed_posts_the_feed_posts_component__WEBPACK_IMPORTED_MODULE_17__["TheFeedPostsComponent"]],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"], _components_recipe_book_recipe_book_module__WEBPACK_IMPORTED_MODULE_11__["RecipeBookModule"], _components_preferences_preferences_module__WEBPACK_IMPORTED_MODULE_12__["PreferencesModule"], _components_user_recipes_user_recipes_module__WEBPACK_IMPORTED_MODULE_13__["UserRecipesModule"]]
       });
     })();
@@ -380,7 +1953,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_main_main_component__WEBPACK_IMPORTED_MODULE_5__["MainComponent"], _components_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_7__["NewUserFormComponent"], _components_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_9__["LoginFormComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_10__["NavbarComponent"], _components_post_drink_form_post_drink_form_component__WEBPACK_IMPORTED_MODULE_14__["PostDrinkFormComponent"], _components_user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_15__["UserProfileComponent"]],
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_main_main_component__WEBPACK_IMPORTED_MODULE_5__["MainComponent"], _components_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_7__["NewUserFormComponent"], _components_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_9__["LoginFormComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_10__["NavbarComponent"], _components_post_drink_form_post_drink_form_component__WEBPACK_IMPORTED_MODULE_14__["PostDrinkFormComponent"], _components_user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_15__["UserProfileComponent"], _components_the_feed_the_feed_main_the_feed_main_component__WEBPACK_IMPORTED_MODULE_16__["TheFeedMainComponent"], _components_the_feed_the_feed_posts_the_feed_posts_component__WEBPACK_IMPORTED_MODULE_17__["TheFeedPostsComponent"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"], _components_recipe_book_recipe_book_module__WEBPACK_IMPORTED_MODULE_11__["RecipeBookModule"], _components_preferences_preferences_module__WEBPACK_IMPORTED_MODULE_12__["PreferencesModule"], _components_user_recipes_user_recipes_module__WEBPACK_IMPORTED_MODULE_13__["UserRecipesModule"]],
           providers: [],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -449,9 +2022,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     MainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: MainComponent,
       selectors: [["app-main"]],
-      decls: 17,
+      decls: 24,
       vars: 0,
-      consts: [["routerLink", "/preferences"], ["routerLink", "/profile"], ["routerLink", "/user-recipes"], ["routerLink", "/recipe-book"]],
+      consts: [["routerLink", "/preferences"], ["routerLink", "/profile"], ["routerLink", "/the-feed"], ["routerLink", "/user-recipes"], ["routerLink", "/recipe-book"]],
       template: function MainComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "post-drink-form");
@@ -464,49 +2037,75 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h5");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "ul");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Nav Bar Links");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " Nav Bar Links ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "li");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "a", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Preferences");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "a", 1);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "User Profile");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Preferences");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "h5");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "User Side Links");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "li");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "a", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "User Profile");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "a", 2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "User Recipes");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "li");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "The Feed");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "br");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "a", 3);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Recipe Book");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "ul");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, " User Side Links ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "li");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "a", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "User Recipes");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "li");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "a", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "Recipe Book");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "br");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
       },
       directives: [_post_drink_form_post_drink_form_component__WEBPACK_IMPORTED_MODULE_1__["PostDrinkFormComponent"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkWithHref"]],
-      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbWFpbi9tYWluLmNvbXBvbmVudC5jc3MifQ== */"]
+      styles: ["a[_ngcontent-%COMP%] {\r\n  color: #80bdad;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9tYWluL21haW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGNBQWM7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL21haW4vbWFpbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYSB7XHJcbiAgY29sb3I6ICM4MGJkYWQ7XHJcbn1cclxuIl19 */"]
     });
     /*@__PURE__*/
 
@@ -580,7 +2179,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-navbar"]],
       decls: 12,
       vars: 0,
-      consts: [["href", "#"], ["routerLink", "/preferences"]],
+      consts: [["routerLink", "/the-feed"], ["href", "#"], ["routerLink", "/profile"], ["routerLink", "/preferences"]],
       template: function NavbarComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h1");
@@ -595,25 +2194,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "a", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "a", 1);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Drinks");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 2);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "User");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "a", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "a", 3);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Favorites");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "a", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "a", 1);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Quiz");
 
@@ -713,9 +2312,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     LoginFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: LoginFormComponent,
       selectors: [["login-form"]],
-      decls: 15,
+      decls: 20,
       vars: 1,
-      consts: [[1, "background"], [1, "body"], [3, "formGroup", "ngSubmit"], [1, "form-group"], ["for", "userName"], ["type", "text", "name", "userName", "formControlName", "userName"], ["for", "password"], ["type", "password", "name", "password", "formControlName", "password"], ["type", "submit"]],
+      consts: [[1, "background"], [1, "body"], [3, "formGroup", "ngSubmit"], [1, "form-group"], ["for", "userName"], ["type", "text", "name", "userName", "formControlName", "userName", "placeholder", "Enter Username"], ["for", "password"], ["type", "password", "name", "password", "formControlName", "password", "placeholder", "Enter Password"], ["type", "submit"], [1, "resetPW"], [1, "linkInfo"], ["href", "#"]],
       template: function LoginFormComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -766,6 +2365,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 9);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "div", 10);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "New to DrinksOnMe?");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "a", 11);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Click Here to Create a Profile");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -778,7 +2393,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroupDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControlName"]],
-      styles: [".background[_ngcontent-%COMP%] {\r\n  margin-top: 30px;\r\n  background-image: url('margarita.svg');\r\n  background-repeat: no-repeat;\r\n  background-color: rgb(52, 43, 56);\r\n  height: 115vh;\r\n  width: 125vw;\r\n}\r\n\r\n.body[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  width: 100vw;\r\n  height: 60vw;\r\n}\r\n\r\nh1[_ngcontent-%COMP%] {\r\n  font-size: 50px;\r\n  color: rgb(236, 184, 92);\r\n}\r\n\r\nform[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 30vw;\r\n  height: auto;\r\n}\r\n\r\nlabel[_ngcontent-%COMP%] {\r\n  font-size: 30px;\r\n}\r\n\r\n.form-group[_ngcontent-%COMP%] {\r\n  margin-top: 30px;\r\n  color: rgb(236, 184, 92);\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\ninput[_ngcontent-%COMP%] {\r\n  padding: 10px 5px;\r\n  color: hsl(0, 0%, 100%);\r\n  background-color: rgb(236, 184, 92, 0.5);\r\n  border: 2pt solid rgb(236, 184, 92);\r\n}\r\n\r\ninput[_ngcontent-%COMP%]:hover {\r\n  border: 2pt solid #80bdad;\r\n}\r\n\r\nbutton[_ngcontent-%COMP%] {\r\n  margin-top: 30px;\r\n  padding: 10px 0px;\r\n  background-color: rgb(236, 184, 92);\r\n  \r\n}\r\n\r\nbutton[_ngcontent-%COMP%]:hover {\r\n  background-color: #80bdad;\r\n}\r\n\r\n\r\n\r\n@media screen and (max-width: 768px) {\r\n  .background[_ngcontent-%COMP%] {\r\n    margin-top: 10vh;\r\n    height: 80vh;\r\n    width: 100vw;\r\n  }\r\n\r\n  .body[_ngcontent-%COMP%] {\r\n    width: 100vw;\r\n    height: 50vw;\r\n  }\r\n  .form-group[_ngcontent-%COMP%] {\r\n    margin-top: 10px;\r\n  }\r\n\r\n  form[_ngcontent-%COMP%] {\r\n    width: 30vw;\r\n  }\r\n\r\n  label[_ngcontent-%COMP%] {\r\n    font-size: 30px;\r\n  }\r\n}\r\n\r\n\r\n\r\n@media screen and (max-width: 360px) {\r\n  .background[_ngcontent-%COMP%] {\r\n    margin-top: 10vh;\r\n    height: 80vh;\r\n    width: 100vw;\r\n  }\r\n\r\n  .body[_ngcontent-%COMP%] {\r\n    width: 100vw;\r\n    height: 60vh;\r\n  }\r\n  h1[_ngcontent-%COMP%] {\r\n    margin: 0;\r\n  }\r\n\r\n  form[_ngcontent-%COMP%] {\r\n    margin-top: 5px;\r\n    width: 40vw;\r\n    height: auto;\r\n  }\r\n\r\n  label[_ngcontent-%COMP%] {\r\n    font-size: 30px;\r\n  }\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9uZXctdXNlci9sb2dpbi1mb3JtL2xvZ2luLWZvcm0uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFnQjtFQUNoQixzQ0FBZ0Q7RUFDaEQsNEJBQTRCO0VBQzVCLGlDQUFpQztFQUNqQyxhQUFhO0VBQ2IsWUFBWTtBQUNkOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixtQkFBbUI7RUFDbkIsdUJBQXVCO0VBQ3ZCLFlBQVk7RUFDWixZQUFZO0FBQ2Q7O0FBQ0E7RUFDRSxlQUFlO0VBQ2Ysd0JBQXdCO0FBQzFCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixXQUFXO0VBQ1gsWUFBWTtBQUNkOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFDQTtFQUNFLGdCQUFnQjtFQUNoQix3QkFBd0I7RUFDeEIsYUFBYTtFQUNiLHNCQUFzQjtBQUN4Qjs7QUFDQTtFQUNFLGlCQUFpQjtFQUNqQix1QkFBdUI7RUFDdkIsd0NBQXdDO0VBQ3hDLG1DQUFtQztBQUNyQzs7QUFDQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixpQkFBaUI7RUFDakIsbUNBQW1DO0VBQ25DLG9DQUFvQztBQUN0Qzs7QUFDQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQSw0QkFBNEI7O0FBQzVCO0VBQ0U7SUFDRSxnQkFBZ0I7SUFDaEIsWUFBWTtJQUNaLFlBQVk7RUFDZDs7RUFFQTtJQUNFLFlBQVk7SUFDWixZQUFZO0VBQ2Q7RUFDQTtJQUNFLGdCQUFnQjtFQUNsQjs7RUFFQTtJQUNFLFdBQVc7RUFDYjs7RUFFQTtJQUNFLGVBQWU7RUFDakI7QUFDRjs7QUFFQSwwQkFBMEI7O0FBQzFCO0VBQ0U7SUFDRSxnQkFBZ0I7SUFDaEIsWUFBWTtJQUNaLFlBQVk7RUFDZDs7RUFFQTtJQUNFLFlBQVk7SUFDWixZQUFZO0VBQ2Q7RUFDQTtJQUNFLFNBQVM7RUFDWDs7RUFFQTtJQUNFLGVBQWU7SUFDZixXQUFXO0lBQ1gsWUFBWTtFQUNkOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9uZXctdXNlci9sb2dpbi1mb3JtL2xvZ2luLWZvcm0uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrZ3JvdW5kIHtcclxuICBtYXJnaW4tdG9wOiAzMHB4O1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCguL01hcmdhcml0YS9tYXJnYXJpdGEuc3ZnKTtcclxuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYig1MiwgNDMsIDU2KTtcclxuICBoZWlnaHQ6IDExNXZoO1xyXG4gIHdpZHRoOiAxMjV2dztcclxufVxyXG5cclxuLmJvZHkge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIHdpZHRoOiAxMDB2dztcclxuICBoZWlnaHQ6IDYwdnc7XHJcbn1cclxuaDEge1xyXG4gIGZvbnQtc2l6ZTogNTBweDtcclxuICBjb2xvcjogcmdiKDIzNiwgMTg0LCA5Mik7XHJcbn1cclxuXHJcbmZvcm0ge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICB3aWR0aDogMzB2dztcclxuICBoZWlnaHQ6IGF1dG87XHJcbn1cclxuXHJcbmxhYmVsIHtcclxuICBmb250LXNpemU6IDMwcHg7XHJcbn1cclxuLmZvcm0tZ3JvdXAge1xyXG4gIG1hcmdpbi10b3A6IDMwcHg7XHJcbiAgY29sb3I6IHJnYigyMzYsIDE4NCwgOTIpO1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxufVxyXG5pbnB1dCB7XHJcbiAgcGFkZGluZzogMTBweCA1cHg7XHJcbiAgY29sb3I6IGhzbCgwLCAwJSwgMTAwJSk7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIzNiwgMTg0LCA5MiwgMC41KTtcclxuICBib3JkZXI6IDJwdCBzb2xpZCByZ2IoMjM2LCAxODQsIDkyKTtcclxufVxyXG5pbnB1dDpob3ZlciB7XHJcbiAgYm9yZGVyOiAycHQgc29saWQgIzgwYmRhZDtcclxufVxyXG5cclxuYnV0dG9uIHtcclxuICBtYXJnaW4tdG9wOiAzMHB4O1xyXG4gIHBhZGRpbmc6IDEwcHggMHB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMzYsIDE4NCwgOTIpO1xyXG4gIC8qIGJveC1zaGFkb3c6IGJsYWNrIC0xcHQgMXB0IDNwdDsgKi9cclxufVxyXG5idXR0b246aG92ZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM4MGJkYWQ7XHJcbn1cclxuXHJcbi8qIG1lZGlhIFF1ZXJ5IGZvciBUYWJsZXRzICovXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDc2OHB4KSB7XHJcbiAgLmJhY2tncm91bmQge1xyXG4gICAgbWFyZ2luLXRvcDogMTB2aDtcclxuICAgIGhlaWdodDogODB2aDtcclxuICAgIHdpZHRoOiAxMDB2dztcclxuICB9XHJcblxyXG4gIC5ib2R5IHtcclxuICAgIHdpZHRoOiAxMDB2dztcclxuICAgIGhlaWdodDogNTB2dztcclxuICB9XHJcbiAgLmZvcm0tZ3JvdXAge1xyXG4gICAgbWFyZ2luLXRvcDogMTBweDtcclxuICB9XHJcblxyXG4gIGZvcm0ge1xyXG4gICAgd2lkdGg6IDMwdnc7XHJcbiAgfVxyXG5cclxuICBsYWJlbCB7XHJcbiAgICBmb250LXNpemU6IDMwcHg7XHJcbiAgfVxyXG59XHJcblxyXG4vKiBNZWRpYSBRdWVyeSBmb3IgcGhvbmUgKi9cclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogMzYwcHgpIHtcclxuICAuYmFja2dyb3VuZCB7XHJcbiAgICBtYXJnaW4tdG9wOiAxMHZoO1xyXG4gICAgaGVpZ2h0OiA4MHZoO1xyXG4gICAgd2lkdGg6IDEwMHZ3O1xyXG4gIH1cclxuXHJcbiAgLmJvZHkge1xyXG4gICAgd2lkdGg6IDEwMHZ3O1xyXG4gICAgaGVpZ2h0OiA2MHZoO1xyXG4gIH1cclxuICBoMSB7XHJcbiAgICBtYXJnaW46IDA7XHJcbiAgfVxyXG5cclxuICBmb3JtIHtcclxuICAgIG1hcmdpbi10b3A6IDVweDtcclxuICAgIHdpZHRoOiA0MHZ3O1xyXG4gICAgaGVpZ2h0OiBhdXRvO1xyXG4gIH1cclxuXHJcbiAgbGFiZWwge1xyXG4gICAgZm9udC1zaXplOiAzMHB4O1xyXG4gIH1cclxufVxyXG4iXX0= */"]
+      styles: [".background[_ngcontent-%COMP%] {\r\n  margin-top: 30px;\r\n  background-image: url('margarita.svg');\r\n  background-repeat: no-repeat;\r\n  height: 115vh;\r\n  width: 100vw;\r\n}\r\n\r\n.body[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  width: 100vw;\r\n  height: 60vw;\r\n}\r\n\r\nh1[_ngcontent-%COMP%] {\r\n  font-size: 50px;\r\n  color: rgb(236, 184, 92);\r\n}\r\n\r\nform[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 30vw;\r\n  height: auto;\r\n}\r\n\r\nlabel[_ngcontent-%COMP%] {\r\n  font-size: 30px;\r\n}\r\n\r\n.form-group[_ngcontent-%COMP%] {\r\n  margin-top: 30px;\r\n  color: rgb(236, 184, 92);\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n\r\n\r\ninput[_ngcontent-%COMP%] {\r\n  padding: 10px 5px;\r\n  color: hsl(0, 0%, 100%);\r\n  background-color: rgb(236, 184, 92, 0.5);\r\n  border: 2pt solid rgb(236, 184, 92);\r\n}\r\n\r\ninput[_ngcontent-%COMP%]:hover {\r\n  border: 2pt solid #80bdad;\r\n}\r\n\r\n[_ngcontent-%COMP%]::-moz-placeholder {\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  color: white;\r\n}\r\n\r\n[_ngcontent-%COMP%]::-ms-input-placeholder {\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  color: white;\r\n}\r\n\r\n[_ngcontent-%COMP%]::placeholder {\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  color: white;\r\n}\r\n\r\n\r\n\r\nbutton[_ngcontent-%COMP%] {\r\n  margin-top: 30px;\r\n  padding: 10px 0px;\r\n  background-color: rgb(236, 184, 92);\r\n  \r\n}\r\n\r\nbutton[_ngcontent-%COMP%]:hover {\r\n  background-color: #80bdad;\r\n}\r\n\r\n\r\n\r\n.resetPW[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.linkInfo[_ngcontent-%COMP%] {\r\n  align-self: center;\r\n  margin-top: 20px;\r\n  color: hsl(0, 0%, 100%);\r\n}\r\n\r\na[_ngcontent-%COMP%] {\r\n  align-self: center;\r\n  margin-top: 8px;\r\n  color: #80bdad;\r\n}\r\n\r\na[_ngcontent-%COMP%]:hover {\r\n  color: #204051;\r\n}\r\n\r\n\r\n\r\n@media screen and (max-width: 768px) {\r\n  .background[_ngcontent-%COMP%] {\r\n    margin-top: 10vh;\r\n    height: 80vh;\r\n    width: 100vw;\r\n  }\r\n\r\n  .body[_ngcontent-%COMP%] {\r\n    width: 100vw;\r\n    height: 50vw;\r\n  }\r\n  .form-group[_ngcontent-%COMP%] {\r\n    margin-top: 10px;\r\n  }\r\n\r\n  form[_ngcontent-%COMP%] {\r\n    width: 30vw;\r\n  }\r\n\r\n  label[_ngcontent-%COMP%] {\r\n    font-size: 30px;\r\n  }\r\n}\r\n\r\n\r\n\r\n@media screen and (max-width: 360px) {\r\n  .background[_ngcontent-%COMP%] {\r\n    margin-top: 10vh;\r\n    height: 80vh;\r\n    width: 100vw;\r\n  }\r\n\r\n  .body[_ngcontent-%COMP%] {\r\n    width: 100vw;\r\n    height: 60vh;\r\n  }\r\n  h1[_ngcontent-%COMP%] {\r\n    margin: 0;\r\n  }\r\n\r\n  form[_ngcontent-%COMP%] {\r\n    margin-top: 5px;\r\n    width: 40vw;\r\n    height: auto;\r\n  }\r\n\r\n  label[_ngcontent-%COMP%] {\r\n    font-size: 30px;\r\n  }\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9uZXctdXNlci9sb2dpbi1mb3JtL2xvZ2luLWZvcm0uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFnQjtFQUNoQixzQ0FBZ0Q7RUFDaEQsNEJBQTRCO0VBQzVCLGFBQWE7RUFDYixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsWUFBWTtFQUNaLFlBQVk7QUFDZDs7QUFDQTtFQUNFLGVBQWU7RUFDZix3QkFBd0I7QUFDMUI7O0FBRUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLHdCQUF3QjtFQUN4QixhQUFhO0VBQ2Isc0JBQXNCO0FBQ3hCOztBQUVBLGtCQUFrQjs7QUFDbEI7RUFDRSxpQkFBaUI7RUFDakIsdUJBQXVCO0VBQ3ZCLHdDQUF3QztFQUN4QyxtQ0FBbUM7QUFDckM7O0FBQ0E7RUFDRSx5QkFBeUI7QUFDM0I7O0FBRUE7RUFDRSx5Q0FBeUM7RUFDekMsWUFBWTtBQUNkOztBQUhBO0VBQ0UseUNBQXlDO0VBQ3pDLFlBQVk7QUFDZDs7QUFIQTtFQUNFLHlDQUF5QztFQUN6QyxZQUFZO0FBQ2Q7O0FBRUEsaUJBQWlCOztBQUNqQjtFQUNFLGdCQUFnQjtFQUNoQixpQkFBaUI7RUFDakIsbUNBQW1DO0VBQ25DLG9DQUFvQztBQUN0Qzs7QUFDQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQSxlQUFlOztBQUNmO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsdUJBQXVCO0FBQ3pCOztBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixjQUFjO0FBQ2hCOztBQUNBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQSw0QkFBNEI7O0FBQzVCO0VBQ0U7SUFDRSxnQkFBZ0I7SUFDaEIsWUFBWTtJQUNaLFlBQVk7RUFDZDs7RUFFQTtJQUNFLFlBQVk7SUFDWixZQUFZO0VBQ2Q7RUFDQTtJQUNFLGdCQUFnQjtFQUNsQjs7RUFFQTtJQUNFLFdBQVc7RUFDYjs7RUFFQTtJQUNFLGVBQWU7RUFDakI7QUFDRjs7QUFFQSwwQkFBMEI7O0FBQzFCO0VBQ0U7SUFDRSxnQkFBZ0I7SUFDaEIsWUFBWTtJQUNaLFlBQVk7RUFDZDs7RUFFQTtJQUNFLFlBQVk7SUFDWixZQUFZO0VBQ2Q7RUFDQTtJQUNFLFNBQVM7RUFDWDs7RUFFQTtJQUNFLGVBQWU7SUFDZixXQUFXO0lBQ1gsWUFBWTtFQUNkOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9uZXctdXNlci9sb2dpbi1mb3JtL2xvZ2luLWZvcm0uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrZ3JvdW5kIHtcclxuICBtYXJnaW4tdG9wOiAzMHB4O1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCguL01hcmdhcml0YS9tYXJnYXJpdGEuc3ZnKTtcclxuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gIGhlaWdodDogMTE1dmg7XHJcbiAgd2lkdGg6IDEwMHZ3O1xyXG59XHJcblxyXG4uYm9keSB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgd2lkdGg6IDEwMHZ3O1xyXG4gIGhlaWdodDogNjB2dztcclxufVxyXG5oMSB7XHJcbiAgZm9udC1zaXplOiA1MHB4O1xyXG4gIGNvbG9yOiByZ2IoMjM2LCAxODQsIDkyKTtcclxufVxyXG5cclxuZm9ybSB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIHdpZHRoOiAzMHZ3O1xyXG4gIGhlaWdodDogYXV0bztcclxufVxyXG5cclxubGFiZWwge1xyXG4gIGZvbnQtc2l6ZTogMzBweDtcclxufVxyXG4uZm9ybS1ncm91cCB7XHJcbiAgbWFyZ2luLXRvcDogMzBweDtcclxuICBjb2xvcjogcmdiKDIzNiwgMTg0LCA5Mik7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG59XHJcblxyXG4vKiBJbnB1dCBTdHlsaW5nICovXHJcbmlucHV0IHtcclxuICBwYWRkaW5nOiAxMHB4IDVweDtcclxuICBjb2xvcjogaHNsKDAsIDAlLCAxMDAlKTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjM2LCAxODQsIDkyLCAwLjUpO1xyXG4gIGJvcmRlcjogMnB0IHNvbGlkIHJnYigyMzYsIDE4NCwgOTIpO1xyXG59XHJcbmlucHV0OmhvdmVyIHtcclxuICBib3JkZXI6IDJwdCBzb2xpZCAjODBiZGFkO1xyXG59XHJcblxyXG46OnBsYWNlaG9sZGVyIHtcclxuICBmb250LWZhbWlseTogQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZjtcclxuICBjb2xvcjogd2hpdGU7XHJcbn1cclxuXHJcbi8qIGJ1dHRvbiBTdHlsZSAqL1xyXG5idXR0b24ge1xyXG4gIG1hcmdpbi10b3A6IDMwcHg7XHJcbiAgcGFkZGluZzogMTBweCAwcHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIzNiwgMTg0LCA5Mik7XHJcbiAgLyogYm94LXNoYWRvdzogYmxhY2sgLTFwdCAxcHQgM3B0OyAqL1xyXG59XHJcbmJ1dHRvbjpob3ZlciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzgwYmRhZDtcclxufVxyXG5cclxuLyogbGluayBTdHlsZSAqL1xyXG4ucmVzZXRQVyB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG59XHJcblxyXG4ubGlua0luZm8ge1xyXG4gIGFsaWduLXNlbGY6IGNlbnRlcjtcclxuICBtYXJnaW4tdG9wOiAyMHB4O1xyXG4gIGNvbG9yOiBoc2woMCwgMCUsIDEwMCUpO1xyXG59XHJcbmEge1xyXG4gIGFsaWduLXNlbGY6IGNlbnRlcjtcclxuICBtYXJnaW4tdG9wOiA4cHg7XHJcbiAgY29sb3I6ICM4MGJkYWQ7XHJcbn1cclxuYTpob3ZlciB7XHJcbiAgY29sb3I6ICMyMDQwNTE7XHJcbn1cclxuXHJcbi8qIG1lZGlhIFF1ZXJ5IGZvciBUYWJsZXRzICovXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDc2OHB4KSB7XHJcbiAgLmJhY2tncm91bmQge1xyXG4gICAgbWFyZ2luLXRvcDogMTB2aDtcclxuICAgIGhlaWdodDogODB2aDtcclxuICAgIHdpZHRoOiAxMDB2dztcclxuICB9XHJcblxyXG4gIC5ib2R5IHtcclxuICAgIHdpZHRoOiAxMDB2dztcclxuICAgIGhlaWdodDogNTB2dztcclxuICB9XHJcbiAgLmZvcm0tZ3JvdXAge1xyXG4gICAgbWFyZ2luLXRvcDogMTBweDtcclxuICB9XHJcblxyXG4gIGZvcm0ge1xyXG4gICAgd2lkdGg6IDMwdnc7XHJcbiAgfVxyXG5cclxuICBsYWJlbCB7XHJcbiAgICBmb250LXNpemU6IDMwcHg7XHJcbiAgfVxyXG59XHJcblxyXG4vKiBNZWRpYSBRdWVyeSBmb3IgcGhvbmUgKi9cclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogMzYwcHgpIHtcclxuICAuYmFja2dyb3VuZCB7XHJcbiAgICBtYXJnaW4tdG9wOiAxMHZoO1xyXG4gICAgaGVpZ2h0OiA4MHZoO1xyXG4gICAgd2lkdGg6IDEwMHZ3O1xyXG4gIH1cclxuXHJcbiAgLmJvZHkge1xyXG4gICAgd2lkdGg6IDEwMHZ3O1xyXG4gICAgaGVpZ2h0OiA2MHZoO1xyXG4gIH1cclxuICBoMSB7XHJcbiAgICBtYXJnaW46IDA7XHJcbiAgfVxyXG5cclxuICBmb3JtIHtcclxuICAgIG1hcmdpbi10b3A6IDVweDtcclxuICAgIHdpZHRoOiA0MHZ3O1xyXG4gICAgaGVpZ2h0OiBhdXRvO1xyXG4gIH1cclxuXHJcbiAgbGFiZWwge1xyXG4gICAgZm9udC1zaXplOiAzMHB4O1xyXG4gIH1cclxufVxyXG4iXX0= */"]
     });
     /*@__PURE__*/
 
@@ -906,70 +2521,74 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     NewUserFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: NewUserFormComponent,
       selectors: [["new-user-form"]],
-      decls: 40,
+      decls: 45,
       vars: 1,
-      consts: [[3, "formGroup", "ngSubmit"], [1, "form-group"], ["for", "firstName", "for", "label-control"], ["type", "text", "formControlName", "firstName", 1, "form-control"], ["for", "lastName", "for", "label-control"], ["type", "text", "formControlName", "lastName", 1, "form-control"], ["for", "userName", "for", "label-control"], ["type", "text", "formControlName", "userName", 1, "form-control"], ["for", "age", "for", "label-control"], ["formControlName", "age", "type", "date", "name", "dob", "placeholder", "DOB", 1, "form-control", 3, "change"], ["for", "email", "for", "label-control"], ["type", "email", "formControlName", "email", 1, "form-control"], ["for", "password", "for", "label-control"], ["type", "password", "formControlName", "password", "placeholder", "password", 1, "form-control"], ["type", "password", "formControlName", "password", "placeholder", "Confirm Password", 1, "form-control"], ["for", "bio", "for", "label-control", "rows", "4", "cols", "50"], ["formControlName", "bio", 1, "form-control"], ["type", "submit"], ["href", "#"]],
+      consts: [[1, "background"], [1, "body"], [3, "formGroup", "ngSubmit"], [1, "form-group"], ["for", "firstName", "for", "label-control"], ["type", "text", "formControlName", "firstName", 1, "form-control"], ["for", "lastName", "for", "label-control"], ["type", "text", "formControlName", "lastName", 1, "form-control"], ["for", "userName", "for", "label-control"], ["type", "text", "formControlName", "userName", 1, "form-control"], ["for", "age", "for", "label-control"], ["formControlName", "age", "type", "date", "name", "dob", "placeholder", "DOB", 1, "form-control", 3, "change"], ["for", "email", "for", "label-control"], ["type", "email", "formControlName", "email", 1, "form-control"], ["for", "password", "for", "label-control"], ["type", "password", "formControlName", "password", "placeholder", "Enter Password", 1, "form-control"], ["type", "password", "formControlName", "password", "placeholder", "Confirm Password", 1, "form-control"], ["for", "bio", "for", "label-control", "rows", "9", "cols", "50"], ["formControlName", "bio", "placeholder", "Limit 140 Characters", 1, "form-control"], ["type", "submit"], [1, "resetPW"], [1, "linkInfo"], ["href", "#"]],
       template: function NewUserFormComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h1");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "New User Form");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "New User Form");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "form", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "form", 2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function NewUserFormComponent_Template_form_ngSubmit_2_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function NewUserFormComponent_Template_form_ngSubmit_4_listener() {
             return ctx.onSubmit();
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "label", 2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "label", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " First Name:");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "input", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " First Name:");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 1);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "label", 4);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Last Name:");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "input", 5);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "input", 5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "label", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Last Name:");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 1);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "label", 6);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, " User Name:");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "input", 7);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "input", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "label", 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, " User Name:");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 1);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "label", 8);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, " Age:");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](16, "input", 9);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "input", 9);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("change", function NewUserFormComponent_Template_input_change_18_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "label", 10);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, " Age:");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "input", 11);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("change", function NewUserFormComponent_Template_input_change_20_listener($event) {
             return ctx.validateDOB($event);
           });
 
@@ -977,67 +2596,81 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "label", 10);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "label", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Email:");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](22, "input", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "Email:");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "div", 1);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "label", 12);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Password:");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "input", 13);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](26, "input", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "label", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "Password:");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "div", 1);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "label", 12);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "Password:");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](28, "input", 15);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](30, "input", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "div", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "label", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "Password:");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "div", 1);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "label", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "Biography:");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](32, "input", 16);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "textarea", 16);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, " ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "label", 17);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "Biography:");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "textarea", 18);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "        ");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "button", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "button", 19);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "Submit");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "Submit");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "a", 18);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "Already registered? Click here to login");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "div", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "div", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "Already Registered?");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "a", 22);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "Click here to login");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1045,13 +2678,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
 
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.newUserForm);
         }
       },
       directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"]],
-      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbmV3LXVzZXIvbmV3LXVzZXItZm9ybS9uZXctdXNlci1mb3JtLmNvbXBvbmVudC5jc3MifQ== */"]
+      styles: [".background[_ngcontent-%COMP%] {\r\n  margin-top: 30px;\r\n  background-image: url('margarita.svg');\r\n  background-repeat: no-repeat;\r\n  height: 120vh;\r\n  width: 115vw;\r\n}\r\n\r\n.body[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  height: 100vh;\r\n  width: 100vw;\r\n}\r\n\r\nh1[_ngcontent-%COMP%] {\r\n  margin-top: 40vh;\r\n  font-size: 50px;\r\n  color: rgb(236, 184, 92);\r\n}\r\n\r\n\r\nform[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 30vw;\r\n  height: auto;\r\n}\r\n\r\n.form-group[_ngcontent-%COMP%] {\r\n  margin-top: 15px;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\nlabel[_ngcontent-%COMP%] {\r\n  font-size: 30px;\r\n  color: rgb(236, 184, 92);\r\n}\r\n\r\ninput[_ngcontent-%COMP%] {\r\n  margin-top: 10px;\r\n  padding: 10px 5px;\r\n  color: white;\r\n  background-color: rgb(236, 184, 92, 0.5);\r\n  border: 2pt solid rgb(236, 184, 92);\r\n}\r\ninput[_ngcontent-%COMP%]:hover {\r\n  border: 2pt solid #80bdad;\r\n}\r\n[_ngcontent-%COMP%]::-moz-placeholder {\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  color: white;\r\n}\r\n[_ngcontent-%COMP%]::-ms-input-placeholder {\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  color: white;\r\n}\r\n[_ngcontent-%COMP%]::placeholder {\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  color: white;\r\n}\r\n.methodInput[_ngcontent-%COMP%] {\r\n  padding: 10px 5px;\r\n  color: white;\r\n  background-color: rgb(236, 184, 92, 0.5);\r\n  border: 2pt solid rgb(236, 184, 92);\r\n}\r\ntextarea[_ngcontent-%COMP%] {\r\n  padding: 30px 5px;\r\n  color: white;\r\n  background-color: rgb(236, 184, 92, 0.5);\r\n  border: 2pt solid rgb(236, 184, 92);\r\n}\r\ntextarea[_ngcontent-%COMP%]:hover {\r\n  border: 2pt solid #80bdad;\r\n}\r\n.methodInput[_ngcontent-%COMP%]:hover {\r\n  border: 2pt solid #80bdad;\r\n}\r\n\r\nbutton[_ngcontent-%COMP%] {\r\n  margin-top: 30px;\r\n  padding: 10px 0px;\r\n  background-color: rgb(236, 184, 92);\r\n  \r\n}\r\nbutton[_ngcontent-%COMP%]:hover {\r\n  background-color: #80bdad;\r\n}\r\n\r\n.resetPW[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n.linkInfo[_ngcontent-%COMP%] {\r\n  margin-top: 20px;\r\n  color: hsl(0, 0%, 100%);\r\n}\r\na[_ngcontent-%COMP%] {\r\n  align-self: center;\r\n  margin-top: 8px;\r\n  color: #80bdad;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9uZXctdXNlci9uZXctdXNlci1mb3JtL25ldy11c2VyLWZvcm0uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSx5QkFBeUI7QUFDekI7RUFDRSxnQkFBZ0I7RUFDaEIsc0NBQTREO0VBQzVELDRCQUE0QjtFQUM1QixhQUFhO0VBQ2IsWUFBWTtBQUNkO0FBQ0EsdUJBQXVCO0FBQ3ZCO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixtQkFBbUI7RUFDbkIsdUJBQXVCO0VBQ3ZCLGFBQWE7RUFDYixZQUFZO0FBQ2Q7QUFDQSxVQUFVO0FBQ1Y7RUFDRSxnQkFBZ0I7RUFDaEIsZUFBZTtFQUNmLHdCQUF3QjtBQUMxQjtBQUVBOztHQUVHO0FBRUgsOEJBQThCO0FBQzlCO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixXQUFXO0VBQ1gsWUFBWTtBQUNkO0FBRUEscUJBQXFCO0FBQ3JCO0VBQ0UsZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixzQkFBc0I7QUFDeEI7QUFDQSxXQUFXO0FBQ1g7RUFDRSxlQUFlO0VBQ2Ysd0JBQXdCO0FBQzFCO0FBRUEsa0JBQWtCO0FBQ2xCO0VBQ0UsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1osd0NBQXdDO0VBQ3hDLG1DQUFtQztBQUNyQztBQUNBO0VBQ0UseUJBQXlCO0FBQzNCO0FBQ0E7RUFDRSx5Q0FBeUM7RUFDekMsWUFBWTtBQUNkO0FBSEE7RUFDRSx5Q0FBeUM7RUFDekMsWUFBWTtBQUNkO0FBSEE7RUFDRSx5Q0FBeUM7RUFDekMsWUFBWTtBQUNkO0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsWUFBWTtFQUNaLHdDQUF3QztFQUN4QyxtQ0FBbUM7QUFDckM7QUFDQTtFQUNFLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1osd0NBQXdDO0VBQ3hDLG1DQUFtQztBQUNyQztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCO0FBRUE7RUFDRSx5QkFBeUI7QUFDM0I7QUFFQSxXQUFXO0FBQ1g7RUFDRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLG1DQUFtQztFQUNuQyxvQ0FBb0M7QUFDdEM7QUFDQTtFQUNFLHlCQUF5QjtBQUMzQjtBQUVBLGVBQWU7QUFDZjtFQUNFLGFBQWE7RUFDYixzQkFBc0I7QUFDeEI7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQix1QkFBdUI7QUFDekI7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2YsY0FBYztBQUNoQjtBQUVBLDRCQUE0QjtBQUM1Qjs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztPQXNCTztBQUVQLDBCQUEwQjtBQUMxQjs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O09Bd0JPIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9uZXctdXNlci9uZXctdXNlci1mb3JtL25ldy11c2VyLWZvcm0uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFNldCBiYWNrZ3JvdW5kIEltYWdlICovXHJcbi5iYWNrZ3JvdW5kIHtcclxuICBtYXJnaW4tdG9wOiAzMHB4O1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi9sb2dpbi1mb3JtL01hcmdhcml0YS9tYXJnYXJpdGEuc3ZnKTtcclxuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gIGhlaWdodDogMTIwdmg7XHJcbiAgd2lkdGg6IDExNXZ3O1xyXG59XHJcbi8qIHNldCBtYWluIGNvbXBvbmVudCAqL1xyXG4uYm9keSB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgaGVpZ2h0OiAxMDB2aDtcclxuICB3aWR0aDogMTAwdnc7XHJcbn1cclxuLyogVGl0bGUgKi9cclxuaDEge1xyXG4gIG1hcmdpbi10b3A6IDQwdmg7XHJcbiAgZm9udC1zaXplOiA1MHB4O1xyXG4gIGNvbG9yOiByZ2IoMjM2LCAxODQsIDkyKTtcclxufVxyXG5cclxuLyogLnN0eWxlIHtcclxuICB0ZXh0LWVtcGhhc2lzLXN0eWxlOiB0cmlhbmdsZTtcclxufSAqL1xyXG5cclxuLyogc2V0IGZvcm0gd2lkdGggYW5kIEhlaWdodCAqL1xyXG5mb3JtIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgd2lkdGg6IDMwdnc7XHJcbiAgaGVpZ2h0OiBhdXRvO1xyXG59XHJcblxyXG4vKiBmb3JtIGNoaWxkIGxheW91dCovXHJcbi5mb3JtLWdyb3VwIHtcclxuICBtYXJnaW4tdG9wOiAxNXB4O1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxufVxyXG4vKiBsYWJlbHMgKi9cclxubGFiZWwge1xyXG4gIGZvbnQtc2l6ZTogMzBweDtcclxuICBjb2xvcjogcmdiKDIzNiwgMTg0LCA5Mik7XHJcbn1cclxuXHJcbi8qIElucHV0IFN0eWxpbmcgKi9cclxuaW5wdXQge1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgcGFkZGluZzogMTBweCA1cHg7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMzYsIDE4NCwgOTIsIDAuNSk7XHJcbiAgYm9yZGVyOiAycHQgc29saWQgcmdiKDIzNiwgMTg0LCA5Mik7XHJcbn1cclxuaW5wdXQ6aG92ZXIge1xyXG4gIGJvcmRlcjogMnB0IHNvbGlkICM4MGJkYWQ7XHJcbn1cclxuOjpwbGFjZWhvbGRlciB7XHJcbiAgZm9udC1mYW1pbHk6IEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWY7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG59XHJcblxyXG4ubWV0aG9kSW5wdXQge1xyXG4gIHBhZGRpbmc6IDEwcHggNXB4O1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjM2LCAxODQsIDkyLCAwLjUpO1xyXG4gIGJvcmRlcjogMnB0IHNvbGlkIHJnYigyMzYsIDE4NCwgOTIpO1xyXG59XHJcbnRleHRhcmVhIHtcclxuICBwYWRkaW5nOiAzMHB4IDVweDtcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIzNiwgMTg0LCA5MiwgMC41KTtcclxuICBib3JkZXI6IDJwdCBzb2xpZCByZ2IoMjM2LCAxODQsIDkyKTtcclxufVxyXG5cclxudGV4dGFyZWE6aG92ZXIge1xyXG4gIGJvcmRlcjogMnB0IHNvbGlkICM4MGJkYWQ7XHJcbn1cclxuXHJcbi5tZXRob2RJbnB1dDpob3ZlciB7XHJcbiAgYm9yZGVyOiAycHQgc29saWQgIzgwYmRhZDtcclxufVxyXG5cclxuLyogQnV0dG9uICovXHJcbmJ1dHRvbiB7XHJcbiAgbWFyZ2luLXRvcDogMzBweDtcclxuICBwYWRkaW5nOiAxMHB4IDBweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjM2LCAxODQsIDkyKTtcclxuICAvKiBib3gtc2hhZG93OiBibGFjayAtMXB0IDFwdCAzcHQ7ICovXHJcbn1cclxuYnV0dG9uOmhvdmVyIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjODBiZGFkO1xyXG59XHJcblxyXG4vKiBsaW5rIFN0eWxlICovXHJcbi5yZXNldFBXIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbn1cclxuXHJcbi5saW5rSW5mbyB7XHJcbiAgbWFyZ2luLXRvcDogMjBweDtcclxuICBjb2xvcjogaHNsKDAsIDAlLCAxMDAlKTtcclxufVxyXG5hIHtcclxuICBhbGlnbi1zZWxmOiBjZW50ZXI7XHJcbiAgbWFyZ2luLXRvcDogOHB4O1xyXG4gIGNvbG9yOiAjODBiZGFkO1xyXG59XHJcblxyXG4vKiBtZWRpYSBRdWVyeSBmb3IgVGFibGV0cyAqL1xyXG4vKiBAbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA3NjhweCkge1xyXG4gICAgICAuYmFja2dyb3VuZCB7XHJcbiAgICAgICAgbWFyZ2luLXRvcDogMTB2aDtcclxuICAgICAgICBoZWlnaHQ6IDgwdmg7XHJcbiAgICAgICAgd2lkdGg6IDEwMHZ3O1xyXG4gICAgICB9XHJcbiAgICBcclxuICAgICAgLmJvZHkge1xyXG4gICAgICAgIHdpZHRoOiAxMDB2dztcclxuICAgICAgICBoZWlnaHQ6IDUwdnc7XHJcbiAgICAgIH1cclxuICAgICAgLmZvcm0tZ3JvdXAge1xyXG4gICAgICAgIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgICAgIH1cclxuICAgIFxyXG4gICAgICBmb3JtIHtcclxuICAgICAgICB3aWR0aDogMzB2dztcclxuICAgICAgfVxyXG4gICAgXHJcbiAgICAgIGxhYmVsIHtcclxuICAgICAgICBmb250LXNpemU6IDMwcHg7XHJcbiAgICAgIH1cclxuICAgIH0gKi9cclxuXHJcbi8qIE1lZGlhIFF1ZXJ5IGZvciBwaG9uZSAqL1xyXG4vKiBAbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiAzNjBweCkge1xyXG4gICAgICAuYmFja2dyb3VuZCB7XHJcbiAgICAgICAgbWFyZ2luLXRvcDogMTB2aDtcclxuICAgICAgICBoZWlnaHQ6IDgwdmg7XHJcbiAgICAgICAgd2lkdGg6IDEwMHZ3O1xyXG4gICAgICB9XHJcbiAgICBcclxuICAgICAgLmJvZHkge1xyXG4gICAgICAgIHdpZHRoOiAxMDB2dztcclxuICAgICAgICBoZWlnaHQ6IDYwdmg7XHJcbiAgICAgIH1cclxuICAgICAgaDEge1xyXG4gICAgICAgIG1hcmdpbjogMDtcclxuICAgICAgfVxyXG4gICAgXHJcbiAgICAgIGZvcm0ge1xyXG4gICAgICAgIG1hcmdpbi10b3A6IDVweDtcclxuICAgICAgICB3aWR0aDogNDB2dztcclxuICAgICAgICBoZWlnaHQ6IGF1dG87XHJcbiAgICAgIH1cclxuICAgIFxyXG4gICAgICBsYWJlbCB7XHJcbiAgICAgICAgZm9udC1zaXplOiAzMHB4O1xyXG4gICAgICB9XHJcbiAgICB9ICovXHJcbiJdfQ== */"]
     });
     /*@__PURE__*/
 
@@ -1119,7 +2752,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
-    function PostDrinkFormComponent_option_13_Template(rf, ctx) {
+    function PostDrinkFormComponent_option_11_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "option", 11);
 
@@ -1181,72 +2814,66 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     PostDrinkFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: PostDrinkFormComponent,
       selectors: [["post-drink-form"]],
-      decls: 20,
+      decls: 18,
       vars: 2,
       consts: [[3, "formGroup", "ngSubmit"], [1, "form-group"], ["for", "name"], ["type", "text", "formControlName", "name", "placeholder", "Drink Name"], ["type", "range", "min", "1", "max", "5", "value", "0", "step", ".5", "id", "rating-slider", "formControlName", "rating", 1, "slider"], ["formControlName", "glassware", "name", "glassware", "id", "glassware"], ["value", ""], [3, "value", 4, "ngFor", "ngForOf"], ["for", "description"], ["name", "description", "formControlName", "description", "id", "description", "cols", "25", "rows", "4", 1, "description"], ["type", "submit"], [3, "value"]],
       template: function PostDrinkFormComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "form", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "post-drink-form works!");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "form", 0);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function PostDrinkFormComponent_Template_form_ngSubmit_2_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function PostDrinkFormComponent_Template_form_ngSubmit_0_listener() {
             return ctx.onSubmit();
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "label", 2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "label", 2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Drink Name");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Drink Name");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "input", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "input", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "input", 4);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "input", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "select", 5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "option", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Glassware");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 1);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "select", 5);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "option", 6);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Glassware");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](13, PostDrinkFormComponent_option_13_Template, 2, 2, "option", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](11, PostDrinkFormComponent_option_11_Template, 2, 2, "option", 7);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "label", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "label", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Description:");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](17, "textarea", 9);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Description:");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "button", 10);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "textarea", 9);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Submit");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "button", 10);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Submit");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1254,8 +2881,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
 
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.drinkPostForm);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
@@ -1319,6 +2944,220 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       value: 'places'
     }];
     /***/
+  },
+
+  /***/
+  "./src/app/components/preferences/preferences-bartenders/preferences-bartenders.component.ts":
+  /*!***************************************************************************************************!*\
+    !*** ./src/app/components/preferences/preferences-bartenders/preferences-bartenders.component.ts ***!
+    \***************************************************************************************************/
+
+  /*! exports provided: PreferencesBartendersComponent */
+
+  /***/
+  function srcAppComponentsPreferencesPreferencesBartendersPreferencesBartendersComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PreferencesBartendersComponent", function () {
+      return PreferencesBartendersComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _preferences_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ../preferences.service */
+    "./src/app/components/preferences/preferences.service.ts");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+
+    function PreferencesBartendersComponent_div_1_div_1_Template(rf, ctx) {
+      if (rf & 1) {
+        var _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 4);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PreferencesBartendersComponent_div_1_div_1_Template_button_click_7_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5);
+
+          var item_r3 = ctx.$implicit;
+
+          var ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+
+          return ctx_r4.onDelete(item_r3.preference_id);
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Delete");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+
+      if (rf & 2) {
+        var item_r3 = ctx.$implicit;
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r3.preference_id);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r3.preference_info);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r3.preference_cat);
+      }
+    }
+
+    function PreferencesBartendersComponent_div_1_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PreferencesBartendersComponent_div_1_div_1_Template, 9, 3, "div", 3);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+
+      if (rf & 2) {
+        var ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r0.bartenders);
+      }
+    }
+
+    function PreferencesBartendersComponent_p_2_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "No posts yet");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+    }
+
+    var PreferencesBartendersComponent = /*#__PURE__*/function () {
+      function PreferencesBartendersComponent(preferService) {
+        _classCallCheck(this, PreferencesBartendersComponent);
+
+        this.preferService = preferService;
+        this.bartenders = [];
+      }
+
+      _createClass(PreferencesBartendersComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this2 = this;
+
+          this.preferService.getBartenders();
+          this.bartendersSub = this.preferService.getBartenderUpdateListener().subscribe(function (items) {
+            _this2.bartenders = items;
+            console.log(_this2.bartenders);
+          });
+        }
+      }, {
+        key: "onDelete",
+        value: function onDelete(itemId) {
+          this.preferService.deleteItem(itemId);
+        }
+      }, {
+        key: "ngOnDestroy",
+        value: function ngOnDestroy() {
+          this.bartendersSub.unsubscribe();
+        }
+      }]);
+
+      return PreferencesBartendersComponent;
+    }();
+
+    PreferencesBartendersComponent.ɵfac = function PreferencesBartendersComponent_Factory(t) {
+      return new (t || PreferencesBartendersComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_preferences_service__WEBPACK_IMPORTED_MODULE_1__["PreferencesService"]));
+    };
+
+    PreferencesBartendersComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: PreferencesBartendersComponent,
+      selectors: [["app-preferences-bartenders"]],
+      decls: 3,
+      vars: 2,
+      consts: [["class", "container", 4, "ngIf"], [4, "ngIf"], [1, "container"], [4, "ngFor", "ngForOf"], [3, "click"]],
+      template: function PreferencesBartendersComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PreferencesBartendersComponent_div_1_Template, 2, 1, "div", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, PreferencesBartendersComponent_p_2_Template, 2, 0, "p", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.bartenders.length > 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.bartenders.length < 0);
+        }
+      },
+      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"]],
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtYmFydGVuZGVycy9wcmVmZXJlbmNlcy1iYXJ0ZW5kZXJzLmNvbXBvbmVudC5jc3MifQ== */", ".container[_ngcontent-%COMP%] {\r\n  border: 2px solid black;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcmVmZXJlbmNlcy9wcmVmZXJlbmNlcy1wYWdlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx1QkFBdUI7QUFDekIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3ByZWZlcmVuY2VzL3ByZWZlcmVuY2VzLXBhZ2VzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xyXG4gIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xyXG59XHJcbiJdfQ== */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PreferencesBartendersComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-preferences-bartenders',
+          templateUrl: './preferences-bartenders.component.html',
+          styleUrls: ['./preferences-bartenders.component.css', '../preferences-pages.css']
+        }]
+      }], function () {
+        return [{
+          type: _preferences_service__WEBPACK_IMPORTED_MODULE_1__["PreferencesService"]
+        }];
+      }, null);
+    })();
+    /***/
+
   },
 
   /***/
@@ -1505,23 +3344,100 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/app/components/preferences/preferences-list/preferences-list.component.ts":
-  /*!***************************************************************************************!*\
-    !*** ./src/app/components/preferences/preferences-list/preferences-list.component.ts ***!
-    \***************************************************************************************/
+  "./src/app/components/preferences/preferences-drinks/preferences-drinks.component.ts":
+  /*!*******************************************************************************************!*\
+    !*** ./src/app/components/preferences/preferences-drinks/preferences-drinks.component.ts ***!
+    \*******************************************************************************************/
 
-  /*! exports provided: PreferencesListComponent */
+  /*! exports provided: PreferencesDrinksComponent */
 
   /***/
-  function srcAppComponentsPreferencesPreferencesListPreferencesListComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppComponentsPreferencesPreferencesDrinksPreferencesDrinksComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
 
-    __webpack_require__.d(__webpack_exports__, "PreferencesListComponent", function () {
-      return PreferencesListComponent;
+    __webpack_require__.d(__webpack_exports__, "PreferencesDrinksComponent", function () {
+      return PreferencesDrinksComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var PreferencesDrinksComponent = /*#__PURE__*/function () {
+      function PreferencesDrinksComponent() {
+        _classCallCheck(this, PreferencesDrinksComponent);
+      }
+
+      _createClass(PreferencesDrinksComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return PreferencesDrinksComponent;
+    }();
+
+    PreferencesDrinksComponent.ɵfac = function PreferencesDrinksComponent_Factory(t) {
+      return new (t || PreferencesDrinksComponent)();
+    };
+
+    PreferencesDrinksComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: PreferencesDrinksComponent,
+      selectors: [["app-preferences-drinks"]],
+      decls: 2,
+      vars: 0,
+      template: function PreferencesDrinksComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h1");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "WORK IN PROGRESS");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtZHJpbmtzL3ByZWZlcmVuY2VzLWRyaW5rcy5jb21wb25lbnQuY3NzIn0= */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PreferencesDrinksComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-preferences-drinks',
+          templateUrl: './preferences-drinks.component.html',
+          styleUrls: ['./preferences-drinks.component.css']
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/preferences/preferences-home-bar/preferences-home-bar.component.ts":
+  /*!***********************************************************************************************!*\
+    !*** ./src/app/components/preferences/preferences-home-bar/preferences-home-bar.component.ts ***!
+    \***********************************************************************************************/
+
+  /*! exports provided: PreferencesHomeBarComponent */
+
+  /***/
+  function srcAppComponentsPreferencesPreferencesHomeBarPreferencesHomeBarComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PreferencesHomeBarComponent", function () {
+      return PreferencesHomeBarComponent;
     });
     /* harmony import */
 
@@ -1542,7 +3458,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
-    function PreferencesListComponent_div_1_div_1_Template(rf, ctx) {
+    function PreferencesHomeBarComponent_div_1_div_1_Template(rf, ctx) {
       if (rf & 1) {
         var _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
@@ -1568,7 +3484,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 4);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PreferencesListComponent_div_1_div_1_Template_button_click_7_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PreferencesHomeBarComponent_div_1_div_1_Template_button_click_7_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5);
 
           var item_r3 = ctx.$implicit;
@@ -1602,11 +3518,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function PreferencesListComponent_div_1_Template(rf, ctx) {
+    function PreferencesHomeBarComponent_div_1_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PreferencesListComponent_div_1_div_1_Template, 9, 3, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PreferencesHomeBarComponent_div_1_div_1_Template, 9, 3, "div", 3);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -1616,11 +3532,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r0.items);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r0.homeBar);
       }
     }
 
-    function PreferencesListComponent_p_2_Template(rf, ctx) {
+    function PreferencesHomeBarComponent_p_2_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
 
@@ -1630,22 +3546,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    var PreferencesListComponent = /*#__PURE__*/function () {
-      function PreferencesListComponent(preferService) {
-        _classCallCheck(this, PreferencesListComponent);
+    var PreferencesHomeBarComponent = /*#__PURE__*/function () {
+      function PreferencesHomeBarComponent(preferService) {
+        _classCallCheck(this, PreferencesHomeBarComponent);
 
         this.preferService = preferService;
-        this.items = [];
+        this.homeBar = [];
       }
 
-      _createClass(PreferencesListComponent, [{
+      _createClass(PreferencesHomeBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this2 = this;
+          var _this3 = this;
 
-          this.preferService.getItems();
-          this.itemsSub = this.preferService.getItemUpdateListener().subscribe(function (items) {
-            _this2.items = items;
+          this.preferService.getHomeBar();
+          this.homeBarSub = this.preferService.getHomeBarUpdateListener().subscribe(function (homeBar) {
+            _this3.homeBar = homeBar;
           });
         }
       }, {
@@ -1656,30 +3572,30 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "ngOnDestroy",
         value: function ngOnDestroy() {
-          this.itemsSub.unsubscribe();
+          this.homeBarSub.unsubscribe();
         }
       }]);
 
-      return PreferencesListComponent;
+      return PreferencesHomeBarComponent;
     }();
 
-    PreferencesListComponent.ɵfac = function PreferencesListComponent_Factory(t) {
-      return new (t || PreferencesListComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_preferences_service__WEBPACK_IMPORTED_MODULE_1__["PreferencesService"]));
+    PreferencesHomeBarComponent.ɵfac = function PreferencesHomeBarComponent_Factory(t) {
+      return new (t || PreferencesHomeBarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_preferences_service__WEBPACK_IMPORTED_MODULE_1__["PreferencesService"]));
     };
 
-    PreferencesListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
-      type: PreferencesListComponent,
-      selectors: [["preferences-list"]],
+    PreferencesHomeBarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: PreferencesHomeBarComponent,
+      selectors: [["preferences-home-bar"]],
       decls: 3,
       vars: 2,
       consts: [["class", "container", 4, "ngIf"], [4, "ngIf"], [1, "container"], [4, "ngFor", "ngForOf"], [3, "click"]],
-      template: function PreferencesListComponent_Template(rf, ctx) {
+      template: function PreferencesHomeBarComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PreferencesListComponent_div_1_Template, 2, 1, "div", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PreferencesHomeBarComponent_div_1_Template, 2, 1, "div", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, PreferencesListComponent_p_2_Template, 2, 0, "p", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, PreferencesHomeBarComponent_p_2_Template, 2, 0, "p", 1);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
@@ -1687,25 +3603,238 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         if (rf & 2) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.items.length > 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.homeBar.length > 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.items.length < 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.homeBar.length < 0);
         }
       },
       directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"]],
-      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtbGlzdC9wcmVmZXJlbmNlcy1saXN0LmNvbXBvbmVudC5jc3MifQ== */"]
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtaG9tZS1iYXIvcHJlZmVyZW5jZXMtaG9tZS1iYXIuY29tcG9uZW50LmNzcyJ9 */", ".container[_ngcontent-%COMP%] {\r\n  border: 2px solid black;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcmVmZXJlbmNlcy9wcmVmZXJlbmNlcy1wYWdlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx1QkFBdUI7QUFDekIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3ByZWZlcmVuY2VzL3ByZWZlcmVuY2VzLXBhZ2VzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xyXG4gIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xyXG59XHJcbiJdfQ== */"]
     });
     /*@__PURE__*/
 
     (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PreferencesListComponent, [{
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PreferencesHomeBarComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-          selector: 'preferences-list',
-          templateUrl: './preferences-list.component.html',
-          styleUrls: ['./preferences-list.component.css']
+          selector: 'preferences-home-bar',
+          templateUrl: './preferences-home-bar.component.html',
+          styleUrls: ['./preferences-home-bar.component.css', '../preferences-pages.css']
+        }]
+      }], function () {
+        return [{
+          type: _preferences_service__WEBPACK_IMPORTED_MODULE_1__["PreferencesService"]
+        }];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/preferences/preferences-locations/preferences-locations.component.ts":
+  /*!*************************************************************************************************!*\
+    !*** ./src/app/components/preferences/preferences-locations/preferences-locations.component.ts ***!
+    \*************************************************************************************************/
+
+  /*! exports provided: PreferencesLocationsComponent */
+
+  /***/
+  function srcAppComponentsPreferencesPreferencesLocationsPreferencesLocationsComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PreferencesLocationsComponent", function () {
+      return PreferencesLocationsComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _preferences_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ../preferences.service */
+    "./src/app/components/preferences/preferences.service.ts");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+
+    function PreferencesLocationsComponent_div_1_div_1_Template(rf, ctx) {
+      if (rf & 1) {
+        var _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 4);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PreferencesLocationsComponent_div_1_div_1_Template_button_click_7_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5);
+
+          var item_r3 = ctx.$implicit;
+
+          var ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+
+          return ctx_r4.onDelete(item_r3.preference_id);
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Delete");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+
+      if (rf & 2) {
+        var item_r3 = ctx.$implicit;
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r3.preference_id);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r3.preference_info);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r3.preference_cat);
+      }
+    }
+
+    function PreferencesLocationsComponent_div_1_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PreferencesLocationsComponent_div_1_div_1_Template, 9, 3, "div", 3);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+
+      if (rf & 2) {
+        var ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r0.locations);
+      }
+    }
+
+    function PreferencesLocationsComponent_p_2_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "No posts yet");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+    }
+
+    var PreferencesLocationsComponent = /*#__PURE__*/function () {
+      function PreferencesLocationsComponent(preferService) {
+        _classCallCheck(this, PreferencesLocationsComponent);
+
+        this.preferService = preferService;
+        this.locations = [];
+      }
+
+      _createClass(PreferencesLocationsComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this4 = this;
+
+          this.preferService.getLocations();
+          this.locationsSub = this.preferService.getLocationsUpdateListener().subscribe(function (locations) {
+            _this4.locations = locations;
+          });
+        }
+      }, {
+        key: "onDelete",
+        value: function onDelete(itemId) {
+          this.preferService.deleteItem(itemId);
+        }
+      }, {
+        key: "ngOnDestroy",
+        value: function ngOnDestroy() {
+          this.locationsSub.unsubscribe();
+        }
+      }]);
+
+      return PreferencesLocationsComponent;
+    }();
+
+    PreferencesLocationsComponent.ɵfac = function PreferencesLocationsComponent_Factory(t) {
+      return new (t || PreferencesLocationsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_preferences_service__WEBPACK_IMPORTED_MODULE_1__["PreferencesService"]));
+    };
+
+    PreferencesLocationsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: PreferencesLocationsComponent,
+      selectors: [["app-preferences-locations"]],
+      decls: 3,
+      vars: 2,
+      consts: [["class", "container", 4, "ngIf"], [4, "ngIf"], [1, "container"], [4, "ngFor", "ngForOf"], [3, "click"]],
+      template: function PreferencesLocationsComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PreferencesLocationsComponent_div_1_Template, 2, 1, "div", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, PreferencesLocationsComponent_p_2_Template, 2, 0, "p", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.locations.length > 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.locations.length < 0);
+        }
+      },
+      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"]],
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtbG9jYXRpb25zL3ByZWZlcmVuY2VzLWxvY2F0aW9ucy5jb21wb25lbnQuY3NzIn0= */", ".container[_ngcontent-%COMP%] {\r\n  border: 2px solid black;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcmVmZXJlbmNlcy9wcmVmZXJlbmNlcy1wYWdlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx1QkFBdUI7QUFDekIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3ByZWZlcmVuY2VzL3ByZWZlcmVuY2VzLXBhZ2VzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xyXG4gIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xyXG59XHJcbiJdfQ== */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PreferencesLocationsComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-preferences-locations',
+          templateUrl: './preferences-locations.component.html',
+          styleUrls: ['./preferences-locations.component.css', '../preferences-pages.css']
         }]
       }], function () {
         return [{
@@ -1751,9 +3880,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _preferences_list_preferences_list_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ../preferences-list/preferences-list.component */
-    "./src/app/components/preferences/preferences-list/preferences-list.component.ts");
+    var _preferences_navigation_preferences_navigation_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../preferences-navigation/preferences-navigation.component */
+    "./src/app/components/preferences/preferences-navigation/preferences-navigation.component.ts");
 
     var PreferencesMainComponent = /*#__PURE__*/function () {
       function PreferencesMainComponent() {
@@ -1789,12 +3918,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "preferences-create");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "preferences-list");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "prefer-nav");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
       },
-      directives: [_preferences_create_preferences_create_component__WEBPACK_IMPORTED_MODULE_1__["PreferencesCreateComponent"], _preferences_list_preferences_list_component__WEBPACK_IMPORTED_MODULE_2__["PreferencesListComponent"]],
+      directives: [_preferences_create_preferences_create_component__WEBPACK_IMPORTED_MODULE_1__["PreferencesCreateComponent"], _preferences_navigation_preferences_navigation_component__WEBPACK_IMPORTED_MODULE_2__["PreferencesNavigationComponent"]],
       styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtbWFpbi9wcmVmZXJlbmNlcy1tYWluLmNvbXBvbmVudC5jc3MifQ== */"]
     });
     /*@__PURE__*/
@@ -1806,6 +3935,143 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           selector: 'preferences-main',
           templateUrl: './preferences-main.component.html',
           styleUrls: ['./preferences-main.component.css']
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/preferences/preferences-navigation/preferences-navigation.component.ts":
+  /*!***************************************************************************************************!*\
+    !*** ./src/app/components/preferences/preferences-navigation/preferences-navigation.component.ts ***!
+    \***************************************************************************************************/
+
+  /*! exports provided: PreferencesNavigationComponent */
+
+  /***/
+  function srcAppComponentsPreferencesPreferencesNavigationPreferencesNavigationComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PreferencesNavigationComponent", function () {
+      return PreferencesNavigationComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+
+    var PreferencesNavigationComponent = /*#__PURE__*/function () {
+      function PreferencesNavigationComponent() {
+        _classCallCheck(this, PreferencesNavigationComponent);
+      }
+
+      _createClass(PreferencesNavigationComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return PreferencesNavigationComponent;
+    }();
+
+    PreferencesNavigationComponent.ɵfac = function PreferencesNavigationComponent_Factory(t) {
+      return new (t || PreferencesNavigationComponent)();
+    };
+
+    PreferencesNavigationComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: PreferencesNavigationComponent,
+      selectors: [["prefer-nav"]],
+      decls: 17,
+      vars: 0,
+      consts: [[1, "navbar"], ["routerLink", "/home-bar"], ["routerLink", "/locations"], ["routerLink", "/bartenders"], ["routerLink", "/drinks"], ["routerLink", "/"]],
+      template: function PreferencesNavigationComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "ul");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "li");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "a", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "What's at Home");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "li");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Favorite Places");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "li");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Favorite Bartenders");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "li");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "a", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "Favorite Drinks");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "li");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "a", 5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "back");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"]],
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtbmF2aWdhdGlvbi9wcmVmZXJlbmNlcy1uYXZpZ2F0aW9uLmNvbXBvbmVudC5jc3MifQ== */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PreferencesNavigationComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'prefer-nav',
+          templateUrl: './preferences-navigation.component.html',
+          styleUrls: ['./preferences-navigation.component.css']
         }]
       }], function () {
         return [];
@@ -1852,10 +4118,46 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _preferences_main_preferences_main_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ./preferences-main/preferences-main.component */
     "./src/app/components/preferences/preferences-main/preferences-main.component.ts");
+    /* harmony import */
+
+
+    var _preferences_bartenders_preferences_bartenders_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./preferences-bartenders/preferences-bartenders.component */
+    "./src/app/components/preferences/preferences-bartenders/preferences-bartenders.component.ts");
+    /* harmony import */
+
+
+    var _preferences_home_bar_preferences_home_bar_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./preferences-home-bar/preferences-home-bar.component */
+    "./src/app/components/preferences/preferences-home-bar/preferences-home-bar.component.ts");
+    /* harmony import */
+
+
+    var _preferences_locations_preferences_locations_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./preferences-locations/preferences-locations.component */
+    "./src/app/components/preferences/preferences-locations/preferences-locations.component.ts");
+    /* harmony import */
+
+
+    var _preferences_drinks_preferences_drinks_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./preferences-drinks/preferences-drinks.component */
+    "./src/app/components/preferences/preferences-drinks/preferences-drinks.component.ts");
 
     var routes = [{
       path: '',
       component: _preferences_main_preferences_main_component__WEBPACK_IMPORTED_MODULE_2__["PreferencesMainComponent"]
+    }, {
+      path: 'bartenders',
+      component: _preferences_bartenders_preferences_bartenders_component__WEBPACK_IMPORTED_MODULE_3__["PreferencesBartendersComponent"]
+    }, {
+      path: 'home-bar',
+      component: _preferences_home_bar_preferences_home_bar_component__WEBPACK_IMPORTED_MODULE_4__["PreferencesHomeBarComponent"]
+    }, {
+      path: 'locations',
+      component: _preferences_locations_preferences_locations_component__WEBPACK_IMPORTED_MODULE_5__["PreferencesLocationsComponent"]
+    }, {
+      path: 'drinks',
+      component: _preferences_drinks_preferences_drinks_component__WEBPACK_IMPORTED_MODULE_6__["PreferencesDrinksComponent"]
     }];
 
     var PreferencesRoutingModule = function PreferencesRoutingModule() {
@@ -1952,9 +4254,33 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _preferences_list_preferences_list_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
-    /*! ./preferences-list/preferences-list.component */
-    "./src/app/components/preferences/preferences-list/preferences-list.component.ts");
+    var _preferences_home_bar_preferences_home_bar_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./preferences-home-bar/preferences-home-bar.component */
+    "./src/app/components/preferences/preferences-home-bar/preferences-home-bar.component.ts");
+    /* harmony import */
+
+
+    var _preferences_bartenders_preferences_bartenders_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ./preferences-bartenders/preferences-bartenders.component */
+    "./src/app/components/preferences/preferences-bartenders/preferences-bartenders.component.ts");
+    /* harmony import */
+
+
+    var _preferences_locations_preferences_locations_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./preferences-locations/preferences-locations.component */
+    "./src/app/components/preferences/preferences-locations/preferences-locations.component.ts");
+    /* harmony import */
+
+
+    var _preferences_navigation_preferences_navigation_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ./preferences-navigation/preferences-navigation.component */
+    "./src/app/components/preferences/preferences-navigation/preferences-navigation.component.ts");
+    /* harmony import */
+
+
+    var _preferences_drinks_preferences_drinks_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! ./preferences-drinks/preferences-drinks.component */
+    "./src/app/components/preferences/preferences-drinks/preferences-drinks.component.ts");
 
     var PreferencesModule = function PreferencesModule() {
       _classCallCheck(this, PreferencesModule);
@@ -1972,7 +4298,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](PreferencesModule, {
-        declarations: [_preferences_main_preferences_main_component__WEBPACK_IMPORTED_MODULE_3__["PreferencesMainComponent"], _preferences_list_preferences_list_component__WEBPACK_IMPORTED_MODULE_6__["PreferencesListComponent"], _preferences_create_preferences_create_component__WEBPACK_IMPORTED_MODULE_5__["PreferencesCreateComponent"]],
+        declarations: [_preferences_main_preferences_main_component__WEBPACK_IMPORTED_MODULE_3__["PreferencesMainComponent"], _preferences_home_bar_preferences_home_bar_component__WEBPACK_IMPORTED_MODULE_6__["PreferencesHomeBarComponent"], _preferences_create_preferences_create_component__WEBPACK_IMPORTED_MODULE_5__["PreferencesCreateComponent"], _preferences_bartenders_preferences_bartenders_component__WEBPACK_IMPORTED_MODULE_7__["PreferencesBartendersComponent"], _preferences_locations_preferences_locations_component__WEBPACK_IMPORTED_MODULE_8__["PreferencesLocationsComponent"], _preferences_navigation_preferences_navigation_component__WEBPACK_IMPORTED_MODULE_9__["PreferencesNavigationComponent"], _preferences_drinks_preferences_drinks_component__WEBPACK_IMPORTED_MODULE_10__["PreferencesDrinksComponent"]],
         imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _preferences_routing_module__WEBPACK_IMPORTED_MODULE_2__["PreferencesRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"]]
       });
     })();
@@ -1983,7 +4309,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PreferencesModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
-          declarations: [_preferences_main_preferences_main_component__WEBPACK_IMPORTED_MODULE_3__["PreferencesMainComponent"], _preferences_list_preferences_list_component__WEBPACK_IMPORTED_MODULE_6__["PreferencesListComponent"], _preferences_create_preferences_create_component__WEBPACK_IMPORTED_MODULE_5__["PreferencesCreateComponent"]],
+          declarations: [_preferences_main_preferences_main_component__WEBPACK_IMPORTED_MODULE_3__["PreferencesMainComponent"], _preferences_home_bar_preferences_home_bar_component__WEBPACK_IMPORTED_MODULE_6__["PreferencesHomeBarComponent"], _preferences_create_preferences_create_component__WEBPACK_IMPORTED_MODULE_5__["PreferencesCreateComponent"], _preferences_bartenders_preferences_bartenders_component__WEBPACK_IMPORTED_MODULE_7__["PreferencesBartendersComponent"], _preferences_locations_preferences_locations_component__WEBPACK_IMPORTED_MODULE_8__["PreferencesLocationsComponent"], _preferences_navigation_preferences_navigation_component__WEBPACK_IMPORTED_MODULE_9__["PreferencesNavigationComponent"], _preferences_drinks_preferences_drinks_component__WEBPACK_IMPORTED_MODULE_10__["PreferencesDrinksComponent"]],
           imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _preferences_routing_module__WEBPACK_IMPORTED_MODULE_2__["PreferencesRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"]]
         }]
       }], null, null);
@@ -2035,20 +4361,80 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, PreferencesService);
 
         this.http = http;
+        this.items = [];
+        this.bartenders = [];
+        this.homeBar = [];
+        this.locations = [];
+        this.locationsUpdated = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.homeBarUpdated = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
         this.itemsUpdated = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.bartendersUpdated = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
       }
 
       _createClass(PreferencesService, [{
         key: "getItems",
         value: function getItems() {
-          var _this3 = this;
+          var _this5 = this;
 
           this.http.get('/api/preferences').subscribe(function (data) {
             console.log(data.message);
-            _this3.items = data.items;
+            _this5.items = data.items;
 
-            _this3.itemsUpdated.next(_toConsumableArray(_this3.items));
+            _this5.itemsUpdated.next(_toConsumableArray(_this5.items));
           });
+        }
+      }, {
+        key: "getBartenders",
+        value: function getBartenders() {
+          var _this6 = this;
+
+          this.http.get('/api/preferences/bartenders').subscribe(function (data) {
+            console.log(data.message);
+            _this6.bartenders = data.items;
+
+            _this6.bartendersUpdated.next(_toConsumableArray(_this6.bartenders));
+          });
+        }
+      }, {
+        key: "getBartenderUpdateListener",
+        value: function getBartenderUpdateListener() {
+          return this.bartendersUpdated.asObservable();
+        }
+      }, {
+        key: "getLocations",
+        value: function getLocations() {
+          var _this7 = this;
+
+          this.http.get('/api/preferences/locations').subscribe(function (data) {
+            console.log(data.message);
+            _this7.locations = data.items;
+
+            _this7.locationsUpdated.next(_toConsumableArray(_this7.locations));
+
+            console.log('service', _this7.locations);
+          });
+        }
+      }, {
+        key: "getLocationsUpdateListener",
+        value: function getLocationsUpdateListener() {
+          return this.locationsUpdated.asObservable();
+        }
+      }, {
+        key: "getHomeBar",
+        value: function getHomeBar() {
+          var _this8 = this;
+
+          this.http.get('/api/preferences/home-bar').subscribe(function (data) {
+            console.log(data.message);
+            _this8.homeBar = data.items;
+
+            _this8.homeBarUpdated.next(_toConsumableArray(_this8.homeBar));
+          });
+        }
+      }, {
+        key: "getHomeBarUpdateListener",
+        value: function getHomeBarUpdateListener() {
+          return this.homeBarUpdated.asObservable();
         }
       }, {
         key: "getItemUpdateListener",
@@ -2058,29 +4444,29 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "addItems",
         value: function addItems(formValue) {
-          var _this4 = this;
+          var _this9 = this;
 
           console.log(formValue);
           this.http.post('/api/preferences', formValue).subscribe(function (response) {
             console.log(response.message);
 
-            _this4.itemsUpdated.next(response.items);
+            _this9.itemsUpdated.next(response.items);
           });
         }
       }, {
         key: "deleteItem",
         value: function deleteItem(itemId) {
-          var _this5 = this;
+          var _this10 = this;
 
           this.http["delete"]("/api/preferences/".concat(itemId)).subscribe(function (response) {
             // console.log(response.message);
             // console.log('service', response.items);
-            _this5.items = response.items;
-            _this5.items = _this5.items.filter(function (item) {
+            _this10.items = response.items;
+            _this10.items = _this10.items.filter(function (item) {
               return item.preference_id !== itemId;
             });
 
-            _this5.itemsUpdated.next(_toConsumableArray(_this5.items));
+            _this10.itemsUpdated.next(_toConsumableArray(_this10.items));
           });
         }
       }]);
@@ -2152,10 +4538,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _recipe_main_recipe_main_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ./recipe-main/recipe-main.component */
     "./src/app/components/recipe-book/recipe-main/recipe-main.component.ts");
+    /* harmony import */
+
+
+    var _recipe_details_recipe_details_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./recipe-details/recipe-details.component */
+    "./src/app/components/recipe-book/recipe-details/recipe-details.component.ts");
 
     var routes = [{
       path: '',
       component: _recipe_main_recipe_main_component__WEBPACK_IMPORTED_MODULE_2__["RecipeMainComponent"]
+    }, {
+      path: 'recipe-details/:recipeID',
+      component: _recipe_details_recipe_details_component__WEBPACK_IMPORTED_MODULE_3__["RecipeDetailsComponent"]
     }];
 
     var RecipeBookRoutingModule = function RecipeBookRoutingModule() {
@@ -2359,140 +4754,28 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       inputs: {
         recipe: "recipe"
       },
-      decls: 44,
-      vars: 36,
-      consts: [[1, "card-container"], [3, "routerLink"], ["width", "100px", 3, "src", "alt"]],
+      decls: 7,
+      vars: 4,
+      consts: [[1, "card-container"], [1, "card"], ["width", "125px", 1, "image", 3, "src", "alt"], [1, "drink-name"], [3, "routerLink"]],
       template: function RecipeCardComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h3");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "img", 2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "a", 1);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "more details");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "a", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "img", 2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "p");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "more details");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "ul");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "h4");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Ingredients");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "li");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "li");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "li");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "li");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "li");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "li");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "li");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "li");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "li");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "li");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "li");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "li");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "li");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "li");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "li");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "p");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -2502,89 +4785,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         if (rf & 2) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.recipe.strDrink);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("routerLink", "recipe-details/", ctx.recipe.idDrink, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx.recipe.strDrinkThumb, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("alt", ctx.recipe.strDrink);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Glassware: ", ctx.recipe.strGlass, "");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.recipe.strDrink);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.recipe.strMeasure1, " ", ctx.recipe.strIngredient1, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.recipe.strMeasure2, " ", ctx.recipe.strIngredient2, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.recipe.strMeasure3, " ", ctx.recipe.strIngredient3, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.recipe.strMeasure4, " ", ctx.recipe.strIngredient4, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.recipe.strMeasure5, " ", ctx.recipe.strIngredient5, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.recipe.strMeasure6, " ", ctx.recipe.strIngredient6, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.recipe.strMeasure7, " ", ctx.recipe.strIngredient7, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.recipe.strMeasure8, " ", ctx.recipe.strIngredient8, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.recipe.strMeasure9, " ", ctx.recipe.strIngredient9, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.recipe.strMeasure10, " ", ctx.recipe.strIngredient10, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.recipe.strMeasure11, " ", ctx.recipe.strIngredient11, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.recipe.strMeasure12, " ", ctx.recipe.strIngredient12, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.recipe.strMeasure13, " ", ctx.recipe.strIngredient13, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.recipe.strMeasure14, " ", ctx.recipe.strIngredient14, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", ctx.recipe.strMeasure15, " ", ctx.recipe.strIngredient15, "");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Method: ", ctx.recipe.strInstructions, "");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("routerLink", "recipe-details/", ctx.recipe.idDrink, "");
         }
       },
       directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"]],
-      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVjaXBlLWJvb2svcmVjaXBlLWNhcmQvcmVjaXBlLWNhcmQuY29tcG9uZW50LmNzcyJ9 */"]
+      styles: [".card[_ngcontent-%COMP%] {\r\n  height: 200px;\r\n  width: 150px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  \r\n  align-items: center;\r\n  margin-bottom: 10px;\r\n}\r\n.image[_ngcontent-%COMP%] {\r\n  border: 2px solid rgb(236, 184, 92);\r\n  box-shadow: 3px 5px 4px rgb(30, 0, 49);\r\n}\r\n.drink-name[_ngcontent-%COMP%] {\r\n  margin-top: 10px;\r\n  color: rgb(236, 184, 92);\r\n  font-size: 20px;\r\n}\r\na[_ngcontent-%COMP%] {\r\n  align-self: center;\r\n  margin-top: 8px;\r\n  color: #80bdad;\r\n}\r\na[_ngcontent-%COMP%]:hover {\r\n  color: #204051;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9yZWNpcGUtYm9vay9yZWNpcGUtY2FyZC9yZWNpcGUtY2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBYTtFQUNiLFlBQVk7RUFDWixhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLDZCQUE2QjtFQUM3QixtQkFBbUI7RUFDbkIsbUJBQW1CO0FBQ3JCO0FBQ0E7RUFDRSxtQ0FBbUM7RUFDbkMsc0NBQXNDO0FBQ3hDO0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsd0JBQXdCO0VBQ3hCLGVBQWU7QUFDakI7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2YsY0FBYztBQUNoQjtBQUVBO0VBQ0UsY0FBYztBQUNoQiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVjaXBlLWJvb2svcmVjaXBlLWNhcmQvcmVjaXBlLWNhcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJkIHtcclxuICBoZWlnaHQ6IDIwMHB4O1xyXG4gIHdpZHRoOiAxNTBweDtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgLyoganVzdGlmeS1jb250ZW50OiBjZW50ZXI7ICovXHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG59XHJcbi5pbWFnZSB7XHJcbiAgYm9yZGVyOiAycHggc29saWQgcmdiKDIzNiwgMTg0LCA5Mik7XHJcbiAgYm94LXNoYWRvdzogM3B4IDVweCA0cHggcmdiKDMwLCAwLCA0OSk7XHJcbn1cclxuXHJcbi5kcmluay1uYW1lIHtcclxuICBtYXJnaW4tdG9wOiAxMHB4O1xyXG4gIGNvbG9yOiByZ2IoMjM2LCAxODQsIDkyKTtcclxuICBmb250LXNpemU6IDIwcHg7XHJcbn1cclxuXHJcbmEge1xyXG4gIGFsaWduLXNlbGY6IGNlbnRlcjtcclxuICBtYXJnaW4tdG9wOiA4cHg7XHJcbiAgY29sb3I6ICM4MGJkYWQ7XHJcbn1cclxuXHJcbmE6aG92ZXIge1xyXG4gIGNvbG9yOiAjMjA0MDUxO1xyXG59XHJcbiJdfQ== */"]
     });
     /*@__PURE__*/
 
@@ -2645,6 +4860,34 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+
+    function RecipeDetailsComponent_div_1_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+
+      if (rf & 2) {
+        var recipe_r1 = ctx.$implicit;
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Drink Name: ", recipe_r1.strDrink, "");
+      }
+    }
 
     var RecipeDetailsComponent = /*#__PURE__*/function () {
       function RecipeDetailsComponent(recipeAPI, route) {
@@ -2657,9 +4900,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
+          var _this11 = this;
+
           this.recipeID = this.route.snapshot.params.recipeID;
+          console.log('component', this.recipeID);
           this.recipeAPI.getDetails(this.recipeID).subscribe(function (data) {
-            console.log(data);
+            _this11.recipes = data['drinks'];
+            console.log('details', _this11.recipes);
           });
         }
       }]);
@@ -2673,18 +4920,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     RecipeDetailsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: RecipeDetailsComponent,
-      selectors: [["app-recipe-details"]],
+      selectors: [["recipe-details"]],
       decls: 2,
-      vars: 0,
+      vars: 1,
+      consts: [[4, "ngFor", "ngForOf"]],
       template: function RecipeDetailsComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "recipe-details works!");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, RecipeDetailsComponent_div_1_Template, 3, 1, "div", 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
+
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.recipes);
+        }
       },
+      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]],
       styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVjaXBlLWJvb2svcmVjaXBlLWRldGFpbHMvcmVjaXBlLWRldGFpbHMuY29tcG9uZW50LmNzcyJ9 */"]
     });
     /*@__PURE__*/
@@ -2693,7 +4948,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](RecipeDetailsComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-          selector: 'app-recipe-details',
+          selector: 'recipe-details',
           templateUrl: './recipe-details.component.html',
           styleUrls: ['./recipe-details.component.css']
         }]
@@ -2836,15 +5091,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! ../recipe-card/recipe-card.component */
     "./src/app/components/recipe-book/recipe-card/recipe-card.component.ts");
 
-    function RecipeMainComponent_recipe_card_1_Template(rf, ctx) {
+    function RecipeMainComponent_recipe_card_4_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "recipe-card", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "recipe-card", 5);
       }
 
       if (rf & 2) {
-        var recipe_r1 = ctx.$implicit;
+        var recipe_r2 = ctx.$implicit;
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("recipe", recipe_r1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("recipe", recipe_r2);
+      }
+    }
+
+    function RecipeMainComponent_recipe_card_6_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "recipe-card", 5);
+      }
+
+      if (rf & 2) {
+        var recipe_r3 = ctx.$implicit;
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("recipe", recipe_r3);
       }
     }
 
@@ -2858,11 +5125,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeMainComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this6 = this;
+          var _this12 = this;
 
           this.recipeApi.getLetterA().subscribe(function (data) {
-            _this6.recipes = data['drinks'];
-            console.log(_this6.recipes);
+            _this12.recipes = data['drinks'];
+            console.log(_this12.recipes);
           });
         }
       }, {
@@ -2883,30 +5150,56 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     RecipeMainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: RecipeMainComponent,
       selectors: [["recipe-main"]],
-      decls: 2,
-      vars: 1,
-      consts: [[3, "searchResults"], [3, "recipe", 4, "ngFor", "ngForOf"], [3, "recipe"]],
+      decls: 7,
+      vars: 2,
+      consts: [[1, "background"], [1, "search-container"], [3, "searchResults"], [1, "card-container"], [3, "recipe", 4, "ngFor", "ngForOf"], [3, "recipe"]],
       template: function RecipeMainComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "recipe-search", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("searchResults", function RecipeMainComponent_Template_recipe_search_searchResults_0_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "recipe-search", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("searchResults", function RecipeMainComponent_Template_recipe_search_searchResults_2_listener($event) {
             return ctx.nameSearch($event);
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, RecipeMainComponent_recipe_card_1_Template, 1, 1, "recipe-card", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, RecipeMainComponent_recipe_card_4_Template, 1, 1, "recipe-card", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "recipe-search", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("searchResults", function RecipeMainComponent_Template_recipe_search_searchResults_5_listener($event) {
+            return ctx.nameSearch($event);
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, RecipeMainComponent_recipe_card_6_Template, 1, 1, "recipe-card", 4);
         }
 
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.recipes);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.recipes);
         }
       },
       directives: [_recipe_search_recipe_search_component__WEBPACK_IMPORTED_MODULE_2__["RecipeSearchComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], _recipe_card_recipe_card_component__WEBPACK_IMPORTED_MODULE_4__["RecipeCardComponent"]],
-      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVjaXBlLWJvb2svcmVjaXBlLW1haW4vcmVjaXBlLW1haW4uY29tcG9uZW50LmNzcyJ9 */"]
+      styles: [".background[_ngcontent-%COMP%] {\r\n  margin-top: 50px;\r\n  margin-left: 10vw;\r\n  background-image: url('Hurricane.svg');\r\n  background-repeat: no-repeat;\r\n  height: 125vh;\r\n  width: 80vw;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.search-container[_ngcontent-%COMP%] {\r\n  margin-top: 20px;\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.card-container[_ngcontent-%COMP%] {\r\n  margin-top: 5vh;\r\n  display: grid;\r\n  grid-template-columns: repeat(6, auto);\r\n  gap: 10px;\r\n  justify-content: center;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9yZWNpcGUtYm9vay9yZWNpcGUtbWFpbi9yZWNpcGUtbWFpbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtFQUNqQixzQ0FBaUQ7RUFDakQsNEJBQTRCO0VBQzVCLGFBQWE7RUFDYixXQUFXO0VBQ1gsYUFBYTtFQUNiLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixhQUFhO0VBQ2IsdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsZUFBZTtFQUNmLGFBQWE7RUFDYixzQ0FBc0M7RUFDdEMsU0FBUztFQUNULHVCQUF1QjtBQUN6QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVjaXBlLWJvb2svcmVjaXBlLW1haW4vcmVjaXBlLW1haW4uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrZ3JvdW5kIHtcclxuICBtYXJnaW4tdG9wOiA1MHB4O1xyXG4gIG1hcmdpbi1sZWZ0OiAxMHZ3O1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi9IdXJyaWNhbmUvSHVycmljYW5lLnN2Zyk7XHJcbiAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICBoZWlnaHQ6IDEyNXZoO1xyXG4gIHdpZHRoOiA4MHZ3O1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxufVxyXG5cclxuLnNlYXJjaC1jb250YWluZXIge1xyXG4gIG1hcmdpbi10b3A6IDIwcHg7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxufVxyXG5cclxuLmNhcmQtY29udGFpbmVyIHtcclxuICBtYXJnaW4tdG9wOiA1dmg7XHJcbiAgZGlzcGxheTogZ3JpZDtcclxuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCg2LCBhdXRvKTtcclxuICBnYXA6IDEwcHg7XHJcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbn1cclxuIl19 */"]
     });
     /*@__PURE__*/
 
@@ -3035,16 +5328,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeSearchComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this7 = this;
+          var _this13 = this;
 
           this.recipeAPI.getGlassware().subscribe(function (data) {
-            _this7.glassware = data['drinks'];
+            _this13.glassware = data['drinks'];
           });
           this.recipeAPI.getAlcoholic().subscribe(function (data) {
-            _this7.alcoholic = data['drinks'];
+            _this13.alcoholic = data['drinks'];
           });
           this.recipeAPI.getCategories().subscribe(function (data) {
-            _this7.categories = data['drinks'];
+            _this13.categories = data['drinks'];
           });
           this.recipeAPI.filterCocktailType().subscribe(function (data) {
             console.log('filter cocktails', data['drinks']);
@@ -3065,19 +5358,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "searchByName",
         value: function searchByName() {
-          var _this8 = this;
+          var _this14 = this;
 
           this.recipeAPI.searchByName(this.nameSearch.value).subscribe(function (data) {
-            return _this8.searchResults.emit(data['drinks']);
+            return _this14.searchResults.emit(data['drinks']);
           });
         }
       }, {
         key: "searchByLetter",
         value: function searchByLetter() {
-          var _this9 = this;
+          var _this15 = this;
 
           this.recipeAPI.searchByLetter(this.letterSearch.value).subscribe(function (data) {
-            _this9.searchResults.emit(data['drinks']);
+            _this15.searchResults.emit(data['drinks']);
           });
         }
       }, {
@@ -3204,6 +5497,327 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/app/components/the-feed/the-feed-main/the-feed-main.component.ts":
+  /*!******************************************************************************!*\
+    !*** ./src/app/components/the-feed/the-feed-main/the-feed-main.component.ts ***!
+    \******************************************************************************/
+
+  /*! exports provided: TheFeedMainComponent */
+
+  /***/
+  function srcAppComponentsTheFeedTheFeedMainTheFeedMainComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "TheFeedMainComponent", function () {
+      return TheFeedMainComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _the_feed_posts_the_feed_posts_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ../the-feed-posts/the-feed-posts.component */
+    "./src/app/components/the-feed/the-feed-posts/the-feed-posts.component.ts");
+
+    var TheFeedMainComponent = /*#__PURE__*/function () {
+      function TheFeedMainComponent() {
+        _classCallCheck(this, TheFeedMainComponent);
+      }
+
+      _createClass(TheFeedMainComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return TheFeedMainComponent;
+    }();
+
+    TheFeedMainComponent.ɵfac = function TheFeedMainComponent_Factory(t) {
+      return new (t || TheFeedMainComponent)();
+    };
+
+    TheFeedMainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: TheFeedMainComponent,
+      selectors: [["app-the-feed-main"]],
+      decls: 2,
+      vars: 0,
+      template: function TheFeedMainComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "the-feed-posts");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      directives: [_the_feed_posts_the_feed_posts_component__WEBPACK_IMPORTED_MODULE_1__["TheFeedPostsComponent"]],
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdGhlLWZlZWQvdGhlLWZlZWQtbWFpbi90aGUtZmVlZC1tYWluLmNvbXBvbmVudC5jc3MifQ== */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TheFeedMainComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-the-feed-main',
+          templateUrl: './the-feed-main.component.html',
+          styleUrls: ['./the-feed-main.component.css']
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/the-feed/the-feed-posts/the-feed-posts.component.ts":
+  /*!********************************************************************************!*\
+    !*** ./src/app/components/the-feed/the-feed-posts/the-feed-posts.component.ts ***!
+    \********************************************************************************/
+
+  /*! exports provided: TheFeedPostsComponent */
+
+  /***/
+  function srcAppComponentsTheFeedTheFeedPostsTheFeedPostsComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "TheFeedPostsComponent", function () {
+      return TheFeedPostsComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_MOCK_DATA_mock_feed__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! src/app/MOCK_DATA/mock-feed */
+    "./src/app/MOCK_DATA/mock-feed.ts");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+
+    function TheFeedPostsComponent_div_1_div_17_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 5);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dignissimos molestiae assumenda at, dolor voluptatum! ");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dignissimos molestiae assumenda at, dolor voluptatum! ");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dignissimos molestiae assumenda at, dolor voluptatum! ");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+    }
+
+    function TheFeedPostsComponent_div_1_Template(rf, ctx) {
+      if (rf & 1) {
+        var _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h2");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "button", 3);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TheFeedPostsComponent_div_1_Template_button_click_15_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r4);
+
+          var ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r3.toggle();
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "read comments");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](17, TheFeedPostsComponent_div_1_div_17_Template, 7, 0, "div", 4);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+
+      if (rf & 2) {
+        var item_r1 = ctx.$implicit;
+
+        var ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("alt", item_r1.drink_name);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r1.drink_name);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Rating: ", item_r1.rating, "");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("glassware: ", item_r1.glassware, "");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("description: ", item_r1.description, "");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("location: ", item_r1.location, "");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("username: ", item_r1.username, "");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx_r0.hide);
+      }
+    }
+
+    var TheFeedPostsComponent = /*#__PURE__*/function () {
+      function TheFeedPostsComponent() {
+        _classCallCheck(this, TheFeedPostsComponent);
+
+        this.theFeed = src_app_MOCK_DATA_mock_feed__WEBPACK_IMPORTED_MODULE_1__["MOCK_FEED"];
+        this.hide = true;
+      }
+
+      _createClass(TheFeedPostsComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }, {
+        key: "toggle",
+        value: function toggle() {
+          this.hide = !this.hide;
+        }
+      }]);
+
+      return TheFeedPostsComponent;
+    }();
+
+    TheFeedPostsComponent.ɵfac = function TheFeedPostsComponent_Factory(t) {
+      return new (t || TheFeedPostsComponent)();
+    };
+
+    TheFeedPostsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: TheFeedPostsComponent,
+      selectors: [["the-feed-posts"]],
+      decls: 2,
+      vars: 1,
+      consts: [[4, "ngFor", "ngForOf"], ["width", "200px", "src", "../../../../assets/lefteris-kallergis-QsmdVT5pTMw-unsplash.jpg", 3, "alt"], [1, "comments-container"], [3, "click"], ["class", "comments", 4, "ngIf"], [1, "comments"]],
+      template: function TheFeedPostsComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, TheFeedPostsComponent_div_1_Template, 18, 8, "div", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.theFeed);
+        }
+      },
+      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"]],
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdGhlLWZlZWQvdGhlLWZlZWQtcG9zdHMvdGhlLWZlZWQtcG9zdHMuY29tcG9uZW50LmNzcyJ9 */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TheFeedPostsComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'the-feed-posts',
+          templateUrl: './the-feed-posts.component.html',
+          styleUrls: ['./the-feed-posts.component.css']
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
   "./src/app/components/user-profile/user-profile.component.ts":
   /*!*******************************************************************!*\
     !*** ./src/app/components/user-profile/user-profile.component.ts ***!
@@ -3231,13 +5845,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var src_app_services_drink_post_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var src_app_MOCK_DATA_mock_posts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! src/app/MOCK_DATA/mock-posts */
+    "./src/app/MOCK_DATA/mock-posts.ts");
+    /* harmony import */
+
+
+    var src_app_services_drink_post_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! src/app/services/drink-post.service */
     "./src/app/services/drink-post.service.ts");
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
@@ -3245,21 +5865,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 1);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      }
-
-      if (rf & 2) {
-        var post_r1 = ctx.$implicit;
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](post_r1.post_name);
       }
     }
 
@@ -3268,18 +5876,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, UserProfileComponent);
 
         this.drinkPosts = drinkPosts;
+        this.mockPosts = src_app_MOCK_DATA_mock_posts__WEBPACK_IMPORTED_MODULE_1__["MOCK_POSTS"];
       }
 
       _createClass(UserProfileComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {
-          var _this10 = this;
-
-          this.drinkPosts.getDrinks().subscribe(function (data) {
-            // console.log(data);
-            _this10.posts = data;
-            console.log(_this10.posts);
-          });
+        value: function ngOnInit() {// this.drinkPosts.getDrinks().subscribe((data) => {
+          //   // console.log(data);
+          //   this.posts = data;
+          //   console.log(this.posts);
+          // });
         }
       }]);
 
@@ -3287,7 +5893,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     UserProfileComponent.ɵfac = function UserProfileComponent_Factory(t) {
-      return new (t || UserProfileComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_drink_post_service__WEBPACK_IMPORTED_MODULE_1__["DrinkPostService"]));
+      return new (t || UserProfileComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_drink_post_service__WEBPACK_IMPORTED_MODULE_2__["DrinkPostService"]));
     };
 
     UserProfileComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -3295,7 +5901,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["user-profile"]],
       decls: 6,
       vars: 1,
-      consts: [[4, "ngFor", "ngForOf"]],
+      consts: [[4, "ngFor", "ngForOf"], ["width", "200px", "src", "../../../assets/lefteris-kallergis-QsmdVT5pTMw-unsplash.jpg", "alt", ""]],
       template: function UserProfileComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section");
@@ -3308,11 +5914,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum numquam odit nemo non qui recusandae delectus modi soluta similique ullam, sint cumque nam laborum alias saepe omnis maxime. Dolor, maiores! Quae ad, sapiente voluptates optio tenetur minima. Molestiae amet harum, hic nihil eius eveniet, minus aliquid, esse quia rem adipisci quo fuga doloribus! Reiciendis neque reprehenderit esse culpa possimus ipsa repellendus? Quibusdam sequi molestias possimus consectetur? Impedit cum voluptatem eveniet adipisci aperiam tenetur ipsa. Aut, non, ab sint recusandae quo laudantium blanditiis fugit adipisci eius nostrum quidem in quibusdam quos omnis exercitationem provident! Accusamus exercitationem illo earum eveniet ipsam nisi. ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas expedita voluptatum velit quod quos, nisi vitae illo voluptate sint, sapiente deleniti animi nemo perspiciatis ut! ");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, UserProfileComponent_div_5_Template, 3, 1, "div", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, UserProfileComponent_div_5_Template, 2, 0, "div", 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
@@ -3320,10 +5926,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         if (rf & 2) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.posts);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.mockPosts);
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"]],
+      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]],
       styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdXNlci1wcm9maWxlL3VzZXItcHJvZmlsZS5jb21wb25lbnQuY3NzIn0= */"]
     });
     /*@__PURE__*/
@@ -3338,7 +5944,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }]
       }], function () {
         return [{
-          type: src_app_services_drink_post_service__WEBPACK_IMPORTED_MODULE_1__["DrinkPostService"]
+          type: src_app_services_drink_post_service__WEBPACK_IMPORTED_MODULE_2__["DrinkPostService"]
         }];
       }, null);
     })();
@@ -3428,10 +6034,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(UserRecipesCreateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this11 = this;
+          var _this16 = this;
 
           this.recipeAPI.getGlassware().subscribe(function (data) {
-            _this11.glassware = data['drinks'];
+            _this16.glassware = data['drinks'];
           });
           var element = this.fb.group({
             amount: [''],
@@ -3477,11 +6083,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getLocation",
         value: function getLocation() {
-          var _this12 = this;
+          var _this17 = this;
 
           navigator.geolocation.getCurrentPosition(function (position) {
-            _this12.latitude = position.coords.latitude;
-            _this12.longitude = position.coords.longitude;
+            _this17.latitude = position.coords.latitude;
+            _this17.longitude = position.coords.longitude;
           });
         }
       }]);
@@ -3693,7 +6299,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["RangeValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["SelectControlValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgSelectOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_x"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupName"]],
-      styles: [".background[_ngcontent-%COMP%] {\r\n  margin-top: 30px;\r\n  \r\n  \r\n  background-color: rgb(52, 43, 56);\r\n  height: 125vh;\r\n  width: 125vw;\r\n}\r\n\r\n.body[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  width: 100vw;\r\n  height: 90vh;\r\n}\r\n\r\nh1[_ngcontent-%COMP%] {\r\n  margin-top: 40vh;\r\n  font-size: 50px;\r\n  color: rgb(236, 184, 92);\r\n}\r\n\r\nform[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 30vw;\r\n  height: auto;\r\n}\r\n\r\n.form-group[_ngcontent-%COMP%] {\r\n  margin-top: 20px;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.methodInput[_ngcontent-%COMP%] {\r\n  padding: 10px 5px;\r\n  color: hsl(0, 0%, 100%);\r\n  background-color: rgb(236, 184, 92, 0.5);\r\n  border: 2pt solid rgb(236, 184, 92);\r\n}\r\n\r\n.methodInput[_ngcontent-%COMP%]:hover {\r\n  border: 2pt solid #80bdad;\r\n}\r\n\r\n.formGroupLabel[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  margin-top: 3vh;\r\n}\r\n\r\n.formFields[_ngcontent-%COMP%] {\r\n  margin: 5px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-around;\r\n}\r\n\r\n.formGroupName[_ngcontent-%COMP%] {\r\n  width: 10vw;\r\n  height: auto;\r\n}\r\n\r\nlabel[_ngcontent-%COMP%] {\r\n  font-size: 30px;\r\n  color: rgb(236, 184, 92);\r\n}\r\n\r\ninput[_ngcontent-%COMP%] {\r\n  margin-top: 10px;\r\n  padding: 10px 5px;\r\n  color: hsl(0, 0%, 100%);\r\n  background-color: rgb(236, 184, 92, 0.5);\r\n  border: 2pt solid rgb(236, 184, 92);\r\n}\r\n\r\ninput[_ngcontent-%COMP%]:hover {\r\n  border: 2pt solid #80bdad;\r\n}\r\n\r\nbutton[_ngcontent-%COMP%] {\r\n  margin-top: 30px;\r\n  padding: 10px 0px;\r\n  background-color: rgb(236, 184, 92);\r\n  \r\n}\r\n\r\nbutton[_ngcontent-%COMP%]:hover {\r\n  background-color: #80bdad;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy91c2VyLXJlY2lwZXMvdXNlci1yZWNpcGVzLWNyZWF0ZS91c2VyLXJlY2lwZXMtY3JlYXRlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxnQkFBZ0I7RUFDaEIsc0RBQXNEO0VBQ3RELGtDQUFrQztFQUNsQyxpQ0FBaUM7RUFDakMsYUFBYTtFQUNiLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixZQUFZO0VBQ1osWUFBWTtBQUNkOztBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGVBQWU7RUFDZix3QkFBd0I7QUFDMUI7O0FBRUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLHNCQUFzQjtBQUN4Qjs7QUFDQTtFQUNFLGlCQUFpQjtFQUNqQix1QkFBdUI7RUFDdkIsd0NBQXdDO0VBQ3hDLG1DQUFtQztBQUNyQzs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixlQUFlO0FBQ2pCOztBQUNBO0VBQ0UsV0FBVztFQUNYLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsNkJBQTZCO0FBQy9COztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGVBQWU7RUFDZix3QkFBd0I7QUFDMUI7O0FBQ0E7RUFDRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLHVCQUF1QjtFQUN2Qix3Q0FBd0M7RUFDeEMsbUNBQW1DO0FBQ3JDOztBQUNBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtFQUNqQixtQ0FBbUM7RUFDbkMsb0NBQW9DO0FBQ3RDOztBQUNBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBLDRCQUE0Qjs7QUFDNUI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7S0FzQks7O0FBRUwsMEJBQTBCOztBQUMxQjs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0tBd0JLIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy91c2VyLXJlY2lwZXMvdXNlci1yZWNpcGVzLWNyZWF0ZS91c2VyLXJlY2lwZXMtY3JlYXRlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYmFja2dyb3VuZCB7XHJcbiAgbWFyZ2luLXRvcDogMzBweDtcclxuICAvKiBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi9NYXJnYXJpdGEvbWFyZ2FyaXRhLnN2Zyk7ICovXHJcbiAgLyogYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDsgKi9cclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoNTIsIDQzLCA1Nik7XHJcbiAgaGVpZ2h0OiAxMjV2aDtcclxuICB3aWR0aDogMTI1dnc7XHJcbn1cclxuXHJcbi5ib2R5IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICB3aWR0aDogMTAwdnc7XHJcbiAgaGVpZ2h0OiA5MHZoO1xyXG59XHJcbmgxIHtcclxuICBtYXJnaW4tdG9wOiA0MHZoO1xyXG4gIGZvbnQtc2l6ZTogNTBweDtcclxuICBjb2xvcjogcmdiKDIzNiwgMTg0LCA5Mik7XHJcbn1cclxuXHJcbmZvcm0ge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICB3aWR0aDogMzB2dztcclxuICBoZWlnaHQ6IGF1dG87XHJcbn1cclxuXHJcbi5mb3JtLWdyb3VwIHtcclxuICBtYXJnaW4tdG9wOiAyMHB4O1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxufVxyXG4ubWV0aG9kSW5wdXQge1xyXG4gIHBhZGRpbmc6IDEwcHggNXB4O1xyXG4gIGNvbG9yOiBoc2woMCwgMCUsIDEwMCUpO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMzYsIDE4NCwgOTIsIDAuNSk7XHJcbiAgYm9yZGVyOiAycHQgc29saWQgcmdiKDIzNiwgMTg0LCA5Mik7XHJcbn1cclxuXHJcbi5tZXRob2RJbnB1dDpob3ZlciB7XHJcbiAgYm9yZGVyOiAycHQgc29saWQgIzgwYmRhZDtcclxufVxyXG5cclxuLmZvcm1Hcm91cExhYmVsIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIG1hcmdpbi10b3A6IDN2aDtcclxufVxyXG4uZm9ybUZpZWxkcyB7XHJcbiAgbWFyZ2luOiA1cHg7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xyXG59XHJcblxyXG4uZm9ybUdyb3VwTmFtZSB7XHJcbiAgd2lkdGg6IDEwdnc7XHJcbiAgaGVpZ2h0OiBhdXRvO1xyXG59XHJcblxyXG5sYWJlbCB7XHJcbiAgZm9udC1zaXplOiAzMHB4O1xyXG4gIGNvbG9yOiByZ2IoMjM2LCAxODQsIDkyKTtcclxufVxyXG5pbnB1dCB7XHJcbiAgbWFyZ2luLXRvcDogMTBweDtcclxuICBwYWRkaW5nOiAxMHB4IDVweDtcclxuICBjb2xvcjogaHNsKDAsIDAlLCAxMDAlKTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjM2LCAxODQsIDkyLCAwLjUpO1xyXG4gIGJvcmRlcjogMnB0IHNvbGlkIHJnYigyMzYsIDE4NCwgOTIpO1xyXG59XHJcbmlucHV0OmhvdmVyIHtcclxuICBib3JkZXI6IDJwdCBzb2xpZCAjODBiZGFkO1xyXG59XHJcblxyXG5idXR0b24ge1xyXG4gIG1hcmdpbi10b3A6IDMwcHg7XHJcbiAgcGFkZGluZzogMTBweCAwcHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIzNiwgMTg0LCA5Mik7XHJcbiAgLyogYm94LXNoYWRvdzogYmxhY2sgLTFwdCAxcHQgM3B0OyAqL1xyXG59XHJcbmJ1dHRvbjpob3ZlciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzgwYmRhZDtcclxufVxyXG5cclxuLyogbWVkaWEgUXVlcnkgZm9yIFRhYmxldHMgKi9cclxuLyogQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY4cHgpIHtcclxuICAgIC5iYWNrZ3JvdW5kIHtcclxuICAgICAgbWFyZ2luLXRvcDogMTB2aDtcclxuICAgICAgaGVpZ2h0OiA4MHZoO1xyXG4gICAgICB3aWR0aDogMTAwdnc7XHJcbiAgICB9XHJcbiAgXHJcbiAgICAuYm9keSB7XHJcbiAgICAgIHdpZHRoOiAxMDB2dztcclxuICAgICAgaGVpZ2h0OiA1MHZ3O1xyXG4gICAgfVxyXG4gICAgLmZvcm0tZ3JvdXAge1xyXG4gICAgICBtYXJnaW4tdG9wOiAxMHB4O1xyXG4gICAgfVxyXG4gIFxyXG4gICAgZm9ybSB7XHJcbiAgICAgIHdpZHRoOiAzMHZ3O1xyXG4gICAgfVxyXG4gIFxyXG4gICAgbGFiZWwge1xyXG4gICAgICBmb250LXNpemU6IDMwcHg7XHJcbiAgICB9XHJcbiAgfSAqL1xyXG5cclxuLyogTWVkaWEgUXVlcnkgZm9yIHBob25lICovXHJcbi8qIEBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDM2MHB4KSB7XHJcbiAgICAuYmFja2dyb3VuZCB7XHJcbiAgICAgIG1hcmdpbi10b3A6IDEwdmg7XHJcbiAgICAgIGhlaWdodDogODB2aDtcclxuICAgICAgd2lkdGg6IDEwMHZ3O1xyXG4gICAgfVxyXG4gIFxyXG4gICAgLmJvZHkge1xyXG4gICAgICB3aWR0aDogMTAwdnc7XHJcbiAgICAgIGhlaWdodDogNjB2aDtcclxuICAgIH1cclxuICAgIGgxIHtcclxuICAgICAgbWFyZ2luOiAwO1xyXG4gICAgfVxyXG4gIFxyXG4gICAgZm9ybSB7XHJcbiAgICAgIG1hcmdpbi10b3A6IDVweDtcclxuICAgICAgd2lkdGg6IDQwdnc7XHJcbiAgICAgIGhlaWdodDogYXV0bztcclxuICAgIH1cclxuICBcclxuICAgIGxhYmVsIHtcclxuICAgICAgZm9udC1zaXplOiAzMHB4O1xyXG4gICAgfVxyXG4gIH0gKi9cclxuIl19 */"]
+      styles: [".background[_ngcontent-%COMP%] {\r\n  margin-top: 30px;\r\n  \r\n  \r\n  height: 125vh;\r\n  width: 125vw;\r\n}\r\n\r\n.body[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  width: 100vw;\r\n  height: 90vh;\r\n}\r\n\r\nh1[_ngcontent-%COMP%] {\r\n  margin-top: 40vh;\r\n  font-size: 50px;\r\n  color: rgb(236, 184, 92);\r\n}\r\n\r\nform[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 30vw;\r\n  height: auto;\r\n}\r\n\r\n.form-group[_ngcontent-%COMP%] {\r\n  margin-top: 20px;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.methodInput[_ngcontent-%COMP%] {\r\n  padding: 10px 5px;\r\n  color: hsl(0, 0%, 100%);\r\n  background-color: rgb(236, 184, 92, 0.5);\r\n  border: 2pt solid rgb(236, 184, 92);\r\n}\r\n\r\n.methodInput[_ngcontent-%COMP%]:hover {\r\n  border: 2pt solid #80bdad;\r\n}\r\n\r\n.formGroupLabel[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  margin-top: 3vh;\r\n}\r\n\r\n.formFields[_ngcontent-%COMP%] {\r\n  margin: 5px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-around;\r\n}\r\n\r\n.formGroupName[_ngcontent-%COMP%] {\r\n  width: 10vw;\r\n  height: auto;\r\n}\r\n\r\nlabel[_ngcontent-%COMP%] {\r\n  font-size: 30px;\r\n  color: rgb(236, 184, 92);\r\n}\r\n\r\ninput[_ngcontent-%COMP%] {\r\n  margin-top: 10px;\r\n  padding: 10px 5px;\r\n  color: hsl(0, 0%, 100%);\r\n  background-color: rgb(236, 184, 92, 0.5);\r\n  border: 2pt solid rgb(236, 184, 92);\r\n}\r\n\r\ninput[_ngcontent-%COMP%]:hover {\r\n  border: 2pt solid #80bdad;\r\n}\r\n\r\n[_ngcontent-%COMP%]::-moz-placeholder {\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  color: white;\r\n}\r\n\r\n[_ngcontent-%COMP%]::-ms-input-placeholder {\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  color: white;\r\n}\r\n\r\n[_ngcontent-%COMP%]::placeholder {\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  color: white;\r\n}\r\n\r\nbutton[_ngcontent-%COMP%] {\r\n  margin-top: 30px;\r\n  padding: 10px 0px;\r\n  background-color: rgb(236, 184, 92);\r\n  \r\n}\r\n\r\nbutton[_ngcontent-%COMP%]:hover {\r\n  background-color: #80bdad;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy91c2VyLXJlY2lwZXMvdXNlci1yZWNpcGVzLWNyZWF0ZS91c2VyLXJlY2lwZXMtY3JlYXRlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxnQkFBZ0I7RUFDaEIsc0RBQXNEO0VBQ3RELGtDQUFrQztFQUNsQyxhQUFhO0VBQ2IsWUFBWTtBQUNkOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixtQkFBbUI7RUFDbkIsdUJBQXVCO0VBQ3ZCLFlBQVk7RUFDWixZQUFZO0FBQ2Q7O0FBQ0E7RUFDRSxnQkFBZ0I7RUFDaEIsZUFBZTtFQUNmLHdCQUF3QjtBQUMxQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsV0FBVztFQUNYLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixhQUFhO0VBQ2Isc0JBQXNCO0FBQ3hCOztBQUNBO0VBQ0UsaUJBQWlCO0VBQ2pCLHVCQUF1QjtFQUN2Qix3Q0FBd0M7RUFDeEMsbUNBQW1DO0FBQ3JDOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLGVBQWU7QUFDakI7O0FBQ0E7RUFDRSxXQUFXO0VBQ1gsYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qiw2QkFBNkI7QUFDL0I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtBQUNkOztBQUVBO0VBQ0UsZUFBZTtFQUNmLHdCQUF3QjtBQUMxQjs7QUFDQTtFQUNFLGdCQUFnQjtFQUNoQixpQkFBaUI7RUFDakIsdUJBQXVCO0VBQ3ZCLHdDQUF3QztFQUN4QyxtQ0FBbUM7QUFDckM7O0FBQ0E7RUFDRSx5QkFBeUI7QUFDM0I7O0FBRUE7RUFDRSx5Q0FBeUM7RUFDekMsWUFBWTtBQUNkOztBQUhBO0VBQ0UseUNBQXlDO0VBQ3pDLFlBQVk7QUFDZDs7QUFIQTtFQUNFLHlDQUF5QztFQUN6QyxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLG1DQUFtQztFQUNuQyxvQ0FBb0M7QUFDdEM7O0FBQ0E7RUFDRSx5QkFBeUI7QUFDM0I7O0FBRUEsNEJBQTRCOztBQUM1Qjs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztLQXNCSzs7QUFFTCwwQkFBMEI7O0FBQzFCOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7S0F3QksiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3VzZXItcmVjaXBlcy91c2VyLXJlY2lwZXMtY3JlYXRlL3VzZXItcmVjaXBlcy1jcmVhdGUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrZ3JvdW5kIHtcclxuICBtYXJnaW4tdG9wOiAzMHB4O1xyXG4gIC8qIGJhY2tncm91bmQtaW1hZ2U6IHVybCguL01hcmdhcml0YS9tYXJnYXJpdGEuc3ZnKTsgKi9cclxuICAvKiBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0OyAqL1xyXG4gIGhlaWdodDogMTI1dmg7XHJcbiAgd2lkdGg6IDEyNXZ3O1xyXG59XHJcblxyXG4uYm9keSB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgd2lkdGg6IDEwMHZ3O1xyXG4gIGhlaWdodDogOTB2aDtcclxufVxyXG5oMSB7XHJcbiAgbWFyZ2luLXRvcDogNDB2aDtcclxuICBmb250LXNpemU6IDUwcHg7XHJcbiAgY29sb3I6IHJnYigyMzYsIDE4NCwgOTIpO1xyXG59XHJcblxyXG5mb3JtIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgd2lkdGg6IDMwdnc7XHJcbiAgaGVpZ2h0OiBhdXRvO1xyXG59XHJcblxyXG4uZm9ybS1ncm91cCB7XHJcbiAgbWFyZ2luLXRvcDogMjBweDtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbn1cclxuLm1ldGhvZElucHV0IHtcclxuICBwYWRkaW5nOiAxMHB4IDVweDtcclxuICBjb2xvcjogaHNsKDAsIDAlLCAxMDAlKTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjM2LCAxODQsIDkyLCAwLjUpO1xyXG4gIGJvcmRlcjogMnB0IHNvbGlkIHJnYigyMzYsIDE4NCwgOTIpO1xyXG59XHJcblxyXG4ubWV0aG9kSW5wdXQ6aG92ZXIge1xyXG4gIGJvcmRlcjogMnB0IHNvbGlkICM4MGJkYWQ7XHJcbn1cclxuXHJcbi5mb3JtR3JvdXBMYWJlbCB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBtYXJnaW4tdG9wOiAzdmg7XHJcbn1cclxuLmZvcm1GaWVsZHMge1xyXG4gIG1hcmdpbjogNXB4O1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcclxufVxyXG5cclxuLmZvcm1Hcm91cE5hbWUge1xyXG4gIHdpZHRoOiAxMHZ3O1xyXG4gIGhlaWdodDogYXV0bztcclxufVxyXG5cclxubGFiZWwge1xyXG4gIGZvbnQtc2l6ZTogMzBweDtcclxuICBjb2xvcjogcmdiKDIzNiwgMTg0LCA5Mik7XHJcbn1cclxuaW5wdXQge1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgcGFkZGluZzogMTBweCA1cHg7XHJcbiAgY29sb3I6IGhzbCgwLCAwJSwgMTAwJSk7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIzNiwgMTg0LCA5MiwgMC41KTtcclxuICBib3JkZXI6IDJwdCBzb2xpZCByZ2IoMjM2LCAxODQsIDkyKTtcclxufVxyXG5pbnB1dDpob3ZlciB7XHJcbiAgYm9yZGVyOiAycHQgc29saWQgIzgwYmRhZDtcclxufVxyXG5cclxuOjpwbGFjZWhvbGRlciB7XHJcbiAgZm9udC1mYW1pbHk6IEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWY7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG59XHJcblxyXG5idXR0b24ge1xyXG4gIG1hcmdpbi10b3A6IDMwcHg7XHJcbiAgcGFkZGluZzogMTBweCAwcHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIzNiwgMTg0LCA5Mik7XHJcbiAgLyogYm94LXNoYWRvdzogYmxhY2sgLTFwdCAxcHQgM3B0OyAqL1xyXG59XHJcbmJ1dHRvbjpob3ZlciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzgwYmRhZDtcclxufVxyXG5cclxuLyogbWVkaWEgUXVlcnkgZm9yIFRhYmxldHMgKi9cclxuLyogQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY4cHgpIHtcclxuICAgIC5iYWNrZ3JvdW5kIHtcclxuICAgICAgbWFyZ2luLXRvcDogMTB2aDtcclxuICAgICAgaGVpZ2h0OiA4MHZoO1xyXG4gICAgICB3aWR0aDogMTAwdnc7XHJcbiAgICB9XHJcbiAgXHJcbiAgICAuYm9keSB7XHJcbiAgICAgIHdpZHRoOiAxMDB2dztcclxuICAgICAgaGVpZ2h0OiA1MHZ3O1xyXG4gICAgfVxyXG4gICAgLmZvcm0tZ3JvdXAge1xyXG4gICAgICBtYXJnaW4tdG9wOiAxMHB4O1xyXG4gICAgfVxyXG4gIFxyXG4gICAgZm9ybSB7XHJcbiAgICAgIHdpZHRoOiAzMHZ3O1xyXG4gICAgfVxyXG4gIFxyXG4gICAgbGFiZWwge1xyXG4gICAgICBmb250LXNpemU6IDMwcHg7XHJcbiAgICB9XHJcbiAgfSAqL1xyXG5cclxuLyogTWVkaWEgUXVlcnkgZm9yIHBob25lICovXHJcbi8qIEBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDM2MHB4KSB7XHJcbiAgICAuYmFja2dyb3VuZCB7XHJcbiAgICAgIG1hcmdpbi10b3A6IDEwdmg7XHJcbiAgICAgIGhlaWdodDogODB2aDtcclxuICAgICAgd2lkdGg6IDEwMHZ3O1xyXG4gICAgfVxyXG4gIFxyXG4gICAgLmJvZHkge1xyXG4gICAgICB3aWR0aDogMTAwdnc7XHJcbiAgICAgIGhlaWdodDogNjB2aDtcclxuICAgIH1cclxuICAgIGgxIHtcclxuICAgICAgbWFyZ2luOiAwO1xyXG4gICAgfVxyXG4gIFxyXG4gICAgZm9ybSB7XHJcbiAgICAgIG1hcmdpbi10b3A6IDVweDtcclxuICAgICAgd2lkdGg6IDQwdnc7XHJcbiAgICAgIGhlaWdodDogYXV0bztcclxuICAgIH1cclxuICBcclxuICAgIGxhYmVsIHtcclxuICAgICAgZm9udC1zaXplOiAzMHB4O1xyXG4gICAgfVxyXG4gIH0gKi9cclxuIl19 */"]
     });
     /*@__PURE__*/
 
@@ -3747,13 +6353,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var src_app_components_user_recipes_user_recipes_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var src_app_MOCK_DATA_mock_recipes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! src/app/MOCK_DATA/mock-recipes */
+    "./src/app/MOCK_DATA/mock-recipes.ts");
+    /* harmony import */
+
+
+    var src_app_components_user_recipes_user_recipes_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! src/app/components/user-recipes/user-recipes.service */
     "./src/app/components/user-recipes/user-recipes.service.ts");
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
@@ -3761,9 +6373,71 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h3");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -3773,9 +6447,55 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (rf & 2) {
         var item_r1 = ctx.$implicit;
 
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", item_r1.picture, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("alt", item_r1.drink_name);
+
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r1.drink_name);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Drink Name: ", item_r1.drink_name, "");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Rating: ", item_r1.rating, "");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Glassware: ", item_r1.glassware, "");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("location: ", item_r1.location, "");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("location: ", item_r1.location, "");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("Ingredient 1 ", item_r1.amount_1, " ", item_r1.ingredient_1, "");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("Ingredient 2 ", item_r1.amount_2, " ", item_r1.ingredient_2, "");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("Ingredient 3 ", item_r1.amount_3, " ", item_r1.ingredient_3, "");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("Ingredient 4 ", item_r1.amount_4, " ", item_r1.ingredient_4, "");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("Ingredient 5 ", item_r1.amount_5, " ", item_r1.ingredient_5, "");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Date Created: ", item_r1.date_created, "");
       }
     }
 
@@ -3784,16 +6504,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, UserRecipesMainComponent);
 
         this.userRecipeService = userRecipeService;
+        this.mockRecipes = src_app_MOCK_DATA_mock_recipes__WEBPACK_IMPORTED_MODULE_1__["MOCK_RECIPES"];
       }
 
       _createClass(UserRecipesMainComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this13 = this;
+          var _this18 = this;
 
           this.userRecipeService.getRecipes().subscribe(function (data) {
-            _this13.recipes = data;
-            console.log(_this13.recipes);
+            _this18.recipes = data;
+            console.log(_this18.recipes);
           });
         }
       }]);
@@ -3802,7 +6523,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     UserRecipesMainComponent.ɵfac = function UserRecipesMainComponent_Factory(t) {
-      return new (t || UserRecipesMainComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_components_user_recipes_user_recipes_service__WEBPACK_IMPORTED_MODULE_1__["UserRecipesService"]));
+      return new (t || UserRecipesMainComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_components_user_recipes_user_recipes_service__WEBPACK_IMPORTED_MODULE_2__["UserRecipesService"]));
     };
 
     UserRecipesMainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -3810,7 +6531,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["user-recipes-main"]],
       decls: 4,
       vars: 1,
-      consts: [[4, "ngFor", "ngForOf"]],
+      consts: [[4, "ngFor", "ngForOf"], ["width", "200px", 3, "src", "alt"]],
       template: function UserRecipesMainComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section");
@@ -3821,7 +6542,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, UserRecipesMainComponent_div_3_Template, 3, 1, "div", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, UserRecipesMainComponent_div_3_Template, 24, 18, "div", 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
@@ -3829,10 +6550,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         if (rf & 2) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.recipes);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.mockRecipes);
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"]],
+      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]],
       styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdXNlci1yZWNpcGVzL3VzZXItcmVjaXBlcy1tYWluL3VzZXItcmVjaXBlcy1tYWluLmNvbXBvbmVudC5jc3MifQ== */"]
     });
     /*@__PURE__*/
@@ -3847,7 +6568,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }]
       }], function () {
         return [{
-          type: src_app_components_user_recipes_user_recipes_service__WEBPACK_IMPORTED_MODULE_1__["UserRecipesService"]
+          type: src_app_components_user_recipes_user_recipes_service__WEBPACK_IMPORTED_MODULE_2__["UserRecipesService"]
         }];
       }, null);
     })();
@@ -4354,6 +7075,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getDetails",
         value: function getDetails(recipeID) {
+          console.log('service', recipeID);
           return this.http.get("".concat(this.baseUrl, "lookup.php?i=").concat(recipeID));
         }
       }, {

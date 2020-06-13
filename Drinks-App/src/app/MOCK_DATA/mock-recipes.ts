@@ -17,7 +17,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.5,
     date_created: '06/24/2019',
     date_modified: '2019-06-28 20:11:44',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '6d8fd2cd-c40a-488d-b420-88c2079dd84d',
@@ -37,7 +37,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.5,
     date_created: '07/29/2019',
     date_modified: '2019-07-21 17:16:54',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '206a3460-7920-4c29-8861-122c24deef7c',
@@ -57,7 +57,7 @@ export const MOCK_RECIPES = [
     amount_5: null,
     date_created: '03/13/2020',
     date_modified: '2020-05-07 02:41:22',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '28a40354-04fa-4a06-a711-7d421f56f834',
@@ -77,7 +77,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.3,
     date_created: '09/17/2019',
     date_modified: '2020-03-06 11:05:50',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '3266897f-339d-467d-aaa8-7d28b7da035b',
@@ -97,7 +97,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.8,
     date_created: '08/22/2019',
     date_modified: '2019-06-27 01:54:02',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '85efa5c4-99f6-4dcf-9239-ae3b6ed2ac23',
@@ -117,7 +117,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.6,
     date_created: '04/14/2020',
     date_modified: '2019-08-11 11:14:49',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '56ca6112-1513-44f5-8fff-4a5de8ca2d90',
@@ -137,7 +137,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.3,
     date_created: '04/27/2020',
     date_modified: '2020-03-29 12:59:36',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'd05a2c8a-ec0d-438d-b59e-dbebeab1dd37',
@@ -157,7 +157,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.7,
     date_created: '11/04/2019',
     date_modified: '2020-01-16 17:32:43',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'cc2d686e-0919-48b3-ad56-c39f2d77eef3',
@@ -177,7 +177,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.5,
     date_created: '04/07/2020',
     date_modified: '2019-06-22 02:46:24',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'ce7ced37-9dfa-4ed7-932e-893e6625e14e',
@@ -197,7 +197,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.5,
     date_created: '05/03/2020',
     date_modified: '2019-12-01 03:13:26',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'c7ed632f-d706-4493-ad30-a9a34c1d8e6f',
@@ -217,7 +217,7 @@ export const MOCK_RECIPES = [
     amount_5: null,
     date_created: '07/25/2019',
     date_modified: '2019-12-25 00:42:03',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '8efd8c1f-454d-4cd1-8563-5c31694f0b37',
@@ -237,7 +237,7 @@ export const MOCK_RECIPES = [
     amount_5: null,
     date_created: '07/16/2019',
     date_modified: '2020-01-11 23:56:44',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '4885a9a8-01d8-4353-956b-f08f2d732eb7',
@@ -257,7 +257,7 @@ export const MOCK_RECIPES = [
     amount_5: 1.0,
     date_created: '04/14/2020',
     date_modified: '2020-03-17 18:05:49',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'aa264d68-23fe-4a40-84bd-55f67167ddc4',
@@ -277,7 +277,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.5,
     date_created: '06/30/2019',
     date_modified: '2020-04-18 14:59:38',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'a53b4394-528c-4c02-b9e5-cd6cf271f7e1',
@@ -297,7 +297,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.3,
     date_created: '06/06/2020',
     date_modified: '2020-03-13 17:29:31',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '47622535-3bf4-45fd-bebe-7b473eea80f5',
@@ -317,7 +317,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.5,
     date_created: '07/20/2019',
     date_modified: '2019-12-27 11:55:05',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '01dd5a39-5247-4e64-ab67-0fceb45dfb2a',
@@ -337,7 +337,7 @@ export const MOCK_RECIPES = [
     amount_5: null,
     date_created: '12/17/2019',
     date_modified: '2019-12-19 13:38:50',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '867e9c56-b9d1-4558-b37a-94cdc9f4a516',
@@ -357,7 +357,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.8,
     date_created: '11/27/2019',
     date_modified: '2020-03-07 00:16:19',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '8bccb5a0-c3c8-408d-ae80-1c9ba874cdda',
@@ -377,7 +377,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.8,
     date_created: '02/29/2020',
     date_modified: '2019-12-18 18:29:56',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'a54f2c8a-8500-4aca-b932-099e8d4c1f86',
@@ -397,7 +397,7 @@ export const MOCK_RECIPES = [
     amount_5: null,
     date_created: '10/08/2019',
     date_modified: '2019-10-17 23:02:24',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'b1bd1a52-d0f6-403b-8710-db65a0fae73a',
@@ -417,7 +417,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.6,
     date_created: '06/26/2019',
     date_modified: '2019-07-08 06:41:29',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'b5993b7d-51c3-4d0a-bee3-b7371c896d7f',
@@ -437,7 +437,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.3,
     date_created: '05/19/2020',
     date_modified: '2019-07-02 06:22:39',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'b032eb06-fd95-48fb-8059-c0afc072342c',
@@ -457,7 +457,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.9,
     date_created: '04/26/2020',
     date_modified: '2019-09-02 20:33:50',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'eb2ed546-dc61-4bd2-b504-938b88bca52f',
@@ -477,7 +477,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.7,
     date_created: '01/18/2020',
     date_modified: '2019-11-12 12:29:17',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'c14355dc-0a20-4da7-93fa-b2ee2c678512',
@@ -497,7 +497,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.3,
     date_created: '11/15/2019',
     date_modified: '2019-09-12 18:53:31',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '7d831c8e-0123-499c-ab22-cdef1cef5bf1',
@@ -517,7 +517,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.5,
     date_created: '03/01/2020',
     date_modified: '2020-02-14 01:35:59',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '8fdd8b3c-b16f-4d47-ad53-e00aafbff6a1',
@@ -537,7 +537,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.5,
     date_created: '09/02/2019',
     date_modified: '2019-12-31 08:27:47',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '5764f24f-2a2a-4aba-8fc6-9d01b25635ec',
@@ -557,7 +557,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.5,
     date_created: '11/27/2019',
     date_modified: '2020-02-22 10:16:34',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'd5d9078d-b006-4792-bbaa-93bef4645812',
@@ -577,7 +577,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.9,
     date_created: '09/21/2019',
     date_modified: '2019-12-27 15:57:24',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '0c72f151-ec42-4bb9-91a4-550bf3baa566',
@@ -597,7 +597,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.9,
     date_created: '09/27/2019',
     date_modified: '2019-10-13 00:02:46',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'ad04c9c8-b49e-4129-acd9-22e6a3c7711c',
@@ -617,7 +617,7 @@ export const MOCK_RECIPES = [
     amount_5: 1.0,
     date_created: '09/20/2019',
     date_modified: '2019-09-25 06:40:54',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'c7541453-d2c1-4c59-9600-53501ea056e8',
@@ -637,7 +637,7 @@ export const MOCK_RECIPES = [
     amount_5: null,
     date_created: '05/25/2020',
     date_modified: '2019-10-17 20:48:27',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '2c524165-1ad5-4b06-94c9-beeead889d83',
@@ -657,7 +657,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.6,
     date_created: '02/14/2020',
     date_modified: '2019-11-29 08:00:05',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'd33e9676-f8ef-44d3-b147-6096aab7bc0a',
@@ -677,7 +677,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.4,
     date_created: '02/13/2020',
     date_modified: '2019-08-08 10:57:35',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '5bbea3ff-33c3-4c9e-8222-9e626a99e962',
@@ -697,7 +697,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.5,
     date_created: '02/24/2020',
     date_modified: '2020-03-17 10:06:51',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '93515416-84d1-4bcd-a0e6-8fa444b043fe',
@@ -717,7 +717,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.5,
     date_created: '05/23/2020',
     date_modified: '2019-12-12 03:23:31',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '199aa472-3928-4eb7-b761-4111f3f79760',
@@ -737,7 +737,7 @@ export const MOCK_RECIPES = [
     amount_5: null,
     date_created: '02/09/2020',
     date_modified: '2020-05-15 21:52:11',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '15654459-7021-4685-adc4-9f19240388db',
@@ -757,7 +757,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.8,
     date_created: '12/20/2019',
     date_modified: '2019-08-29 04:11:33',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'c68ea54d-5f06-4048-a8b5-0c33a07a7ed0',
@@ -777,7 +777,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.6,
     date_created: '03/27/2020',
     date_modified: '2019-09-27 20:04:01',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '3b932085-f637-4059-903f-59a639e3ebe8',
@@ -797,7 +797,7 @@ export const MOCK_RECIPES = [
     amount_5: null,
     date_created: '03/31/2020',
     date_modified: '2019-08-26 14:41:41',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '2156d499-3ae5-4966-96a6-b1d468d91dec',
@@ -817,7 +817,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.6,
     date_created: '10/15/2019',
     date_modified: '2019-09-24 15:41:23',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'a462334a-ae23-458f-b711-300ab36d833b',
@@ -837,7 +837,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.8,
     date_created: '04/02/2020',
     date_modified: '2020-05-13 08:04:11',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'd3429ef3-e8db-4161-9e7c-4fdb03b04bcd',
@@ -857,7 +857,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.7,
     date_created: '04/15/2020',
     date_modified: '2019-07-04 19:29:16',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '1f26fa5c-e81f-4e7b-880f-e4a10178acae',
@@ -877,7 +877,7 @@ export const MOCK_RECIPES = [
     amount_5: null,
     date_created: '10/28/2019',
     date_modified: '2019-11-22 23:05:01',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'd2b13a38-6940-4534-9b52-50bf9d9ff649',
@@ -897,7 +897,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.8,
     date_created: '10/12/2019',
     date_modified: '2019-12-07 08:50:35',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '146d0f5c-08ed-4edf-971e-d715db3eb63d',
@@ -917,7 +917,7 @@ export const MOCK_RECIPES = [
     amount_5: 1.0,
     date_created: '05/03/2020',
     date_modified: '2020-01-23 19:48:41',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: 'ec8ac615-f701-42fb-a207-86f8aa452f5c',
@@ -937,7 +937,7 @@ export const MOCK_RECIPES = [
     amount_5: 1.0,
     date_created: '08/31/2019',
     date_modified: '2019-07-08 08:39:21',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '3458e93c-9ceb-4419-a280-7f25326ef899',
@@ -957,7 +957,7 @@ export const MOCK_RECIPES = [
     amount_5: 0.8,
     date_created: '06/04/2020',
     date_modified: '2019-12-27 02:31:53',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '0f99f649-4323-4a24-b76b-47a6ee28c872',
@@ -977,7 +977,7 @@ export const MOCK_RECIPES = [
     amount_5: null,
     date_created: '09/24/2019',
     date_modified: '2020-05-02 22:32:15',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
   {
     recipe_id: '46fc2d48-2c9e-4f34-8e3f-8b59ab734a98',
@@ -997,6 +997,6 @@ export const MOCK_RECIPES = [
     amount_5: null,
     date_created: '04/15/2020',
     date_modified: '2019-11-05 06:32:09',
-    picture: 'https://picsum.photos/400',
+    picture: '../../../../assets/adam-jaime-dmkmrNptMpw-unsplash.jpg',
   },
 ];
