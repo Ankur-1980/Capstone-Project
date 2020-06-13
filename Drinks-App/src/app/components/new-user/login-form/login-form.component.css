@@ -2,8 +2,9 @@
   margin-top: 30px;
   background-image: url(./Margarita/margarita.svg);
   background-repeat: no-repeat;
-  height: 115vh;
-  width: 100vw;
+  background-color: rgb(52, 43, 56);
+  /* height: 115vh; */
+  /* width: 125vw; */
 }
 
 .body {
@@ -11,13 +12,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  /* width: 100vw; */
   height: 60vw;
 }
-h1 {
+/* h1 {
   font-size: 50px;
   color: rgb(236, 184, 92);
-}
+} */
 
 form {
   display: flex;
@@ -27,38 +28,31 @@ form {
 }
 
 label {
-  font-size: 30px;
+  font-size: 20px;
 }
 .form-group {
-  margin-top: 30px;
-  color: rgb(236, 184, 92);
+  margin-top: 10px;
+  /* color: rgb(236, 184, 92); */
   display: flex;
   flex-direction: column;
 }
-
-/* Input Styling */
-input {
+/* input {
   padding: 10px 5px;
   color: hsl(0, 0%, 100%);
   background-color: rgb(236, 184, 92, 0.5);
   border: 2pt solid rgb(236, 184, 92);
-}
-input:hover {
+} */
+
+/* input:hover {
   border: 2pt solid #80bdad;
 }
-
-::placeholder {
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-}
-
-/* button Style */
 button {
   margin-top: 30px;
   padding: 10px 0px;
   background-color: rgb(236, 184, 92);
-  /* box-shadow: black -1pt 1pt 3pt; */
+  /* box-shadow: black -1pt 1pt 3pt;
 }
+
 button:hover {
   background-color: #80bdad;
 }
@@ -102,10 +96,6 @@ a:hover {
   form {
     width: 30vw;
   }
-
-  label {
-    font-size: 30px;
-  }
 }
 
 /* Media Query for phone */
@@ -120,6 +110,7 @@ a:hover {
     width: 100vw;
     height: 60vh;
   }
+
   h1 {
     margin: 0;
   }
@@ -131,6 +122,6 @@ a:hover {
   }
 
   label {
-    font-size: 30px;
+    font-size: 18px;
   }
 }
