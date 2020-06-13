@@ -6,15 +6,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LoginService {
   constructor(private http: HttpClient) {}
-  users = [];
 
   getUsers(): any {
-    return this.http.get('http://localhost:3000/users');
+    return this.http.get('/api/users');
   }
 
   addNewUser(formValue) {
     this.http
-      .post<{ message: string }>('http://localhost:3000/users', formValue)
+      .post<{ message: string }>('/api/users', formValue)
       .subscribe((response) => {
         console.log(response.message);
       });

@@ -1,0 +1,84 @@
+.background {
+  margin-top: 30px;
+  background-image: url(./Highball/Highball.svg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 60vw;
+}
+h1 {
+  font-size: 50px;
+  color: rgb(236, 184, 92);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: auto;
+}
+.form-group {
+  margin-top: 30px;
+  color: rgb(236, 184, 92);
+  display: flex;
+  flex-direction: column;
+}
+
+/* slider style */
+/* 
+.slider {
+  background-color: rgb(236, 184, 92);
+} */
+
+/* dropdown */
+select {
+  width: 30vw;
+  background-color: #80bdad;
+  color: #204051;
+}
+
+/* Input Styling */
+input {
+  padding: 10px 5px;
+  color: hsl(0, 0%, 100%);
+  background-color: rgb(236, 184, 92, 0.5);
+  border: 2pt solid rgb(236, 184, 92);
+}
+input:hover {
+  border: 2pt solid #80bdad;
+}
+
+::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+/* Textarea */
+
+textarea {
+  padding: 10px 5px;
+  color: hsl(0, 0%, 100%);
+  background-color: rgb(236, 184, 92, 0.5);
+  border: 2pt solid rgb(236, 184, 92);
+}
+textarea:hover {
+  border: 2pt solid #80bdad;
+}
+
+/* button Style */
+button {
+  margin-top: 30px;
+  padding: 10px 0px;
+  background-color: rgb(236, 184, 92);
+  /* box-shadow: black -1pt 1pt 3pt; */
+}
+button:hover {
+  background-color: #80bdad;
+}
