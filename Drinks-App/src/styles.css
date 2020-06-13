@@ -1,1 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #342B38;
+}
+
+* {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: rgb(236, 184, 92);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #80bdad;
+    transition: all 0.3s ease 0s;
+}
+
+h1 {
+  font-size: 45px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+p, a {
+    font-size: 14px;
+}
+
+input, textarea, select {
+    padding: 10px 0;
+    margin: 5px 0 5px 0;
+    color: hsl(0, 0%, 100%);
+    background-color: rgb(236, 184, 92, 0.5);
+    border: 1pt solid rgb(236, 184, 92);
+    transition: all 0.3s ease 0s;
+    font-size: 12px;
+    width: 100%;
+}
+
+input::placeholder {
+    padding: 10px;
+} 
+
+input:hover {
+    border: 1pt solid #80bdad;
+}
+
+label {
+    padding-right: 10px;
+}
+  
+button {
+    margin-top: 10px;
+    padding: 10px 0px;
+    background-color: rgb(236, 184, 92);
+    border: none;
+    transition: all 0.3s ease 0s;
+    font-size: 14px;
+    color: #ffffff;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #80bdad;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    p, label, button, a {
+        font-size: 12px;
+    }
+
+    a {
+        margin-top: 10px;
+    }
+}
