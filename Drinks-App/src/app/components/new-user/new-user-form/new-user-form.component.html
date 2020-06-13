@@ -1,121 +1,97 @@
-<h1 class="center">New User Form</h1>
-<form [formGroup]="newUserForm" (ngSubmit)="onSubmit()">
-  <!-- first name & last name- required-->
-  <div class="form-group inline">
-    <div class="two-col">
-      <label for="firstName" for="label-control">First Name</label>
-      <input type="text" formControlName="firstName" class="form-control" />
-      <!-- <div *ngIf="firstName.invalid && firstName.touched">
+<div class="background">
+  <div class="body">
+    <h1 class="center">New User Form</h1>
+    <form [formGroup]="newUserForm" (ngSubmit)="onSubmit()">
+      <!-- first name & last name- required-->
+      <div class="form-group inline">
+        <div class="two-col">
+          <label for="firstName" for="label-control">First Name</label>
+          <input type="text" formControlName="firstName" class="form-control" />
+          <!-- <div *ngIf="firstName.invalid && firstName.touched">
         <div *ngIf="firstName.errors.required">
-        </div>
+        </div> 
       </div> -->
-    </div>
-    <div class="two-col">
-      <label for="lastName" for="label-control">Last Name</label>
-      <input type="text" formControlName="lastName" class="form-control" />
-      <!-- <div *ngIf="lastName.invalid && lastName.touched">
+        </div>
+        <div class="two-col">
+          <label for="lastName" for="label-control">Last Name</label>
+          <input type="text" formControlName="lastName" class="form-control" />
+          <!-- <div *ngIf="lastName.invalid && lastName.touched">
         <div *ngIf="lastName.errors.required">
           Last Name is required
         </div>
       </div> -->
-    </div>
-  </div>
-  <!-- username - required -->
-  <div class="form-group">
-    <label for="userName" for="label-control"> User Name</label>
-    <input type="text" formControlName="userName" class="form-control" />
-    <!-- <div *ngIf="userName.invalid && userName.touched">
+        </div>
+        <!-- username - required -->
+        <div class="form-group">
+          <label for="userName" for="label-control"> User Name</label>
+          <input type="text" formControlName="userName" class="form-control" />
+          <!-- <div *ngIf="userName.invalid && userName.touched">
       <div *ngIf="userName.errors.required">
         Username is required
       </div>
     </div> -->
-  </div>
-  <!-- age - required -->
-  <div class="form-group">
-    <label for="age" for="label-control"> Age</label>
-    <input
-      formControlName="age"
-      class="form-control"
-      (change)="validateDOB($event)"
-      type="date"
-      name="dob"
-      placeholder="DOB"
-    />
-  </div>
-  <!-- email - required -->
-  <div class="form-group">
-    <label for="email" for="label-control">Email</label>
-    <input type="email" formControlName="email" class="form-control" />
-    <!-- <div *ngIf="userName.invalid && userName.touched">
+        </div>
+        <!-- age - required -->
+        <div class="form-group">
+          <label for="age" for="label-control"> Age</label>
+          <input
+            formControlName="age"
+            class="form-control"
+            (change)="validateDOB($event)"
+            type="date"
+            name="dob"
+            placeholder="DOB"
+          />
+        </div>
+        <!-- email - required -->
+        <div class="form-group">
+          <label for="email" for="label-control">Email</label>
+          <input type="email" formControlName="email" class="form-control" />
+          <!-- <div *ngIf="userName.invalid && userName.touched">
       <div *ngIf="userName.errors.required">
         Username is required
       </div>
     </div> -->
+          <!-- password - required -->
+          <div class="form-group">
+            <label for="password" for="label-control">Password:</label>
+            <input
+              type="password"
+              formControlName="password"
+              class="form-control"
+              placeholder="Enter Password"
+            />
+          </div>
+          <!-- password -2 - required -->
+          <div class="form-group">
+            <label for="password" for="label-control">Password:</label>
+            <input
+              type="password"
+              formControlName="password"
+              class="form-control"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <!-- bio - not required -->
+          <div class="form-group">
+            <label for="bio" for="label-control" rows="9" cols="50"
+              >Biography:</label
+            >
+            <textarea
+              formControlName="bio"
+              class="form-control"
+              placeholder="Limit 140 Characters"
+            >
+            </textarea>
+          </div>
+          <!-- submit button -->
+          <button type="submit">Submit</button>
+        </div>
+        <!-- Back to login screen -->
+        <p class="center">
+          Already registered? Click <a href="#"> here </a> to login
+        </p>
       </div>
-      <!-- password - required -->
-      <div class="form-group">
-        <label for="password" for="label-control">Password:</label>
-        <input
-          type="password"
-          formControlName="password"
-          class="form-control"
-          placeholder="Enter Password"
-        />
-      </div>
-      <!-- password -2 - required -->
-      <div class="form-group">
-        <label for="password" for="label-control">Password:</label>
-        <input
-          type="password"
-          formControlName="password"
-          class="form-control"
-          placeholder="Confirm Password"
-        />
-      </div>
-      <!-- bio - not required -->
-      <div class="form-group">
-        <label for="bio" for="label-control" rows="9" cols="50"
-          >Biography:</label
-        >
-        <textarea
-          formControlName="bio"
-          class="form-control"
-          placeholder="Limit 140 Characters"
-        >
-        </textarea>
-      </div>
-      <button type="submit">Submit</button>
     </form>
-    <div class="resetPW">
-      <div class="linkInfo">Already Registered?</div>
-      <a href="#">Click here to login</a>
-    </div>
   </div>
-  <!-- password - required -->
-  <div class="form-group">
-    <label for="password" for="label-control">Password</label>
-    <input
-      type="password"
-      formControlName="password"
-      class="form-control"
-      placeholder="password"
-    />
-  </div>
-  <!-- password -2 - required -->
-  <div class="form-group">
-    <label for="password" for="label-control">Confirm Password</label>
-    <input
-      type="password"
-      formControlName="password"
-      class="form-control"
-      placeholder="Confirm Password"
-    />
-  </div>
-  <!-- bio - not required -->
-  <div class="form-group">
-    <label for="bio" for="label-control" rows="8" cols="50">Biography</label>
-    <textarea formControlName="bio" class="form-control"> </textarea>
-  </div>
-  <button type="submit">Submit</button>
-  <p class="center">Already registered? Click <a href="#"> here </a> to login</p>
-</form>
+</div>

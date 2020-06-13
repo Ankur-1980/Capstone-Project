@@ -43,6 +43,7 @@ select {
   width: 30vw;
   background-color: #80bdad;
   color: #204051;
+  border-style: none;
 }
 
 /* Input Styling */

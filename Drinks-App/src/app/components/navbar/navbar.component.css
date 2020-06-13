@@ -1,0 +1,52 @@
+.nav-parent {
+  position: fixed;
+  width: 200px;
+  height: 100vh;
+  background-color: rgb(32, 64, 81, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links {
+  margin: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* justify-content: right; */
+}
+a {
+  width: 80px;
+  height: 80px;
+  color: #80bdad;
+  margin-top: 8vh;
+}
+
+a:hover {
+  width: 100px;
+  height: 100px;
+}
+
+.feed {
+  background-image: url(../Icons/NavBar_Feed/Feed.svg);
+  background-repeat: no-repeat;
+}
+
+.drink-post {
+  background-image: url(../Icons/NavBar_Drink/drinks.svg);
+  background-repeat: no-repeat;
+}
+
+.preferences {
+  background-image: url(../Icons/NavBar_MyFavs/preferances.svg);
+  background-repeat: no-repeat;
+}
+.quiz {
+  background-image: url(../Icons/NavBar_Quiz/quiz.svg);
+  background-repeat: no-repeat;
+}
+
+img {
+  border-radius: 100%;
+  background-color: white;
+  border: 2px solid rgb(236, 184, 94);
+}
