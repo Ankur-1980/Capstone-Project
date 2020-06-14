@@ -2,13 +2,17 @@ const users = require("express").Router();
 const database = require("../connection");
 const bcrypt = require("bcrypt");
 
+// get all users
 users.get("/", (req, res) => {
   database.query("SELECT * FROM users").then((response) => {
     res.status(200).json({ message: "Users Fetched", users: response.rows });
   });
 });
 
-users.post("/", async (req, res) => {
+// path for register
+users.get("/register"), (req, res) => {};
+
+users.post("/register", async (req, res) => {
   // securing password
   // let hashedPassword = await bcrypt.hash(req.body.password, 10);
   // const errors = [];

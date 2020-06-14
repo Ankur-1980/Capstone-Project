@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root',
 })
-export class LoginService {
+export class UsersService {
   constructor(private http: HttpClient) {}
 
   getUsers(): any {
@@ -13,7 +13,7 @@ export class LoginService {
 
   addNewUser(formValue) {
     this.http
-      .post<{ message: string }>('/api/users', formValue)
+      .post<{ message: string }>('/api/users/register', formValue)
       .subscribe((response) => {
         console.log(response.message);
       });
