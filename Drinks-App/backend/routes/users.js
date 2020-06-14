@@ -3,6 +3,9 @@ const database = require("../connection");
 const bcrypt = require("bcrypt");
 const session = require("express-session");
 const passport = require();
+const initializePassport = require("./passportConfig");
+
+initializePassport(passport);
 
 // get all users
 users.get("/", (req, res) => {

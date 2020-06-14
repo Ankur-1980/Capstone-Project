@@ -3,6 +3,7 @@ const app = express();
 const session = require("express-session");
 const passport = require("passport");
 const initializePassport = require("./passportConfig");
+
 initializePassport(passport);
 
 const PORT = process.env.PORT || 3000;
