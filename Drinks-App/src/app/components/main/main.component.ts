@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RecipeApiService } from '../../services/recipeAPI.service';
-import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-main',

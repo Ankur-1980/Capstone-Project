@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { LoginService } from 'src/app/services/login.service';
+import { UsersService } from '../../../services/users.service';
 
 @Component({
   selector: 'new-user-form',
@@ -10,7 +10,7 @@ import { LoginService } from 'src/app/services/login.service';
 export class NewUserFormComponent implements OnInit {
   newUserForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private loginService: LoginService) {}
+  constructor(private fb: FormBuilder, private usersService: UsersService) {}
 
   ngOnInit(): void {
     this.newUserForm = this.fb.group({
@@ -19,28 +19,14 @@ export class NewUserFormComponent implements OnInit {
       userName: ['', [Validators.required]],
       age: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
-      password: [
-        '',
-        [
-          Validators.required,
-          Validators.pattern('^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$'),
-        ],
-      ],
-      password2: [
-        '',
-        [
-          Validators.required,
-          Validators.pattern('^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$'),
-        ],
-      ],
+      password: ['', [Validators.required]],
+      password2: ['', [Validators.required, ,]],
       bio: ['', [Validators.maxLength(255)]],
       date: this.fb.control(new Date()),
     });
   }
 
   validateDOB(dob) {
-    console.log(dob.target.value);
-
     let year = new Date(dob.target.value).getFullYear();
     let today = new Date().getFullYear();
     if (today - year >= 21) {
@@ -65,6 +51,6 @@ export class NewUserFormComponent implements OnInit {
 
   onSubmit() {
     // console.log('form', this.newUserForm.value);
-    this.loginService.addNewUser(this.newUserForm.value);
+    this.usersService.addNewUser(this.newUserForm.value);
   }
 }

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { TheFeedMainComponent } from './components/the-feed/the-feed-main/the-feed-main.component';
+import { QuizComponent } from './components/quiz/quiz.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -14,6 +15,11 @@ const routes: Routes = [
     path: 'the-feed',
     component: TheFeedMainComponent,
   },
+  {
+    path: 'quiz',
+    component: QuizComponent,
+  },
+
   {
     path: 'preferences',
     loadChildren: () =>
