@@ -1755,13 +1755,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! ./components/navbar/navbar.component */
-    "./src/app/components/navbar/navbar.component.ts");
-    /* harmony import */
-
-
-    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 
@@ -1776,16 +1770,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: AppComponent,
       selectors: [["app-root"]],
-      decls: 2,
+      decls: 1,
       vars: 0,
       template: function AppComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-navbar");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "router-outlet");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "router-outlet");
         }
       },
-      directives: [_components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_1__["NavbarComponent"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterOutlet"]],
+      directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterOutlet"]],
       styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"]
     });
     /*@__PURE__*/
@@ -2003,6 +1995,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ../new-user/new-user-form/new-user-form.component */
+    "./src/app/components/new-user/new-user-form/new-user-form.component.ts");
 
     var MainComponent = /*#__PURE__*/function () {
       function MainComponent() {
@@ -2024,9 +2022,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     MainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: MainComponent,
       selectors: [["app-main"]],
-      decls: 0,
+      decls: 1,
       vars: 0,
-      template: function MainComponent_Template(rf, ctx) {},
+      template: function MainComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "new-user-form");
+        }
+      },
+      directives: [_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_1__["NewUserFormComponent"]],
       styles: ["a[_ngcontent-%COMP%] {\r\n  color: #80bdad;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9tYWluL21haW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGNBQWM7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL21haW4vbWFpbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYSB7XHJcbiAgY29sb3I6ICM4MGJkYWQ7XHJcbn1cclxuIl19 */"]
     });
     /*@__PURE__*/
@@ -2176,9 +2179,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var src_app_services_login_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! src/app/services/login.service */
-    "./src/app/services/login.service.ts");
+    var _services_users_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ../../../services/users.service */
+    "./src/app/services/users.service.ts");
     /* harmony import */
 
 
@@ -2187,10 +2190,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
 
     var LoginFormComponent = /*#__PURE__*/function () {
-      function LoginFormComponent(loginService, fb) {
+      function LoginFormComponent(usersService, fb) {
         _classCallCheck(this, LoginFormComponent);
 
-        this.loginService = loginService;
+        this.usersService = usersService;
         this.fb = fb;
       }
 
@@ -2214,7 +2217,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     LoginFormComponent.ɵfac = function LoginFormComponent_Factory(t) {
-      return new (t || LoginFormComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_login_service__WEBPACK_IMPORTED_MODULE_1__["LoginService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]));
+      return new (t || LoginFormComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_users_service__WEBPACK_IMPORTED_MODULE_1__["UsersService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]));
     };
 
     LoginFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -2315,7 +2318,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }]
       }], function () {
         return [{
-          type: src_app_services_login_service__WEBPACK_IMPORTED_MODULE_1__["LoginService"]
+          type: _services_users_service__WEBPACK_IMPORTED_MODULE_1__["UsersService"]
         }, {
           type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]
         }];
@@ -2359,16 +2362,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var src_app_services_login_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! src/app/services/login.service */
-    "./src/app/services/login.service.ts");
+    var _services_users_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../../../services/users.service */
+    "./src/app/services/users.service.ts");
 
     var NewUserFormComponent = /*#__PURE__*/function () {
-      function NewUserFormComponent(fb, loginService) {
+      function NewUserFormComponent(fb, usersService) {
         _classCallCheck(this, NewUserFormComponent);
 
         this.fb = fb;
-        this.loginService = loginService;
+        this.usersService = usersService;
       }
 
       _createClass(NewUserFormComponent, [{
@@ -2380,8 +2383,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             userName: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
             age: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
             email: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].email]],
-            password: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].pattern('^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$')]],
-            password2: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].pattern('^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$')]],
+            password: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
+            password2: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,,]],
             bio: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].maxLength(255)]],
             date: this.fb.control(new Date())
           });
@@ -2389,7 +2392,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "validateDOB",
         value: function validateDOB(dob) {
-          console.log(dob.target.value);
           var year = new Date(dob.target.value).getFullYear();
           var today = new Date().getFullYear();
 
@@ -2415,7 +2417,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "onSubmit",
         value: function onSubmit() {
           // console.log('form', this.newUserForm.value);
-          this.loginService.addNewUser(this.newUserForm.value);
+          this.usersService.addNewUser(this.newUserForm.value);
         }
       }]);
 
@@ -2423,7 +2425,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     NewUserFormComponent.ɵfac = function NewUserFormComponent_Factory(t) {
-      return new (t || NewUserFormComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_login_service__WEBPACK_IMPORTED_MODULE_2__["LoginService"]));
+      return new (t || NewUserFormComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_users_service__WEBPACK_IMPORTED_MODULE_2__["UsersService"]));
     };
 
     NewUserFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -2610,7 +2612,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         return [{
           type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]
         }, {
-          type: src_app_services_login_service__WEBPACK_IMPORTED_MODULE_2__["LoginService"]
+          type: _services_users_service__WEBPACK_IMPORTED_MODULE_2__["UsersService"]
         }];
       }, null);
     })();
@@ -7113,89 +7115,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/app/services/login.service.ts":
-  /*!*******************************************!*\
-    !*** ./src/app/services/login.service.ts ***!
-    \*******************************************/
-
-  /*! exports provided: LoginService */
-
-  /***/
-  function srcAppServicesLoginServiceTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "LoginService", function () {
-      return LoginService;
-    });
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-    /* harmony import */
-
-
-    var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/common/http */
-    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
-
-    var LoginService = /*#__PURE__*/function () {
-      function LoginService(http) {
-        _classCallCheck(this, LoginService);
-
-        this.http = http;
-      }
-
-      _createClass(LoginService, [{
-        key: "getUsers",
-        value: function getUsers() {
-          return this.http.get('/api/users');
-        }
-      }, {
-        key: "addNewUser",
-        value: function addNewUser(formValue) {
-          this.http.post('/api/users', formValue).subscribe(function (response) {
-            console.log(response.message);
-          });
-        }
-      }]);
-
-      return LoginService;
-    }();
-
-    LoginService.ɵfac = function LoginService_Factory(t) {
-      return new (t || LoginService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]));
-    };
-
-    LoginService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
-      token: LoginService,
-      factory: LoginService.ɵfac,
-      providedIn: 'root'
-    });
-    /*@__PURE__*/
-
-    (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](LoginService, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
-        args: [{
-          providedIn: 'root'
-        }]
-      }], function () {
-        return [{
-          type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]
-        }];
-      }, null);
-    })();
-    /***/
-
-  },
-
-  /***/
   "./src/app/services/recipeAPI.service.ts":
   /*!***********************************************!*\
     !*** ./src/app/services/recipeAPI.service.ts ***!
@@ -7312,6 +7231,89 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     (function () {
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](RecipeApiService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{
+          providedIn: 'root'
+        }]
+      }], function () {
+        return [{
+          type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]
+        }];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/services/users.service.ts":
+  /*!*******************************************!*\
+    !*** ./src/app/services/users.service.ts ***!
+    \*******************************************/
+
+  /*! exports provided: UsersService */
+
+  /***/
+  function srcAppServicesUsersServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "UsersService", function () {
+      return UsersService;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
+
+    var UsersService = /*#__PURE__*/function () {
+      function UsersService(http) {
+        _classCallCheck(this, UsersService);
+
+        this.http = http;
+      }
+
+      _createClass(UsersService, [{
+        key: "getUsers",
+        value: function getUsers() {
+          return this.http.get('/api/users');
+        }
+      }, {
+        key: "addNewUser",
+        value: function addNewUser(formValue) {
+          this.http.post('/api/users/register', formValue).subscribe(function (response) {
+            console.log(response.message);
+          });
+        }
+      }]);
+
+      return UsersService;
+    }();
+
+    UsersService.ɵfac = function UsersService_Factory(t) {
+      return new (t || UsersService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]));
+    };
+
+    UsersService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      token: UsersService,
+      factory: UsersService.ɵfac,
+      providedIn: 'root'
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](UsersService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
           providedIn: 'root'

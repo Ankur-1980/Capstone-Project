@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const session = require("express-session");
 
 const PORT = process.env.PORT || 3000;
 
@@ -12,7 +13,15 @@ const users = require("./routes/users");
 app.use(express.urlencoded({ extended: false }));
 // be able to read json
 app.use(express.json());
-//
+
+app.use(
+  session({
+    secret: "secret",
+    resave: false,
+    saveUninitialized: false,
+  })
+);
+
 app.use(express.static(__dirname + "/public"));
 
 // where to send information from the front end to the back end
