@@ -1648,6 +1648,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _components_the_feed_the_feed_main_the_feed_main_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./components/the-feed/the-feed-main/the-feed-main.component */
     "./src/app/components/the-feed/the-feed-main/the-feed-main.component.ts");
+    /* harmony import */
+
+
+    var _components_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./components/quiz/quiz.component */
+    "./src/app/components/quiz/quiz.component.ts");
 
     var routes = [{
       path: '',
@@ -1658,6 +1664,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }, {
       path: 'the-feed',
       component: _components_the_feed_the_feed_main_the_feed_main_component__WEBPACK_IMPORTED_MODULE_4__["TheFeedMainComponent"]
+    }, {
+      path: 'quiz',
+      component: _components_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_5__["QuizComponent"]
     }, {
       path: 'preferences',
       loadChildren: function loadChildren() {
