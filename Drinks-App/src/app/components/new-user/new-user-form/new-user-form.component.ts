@@ -19,28 +19,14 @@ export class NewUserFormComponent implements OnInit {
       userName: ['', [Validators.required]],
       age: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
-      password: [
-        '',
-        [
-          Validators.required,
-          Validators.pattern('^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$'),
-        ],
-      ],
-      password2: [
-        '',
-        [
-          Validators.required,
-          Validators.pattern('^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$'),
-        ],
-      ],
+      password: ['', [Validators.required]],
+      password2: ['', [Validators.required, ,]],
       bio: ['', [Validators.maxLength(255)]],
       date: this.fb.control(new Date()),
     });
   }
 
   validateDOB(dob) {
-    console.log(dob.target.value);
-
     let year = new Date(dob.target.value).getFullYear();
     let today = new Date().getFullYear();
     if (today - year >= 21) {
