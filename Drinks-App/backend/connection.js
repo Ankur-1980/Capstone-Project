@@ -11,6 +11,17 @@ const { Pool } = require("pg");
 //   connectionString: isProduction ? process.env.URL : connectionString,
 // });
 
+// // Amazon RDS Cloud
+// const credentials = new Pool({
+//   user: "postgres",
+//   password: "password",
+//   host: "capstone-project.cssdesi1idkq.us-east-2.rds.amazonaws.com",
+//   port: 5432,
+//   database: "Capstone",
+//   ssl: false,
+// });
+
+// local server
 const credentials = new Pool({
   user: "postgres",
   password: "password",
