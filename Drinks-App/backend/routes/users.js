@@ -2,6 +2,7 @@ const users = require("express").Router();
 const database = require("../connection");
 const bcrypt = require("bcrypt");
 const session = require("express-session");
+const passport = require();
 
 // get all users
 users.get("/", (req, res) => {
@@ -70,16 +71,6 @@ users.post("/register", async (req, res) => {
 });
 
 // login in
-users.post("/login", async (req, res) => {
-  // const loginName = req.body.userName;
-  // const dbName = await database
-  //   .query(`SELECT username FROM users where username='${loginName}'`)
-  //   .then((response) => {
-  //     res.json(response.rows);
-  //   });
-  // console.log(loginName);
-
-  console.log(dbName);
-});
+users.post("/login");
 
 module.exports = users;

@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 const session = require("express-session");
+const passport = require("passport");
+const initializePassport = require("./passportConfig");
+initializePassport(passport);
 
 const PORT = process.env.PORT || 3000;
 
@@ -21,6 +24,8 @@ app.use(
     saveUninitialized: false,
   })
 );
+app.use(passport.initialize);
+app.use(passport.session);
 
 app.use(express.static(__dirname + "/public"));
 
