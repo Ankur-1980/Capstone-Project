@@ -57,6 +57,8 @@ export class PreferencesService {
   }
 
   getHomeBar() {
+    console.log('service working?');
+
     this.http
       .get<{ message: string; items: any }>('/api/preferences/home-bar')
       .subscribe((data) => {
