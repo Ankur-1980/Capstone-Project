@@ -1,7 +1,41 @@
 <div class="background">
   <div class="body">
-    <prefer-nav></prefer-nav>
+    <!-- <prefer-nav></prefer-nav> -->
+    <div class="nav">
+      <ul>
+        <li>
+          <button (click)="displayFavorite('home')">What's at Home</button>
+        </li>
+        <li>
+          <button (click)="displayFavorite('bars')">Favorite Places</button>
+        </li>
+        <li>
+          <button (click)="displayFavorite('bartenders')">
+            Favorite Bartenders
+          </button>
+        </li>
+        <li>
+          <button (click)="displayFavorite('favDrinks')">
+            Favorite Drinks
+          </button>
+        </li>
+        <li><button>back</button></li>
+      </ul>
+    </div>
+
     <h1>Preferences Main</h1>
     <preferences-create></preferences-create>
+    <preferences-locations
+      *ngIf="displayOthers === 'bars'"
+    ></preferences-locations>
+    <preferences-home-bar
+      *ngIf="displayOthers === 'home'"
+    ></preferences-home-bar>
+    <preferences-drinks
+      *ngIf="displayOthers === 'favDrinks'"
+    ></preferences-drinks>
+    <preferences-bartenders
+      *ngIf="displayOthers === 'bartenders'"
+    ></preferences-bartenders>
   </div>
 </div>

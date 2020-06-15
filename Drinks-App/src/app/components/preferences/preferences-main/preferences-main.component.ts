@@ -7,7 +7,13 @@ import { PreferencesService } from 'src/app/components/preferences/preferences.s
   styleUrls: ['./preferences-main.component.css'],
 })
 export class PreferencesMainComponent implements OnInit {
+  displayOthers = null;
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  displayFavorite(value) {
+    this.displayOthers = value;
+  }
 }

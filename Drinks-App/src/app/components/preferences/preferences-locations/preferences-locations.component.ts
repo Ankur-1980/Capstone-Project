@@ -4,7 +4,7 @@ import { Item } from '../item';
 import { PreferencesService } from '../preferences.service';
 
 @Component({
-  selector: 'app-preferences-locations',
+  selector: 'preferences-locations',
   templateUrl: './preferences-locations.component.html',
   styleUrls: [
     './preferences-locations.component.css',

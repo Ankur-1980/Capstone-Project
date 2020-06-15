@@ -7,29 +7,24 @@
         <div class="two-col">
           <label for="firstName" for="label-control">First Name</label>
           <input type="text" formControlName="firstName" class="form-control" />
-          <!-- <div *ngIf="firstName.invalid && firstName.touched">
-        <div *ngIf="firstName.errors.required">
-        </div> 
-      </div> -->
+          <span *ngIf="firstName.touched && firstName.errors?.required">
+            First Name is required
+          </span>
         </div>
         <div class="two-col">
           <label for="lastName" for="label-control">Last Name</label>
           <input type="text" formControlName="lastName" class="form-control" />
-          <!-- <div *ngIf="lastName.invalid && lastName.touched">
-        <div *ngIf="lastName.errors.required">
-          Last Name is required
-        </div>
-      </div> -->
+          <span *ngIf="lastName.touched && lastName.errors?.required">
+            Last Name is required
+          </span>
         </div>
         <!-- username - required -->
         <div class="form-group">
           <label for="userName" for="label-control"> User Name</label>
           <input type="text" formControlName="userName" class="form-control" />
-          <!-- <div *ngIf="userName.invalid && userName.touched">
-      <div *ngIf="userName.errors.required">
-        Username is required
-      </div>
-    </div> -->
+          <span *ngIf="userName.touched && userName.errors?.required">
+            Last Name is required
+          </span>
         </div>
         <!-- age - required -->
         <div class="form-group">
@@ -47,12 +42,11 @@
         <div class="form-group">
           <label for="email" for="label-control">Email</label>
           <input type="email" formControlName="email" class="form-control" />
-          <!-- <div *ngIf="userName.invalid && userName.touched">
-      <div *ngIf="userName.errors.required">
-        Username is required
-      </div>
-    </div> -->
-          <!-- password - required -->
+          <span *ngIf="email.touched && email.errors?.required">
+            Email is required
+          </span>
+
+          <!-- password -1 - required -->
           <div class="form-group">
             <label for="password" for="label-control">Password:</label>
             <input
@@ -61,16 +55,27 @@
               class="form-control"
               placeholder="Enter Password"
             />
+            <span *ngIf="password.touched && password.errors?.required">
+              Password is required
+            </span>
           </div>
-          <!-- password -2 - required -->
+          <!-- password -2- required -->
           <div class="form-group">
-            <label for="password" for="label-control">Password:</label>
+            <label for="password2" for="label-control">Password:</label>
             <input
               type="password"
-              formControlName="password"
+              formControlName="password2"
               class="form-control"
               placeholder="Confirm Password"
             />
+            <span *ngIf="password2.touched && password2.errors?.required">
+              Please confirm password
+            </span>
+            <span
+              *ngIf="password2.touched && password2.errors?.passwordMismatch"
+            >
+              Passwords do not match
+            </span>
           </div>
           <!-- bio - not required -->
           <div class="form-group">
