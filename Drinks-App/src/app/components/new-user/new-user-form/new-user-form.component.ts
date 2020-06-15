@@ -76,7 +76,7 @@ export class NewUserFormComponent implements OnInit {
     this.registered = true;
     if (this.newUserForm.valid) {
       console.log('form', this.newUserForm.value);
-      // this.usersService.addNewUser(this.newUserForm.value);
+      this.usersService.addNewUser(this.newUserForm.value);
     }
   }
 }

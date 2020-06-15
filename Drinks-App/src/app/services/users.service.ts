@@ -21,10 +21,11 @@ export class UsersService {
       .subscribe((response) => {
         console.log(response.message);
       });
+    this.router.navigate(['/login']);
   }
 
   login() {
-    this.router.navigate(['/register']);
+    this.router.navigate(['/the-feed']);
   }
 
   PasswordValidation(password: string, password2: string) {
