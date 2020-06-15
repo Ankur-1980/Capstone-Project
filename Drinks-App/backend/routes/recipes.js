@@ -10,7 +10,7 @@ recipes.get("/", (req, res) => {
 recipes.post("/", (req, res) => {
   console.log(req.body);
 
-  // Function for time stamp PG
+  // Function for time stamp postgres
   // NOW()
 
   // database
