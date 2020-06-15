@@ -3,7 +3,7 @@ import { PreferencesService } from '../preferences.service';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-preferences-bartenders',
+  selector: 'preferences-bartenders',
   templateUrl: './preferences-bartenders.component.html',
   styleUrls: [
     './preferences-bartenders.component.css',

@@ -38,21 +38,21 @@ const routes: Routes = [
     path: 'preferences',
     loadChildren: () =>
       import('./components/preferences/preferences.module').then(
-        (m) => m.PreferencesModule
+        (module) => module.PreferencesModule
       ),
   },
   {
     path: 'recipe-book',
     loadChildren: () =>
       import('./components/recipe-book/recipe-book.module').then(
-        (m) => m.RecipeBookModule
+        (module) => module.RecipeBookModule
       ),
   },
   {
     path: 'user-recipes',
     loadChildren: () =>
       import('./components/user-recipes/user-recipes.module').then(
-        (m) => m.UserRecipesModule
+        (module) => module.UserRecipesModule
       ),
   },
 
