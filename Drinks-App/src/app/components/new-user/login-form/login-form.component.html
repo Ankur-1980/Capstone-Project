@@ -22,6 +22,10 @@
           formControlName="password"
           placeholder="Enter Password"
         />
+
+        <div *ngIf="password.invalid && password.touched">
+          Please enter password
+        </div>
       </div>
       <button [disabled]="loginForm.invalid" type="submit">Log In</button>
     </form>

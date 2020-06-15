@@ -29,6 +29,7 @@ export class UsersService {
 
   PasswordValidation(password: string, password2: string) {
     return (formGroup: FormGroup) => {
+      // get the passwords from the controls
       const passwordControl = formGroup.controls[password];
       const password2Control = formGroup.controls[password2];
 

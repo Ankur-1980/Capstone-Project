@@ -28,6 +28,11 @@ export class LoginFormComponent implements OnInit {
     return this.loginForm.get('password');
   }
 
+  // this doesn't work for some reason
+  // get loginFormControl() {
+  //   return this.loginForm.controls;
+  // }
+
   onSubmit() {
     console.log(this.loginForm.value);
     this.usersService.login();
