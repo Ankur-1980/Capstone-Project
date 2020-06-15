@@ -9,21 +9,30 @@ import { UsersService } from '../../../services/users.service';
 })
 export class NewUserFormComponent implements OnInit {
   newUserForm: FormGroup;
+  registered: boolean = false;
 
   constructor(private fb: FormBuilder, private usersService: UsersService) {}
 
   ngOnInit(): void {
-    this.newUserForm = this.fb.group({
-      firstName: ['', [Validators.required]],
-      lastName: ['', [Validators.required]],
-      userName: ['', [Validators.required]],
-      age: ['', [Validators.required]],
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required]],
-      password2: ['', [Validators.required, ,]],
-      bio: ['', [Validators.maxLength(255)]],
-      date: this.fb.control(new Date()),
-    });
+    this.newUserForm = this.fb.group(
+      {
+        firstName: ['', [Validators.required]],
+        lastName: ['', [Validators.required]],
+        userName: ['', [Validators.required]],
+        age: ['', [Validators.required]],
+        email: ['', [Validators.required, Validators.email]],
+        password: ['', [Validators.required]],
+        password2: ['', [Validators.required, ,]],
+        bio: ['', [Validators.maxLength(255)]],
+        date: this.fb.control(new Date()),
+      },
+      {
+        validator: this.usersService.PasswordValidation(
+          'password',
+          'password2'
+        ),
+      }
+    );
   }
 
   validateDOB(dob) {
@@ -36,21 +45,15 @@ export class NewUserFormComponent implements OnInit {
     }
   }
 
-  // getFirstName() {
-  //   return this.newUserForm.get('firstName');
-  // }
-  // getUserName() {
-  //   return this.newUserForm.get('userName');
-  // }
-  // getAge() {
-  //   return this.newUserForm.get('age');
-  // }
-  // getEmail() {
-  //   return this.newUserForm.get('getEmail');
-  // }
+  get newUserFormControl() {
+    return this.newUserForm.controls;
+  }
 
   onSubmit() {
-    // console.log('form', this.newUserForm.value);
-    this.usersService.addNewUser(this.newUserForm.value);
+    this.registered = true;
+    if (this.newUserForm.valid) {
+      console.log('form', this.newUserForm.value);
+      // this.usersService.addNewUser(this.newUserForm.value);
+    }
   }
 }

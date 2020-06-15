@@ -7,29 +7,39 @@
         <div class="two-col">
           <label for="firstName" for="label-control">First Name</label>
           <input type="text" formControlName="firstName" class="form-control" />
-          <!-- <div *ngIf="firstName.invalid && firstName.touched">
-        <div *ngIf="firstName.errors.required">
-        </div> 
-      </div> -->
+          <span
+            *ngIf="
+              newUserFormControl.firstName.touched &&
+              newUserFormControl.firstName.errors?.required
+            "
+          >
+            First Name is required
+          </span>
         </div>
         <div class="two-col">
           <label for="lastName" for="label-control">Last Name</label>
           <input type="text" formControlName="lastName" class="form-control" />
-          <!-- <div *ngIf="lastName.invalid && lastName.touched">
-        <div *ngIf="lastName.errors.required">
-          Last Name is required
-        </div>
-      </div> -->
+          <span
+            *ngIf="
+              newUserFormControl.lastName.touched &&
+              newUserFormControl.lastName.errors?.required
+            "
+          >
+            Last Name is required
+          </span>
         </div>
         <!-- username - required -->
         <div class="form-group">
           <label for="userName" for="label-control"> User Name</label>
           <input type="text" formControlName="userName" class="form-control" />
-          <!-- <div *ngIf="userName.invalid && userName.touched">
-      <div *ngIf="userName.errors.required">
-        Username is required
-      </div>
-    </div> -->
+          <span
+            *ngIf="
+              newUserFormControl.userName.touched &&
+              newUserFormControl.userName.errors?.required
+            "
+          >
+            Last Name is required
+          </span>
         </div>
         <!-- age - required -->
         <div class="form-group">
@@ -47,11 +57,14 @@
         <div class="form-group">
           <label for="email" for="label-control">Email</label>
           <input type="email" formControlName="email" class="form-control" />
-          <!-- <div *ngIf="userName.invalid && userName.touched">
-      <div *ngIf="userName.errors.required">
-        Username is required
-      </div>
-    </div> -->
+          <span
+            *ngIf="
+              newUserFormControl.email.touched &&
+              newUserFormControl.email.errors?.required
+            "
+          >
+            Email is required
+          </span>
           <!-- password - required -->
           <div class="form-group">
             <label for="password" for="label-control">Password:</label>
@@ -61,8 +74,16 @@
               class="form-control"
               placeholder="Enter Password"
             />
+            <span
+              *ngIf="
+                newUserFormControl.password.touched &&
+                newUserFormControl.password.errors?.required
+              "
+            >
+              Last Name is required
+            </span>
           </div>
-          <!-- password -2 - required -->
+          <!-- password -1 - required -->
           <div class="form-group">
             <label for="password" for="label-control">Password:</label>
             <input
@@ -71,6 +92,32 @@
               class="form-control"
               placeholder="Confirm Password"
             />
+          </div>
+          <!-- password -2- required -->
+          <div class="form-group">
+            <label for="password2" for="label-control">Password:</label>
+            <input
+              type="password2"
+              formControlName="password2"
+              class="form-control"
+              placeholder="Confirm Password"
+            />
+            <span
+              *ngIf="
+                newUserFormControl.confirmPassword.touched &&
+                newUserFormControl.confirmPassword.errors?.required
+              "
+            >
+              Confirm Password is required
+            </span>
+            <span
+              *ngIf="
+                newUserFormControl.confirmPassword.touched &&
+                newUserFormControl.confirmPassword.errors?.passwordMismatch
+              "
+            >
+              Passwords do not match
+            </span>
           </div>
           <!-- bio - not required -->
           <div class="form-group">
