@@ -13,16 +13,18 @@ import { PreferencesService } from '../preferences.service';
 })
 export class PreferencesHomeBarComponent implements OnInit, OnDestroy {
   homeBar: Item[] = [];
-  homeBarSub: Subscription;
+  itemsSub: Subscription;
 
   constructor(private preferService: PreferencesService) {}
 
   ngOnInit(): void {
-    this.preferService.getHomeBar();
-    this.homeBarSub = this.preferService
-      .getHomeBarUpdateListener()
-      .subscribe((homeBar) => {
-        this.homeBar = homeBar;
+    this.preferService.getItems();
+    this.itemsSub = this.preferService
+      .getItemUpdateListener()
+      .subscribe((items) => {
+        this.homeBar = items.filter(
+          (item) => item.preference_cat === 'home_bar'
+        );
       });
   }
 
@@ -31,6 +33,6 @@ export class PreferencesHomeBarComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.homeBarSub.unsubscribe();
+    this.itemsSub.unsubscribe();
   }
 }

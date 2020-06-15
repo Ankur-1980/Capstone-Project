@@ -90,13 +90,12 @@ export class PreferencesService {
   deleteItem(itemId) {
     this.http
       .delete<{ message: string; items: any }>(`/api/preferences/${itemId}`)
-      .subscribe((response) => {
-        // console.log(response.message);
-        // console.log('service', response.items);
+      .subscribe(() => {
+        console.log('before', this.items);
 
-        this.items = response.items;
         this.items = this.items.filter((item) => item.preference_id !== itemId);
         this.itemsUpdated.next([...this.items]);
+        console.log('after', this.items);
       });
   }
 }
