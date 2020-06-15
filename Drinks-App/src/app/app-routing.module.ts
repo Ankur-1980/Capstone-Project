@@ -4,6 +4,8 @@ import { MainComponent } from './components/main/main.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { TheFeedMainComponent } from './components/the-feed/the-feed-main/the-feed-main.component';
 import { QuizComponent } from './components/quiz/quiz.component';
+import { LoginFormComponent } from './components/new-user/login-form/login-form.component';
+import { NewUserFormComponent } from './components/new-user/new-user-form/new-user-form.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -18,6 +20,14 @@ const routes: Routes = [
   {
     path: 'quiz',
     component: QuizComponent,
+  },
+  {
+    path: 'login',
+    component: LoginFormComponent,
+  },
+  {
+    path: 'register',
+    component: NewUserFormComponent,
   },
 
   {
