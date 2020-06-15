@@ -13,16 +13,18 @@ import { PreferencesService } from '../preferences.service';
 })
 export class PreferencesLocationsComponent implements OnInit {
   locations: Item[] = [];
-  locationsSub: Subscription;
+  itemsSub: Subscription;
 
   constructor(private preferService: PreferencesService) {}
 
   ngOnInit(): void {
-    this.preferService.getLocations();
-    this.locationsSub = this.preferService
-      .getLocationsUpdateListener()
-      .subscribe((locations) => {
-        this.locations = locations;
+    this.preferService.getItems();
+    this.itemsSub = this.preferService
+      .getItemUpdateListener()
+      .subscribe((items) => {
+        this.locations = items.filter(
+          (item) => item.preference_cat === 'bartenders'
+        );
       });
   }
 
@@ -31,6 +33,6 @@ export class PreferencesLocationsComponent implements OnInit {
   }
 
   ngOnDestroy() {
-    this.locationsSub.unsubscribe();
+    this.itemsSub.unsubscribe();
   }
 }

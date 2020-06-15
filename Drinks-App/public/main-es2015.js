@@ -1908,7 +1908,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainComponent", function() { return MainComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../new-user/new-user-form/new-user-form.component */ "./src/app/components/new-user/new-user-form/new-user-form.component.ts");
+/* harmony import */ var _new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../new-user/login-form/login-form.component */ "./src/app/components/new-user/login-form/login-form.component.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 
 
@@ -1920,7 +1920,7 @@ class MainComponent {
 }
 MainComponent.ɵfac = function MainComponent_Factory(t) { return new (t || MainComponent)(); };
 MainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MainComponent, selectors: [["app-main"]], decls: 27, vars: 0, consts: [["routerLink", "/the-feed"], ["routerLink", "/preferences"], ["routerLink", "/profile"], ["routerLink", "/user-recipes"], ["routerLink", "/recipe-book"], ["routerLink", "/quiz"]], template: function MainComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "new-user-form");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "login-form");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "section");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Nav Bar");
@@ -1963,7 +1963,7 @@ MainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](26, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_1__["NewUserFormComponent"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkWithHref"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbWFpbi9tYWluLmNvbXBvbmVudC5jc3MifQ== */"] });
+    } }, directives: [_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_1__["LoginFormComponent"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkWithHref"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbWFpbi9tYWluLmNvbXBvbmVudC5jc3MifQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MainComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -2920,6 +2920,11 @@ class PreferencesLocationsComponent {
     }
     onDelete(itemId) {
         this.preferService.deleteItem(itemId);
+        this.locationsSub = this.preferService
+            .getLocationsUpdateListener()
+            .subscribe((locations) => {
+            this.locations = locations;
+        });
     }
     ngOnDestroy() {
         this.locationsSub.unsubscribe();
@@ -3338,6 +3343,7 @@ class PreferencesService {
         return this.locationsUpdated.asObservable();
     }
     getHomeBar() {
+        console.log('service working?');
         this.http
             .get('/api/preferences/home-bar')
             .subscribe((data) => {
@@ -3365,8 +3371,6 @@ class PreferencesService {
         this.http
             .delete(`/api/preferences/${itemId}`)
             .subscribe((response) => {
-            // console.log(response.message);
-            // console.log('service', response.items);
             this.items = response.items;
             this.items = this.items.filter((item) => item.preference_id !== itemId);
             this.itemsUpdated.next([...this.items]);

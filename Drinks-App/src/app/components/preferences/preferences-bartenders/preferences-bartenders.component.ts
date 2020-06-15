@@ -12,17 +12,18 @@ import { Subscription } from 'rxjs';
 })
 export class PreferencesBartendersComponent implements OnInit {
   bartenders = [];
-  bartendersSub: Subscription;
+  itemsSub: Subscription;
 
   constructor(private preferService: PreferencesService) {}
 
   ngOnInit(): void {
-    this.preferService.getBartenders();
-    this.bartendersSub = this.preferService
-      .getBartenderUpdateListener()
+    this.preferService.getItems();
+    this.itemsSub = this.preferService
+      .getItemUpdateListener()
       .subscribe((items) => {
-        this.bartenders = items;
-        console.log(this.bartenders);
+        this.bartenders = items.filter(
+          (item) => item.preference_cat === 'bartenders'
+        );
       });
   }
 
@@ -31,6 +32,6 @@ export class PreferencesBartendersComponent implements OnInit {
   }
 
   ngOnDestroy() {
-    this.bartendersSub.unsubscribe();
+    this.itemsSub.unsubscribe();
   }
 }

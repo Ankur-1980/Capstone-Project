@@ -2034,9 +2034,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! ../new-user/new-user-form/new-user-form.component */
-    "./src/app/components/new-user/new-user-form/new-user-form.component.ts");
+    var _new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ../new-user/login-form/login-form.component */
+    "./src/app/components/new-user/login-form/login-form.component.ts");
     /* harmony import */
 
 
@@ -2069,7 +2069,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       consts: [["routerLink", "/the-feed"], ["routerLink", "/preferences"], ["routerLink", "/profile"], ["routerLink", "/user-recipes"], ["routerLink", "/recipe-book"], ["routerLink", "/quiz"]],
       template: function MainComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "new-user-form");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "login-form");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "section");
 
@@ -2156,7 +2156,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
       },
-      directives: [_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_1__["NewUserFormComponent"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkWithHref"]],
+      directives: [_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_1__["LoginFormComponent"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkWithHref"]],
       styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbWFpbi9tYWluLmNvbXBvbmVudC5jc3MifQ== */"]
     });
     /*@__PURE__*/
@@ -4084,7 +4084,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "onDelete",
         value: function onDelete(itemId) {
+          var _this5 = this;
+
           this.preferService.deleteItem(itemId);
+          this.locationsSub = this.preferService.getLocationsUpdateListener().subscribe(function (locations) {
+            _this5.locations = locations;
+          });
         }
       }, {
         key: "ngOnDestroy",
@@ -4842,25 +4847,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PreferencesService, [{
         key: "getItems",
         value: function getItems() {
-          var _this5 = this;
+          var _this6 = this;
 
           this.http.get('/api/preferences').subscribe(function (data) {
             console.log(data.message);
-            _this5.items = data.items;
+            _this6.items = data.items;
 
-            _this5.itemsUpdated.next(_toConsumableArray(_this5.items));
+            _this6.itemsUpdated.next(_toConsumableArray(_this6.items));
           });
         }
       }, {
         key: "getBartenders",
         value: function getBartenders() {
-          var _this6 = this;
+          var _this7 = this;
 
           this.http.get('/api/preferences/bartenders').subscribe(function (data) {
             console.log(data.message);
-            _this6.bartenders = data.items;
+            _this7.bartenders = data.items;
 
-            _this6.bartendersUpdated.next(_toConsumableArray(_this6.bartenders));
+            _this7.bartendersUpdated.next(_toConsumableArray(_this7.bartenders));
           });
         }
       }, {
@@ -4871,15 +4876,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getLocations",
         value: function getLocations() {
-          var _this7 = this;
+          var _this8 = this;
 
           this.http.get('/api/preferences/locations').subscribe(function (data) {
             console.log(data.message);
-            _this7.locations = data.items;
+            _this8.locations = data.items;
 
-            _this7.locationsUpdated.next(_toConsumableArray(_this7.locations));
+            _this8.locationsUpdated.next(_toConsumableArray(_this8.locations));
 
-            console.log('service', _this7.locations);
+            console.log('service', _this8.locations);
           });
         }
       }, {
@@ -4890,13 +4895,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getHomeBar",
         value: function getHomeBar() {
-          var _this8 = this;
+          var _this9 = this;
 
+          console.log('service working?');
           this.http.get('/api/preferences/home-bar').subscribe(function (data) {
             console.log(data.message);
-            _this8.homeBar = data.items;
+            _this9.homeBar = data.items;
 
-            _this8.homeBarUpdated.next(_toConsumableArray(_this8.homeBar));
+            _this9.homeBarUpdated.next(_toConsumableArray(_this9.homeBar));
           });
         }
       }, {
@@ -4912,29 +4918,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "addItems",
         value: function addItems(formValue) {
-          var _this9 = this;
+          var _this10 = this;
 
           console.log(formValue);
           this.http.post('/api/preferences', formValue).subscribe(function (response) {
             console.log(response.message);
 
-            _this9.itemsUpdated.next(response.items);
+            _this10.itemsUpdated.next(response.items);
           });
         }
       }, {
         key: "deleteItem",
         value: function deleteItem(itemId) {
-          var _this10 = this;
+          var _this11 = this;
 
           this.http["delete"]("/api/preferences/".concat(itemId)).subscribe(function (response) {
-            // console.log(response.message);
-            // console.log('service', response.items);
-            _this10.items = response.items;
-            _this10.items = _this10.items.filter(function (item) {
+            _this11.items = response.items;
+            _this11.items = _this11.items.filter(function (item) {
               return item.preference_id !== itemId;
             });
 
-            _this10.itemsUpdated.next(_toConsumableArray(_this10.items));
+            _this11.itemsUpdated.next(_toConsumableArray(_this11.items));
           });
         }
       }]);
@@ -5647,13 +5651,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this11 = this;
+          var _this12 = this;
 
           this.recipeID = this.route.snapshot.params.recipeID;
           console.log('component', this.recipeID);
           this.recipeAPI.getDetails(this.recipeID).subscribe(function (data) {
-            _this11.recipes = data['drinks'];
-            console.log('details', _this11.recipes);
+            _this12.recipes = data['drinks'];
+            console.log('details', _this12.recipes);
           });
         }
       }]);
@@ -5864,11 +5868,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeMainComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this12 = this;
+          var _this13 = this;
 
           this.recipeApi.getLetterA().subscribe(function (data) {
-            _this12.recipes = data['drinks'];
-            console.log(_this12.recipes);
+            _this13.recipes = data['drinks'];
+            console.log(_this13.recipes);
           });
         }
       }, {
@@ -6053,16 +6057,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeSearchComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this13 = this;
+          var _this14 = this;
 
           this.recipeAPI.getGlassware().subscribe(function (data) {
-            _this13.glassware = data['drinks'];
+            _this14.glassware = data['drinks'];
           });
           this.recipeAPI.getAlcoholic().subscribe(function (data) {
-            _this13.alcoholic = data['drinks'];
+            _this14.alcoholic = data['drinks'];
           });
           this.recipeAPI.getCategories().subscribe(function (data) {
-            _this13.categories = data['drinks'];
+            _this14.categories = data['drinks'];
           });
           this.recipeAPI.filterCocktailType().subscribe(function (data) {
             console.log('filter cocktails', data['drinks']);
@@ -6083,19 +6087,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "searchByName",
         value: function searchByName() {
-          var _this14 = this;
+          var _this15 = this;
 
           this.recipeAPI.searchByName(this.nameSearch.value).subscribe(function (data) {
-            return _this14.searchResults.emit(data['drinks']);
+            return _this15.searchResults.emit(data['drinks']);
           });
         }
       }, {
         key: "searchByLetter",
         value: function searchByLetter() {
-          var _this15 = this;
+          var _this16 = this;
 
           this.recipeAPI.searchByLetter(this.letterSearch.value).subscribe(function (data) {
-            _this15.searchResults.emit(data['drinks']);
+            _this16.searchResults.emit(data['drinks']);
           });
         }
       }, {
@@ -6825,10 +6829,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(UserRecipesCreateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this16 = this;
+          var _this17 = this;
 
           this.recipeAPI.getGlassware().subscribe(function (data) {
-            _this16.glassware = data['drinks'];
+            _this17.glassware = data['drinks'];
           });
           var element = this.fb.group({
             amount: [''],
@@ -6874,11 +6878,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getLocation",
         value: function getLocation() {
-          var _this17 = this;
+          var _this18 = this;
 
           navigator.geolocation.getCurrentPosition(function (position) {
-            _this17.latitude = position.coords.latitude;
-            _this17.longitude = position.coords.longitude;
+            _this18.latitude = position.coords.latitude;
+            _this18.longitude = position.coords.longitude;
           });
         }
       }]);
@@ -7301,11 +7305,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(UserRecipesMainComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this18 = this;
+          var _this19 = this;
 
           this.userRecipeService.getRecipes().subscribe(function (data) {
-            _this18.recipes = data;
-            console.log(_this18.recipes);
+            _this19.recipes = data;
+            console.log(_this19.recipes);
           });
         }
       }]);
