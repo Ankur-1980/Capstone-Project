@@ -35,6 +35,28 @@ export class NewUserFormComponent implements OnInit {
     );
   }
 
+  get firstName() {
+    return this.newUserForm.get('firstName');
+  }
+  get lastName() {
+    return this.newUserForm.get('lastName');
+  }
+  get userName() {
+    return this.newUserForm.get('userName');
+  }
+  // get age() {
+  //   return this.newUserForm.get('age');
+  // }
+  get email() {
+    return this.newUserForm.get('firstName');
+  }
+  get password() {
+    return this.newUserForm.get('password');
+  }
+  get password2() {
+    return this.newUserForm.get('password2');
+  }
+
   validateDOB(dob) {
     let year = new Date(dob.target.value).getFullYear();
     let today = new Date().getFullYear();
@@ -45,9 +67,10 @@ export class NewUserFormComponent implements OnInit {
     }
   }
 
-  get newUserFormControl() {
-    return this.newUserForm.controls;
-  }
+  // // this doesn't work :()
+  // get newUserFormControl() {
+  //   return this.newUserForm.controls;
+  // }
 
   onSubmit() {
     this.registered = true;
