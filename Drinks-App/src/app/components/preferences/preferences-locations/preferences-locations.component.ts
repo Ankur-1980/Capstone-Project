@@ -23,7 +23,7 @@ export class PreferencesLocationsComponent implements OnInit {
       .getItemUpdateListener()
       .subscribe((items) => {
         this.locations = items.filter(
-          (item) => item.preference_cat === 'bartenders'
+          (item) => item.preference_cat === 'places'
         );
       });
   }
