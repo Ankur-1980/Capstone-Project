@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { UsersService } from '../../../services/users.service';
 
 @Component({
@@ -14,13 +14,22 @@ export class LoginFormComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
-      userName: [''],
-      password: [''],
+      userName: ['', [Validators.required]],
+      password: ['', [Validators.required]],
       loginDate: this.fb.control(new Date()),
     });
   }
 
+  get userName() {
+    return this.loginForm.get('userName');
+  }
+
+  get password() {
+    return this.loginForm.get('password');
+  }
+
   onSubmit() {
     console.log(this.loginForm.value);
+    this.usersService.login();
   }
 }
