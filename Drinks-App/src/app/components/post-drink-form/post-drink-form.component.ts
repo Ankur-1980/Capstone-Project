@@ -9,7 +9,8 @@ import { RecipeApiService } from 'src/app/services/recipeAPI.service';
 })
 export class PostDrinkFormComponent implements OnInit {
   drinkPostForm: FormGroup;
-  glassware;
+  glassware: string;
+  ratingsDisplay: number;
 
   constructor(private fb: FormBuilder, private recipeApi: RecipeApiService) {}
 
@@ -25,6 +26,12 @@ export class PostDrinkFormComponent implements OnInit {
       glassware: [''],
       description: [''],
       location: [''],
+    });
+
+    this.drinkPostForm.valueChanges.subscribe((value) => {
+      // console.log(value);
+      this.ratingsDisplay = value.rating;
+      // console.log('rating', this.ratingsDisplay);
     });
   }
 

@@ -6,6 +6,7 @@ import { TheFeedMainComponent } from './components/the-feed/the-feed-main/the-fe
 import { QuizComponent } from './components/quiz/quiz.component';
 import { LoginFormComponent } from './components/new-user/login-form/login-form.component';
 import { NewUserFormComponent } from './components/new-user/new-user-form/new-user-form.component';
+import { PostDrinkFormComponent } from './components/post-drink-form/post-drink-form.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -29,7 +30,10 @@ const routes: Routes = [
     path: 'register',
     component: NewUserFormComponent,
   },
-
+  {
+    path: 'drink-post',
+    component: PostDrinkFormComponent,
+  },
   {
     path: 'preferences',
     loadChildren: () =>
