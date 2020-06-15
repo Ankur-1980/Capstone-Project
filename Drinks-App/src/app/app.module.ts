@@ -18,6 +18,7 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
 import { TheFeedMainComponent } from './components/the-feed/the-feed-main/the-feed-main.component';
 import { TheFeedPostsComponent } from './components/the-feed/the-feed-posts/the-feed-posts.component';
 import { QuizComponent } from './components/quiz/quiz.component';
+import { QuestionComponent } from './components/quiz/question/question.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { QuizComponent } from './components/quiz/quiz.component';
     TheFeedMainComponent,
     TheFeedPostsComponent,
     QuizComponent,
+    QuestionComponent,
   ],
   imports: [
     BrowserModule,
