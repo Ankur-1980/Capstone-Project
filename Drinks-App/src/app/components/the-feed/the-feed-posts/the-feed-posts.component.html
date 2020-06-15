@@ -1,0 +1,49 @@
+<div class="background">
+  <div class="body">
+    <div *ngFor="let item of theFeed">
+      <img
+        width="200px"
+        src="../../../../assets/lefteris-kallergis-QsmdVT5pTMw-unsplash.jpg"
+        alt="{{ item.drink_name }}"
+      />
+      <h2>{{ item.drink_name }}</h2>
+      <div class="info-container">
+        <label>Rating: </label>
+        <div>{{ item.rating }}</div>
+      </div>
+      <div class="info-container">
+        <label>Glassware:</label>
+        <div>{{ item.glassware }}</div>
+      </div>
+      <div class="info-container">
+        <label>Description:</label>
+        <div>{{ item.description }}</div>
+      </div>
+      <div class="info-container">
+        <label> Location:</label>
+        <div>{{ item.location }}</div>
+      </div>
+      <div class="info-container">
+        <label>Username:</label>
+        <div>{{ item.username }}</div>
+      </div>
+      <div class="comments-container">
+        <button (click)="toggle()">read comments</button>
+        <div *ngIf="!hide" class="comments">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+            dignissimos molestiae assumenda at, dolor voluptatum!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+            dignissimos molestiae assumenda at, dolor voluptatum!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+            dignissimos molestiae assumenda at, dolor voluptatum!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

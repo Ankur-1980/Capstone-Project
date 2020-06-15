@@ -1,0 +1,56 @@
+h1 {
+  font-size: 50px;
+  color: rgb(236, 184, 92);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30vw;
+  height: auto;
+}
+.form-group2 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Input Styling */
+input {
+  width: 29vw;
+  padding: 10px 5px;
+  color: hsl(0, 0%, 100%);
+  background-color: rgb(236, 184, 92, 0.5);
+  border: 2pt solid rgb(236, 184, 92);
+}
+input:hover {
+  border: 2pt solid #80bdad;
+}
+
+::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+/* sort by letter */
+label {
+  justify-content: center;
+  color: rgb(236, 184, 92);
+  font-size: 25px;
+}
+select {
+  background-color: #80bdad;
+  color: #204051;
+}
+
+/* button Style */
+button {
+  margin-top: 10px;
+  padding: 10px 0px;
+  background-color: rgb(236, 184, 92);
+  /* box-shadow: black -1pt 1pt 3pt; */
+}
+button:hover {
+  background-color: #80bdad;
+}

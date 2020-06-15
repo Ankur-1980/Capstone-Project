@@ -4,13 +4,34 @@
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <label for="userName">Username</label>
-        <input type="text" name="userName" formControlName="userName" />
+        <input
+          type="text"
+          name="userName"
+          formControlName="userName"
+          placeholder="Enter Username"
+        />
+        <div *ngIf="userName.invalid && userName.touched">
+          Please enter user name
+        </div>
       </div>
       <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" name="password" formControlName="password" />
+        <input
+          type="password"
+          name="password"
+          formControlName="password"
+          placeholder="Enter Password"
+        />
+
+        <div *ngIf="password.invalid && password.touched">
+          Please enter password
+        </div>
       </div>
-      <button type="submit">Log In</button>
+      <button [disabled]="loginForm.invalid" type="submit">Log In</button>
     </form>
+    <div class="resetPW">
+      <div class="linkInfo">New to DrinksOnMe?</div>
+      <a routerLink="/register">Click Here to Create a Profile</a>
+    </div>
   </div>
 </div>

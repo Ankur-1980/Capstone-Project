@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-preferences-navigation',
+  selector: 'prefer-nav',
   templateUrl: './preferences-navigation.component.html',
-  styleUrls: ['./preferences-navigation.component.css']
+  styleUrls: ['./preferences-navigation.component.css'],
 })
 export class PreferencesNavigationComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

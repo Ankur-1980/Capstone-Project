@@ -3,12 +3,12 @@ import { ActivatedRoute } from '@angular/router';
 import { RecipeApiService } from '../../../services/recipeAPI.service';
 
 @Component({
-  selector: 'app-recipe-details',
+  selector: 'recipe-details',
   templateUrl: './recipe-details.component.html',
   styleUrls: ['./recipe-details.component.css'],
 })
 export class RecipeDetailsComponent implements OnInit {
-  recipeDetails;
+  recipes;
   recipeID: number;
 
   constructor(
@@ -18,9 +18,11 @@ export class RecipeDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.recipeID = this.route.snapshot.params.recipeID;
+    console.log('component', this.recipeID);
 
     this.recipeAPI.getDetails(this.recipeID).subscribe((data) => {
-      console.log(data);
+      this.recipes = data['drinks'];
+      console.log('details', this.recipes);
     });
   }
 }

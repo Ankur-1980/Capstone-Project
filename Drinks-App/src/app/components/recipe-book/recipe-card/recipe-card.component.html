@@ -1,15 +1,17 @@
 <div class="card-container">
-  <h3>{{ recipe.strDrink }}</h3>
-  <p>
+  <div class="card">
+    <img
+      class="image"
+      src="{{ recipe.strDrinkThumb }}"
+      alt="{{ recipe.strDrink }}"
+      width="125px"
+    />
+    <div class="drink-name">{{ recipe.strDrink }}</div>
     <a routerLink="recipe-details/{{ recipe.idDrink }}">more details</a>
-  </p>
-  <img
-    src="{{ recipe.strDrinkThumb }}"
-    alt="{{ recipe.strDrink }}"
-    width="100px"
-  />
-  <p>Glassware: {{ recipe.strGlass }}</p>
-  <ul>
+  </div>
+</div>
+<!-- <p>Glassware: {{ recipe.strGlass }}</p> -->
+<!-- <ul>
     <h4>Ingredients</h4>
     <li>{{ recipe.strMeasure1 }} {{ recipe.strIngredient1 }}</li>
     <li>{{ recipe.strMeasure2 }} {{ recipe.strIngredient2 }}</li>
@@ -26,6 +28,5 @@
     <li>{{ recipe.strMeasure13 }} {{ recipe.strIngredient13 }}</li>
     <li>{{ recipe.strMeasure14 }} {{ recipe.strIngredient14 }}</li>
     <li>{{ recipe.strMeasure15 }} {{ recipe.strIngredient15 }}</li>
-  </ul>
-  <p>Method: {{ recipe.strInstructions }}</p>
-</div>
+  </ul> -->
+<!-- <p>Method: {{ recipe.strInstructions }}</p> -->

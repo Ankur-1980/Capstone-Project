@@ -1,0 +1,27 @@
+.background {
+  background-image: url(../LowBall/lowball.svg);
+  background-repeat: no-repeat;
+
+  width: 60vh;
+  height: 60vw;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  margin-top: 10vh;
+  border: 2px solid;
+}
+
+h2 {
+  color: rgb(236, 184, 92);
+}
+.info-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
