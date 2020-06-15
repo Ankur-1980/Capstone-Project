@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { UsersService } from '../../../services/users.service';
+import { RegisterValidatorsService } from 'src/app/services/register-validators.service';
 
 @Component({
   selector: 'new-user-form',
@@ -10,8 +11,12 @@ import { UsersService } from '../../../services/users.service';
 export class NewUserFormComponent implements OnInit {
   newUserForm: FormGroup;
   registered: boolean = false;
-
-  constructor(private fb: FormBuilder, private usersService: UsersService) {}
+  ageValidation;
+  constructor(
+    private fb: FormBuilder,
+    private usersService: UsersService,
+    private formValidators: RegisterValidatorsService
+  ) {}
 
   ngOnInit(): void {
     this.newUserForm = this.fb.group(
@@ -22,16 +27,19 @@ export class NewUserFormComponent implements OnInit {
         age: ['', [Validators.required]],
         email: ['', [Validators.required, Validators.email]],
         password: ['', [Validators.required]],
-        password2: ['', [Validators.required, ,]],
+        password2: ['', [Validators.required]],
         bio: ['', [Validators.maxLength(255)]],
         date: this.fb.control(new Date()),
       },
       {
-        validator: this.usersService.PasswordValidation(
+        validator: this.formValidators.PasswordValidation(
           'password',
           'password2'
         ),
       }
+    );
+    this.newUserForm.valueChanges.subscribe(
+      (value) => (this.ageValidation = value.age)
     );
   }
 
@@ -57,13 +65,28 @@ export class NewUserFormComponent implements OnInit {
     return this.newUserForm.get('password2');
   }
 
-  validateDOB(dob) {
-    let year = new Date(dob.target.value).getFullYear();
-    let today = new Date().getFullYear();
-    if (today - year >= 21) {
-      console.log(`you can drink`);
+  // validateDOB(dob) {
+  //   let year = new Date(dob.target.value).getFullYear();
+  //   let today = new Date().getFullYear();
+  //   if (today - year >= 21) {
+  //     console.log(`you can drink`);
+  //   } else {
+  //     console.log(`you are not old enough`);
+  //   }
+  // }
+
+  getAge() {
+    const today = new Date();
+    const birthDate = new Date(this.ageValidation);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    if (age >= 21) {
+      console.log('DRINK UP!');
     } else {
-      console.log(`you are not old enough`);
+      console.log('no drinks for you');
     }
   }
 
