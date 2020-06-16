@@ -17,5 +17,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     RecipeSearchComponent,
   ],
   imports: [CommonModule, RecipeBookRoutingModule, ReactiveFormsModule],
+  exports: [RecipeCardComponent],
 })
 export class RecipeBookModule {}

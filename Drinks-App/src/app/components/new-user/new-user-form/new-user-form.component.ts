@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { UsersService } from '../../../services/users.service';
+import { NavbarService } from 'src/app/services/navbar.service';
 
 @Component({
   selector: 'new-user-form',
@@ -11,9 +12,14 @@ export class NewUserFormComponent implements OnInit {
   newUserForm: FormGroup;
   registered: boolean = false;
 
-  constructor(private fb: FormBuilder, private usersService: UsersService) {}
+  constructor(
+    private fb: FormBuilder,
+    private usersService: UsersService,
+    public nav: NavbarService
+  ) {}
 
   ngOnInit(): void {
+    this.nav.hide();
     this.newUserForm = this.fb.group(
       {
         firstName: ['', [Validators.required]],
