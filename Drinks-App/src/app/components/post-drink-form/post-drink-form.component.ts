@@ -42,6 +42,5 @@ export class PostDrinkFormComponent implements OnInit {
 
   onSubmit() {
     this.drinkPostService.postADrink(this.drinkPostForm.value);
-    console.log(this.drinkPostForm.value);
   }
 }

@@ -14,6 +14,7 @@ export class UserRecipesCreateComponent implements OnInit {
   glassware;
   latitude;
   longitude;
+  ratingDisplay;
 
   constructor(
     private fb: FormBuilder,
@@ -43,6 +44,10 @@ export class UserRecipesCreateComponent implements OnInit {
       ingredient4: element,
       ingredient5: element,
       // date: this.fb.control(new Date()),
+    });
+
+    this.userRecipe.valueChanges.subscribe((value) => {
+      this.ratingDisplay = value.rating;
     });
   }
 

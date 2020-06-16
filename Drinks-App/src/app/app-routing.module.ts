@@ -2,21 +2,22 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
-import { TheFeedMainComponent } from './components/the-feed/the-feed-main/the-feed-main.component';
+
 import { QuizComponent } from './components/quiz/quiz.component';
 import { LoginFormComponent } from './components/new-user/login-form/login-form.component';
 import { NewUserFormComponent } from './components/new-user/new-user-form/new-user-form.component';
 import { PostDrinkFormComponent } from './components/post-drink-form/post-drink-form.component';
+import { TheFeedPostsComponent } from './components/the-feed/the-feed-posts/the-feed-posts.component';
 
 const routes: Routes = [
-  { path: '', component: MainComponent },
+  { path: '', component: LoginFormComponent },
   {
     path: 'profile',
     component: UserProfileComponent,
   },
   {
     path: 'the-feed',
-    component: TheFeedMainComponent,
+    component: TheFeedPostsComponent,
   },
   {
     path: 'quiz',

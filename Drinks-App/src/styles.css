@@ -1,10 +1,10 @@
 body {
   background-color: #342b38;
 }
-.background {
+/* .background {
   height: 115vh;
   width: 125vw;
-}
+} */
 .body {
   display: flex;
   flex-direction: column;
@@ -17,6 +17,8 @@ body {
 * {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #ffffff;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
