@@ -9,7 +9,9 @@ import { FavoritesService } from 'src/app/services/favorites.service';
 export class PreferencesDrinksComponent implements OnInit {
   constructor(private favoriteService: FavoritesService) {}
   favorites = [];
+
   ngOnInit(): void {
     this.favorites = this.favoriteService.getFavorites();
+    console.log(this.favorites);
   }
 }

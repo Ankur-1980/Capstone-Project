@@ -14,10 +14,13 @@ export class RecipeCardComponent implements OnInit {
   ngOnInit(): void {}
 
   toggleAddRemove() {
-    if (this.favoriteService.containsFavorite(this.recipe)) {
-      this.favoriteService.removeFromFavorites(this.recipe);
-    } else {
-      this.favoriteService.addToFavorites(this.recipe);
-    }
+    // console.log(this.recipe);
+
+    this.favoriteService.addToFavorites(this.recipe);
+    // if (this.favoriteService.containsFavorite(this.recipe)) {
+    //   this.favoriteService.removeFromFavorites(this.recipe);
+    // } else {
+    //   this.favoriteService.addToFavorites(this.recipe);
+    // }
   }
 }
