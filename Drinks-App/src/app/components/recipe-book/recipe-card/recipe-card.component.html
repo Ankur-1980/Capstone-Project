@@ -8,6 +8,14 @@
     />
     <div class="drink-name">{{ recipe.strDrink }}</div>
     <a routerLink="recipe-details/{{ recipe.idDrink }}">more details</a>
+    <div (click)="toggleAddRemove()">
+      <span *ngIf="!favoriteService.containsFavorite(recipe)">
+        <img src="../../Icons/heart.svg" alt="" />
+      </span>
+      <span *ngIf="favoriteService.containsFavorite(recipe)">
+        <img src="../../Icons/heart_open.svg" alt="" />
+      </span>
+    </div>
   </div>
 </div>
 <!-- <p>Glassware: {{ recipe.strGlass }}</p> -->

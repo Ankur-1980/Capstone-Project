@@ -3566,22 +3566,33 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_services_favorites_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! src/app/services/favorites.service */
+    "./src/app/services/favorites.service.ts");
 
     var PreferencesDrinksComponent = /*#__PURE__*/function () {
-      function PreferencesDrinksComponent() {
+      function PreferencesDrinksComponent(favoriteService) {
         _classCallCheck(this, PreferencesDrinksComponent);
+
+        this.favoriteService = favoriteService;
+        this.favorites = [];
       }
 
       _createClass(PreferencesDrinksComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          this.favorites = this.favoriteService.getFavorites();
+        }
       }]);
 
       return PreferencesDrinksComponent;
     }();
 
     PreferencesDrinksComponent.ɵfac = function PreferencesDrinksComponent_Factory(t) {
-      return new (t || PreferencesDrinksComponent)();
+      return new (t || PreferencesDrinksComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_favorites_service__WEBPACK_IMPORTED_MODULE_1__["FavoritesService"]));
     };
 
     PreferencesDrinksComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -3611,7 +3622,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           styleUrls: ['./preferences-drinks.component.css']
         }]
       }], function () {
-        return [];
+        return [{
+          type: src_app_services_favorites_service__WEBPACK_IMPORTED_MODULE_1__["FavoritesService"]
+        }];
       }, null);
     })();
     /***/
@@ -4745,12 +4758,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
 
     var PreferencesService = /*#__PURE__*/function () {
-      // bartenders = [];
-      // homeBar = [];
-      // locations = [];
-      // locationsUpdated = new Subject<Item[]>();
-      // homeBarUpdated = new Subject<Item[]>();
-      //   bartendersUpdated = new Subject<Item[]>();
       function PreferencesService(http) {
         _classCallCheck(this, PreferencesService);
 
@@ -4770,45 +4777,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
             _this5.itemsUpdated.next(_toConsumableArray(_this5.items));
           });
-        } // getBartenders() {
-        //   this.http
-        //     .get<{ message: string; items: any }>('/api/preferences/bartenders')
-        //     .subscribe((data) => {
-        //       console.log(data.message);
-        //       this.bartenders = data.items;
-        //       this.bartendersUpdated.next([...this.bartenders]);
-        //     });
-        // }
-        // getBartenderUpdateListener() {
-        //   return this.bartendersUpdated.asObservable();
-        // }
-        // getLocations() {
-        //   this.http
-        //     .get<{ message: string; items: any }>('/api/preferences/locations')
-        //     .subscribe((data) => {
-        //       console.log(data.message);
-        //       this.locations = data.items;
-        //       this.locationsUpdated.next([...this.locations]);
-        //       console.log('service', this.locations);
-        //     });
-        // }
-        // getLocationsUpdateListener() {
-        //   return this.locationsUpdated.asObservable();
-        // }
-        // getHomeBar() {
-        //   console.log('service working?');
-        //   this.http
-        //     .get<{ message: string; items: any }>('/api/preferences/home-bar')
-        //     .subscribe((data) => {
-        //       console.log(data.message);
-        //       this.homeBar = data.items;
-        //       this.homeBarUpdated.next([...this.homeBar]);
-        //     });
-        // }
-        // getHomeBarUpdateListener() {
-        //   return this.homeBarUpdated.asObservable();
-        // }
-
+        }
       }, {
         key: "getItemUpdateListener",
         value: function getItemUpdateListener() {
@@ -5557,25 +5526,60 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var src_app_services_favorites_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! src/app/services/favorites.service */
+    "./src/app/services/favorites.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+
+    function RecipeCardComponent_span_8_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "span");
+      }
+    }
+
+    function RecipeCardComponent_span_9_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "span");
+      }
+    }
 
     var RecipeCardComponent = /*#__PURE__*/function () {
-      function RecipeCardComponent() {
+      function RecipeCardComponent(favoriteService) {
         _classCallCheck(this, RecipeCardComponent);
+
+        this.favoriteService = favoriteService;
       }
 
       _createClass(RecipeCardComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "toggleAddRemove",
+        value: function toggleAddRemove() {
+          if (this.favoriteService.containsFavorite(this.recipe)) {
+            this.favoriteService.removeFromFavorites(this.recipe);
+          } else {
+            this.favoriteService.addToFavorites(this.recipe);
+          }
+        }
       }]);
 
       return RecipeCardComponent;
     }();
 
     RecipeCardComponent.ɵfac = function RecipeCardComponent_Factory(t) {
-      return new (t || RecipeCardComponent)();
+      return new (t || RecipeCardComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_favorites_service__WEBPACK_IMPORTED_MODULE_1__["FavoritesService"]));
     };
 
     RecipeCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -5584,9 +5588,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       inputs: {
         recipe: "recipe"
       },
-      decls: 7,
-      vars: 4,
-      consts: [[1, "card-container"], [1, "card"], ["width", "125px", 1, "image", 3, "src", "alt"], [1, "drink-name"], [3, "routerLink"]],
+      decls: 10,
+      vars: 6,
+      consts: [[1, "card-container"], [1, "card"], ["width", "125px", 1, "image", 3, "src", "alt"], [1, "drink-name"], [3, "routerLink"], [3, "click"], [4, "ngIf"]],
       template: function RecipeCardComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -5604,6 +5608,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "a", 4);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "more details");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function RecipeCardComponent_Template_div_click_7_listener() {
+            return ctx.toggleAddRemove();
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, RecipeCardComponent_span_8_Template, 1, 0, "span", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, RecipeCardComponent_span_9_Template, 1, 0, "span", 6);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -5626,9 +5642,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("routerLink", "recipe-details/", ctx.recipe.idDrink, "");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.favoriteService.containsFavorite(ctx.recipe));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.favoriteService.containsFavorite(ctx.recipe));
         }
       },
-      directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"]],
+      directives: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkWithHref"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"]],
       styles: [".card[_ngcontent-%COMP%] {\r\n  height: 200px;\r\n  width: 150px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  \r\n  align-items: center;\r\n  margin-bottom: 10px;\r\n}\r\n.image[_ngcontent-%COMP%] {\r\n  border: 2px solid rgb(236, 184, 92);\r\n  box-shadow: 3px 5px 4px rgb(30, 0, 49);\r\n}\r\n.drink-name[_ngcontent-%COMP%] {\r\n  margin-top: 10px;\r\n  color: rgb(236, 184, 92);\r\n  font-size: 20px;\r\n}\r\na[_ngcontent-%COMP%] {\r\n  align-self: center;\r\n  margin-top: 8px;\r\n  color: #80bdad;\r\n}\r\na[_ngcontent-%COMP%]:hover {\r\n  color: #204051;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9yZWNpcGUtYm9vay9yZWNpcGUtY2FyZC9yZWNpcGUtY2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBYTtFQUNiLFlBQVk7RUFDWixhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLDZCQUE2QjtFQUM3QixtQkFBbUI7RUFDbkIsbUJBQW1CO0FBQ3JCO0FBQ0E7RUFDRSxtQ0FBbUM7RUFDbkMsc0NBQXNDO0FBQ3hDO0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsd0JBQXdCO0VBQ3hCLGVBQWU7QUFDakI7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2YsY0FBYztBQUNoQjtBQUVBO0VBQ0UsY0FBYztBQUNoQiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVjaXBlLWJvb2svcmVjaXBlLWNhcmQvcmVjaXBlLWNhcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJkIHtcclxuICBoZWlnaHQ6IDIwMHB4O1xyXG4gIHdpZHRoOiAxNTBweDtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgLyoganVzdGlmeS1jb250ZW50OiBjZW50ZXI7ICovXHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG59XHJcbi5pbWFnZSB7XHJcbiAgYm9yZGVyOiAycHggc29saWQgcmdiKDIzNiwgMTg0LCA5Mik7XHJcbiAgYm94LXNoYWRvdzogM3B4IDVweCA0cHggcmdiKDMwLCAwLCA0OSk7XHJcbn1cclxuXHJcbi5kcmluay1uYW1lIHtcclxuICBtYXJnaW4tdG9wOiAxMHB4O1xyXG4gIGNvbG9yOiByZ2IoMjM2LCAxODQsIDkyKTtcclxuICBmb250LXNpemU6IDIwcHg7XHJcbn1cclxuXHJcbmEge1xyXG4gIGFsaWduLXNlbGY6IGNlbnRlcjtcclxuICBtYXJnaW4tdG9wOiA4cHg7XHJcbiAgY29sb3I6ICM4MGJkYWQ7XHJcbn1cclxuXHJcbmE6aG92ZXIge1xyXG4gIGNvbG9yOiAjMjA0MDUxO1xyXG59XHJcbiJdfQ== */"]
     });
     /*@__PURE__*/
@@ -5642,7 +5666,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           styleUrls: ['./recipe-card.component.css']
         }]
       }], function () {
-        return [];
+        return [{
+          type: src_app_services_favorites_service__WEBPACK_IMPORTED_MODULE_1__["FavoritesService"]
+        }];
       }, {
         recipe: [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
@@ -7943,6 +7969,94 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }, {
           type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
         }];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/services/favorites.service.ts":
+  /*!***********************************************!*\
+    !*** ./src/app/services/favorites.service.ts ***!
+    \***********************************************/
+
+  /*! exports provided: FavoritesService */
+
+  /***/
+  function srcAppServicesFavoritesServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "FavoritesService", function () {
+      return FavoritesService;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var FavoritesService = /*#__PURE__*/function () {
+      function FavoritesService() {
+        _classCallCheck(this, FavoritesService);
+
+        this.favorites = [];
+      }
+
+      _createClass(FavoritesService, [{
+        key: "addToFavorites",
+        value: function addToFavorites(drink) {
+          this.favorites.push(drink);
+          return this.favorites;
+        }
+      }, {
+        key: "removeFromFavorites",
+        value: function removeFromFavorites(drink) {
+          var index = this.favorites.findIndex(function (fav) {
+            return fav.idDrink === drink.idDrink;
+          });
+          this.favorites.splice(index, 1);
+          return this.favorites;
+        }
+      }, {
+        key: "getFavorites",
+        value: function getFavorites() {
+          return this.favorites;
+        }
+      }, {
+        key: "containsFavorite",
+        value: function containsFavorite(drink) {
+          return this.favorites.includes(drink);
+        }
+      }]);
+
+      return FavoritesService;
+    }();
+
+    FavoritesService.ɵfac = function FavoritesService_Factory(t) {
+      return new (t || FavoritesService)();
+    };
+
+    FavoritesService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      token: FavoritesService,
+      factory: FavoritesService.ɵfac,
+      providedIn: 'root'
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](FavoritesService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{
+          providedIn: 'root'
+        }]
+      }], function () {
+        return [];
       }, null);
     })();
     /***/
