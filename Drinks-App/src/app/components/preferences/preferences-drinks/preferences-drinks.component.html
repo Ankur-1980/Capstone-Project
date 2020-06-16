@@ -1,2 +1,9 @@
-<h1>WORK IN PROGRESS</h1>
-<recipe-card *ngFor="let recipe of favorites" [recipe]="recipe"></recipe-card>
+<section>
+  <h1>
+    Saved Recipes
+  </h1>
+  <div *ngFor="let item of favorites">
+    <p>{{ item.strDrink }}</p>
+    <button (click)="onDelete(item.idDrink)">x</button>
+  </div>
+</section>

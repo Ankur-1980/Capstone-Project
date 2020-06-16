@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./preferences-drinks.component.css'],
 })
 export class PreferencesDrinksComponent implements OnInit {
-  favorites = [];
+  favorites;
   favSub: Subscription;
   constructor(private favoriteService: FavoritesService) {}
 
@@ -17,10 +17,15 @@ export class PreferencesDrinksComponent implements OnInit {
     this.favSub = this.favoriteService
       .getFavoriteUpdateListener()
       .subscribe((data) => {
-        console.log(data);
+        this.favorites = data;
+        console.log(this.favorites);
 
         // this.favorites = items
       });
     // console.log(this.favorites);
+  }
+
+  onDelete(drinkId) {
+    this.favoriteService.removeFromFavorites(drinkId);
   }
 }

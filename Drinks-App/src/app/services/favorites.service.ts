@@ -40,11 +40,13 @@ export class FavoritesService {
   }
 
   removeFromFavorites(drink) {
-    let index = this.favorites.findIndex(
-      (fav) => fav.idDrink === drink.idDrink
-    );
-    this.favorites.splice(index, 1);
-    return this.favorites;
+    console.log(drink);
+
+    // let index = this.favorites.findIndex(
+    //   (fav) => fav.idDrink === drink.idDrink
+    // );
+    // this.favorites.splice(index, 1);
+    // return this.favorites;
   }
 
   // getFavorites() {
