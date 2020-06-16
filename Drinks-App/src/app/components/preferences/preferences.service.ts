@@ -9,12 +9,7 @@ import { Subject } from 'rxjs';
 export class PreferencesService {
   items: Item[] = [];
   itemsUpdated = new Subject<Item[]>();
-  // bartenders = [];
-  // homeBar = [];
-  // locations = [];
-  // locationsUpdated = new Subject<Item[]>();
-  // homeBarUpdated = new Subject<Item[]>();
-  //   bartendersUpdated = new Subject<Item[]>();
+
   constructor(private http: HttpClient) {}
 
   getItems() {
@@ -26,51 +21,6 @@ export class PreferencesService {
         this.itemsUpdated.next([...this.items]);
       });
   }
-
-  // getBartenders() {
-  //   this.http
-  //     .get<{ message: string; items: any }>('/api/preferences/bartenders')
-  //     .subscribe((data) => {
-  //       console.log(data.message);
-  //       this.bartenders = data.items;
-  //       this.bartendersUpdated.next([...this.bartenders]);
-  //     });
-  // }
-
-  // getBartenderUpdateListener() {
-  //   return this.bartendersUpdated.asObservable();
-  // }
-
-  // getLocations() {
-  //   this.http
-  //     .get<{ message: string; items: any }>('/api/preferences/locations')
-  //     .subscribe((data) => {
-  //       console.log(data.message);
-  //       this.locations = data.items;
-  //       this.locationsUpdated.next([...this.locations]);
-  //       console.log('service', this.locations);
-  //     });
-  // }
-
-  // getLocationsUpdateListener() {
-  //   return this.locationsUpdated.asObservable();
-  // }
-
-  // getHomeBar() {
-  //   console.log('service working?');
-
-  //   this.http
-  //     .get<{ message: string; items: any }>('/api/preferences/home-bar')
-  //     .subscribe((data) => {
-  //       console.log(data.message);
-  //       this.homeBar = data.items;
-  //       this.homeBarUpdated.next([...this.homeBar]);
-  //     });
-  // }
-
-  // getHomeBarUpdateListener() {
-  //   return this.homeBarUpdated.asObservable();
-  // }
 
   getItemUpdateListener() {
     return this.itemsUpdated.asObservable();
