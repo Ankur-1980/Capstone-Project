@@ -24,8 +24,13 @@ export class UsersService {
     this.router.navigate(['/login']);
   }
 
-  login() {
-    this.router.navigate(['/the-feed']);
+  login(formValue) {
+    this.http
+      .post<{ message: string }>('api/users/login', formValue)
+      .subscribe((response) => {
+        console.log(response.message);
+      });
+    // this.router.navigate(['/the-feed']);
   }
 
   PasswordValidation(password: string, password2: string) {

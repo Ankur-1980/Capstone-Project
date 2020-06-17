@@ -42,7 +42,7 @@ users.post("/register", async (req, res) => {
       if (err) {
         throw err;
       }
-      // console.log(response.rows);
+      console.log(response.rows);
 
       if (response.rows.length > 0) {
         res.status(201).json({ message: "email already exists" });
@@ -76,16 +76,26 @@ users.post("/register", async (req, res) => {
 
 // login in
 users.post("/login", (req, res) => {
+  console.log(req.body);
   const { userName, password } = req.body;
+
   database.query(
     "SELECT * FROM users WHERE userName = $1",
     [userName],
-    (response) => {
-      if (response.rows.length > 0) {
-        res.status(200).json({ message: "userName found" });
-      }
-    }
+    (response) => console.log(response.rows)
   );
+
+  // database.query(
+  //   "SELECT * FROM users WHERE userName = $1",
+  //   [userName],
+  //   (response) => {
+  //     console.log(response.rows);
+
+  // if (response.rows.length > 0) {
+  //   res.status(200).json({ message: "userName found" });
+  // }
+  //   }
+  // );
 });
 
 module.exports = users;
