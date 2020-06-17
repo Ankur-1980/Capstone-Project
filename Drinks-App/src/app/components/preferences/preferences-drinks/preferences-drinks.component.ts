@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FavoritesService } from 'src/app/services/favorites.service';
 import { Subscription } from 'rxjs';
 
@@ -7,8 +7,8 @@ import { Subscription } from 'rxjs';
   templateUrl: './preferences-drinks.component.html',
   styleUrls: ['./preferences-drinks.component.css'],
 })
-export class PreferencesDrinksComponent implements OnInit {
-  favorites;
+export class PreferencesDrinksComponent implements OnInit, OnDestroy {
+  favorites = [];
   favSub: Subscription;
   constructor(private favoriteService: FavoritesService) {}
 
@@ -19,13 +19,14 @@ export class PreferencesDrinksComponent implements OnInit {
       .subscribe((data) => {
         this.favorites = data;
         console.log(this.favorites);
-
-        // this.favorites = items
       });
-    // console.log(this.favorites);
   }
 
   onDelete(drinkId) {
     this.favoriteService.removeFromFavorites(drinkId);
+  }
+
+  ngOnDestroy() {
+    this.favSub.unsubscribe();
   }
 }

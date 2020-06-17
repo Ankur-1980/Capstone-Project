@@ -1,14 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Subject } from 'rxjs';
-import { stringify } from 'querystring';
 
 @Injectable({
   providedIn: 'root',
 })
 export class FavoritesService {
-  favorites = [];
-  favoritesUpdated = new Subject();
+  favorites: any[] = [];
+  favoritesUpdated = new Subject<any[]>();
 
   constructor(private http: HttpClient) {}
 
@@ -41,14 +40,13 @@ export class FavoritesService {
   }
 
   removeFromFavorites(drinkId) {
-    console.log('service', drinkId);
+    // console.log('service', drinkId);
     this.http
       .delete<{ message: string; items: any }>(`/api/recipes/${drinkId}`)
       .subscribe(() => {
-        let index = this.favorites.findIndex(
-          (items) => items.idDrink === drinkId
+        this.favorites = this.favorites.filter(
+          (fav) => fav.id_drink !== drinkId
         );
-        this.favorites.splice(index, 1);
         this.favoritesUpdated.next([...this.favorites]);
       });
   }
