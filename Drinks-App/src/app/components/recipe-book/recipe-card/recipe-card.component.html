@@ -8,12 +8,12 @@
     />
     <div class="drink-name">{{ recipe.strDrink }}</div>
     <a routerLink="recipe-details/{{ recipe.idDrink }}">more details</a>
-    <div (click)="toggleAddRemove()">
+    <div class="saved" (click)="toggleAddRemove()">
       <span *ngIf="!favoriteService.containsFavorite(recipe)">
-        <p>&#10084;</p>
+        <p>Save Recipe</p>
       </span>
       <span *ngIf="favoriteService.containsFavorite(recipe)">
-        X
+        Recipe Saved
       </span>
     </div>
   </div>
