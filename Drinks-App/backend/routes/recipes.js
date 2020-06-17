@@ -95,7 +95,15 @@ recipes.post("/", (req, res) => {
 });
 
 recipes.delete("/:id", (req, res) => {
-  database.query("");
+  console.log(req.params.id);
+
+  database
+    .query(`DELETE FROM saved_recipes_api WHERE id_drink=$1`, [req.params.id])
+    .then(() => {
+      database.query("SELECT * FROM saved_recipes_api").then((response) => {
+        res.status(200).json({ message: "Item Deleted", items: response.rows });
+      });
+    });
 });
 
 module.exports = recipes;
