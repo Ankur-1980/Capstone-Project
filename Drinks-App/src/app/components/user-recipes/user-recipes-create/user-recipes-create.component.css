@@ -1,23 +1,6 @@
-.background {
-  margin-top: 30px;
-  /* background-image: url(./Margarita/margarita.svg); */
-  /* background-repeat: no-repeat; */
-  height: 125vh;
-  width: 125vw;
-}
-
-.body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 90vh;
-}
-h1 {
-  margin-top: 40vh;
-  font-size: 50px;
-  color: rgb(236, 184, 92);
+.background-img {
+  background-image: url(#);
+  background-repeat: no-repeat;
 }
 
 form {
@@ -32,7 +15,7 @@ form {
   display: flex;
   flex-direction: column;
 }
-.methodInput {
+/* .methodInput {
   padding: 10px 5px;
   color: hsl(0, 0%, 100%);
   background-color: rgb(236, 184, 92, 0.5);
@@ -41,7 +24,7 @@ form {
 
 .methodInput:hover {
   border: 2pt solid #80bdad;
-}
+} */
 
 .formGroupLabel {
   display: flex;
@@ -59,84 +42,10 @@ form {
   height: auto;
 }
 
-label {
-  font-size: 30px;
-  color: rgb(236, 184, 92);
-}
-input {
-  margin-top: 10px;
-  padding: 10px 5px;
-  color: hsl(0, 0%, 100%);
-  background-color: rgb(236, 184, 92, 0.5);
-  border: 2pt solid rgb(236, 184, 92);
-}
-input:hover {
-  border: 2pt solid #80bdad;
+/* Media Query for Tablet
+@media screen and (max-width: 768px) {
 }
 
-::placeholder {
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-}
-
-button {
-  margin-top: 30px;
-  padding: 10px 0px;
-  background-color: rgb(236, 184, 92);
-  /* box-shadow: black -1pt 1pt 3pt; */
-}
-button:hover {
-  background-color: #80bdad;
-}
-
-/* media Query for Tablets */
-/* @media screen and (max-width: 768px) {
-    .background {
-      margin-top: 10vh;
-      height: 80vh;
-      width: 100vw;
-    }
-  
-    .body {
-      width: 100vw;
-      height: 50vw;
-    }
-    .form-group {
-      margin-top: 10px;
-    }
-  
-    form {
-      width: 30vw;
-    }
-  
-    label {
-      font-size: 30px;
-    }
-  } */
-
-/* Media Query for phone */
-/* @media screen and (max-width: 360px) {
-    .background {
-      margin-top: 10vh;
-      height: 80vh;
-      width: 100vw;
-    }
-  
-    .body {
-      width: 100vw;
-      height: 60vh;
-    }
-    h1 {
-      margin: 0;
-    }
-  
-    form {
-      margin-top: 5px;
-      width: 40vw;
-      height: auto;
-    }
-  
-    label {
-      font-size: 30px;
-    }
-  } */
+/* Media Query for phone 
+@media screen and (max-width: 360px) {
+} */
