@@ -3,18 +3,18 @@ const database = require("./connection");
 const bcrypt = require("bcrypt");
 
 const initialize = (passport) => {
-  const authenticateUser = (email, password, done) => {
+  const authenticateUser = (username, password, done) => {
     database.query(
-      `SELECT * FROM users WHERE email = $1`,
-      [email],
-      (err, response) => {
+      `SELECT * FROM users WHERE userName = $1`,
+      [username],
+      (err, results) => {
         if (err) {
           throw err;
         }
-        console.log(response.rows);
+        console.log(results.rows);
         // there are users in the db
-        if (response.rows.length > 0) {
-          const user = response.rows[0];
+        if (results.rows.length > 0) {
+          const user = results.rows[0];
 
           bcrypt.compare(password, user.password, (err, isMatch) => {
             if (err) {
@@ -39,7 +39,7 @@ const initialize = (passport) => {
   passport.use(
     new LocalStrategy(
       {
-        usernameField: "username",
+        usernameField: "userName",
         passwordField: "password",
       },
       authenticateUser
@@ -52,12 +52,12 @@ const initialize = (passport) => {
     pool.query(
       `SELECT * FROM users WHERE user_id = $1`,
       [id],
-      (err, response) => {
+      (err, results) => {
         if (err) {
           return done(err);
         }
-        console.log(`ID is ${response.rows[0].user_id}`);
-        return done(null, response.rows[0]);
+        console.log(`ID is ${results.rows[0].user_id}`);
+        return done(null, results.rows[0]);
       }
     );
   });

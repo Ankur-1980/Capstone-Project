@@ -36,11 +36,13 @@
         <input
           formControlName="age"
           class="form-control"
-          (change)="validateDOB($event)"
-          type="date"
-          name="dob"
-          placeholder="DOB"
+          type="number"
+          name="age"
+          placeholder="age"
         />
+        <span *ngIf="age.errors?.min && age.touched"
+          >You are not old enough</span
+        >
       </div>
       <!-- email - required -->
       <div class="form-group">

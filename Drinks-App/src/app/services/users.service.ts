@@ -8,6 +8,7 @@ import { FormGroup, AbstractControl } from '@angular/forms';
 })
 export class UsersService {
   userNameList = [];
+  serverMessage;
 
   constructor(private http: HttpClient, private router: Router) {}
 
@@ -19,7 +20,7 @@ export class UsersService {
     this.http
       .post<{ message: string }>('/api/users/register', formValue)
       .subscribe((response) => {
-        console.log(response.message);
+        alert(response.message);
       });
     this.router.navigate(['/login']);
   }
@@ -52,20 +53,4 @@ export class UsersService {
       }
     };
   }
-
-  // userNameDuplicated(userControl: AbstractControl) {
-  //   return new Promise((resolve) => {
-  //     setTimeout(() => {
-  //       if (this.checkUserName(userControl.value)) {
-  //         resolve({ userNameNotAvailable: true });
-  //       } else {
-  //         resolve(null);
-  //       }
-  //     }, 1000);
-  //   });
-  // }
-
-  // checkUserName(userName: string) {
-  //   return this.userNameList.indexOf(userName) > -1;
-  // }
 }
