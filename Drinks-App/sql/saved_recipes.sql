@@ -1,45 +1,45 @@
--- CREATE TABLE saved_recipes (
--- saved_id UUID,
--- 	idDrink VARCHAR(20),
--- 	strDrink VARCHAR(40),
--- 	strGlass VARCHAR(20),
--- 	strIngredient1 VARCHAR(20),
--- 	strIngredient2 VARCHAR(20),
--- 	strIngredient3 VARCHAR(20),
--- 	strIngredient4 VARCHAR(20),
--- 	strIngredient5 VARCHAR(20),
--- 	strIngredient6 VARCHAR(20),
--- 	strIngredient7 VARCHAR(20),
--- 	strIngredient8 VARCHAR(20),
--- 	strIngredient9 VARCHAR(20),
--- 	strIngredient10 VARCHAR(20),
--- 	strIngredient11 VARCHAR(20),
--- 	strIngredient12 VARCHAR(20),
--- 	strIngredient13 VARCHAR(20),
--- 	strIngredient14 VARCHAR(20),
--- 	strIngredient15 VARCHAR(20),
--- 	strInstructions VARCHAR(255),
--- 	strMeasure1 VARCHAR(20),
--- 	strMeasure2 VARCHAR(20),
--- 	strMeasure3 VARCHAR(20),
--- 	strMeasure4 VARCHAR(20),
--- 	strMeasure5 VARCHAR(20),
--- 	strMeasure6 VARCHAR(20),
--- 	strMeasure7 VARCHAR(20),
--- 	strMeasure8 VARCHAR(20),
--- 	strMeasure9 VARCHAR(20),
--- 	strMeasure10 VARCHAR(20),
--- 	strMeasure11 VARCHAR(20),
--- 	strMeasure12 VARCHAR(20),
--- 	strMeasure13 VARCHAR(20),
--- 	strMeasure14 VARCHAR(20),
--- 	strMeasure15 VARCHAR(20),
--- 	user_id UUID
--- );
+-- CREATE TABLE saved_recipes_api (saved_id UUID,
+--                                 id_drink VARCHAR(20),
+--                                          drink_name VARCHAR(40),
+--                                                     glassware VARCHAR(20),
+--                                                               ingredient1 VARCHAR(20),
+--                                                                           ingredient2 VARCHAR(20),
+--                                                                                       ingredient3 VARCHAR(20),
+--                                                                                                   ingredient4 VARCHAR(20),
+--                                                                                                               ingredient5 VARCHAR(20),
+--                                                                                                                           ingredient6 VARCHAR(20),
+--                                                                                                                                       ingredient7 VARCHAR(20),
+--                                                                                                                                                   ingredient8 VARCHAR(20),
+--                                                                                                                                                               ingredient9 VARCHAR(20),
+--                                                                                                                                                                           ingredient10 VARCHAR(20),
+--                                                                                                                                                                                        ingredient11 VARCHAR(20),
+--                                                                                                                                                                                                     ingredient12 VARCHAR(20),
+--                                                                                                                                                                                                                  ingredient13 VARCHAR(20),
+--                                                                                                                                                                                                                               ingredient14 VARCHAR(20),
+--                                                                                                                                                                                                                                            ingredient15 VARCHAR(20),
+--                                                                                                                                                                                                                                                         instructions VARCHAR, measure1 VARCHAR(20),
+--                                                                                                                                                                                                                                                                                        measure2 VARCHAR(20),
+--                                                                                                                                                                                                                                                                                                 measure3 VARCHAR(20),
+--                                                                                                                                                                                                                                                                                                          measure4 VARCHAR(20),
+--                                                                                                                                                                                                                                                                                                                   measure5 VARCHAR(20),
+--                                                                                                                                                                                                                                                                                                                            measure6 VARCHAR(20),
+--                                                                                                                                                                                                                                                                                                                                     measure7 VARCHAR(20),
+--                                                                                                                                                                                                                                                                                                                                              measure8 VARCHAR(20),
+--                                                                                                                                                                                                                                                                                                                                                       measure9 VARCHAR(20),
+--                                                                                                                                                                                                                                                                                                                                                                measure10 VARCHAR(20),
+--                                                                                                                                                                                                                                                                                                                                                                          measure11 VARCHAR(20),
+--                                                                                                                                                                                                                                                                                                                                                                                    measure12 VARCHAR(20),
+--                                                                                                                                                                                                                                                                                                                                                                                              measure13 VARCHAR(20),
+--                                                                                                                                                                                                                                                                                                                                                                                                        measure14 VARCHAR(20),
+--                                                                                                                                                                                                                                                                                                                                                                                                                  measure15 VARCHAR(20),
+--                                                                                                                                                                                                                                                                                                                                                                                                                            user_id UUID);
 
--- SELECT * FROM users;
 
--- INSERT INTO saved_recipes (saved_id,idDrink,strDrink,strGlass,strIngredient1,strIngredient2, strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10, strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15, strInstructions, strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5, strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10, strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15, user_id)
+-- SELECT *
+-- FROM users;
+
+
+-- INSERT INTO saved_recipes (saved_id,id_drink,drink_name,glassware,ingredient1,ingredient2, ingredient3, ingredient4, ingredient5, ingredient6, ingredient7, ingredient8, ingredient9, ingredient10, ingredient11, ingredient12, ingredient13, ingredient14, ingredient15, instructions, measure1, measure2, measure3, measure4, measure5, measure6, measure7, measure8, measure9, measure10, measure11, measure12, measure13, measure14, measure15, user_id)
 -- VALUES (uuid_generate_v4(),
 --         '100',
 --         'Not Another Word',
@@ -78,7 +78,7 @@
 --         '5fd2ddc4-0013-43e8-a3e0-f9c11852467e');
 
 
--- INSERT INTO saved_recipes (saved_id,idDrink,strDrink,strGlass,strIngredient1,strIngredient2, strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10, strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15, strInstructions, strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5, strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10, strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15, user_id)
+-- INSERT INTO saved_recipes (saved_id,id_drink,drink_name,glassware,ingredient1,ingredient2, ingredient3, ingredient4, ingredient5, ingredient6, ingredient7, ingredient8, ingredient9, ingredient10, ingredient11, ingredient12, ingredient13, ingredient14, ingredient15, instructions, measure1, measure2, measure3, measure4, measure5, measure6, measure7, measure8, measure9, measure10, measure11, measure12, measure13, measure14, measure15, user_id)
 -- VALUES (uuid_generate_v4(),
 --         '110',
 --         'Last Word',
@@ -117,7 +117,7 @@
 --         '5fd2ddc4-0013-43e8-a3e0-f9c11852467e');
 
 
--- INSERT INTO saved_recipes (saved_id,idDrink,strDrink,strGlass,strIngredient1,strIngredient2, strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10, strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15, strInstructions, strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5, strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10, strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15, user_id)
+-- INSERT INTO saved_recipes (saved_id,id_drink,drink_name,glassware,ingredient1,ingredient2, ingredient3, ingredient4, ingredient5, ingredient6, ingredient7, ingredient8, ingredient9, ingredient10, ingredient11, ingredient12, ingredient13, ingredient14, ingredient15, instructions, measure1, measure2, measure3, measure4, measure5, measure6, measure7, measure8, measure9, measure10, measure11, measure12, measure13, measure14, measure15, user_id)
 -- VALUES (uuid_generate_v4(),
 --         '100',
 --         'Not Another Word',
@@ -156,7 +156,7 @@
 --         '5fd2ddc4-0013-43e8-a3e0-f9c11852467e');
 
 
--- INSERT INTO saved_recipes (saved_id,idDrink,strDrink,strGlass,strIngredient1,strIngredient2, strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10, strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15, strInstructions, strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5, strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10, strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15, user_id)
+-- INSERT INTO saved_recipes (saved_id,id_drink,drink_name,glassware,ingredient1,ingredient2, ingredient3, ingredient4, ingredient5, ingredient6, ingredient7, ingredient8, ingredient9, ingredient10, ingredient11, ingredient12, ingredient13, ingredient14, ingredient15, instructions, measure1, measure2, measure3, measure4, measure5, measure6, measure7, measure8, measure9, measure10, measure11, measure12, measure13, measure14, measure15, user_id)
 -- VALUES (uuid_generate_v4(),
 --         '20',
 --         'El Matador',
@@ -195,7 +195,7 @@
 --         '5fd2ddc4-0013-43e8-a3e0-f9c11852467e');
 
 
--- INSERT INTO saved_recipes (saved_id,idDrink,strDrink,strGlass,strIngredient1,strIngredient2, strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10, strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15, strInstructions, strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5, strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10, strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15, user_id)
+-- INSERT INTO saved_recipes (saved_id,id_drink,drink_name,glassware,ingredient1,ingredient2, ingredient3, ingredient4, ingredient5, ingredient6, ingredient7, ingredient8, ingredient9, ingredient10, ingredient11, ingredient12, ingredient13, ingredient14, ingredient15, instructions, measure1, measure2, measure3, measure4, measure5, measure6, measure7, measure8, measure9, measure10, measure11, measure12, measure13, measure14, measure15, user_id)
 -- VALUES (uuid_generate_v4(),
 --         '200',
 --         'Indifference Cherished',
@@ -234,7 +234,7 @@
 --         '686abb99-a94a-47f1-aa12-22b24a41e2ee');
 
 
--- INSERT INTO saved_recipes (saved_id,idDrink,strDrink,strGlass,strIngredient1,strIngredient2, strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10, strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15, strInstructions, strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5, strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10, strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15, user_id)
+-- INSERT INTO saved_recipes (saved_id,id_drink,drink_name,glassware,ingredient1,ingredient2, ingredient3, ingredient4, ingredient5, ingredient6, ingredient7, ingredient8, ingredient9, ingredient10, ingredient11, ingredient12, ingredient13, ingredient14, ingredient15, instructions, measure1, measure2, measure3, measure4, measure5, measure6, measure7, measure8, measure9, measure10, measure11, measure12, measure13, measure14, measure15, user_id)
 -- VALUES (uuid_generate_v4(),
 --         '30',
 --         'Something Delicious',
@@ -265,11 +265,17 @@
 --         null,
 --         null,
 --         null,
---         'strip',
+--         'ip',
 --         null,
 --         null,
 --         null,
 --         null,
 --         '686abb99-a94a-47f1-aa12-22b24a41e2ee');
 
-select * from saved_recipes;
+
+-- DELETE
+-- FROM saved_recipes_api
+-- where saved_id = 'ad4b4e32-931e-4d5e-aab0-2bc755278f63';
+
+
+-- select * from saved_recipes_api;

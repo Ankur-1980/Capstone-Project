@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { PreferencesService } from '../preferences.service';
 import { Subscription } from 'rxjs';
 
@@ -10,7 +10,7 @@ import { Subscription } from 'rxjs';
     '../preferences-pages.css',
   ],
 })
-export class PreferencesBartendersComponent implements OnInit {
+export class PreferencesBartendersComponent implements OnInit, OnDestroy {
   bartenders = [];
   itemsSub: Subscription;
 

@@ -6,28 +6,42 @@ import { Subject } from 'rxjs';
   providedIn: 'root',
 })
 export class FavoritesService {
-  favorites = [];
-  favoritesUpdated = new Subject();
+  favorites: any[] = [];
+  favoritesUpdated = new Subject<any[]>();
 
   constructor(private http: HttpClient) {}
 
   addToFavorites(drink) {
+    console.log('service', drink);
+
     this.http
-      .post<{ message: string; items: any }>('/api/favorites', drink)
+      .post<{ message: string; items: any }>('/api/recipes', drink)
       .subscribe((response) => {
         console.log(response.message);
         this.favorites.push(drink);
-        // console.log('service', response.items);
+
         this.favoritesUpdated.next([...this.favorites]);
-        console.log('service', this.favorites);
+        // console.log('service', this.favorites);
       });
-    // this.favorites.push(drink);
-    // return this.favorites;
+  }
+
+  userRecipes(recipe) {
+    console.log('service', recipe);
+
+    this.http
+      .post<{ message: string; items: any }>('/api/recipes/created', recipe)
+      .subscribe((response) => {
+        console.log(response.message);
+        this.favorites.push(recipe);
+
+        this.favoritesUpdated.next([...this.favorites]);
+        // console.log('service', this.favorites);
+      });
   }
 
   getFavorites() {
     this.http
-      .get<{ message: string; items: any }>('/api/favorites')
+      .get<{ message: string; items: any }>('/api/recipes')
       .subscribe((response) => {
         console.log(response.message);
         this.favorites = response.items;
@@ -40,13 +54,30 @@ export class FavoritesService {
   }
 
   removeFromFavorites(drink) {
-    console.log(drink);
+    // console.log('service', drinkId);
+    const parsedId = drink.idDrink;
+    this.http
+      .delete<{ message: string; items: any }>(`/api/recipes/${parsedId}`)
+      .subscribe((response) => {
+        console.log(response.message);
+        this.favorites = this.favorites.filter(
+          (fav) => fav.id_drink !== parsedId
+        );
+        this.favoritesUpdated.next([...this.favorites]);
+      });
+  }
 
-    // let index = this.favorites.findIndex(
-    //   (fav) => fav.idDrink === drink.idDrink
-    // );
-    // this.favorites.splice(index, 1);
-    // return this.favorites;
+  deleteFromPref(drinkId) {
+    this.http
+      .delete<{ message: string; items: any }>(`/api/recipes/${drinkId}`)
+      .subscribe((response) => {
+        console.log(response.message);
+
+        this.favorites = this.favorites.filter(
+          (fav) => fav.id_drink !== drinkId
+        );
+        this.favoritesUpdated.next([...this.favorites]);
+      });
   }
 
   // getFavorites() {

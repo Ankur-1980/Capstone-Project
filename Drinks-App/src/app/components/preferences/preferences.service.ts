@@ -41,11 +41,8 @@ export class PreferencesService {
     this.http
       .delete<{ message: string; items: any }>(`/api/preferences/${itemId}`)
       .subscribe(() => {
-        console.log('before', this.items);
-
         this.items = this.items.filter((item) => item.preference_id !== itemId);
         this.itemsUpdated.next([...this.items]);
-        console.log('after', this.items);
       });
   }
 }
