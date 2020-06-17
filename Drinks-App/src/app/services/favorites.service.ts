@@ -39,13 +39,14 @@ export class FavoritesService {
     return this.favoritesUpdated.asObservable();
   }
 
-  removeFromFavorites(drinkId) {
+  removeFromFavorites(drink) {
     // console.log('service', drinkId);
+    const parsedId = drink.idDrink;
     this.http
-      .delete<{ message: string; items: any }>(`/api/recipes/${drinkId}`)
+      .delete<{ message: string; items: any }>(`/api/recipes/${parsedId}`)
       .subscribe(() => {
         this.favorites = this.favorites.filter(
-          (fav) => fav.id_drink !== drinkId
+          (fav) => fav.id_drink !== parsedId
         );
         this.favoritesUpdated.next([...this.favorites]);
       });
