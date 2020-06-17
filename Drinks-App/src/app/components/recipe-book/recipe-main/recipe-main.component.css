@@ -1,6 +1,11 @@
 .background-img {
+  margin-left: 5vh;
   background-image: url(../Hurricane/Hurricane.svg);
   background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
 }
 
 .search-container {
