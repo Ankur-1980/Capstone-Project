@@ -58,7 +58,8 @@ export class FavoritesService {
     const parsedId = drink.idDrink;
     this.http
       .delete<{ message: string; items: any }>(`/api/recipes/${parsedId}`)
-      .subscribe(() => {
+      .subscribe((response) => {
+        console.log(response.message);
         this.favorites = this.favorites.filter(
           (fav) => fav.id_drink !== parsedId
         );
