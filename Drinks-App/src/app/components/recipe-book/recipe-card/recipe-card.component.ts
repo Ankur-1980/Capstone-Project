@@ -8,19 +8,24 @@ import { FavoritesService } from 'src/app/services/favorites.service';
 })
 export class RecipeCardComponent implements OnInit {
   @Input() recipe;
-
+  show = true;
   constructor(public favoriteService: FavoritesService) {}
 
   ngOnInit(): void {}
 
   toggleAddRemove() {
-    // console.log(this.recipe);
+    if (this.show) {
+      this.favoriteService.addToFavorites(this.recipe);
+      this.show = !this.show;
+    } else {
+      this.favoriteService.removeFromFavorites(this.recipe);
+      this.show = !this.show;
+    }
 
-    this.favoriteService.addToFavorites(this.recipe);
-    // if (this.favoriteService.containsFavorite(this.recipe)) {
-    //   this.favoriteService.removeFromFavorites(this.recipe);
-    // } else {
-    //   this.favoriteService.addToFavorites(this.recipe);
-    // }
+    //   if (this.favoriteService.containsFavorite(this.recipe)) {
+    //     this.favoriteService.removeFromFavorites(this.recipe);
+    //   } else {
+    //     this.favoriteService.addToFavorites(this.recipe);
+    //   }
   }
 }

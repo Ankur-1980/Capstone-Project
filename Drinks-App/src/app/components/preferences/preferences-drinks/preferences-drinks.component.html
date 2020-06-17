@@ -3,7 +3,7 @@
     Saved Recipes
   </h1>
   <div *ngFor="let item of favorites">
-    <p>{{ item.strDrink }}</p>
-    <button (click)="onDelete(item.idDrink)">x</button>
+    <p>{{ item.drink_name }}</p>
+    <button (click)="onDelete(item.id_drink)">x</button>
   </div>
 </section>
