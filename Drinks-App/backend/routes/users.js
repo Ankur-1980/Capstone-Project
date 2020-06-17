@@ -1,11 +1,12 @@
 const users = require("express").Router();
 const database = require("../connection");
 const bcrypt = require("bcrypt");
+const { response } = require("express");
 
-const passport = require("passport");
-const initializePassport = require("../passportConfig");
+// const passport = require("passport");
+// const initializePassport = require("../passportConfig");
 
-initializePassport(passport);
+// initializePassport(passport);
 
 // get all users
 users.get("/", (req, res) => {
@@ -14,9 +15,9 @@ users.get("/", (req, res) => {
   });
 });
 
-// path for register
-users.get("/:id"), (req, res) => {};
+// users.get("/:id"), (req, res) => {};
 
+// path for register
 users.post("/register", async (req, res) => {
   // console.log("server", req.body);
   let {
@@ -30,22 +31,15 @@ users.post("/register", async (req, res) => {
     date,
   } = req.body;
 
-  const dbErrors = [];
-
   let hashedPassword = await bcrypt.hash(password, 10);
   // console.log(hashedPassword);
 
   database.query(
     "SELECT * FROM users WHERE email = $1",
     [email],
-    (err, response) => {
-      if (err) {
-        throw err;
-      }
-      // console.log(response.rows);
-
+    (response) => {
       if (response.rows.length > 0) {
-        res.status(201).json({ message: "email already exists" });
+        res.status(200).json({ message: "email already exists" });
         // res.redirect("/");
       } else {
         database.query(
@@ -60,14 +54,15 @@ users.post("/register", async (req, res) => {
             bio,
             date,
           ],
-          (err, response) => {
-            if (err) {
-              throw err;
-            }
+          (error, response) => {
             console.log(response.rows);
-            res.status(201).json({
-              message: "You successfully registered, please log in",
-            });
+            if (err) {
+              console.log(error);
+            } else {
+              res.status(200).json({
+                message: "You successfully registered, please log in",
+              });
+            }
           }
         );
       }
@@ -75,7 +70,30 @@ users.post("/register", async (req, res) => {
   );
 });
 
-// login in
-users.post("/login");
+// // login in
+// users.post("/login", (req, res) => {
+//   const { userName, password } = req.body;
+//   database.query(
+//     "SELECT * FROM users WHERE userName = $1",
+//     [userName],
+//     (response) => {
+//       if (response.rows.length > 0) {
+//         res.status(200).json({ message: "email already exists" });
+//         // res.redirect("/");
+//       }
+//     })
+
+users.post("/login", (req, res) => {
+  const { userName, password } = req.body;
+  database.query(
+    "SELECT * FROM users WHERE userName = $1",
+    [userName],
+    (response) => {
+      if (response.rows.length > 0) {
+        res.status(200).json({ message: "userName found" });
+      }
+    }
+  );
+});
 
 module.exports = users;
