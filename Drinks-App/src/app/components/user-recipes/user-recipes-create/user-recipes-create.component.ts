@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 import { RecipeApiService } from 'src/app/services/recipeAPI.service';
 import { UserRecipesService } from 'src/app/components/user-recipes/user-recipes.service';
+import { FavoritesService } from 'src/app/services/favorites.service';
 
 @Component({
   selector: 'user-recipes-create',
@@ -10,7 +11,6 @@ import { UserRecipesService } from 'src/app/components/user-recipes/user-recipes
 })
 export class UserRecipesCreateComponent implements OnInit {
   userRecipe: FormGroup;
-  ratingChange;
   glassware;
   latitude;
   longitude;
@@ -19,16 +19,12 @@ export class UserRecipesCreateComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private recipeAPI: RecipeApiService,
-    private userRecipeService: UserRecipesService
+    private favService: FavoritesService
   ) {}
 
   ngOnInit(): void {
     this.recipeAPI.getGlassware().subscribe((data) => {
       this.glassware = data['drinks'];
-    });
-    const element = this.fb.group({
-      amount: [''],
-      ingredient: [''],
     });
 
     this.userRecipe = this.fb.group({
@@ -38,11 +34,22 @@ export class UserRecipesCreateComponent implements OnInit {
       latitude: [''],
       longitude: [''],
       method: [''],
-      ingredient1: element,
-      ingredient2: element,
-      ingredient3: element,
-      ingredient4: element,
-      ingredient5: element,
+      ingredient1: [''],
+      ingredient2: [''],
+      ingredient3: [''],
+      ingredient4: [''],
+      ingredient5: [''],
+      ingredient6: [''],
+      ingredient7: [''],
+      ingredient8: [''],
+      amount1: [''],
+      amount2: [''],
+      amount3: [''],
+      amount4: [''],
+      amount5: [''],
+      amount6: [''],
+      amount7: [''],
+      amount8: [''],
       // date: this.fb.control(new Date()),
     });
 
@@ -68,13 +75,10 @@ export class UserRecipesCreateComponent implements OnInit {
   //   ingredientsArray.insert(arrayLen, newIngredientGroup);
   // }
 
-  changeRating(value) {
-    console.log(value);
-
-    // this.ratingChange = value;
-  }
   onSubmit() {
-    this.userRecipeService.addNewRecipe(this.userRecipe.value);
+    console.log(this.userRecipe.value);
+
+    this.favService.userRecipes(this.userRecipe.value);
   }
 
   getLocation() {

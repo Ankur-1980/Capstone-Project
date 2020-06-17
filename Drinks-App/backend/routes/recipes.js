@@ -106,4 +106,63 @@ recipes.delete("/:id", (req, res) => {
     });
 });
 
+recipes.post("/created", (req, res) => {
+  console.log(req.body);
+
+  let {
+    name,
+    glassware,
+    method,
+    ingredient1,
+    ingredient2,
+    ingredient3,
+    ingredient4,
+    ingredient5,
+    ingredient6,
+    ingredient7,
+    ingredient8,
+    amount1,
+    amount2,
+    amount3,
+    amount4,
+    amount5,
+    amount6,
+    amount7,
+    amount8,
+  } = req.body;
+
+  database
+    .query(
+      "INSERT INTO saved_recipes_api (saved_id,id_drink,drink_name,glassware,ingredient1,ingredient2, ingredient3, ingredient4, ingredient5, ingredient6, ingredient7, ingredient8, instructions, measure1, measure2, measure3, measure4, measure5, measure6, measure7, measure8) VALUES(uuid_generate_v4(), uuid_generate_v4(), $1, $2, $4, $5,$6,$7,$8,$9,$10,$11, $3, $12, $13, $14, $15, $16, $17, $18, $19)",
+      [
+        name,
+        glassware,
+        method,
+        ingredient1,
+        ingredient2,
+        ingredient3,
+        ingredient4,
+        ingredient5,
+        ingredient6,
+        ingredient7,
+        ingredient8,
+        amount1,
+        amount2,
+        amount3,
+        amount4,
+        amount5,
+        amount6,
+        amount7,
+        amount8,
+      ]
+    )
+    .then(() => {
+      database.query("SELECT * FROM saved_recipes_api").then((response) => {
+        // console.log(response.rows);
+
+        res.status(201).json({ message: "Item Added", items: response.rows });
+      });
+    });
+});
+
 module.exports = recipes;

@@ -23,7 +23,7 @@ export class PreferencesDrinksComponent implements OnInit, OnDestroy {
   }
 
   onDelete(drinkId) {
-    this.favoriteService.removeFromFavorites(drinkId);
+    this.favoriteService.deleteFromPref(drinkId);
   }
 
   ngOnDestroy() {

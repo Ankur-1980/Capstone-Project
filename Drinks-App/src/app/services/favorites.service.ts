@@ -12,17 +12,29 @@ export class FavoritesService {
   constructor(private http: HttpClient) {}
 
   addToFavorites(drink) {
+    console.log('service', drink);
+
     this.http
       .post<{ message: string; items: any }>('/api/recipes', drink)
       .subscribe((response) => {
         console.log(response.message);
         this.favorites.push(drink);
-        // console.log('service', response.items);
+
         this.favoritesUpdated.next([...this.favorites]);
-        console.log('service', this.favorites);
+        // console.log('service', this.favorites);
       });
-    // this.favorites.push(drink);
-    // return this.favorites;
+  }
+
+  userRecipes(recipe) {
+    this.http
+      .post<{ message: string; items: any }>('/api/recipes/created', recipe)
+      .subscribe((response) => {
+        console.log(response.message);
+        this.favorites.push(recipe);
+
+        this.favoritesUpdated.next([...this.favorites]);
+        // console.log('service', this.favorites);
+      });
   }
 
   getFavorites() {
@@ -47,6 +59,19 @@ export class FavoritesService {
       .subscribe(() => {
         this.favorites = this.favorites.filter(
           (fav) => fav.id_drink !== parsedId
+        );
+        this.favoritesUpdated.next([...this.favorites]);
+      });
+  }
+
+  deleteFromPref(drinkId) {
+    this.http
+      .delete<{ message: string; items: any }>(`/api/recipes/${drinkId}`)
+      .subscribe((response) => {
+        console.log(response.message);
+
+        this.favorites = this.favorites.filter(
+          (fav) => fav.id_drink !== drinkId
         );
         this.favoritesUpdated.next([...this.favorites]);
       });
