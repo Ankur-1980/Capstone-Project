@@ -1,17 +1,15 @@
 body {
   background-color: #342b38;
+  margin: 0;
+  padding: 0;
 }
-/* .background {
-  height: 115vh;
-  width: 125vw;
-} */
-.body {
+.global-parent {
+  margin-top: 10vh;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 60vw;
 }
 
 * {
@@ -20,6 +18,8 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Link Styling */
 
 a {
   text-decoration: none;
@@ -31,16 +31,20 @@ a:hover {
   transition: all 0.3s ease 0s;
 }
 
+/* title styling */
 h1 {
-  font-size: 45px;
-  margin-bottom: 0px;
+  font-size: 30px;
+  margin-bottom: 20px;
   margin-top: 0px;
 }
 
-p,
-a {
-  font-size: 14px;
+/* Image Styling */
+.image {
+  border: 2px solid rgb(236, 184, 92);
+  box-shadow: 3px 5px 4px rgb(30, 0, 49);
 }
+
+/* link styling */
 
 input,
 textarea,
@@ -59,10 +63,20 @@ input:hover {
   border: 2px solid #80bdad;
 }
 
-label {
-  padding-right: 10px;
+::placeholder {
+  padding-left: 5px;
+  color: white;
 }
 
+/* label Styling */
+label {
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+/* button Styling */
 button {
   margin-top: 10px;
   padding: 10px 0px;
@@ -78,54 +92,83 @@ button:hover {
   background-color: #80bdad;
 }
 
-::placeholder {
-  color: white;
-}
 .center {
   text-align: center;
 }
 
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
 
-.inline {
+/* .inline {
   display: flex;
   justify-content: space-between;
-}
+} */
 
-@media screen and (max-width: 360px) {
-  .background {
-    margin-top: 10vh;
-    /* height: 100vh; */
-    /* width: 50vh; */
+/* tablet sizing */
+/* @media screen and (max-width: 768px) {
+  .global-parent {
   }
-  .body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70vw;
-    height: 80%;
+} */
+
+/* Phone sizing */
+/* @media screen and (max-width: 640px) {
+  .global-parent {
+    margin-top: 10vh;
+    padding: 0;
   }
 
   input,
   textarea,
   select {
     padding: 10px 30px;
+    width: 80%;
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 18px;
   }
-
+  label {
+    font-size: 12px;
+  }
+  ::placeholder {
+    margin-left: 2px;
+  }
   p,
-  label,
-  button,
   a {
     font-size: 12px;
   }
+  button {
+    width: 80%;
+  }
   .center-mob {
     text-align: center;
+  } 
+} */
+
+@media screen and (max-width: 360px) {
+  .global-parent {
+    margin-top: 2vh 0;
+    padding: 0;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 10px 0;
+  }
+  ::placeholder {
+    margin-left: 2px;
+  }
+
+  label {
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 12px;
   }
 }

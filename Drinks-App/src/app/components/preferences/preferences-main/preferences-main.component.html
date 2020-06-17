@@ -5,6 +5,11 @@
     <div class="nav">
       <ul>
         <li>
+          <button routerLink="/recipe-book">
+            Add a recipe
+          </button>
+        </li>
+        <li>
           <button routerLink="/user-recipes/user-recipe-form">
             Add a recipe
           </button>
@@ -43,4 +48,16 @@
       *ngIf="displayOthers === 'bartenders'"
     ></preferences-bartenders>
   </div>
+
+  <preferences-create></preferences-create>
+  <preferences-locations
+    *ngIf="displayOthers === 'bars'"
+  ></preferences-locations>
+  <preferences-home-bar *ngIf="displayOthers === 'home'"></preferences-home-bar>
+  <preferences-drinks
+    *ngIf="displayOthers === 'favDrinks'"
+  ></preferences-drinks>
+  <preferences-bartenders
+    *ngIf="displayOthers === 'bartenders'"
+  ></preferences-bartenders>
 </div>

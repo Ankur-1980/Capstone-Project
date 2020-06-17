@@ -1,0 +1,17 @@
+.background-img {
+  background-image: url(#);
+  background-repeat: no-repeat;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Media Query for Tablet */
+@media screen and (max-width: 768px) {
+}
+
+/* Media Query for phone */
+@media screen and (max-width: 360px) {
+}

@@ -1,12 +1,6 @@
-.background {
-  margin-top: 40px;
-  margin-left: 10vw;
+.background-img {
   background-image: url(../Hurricane/Hurricane.svg);
   background-repeat: no-repeat;
-  height: 120vh;
-  width: 80vw;
-  display: flex;
-  flex-direction: column;
 }
 
 .details {
@@ -29,12 +23,6 @@ img {
   font-size: 50px;
   color: rgb(236, 184, 92);
   margin-bottom: 5vh;
-}
-label {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: rgb(236, 184, 92);
-  font-size: 30px;
 }
 
 .info {

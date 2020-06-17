@@ -40,7 +40,7 @@ export class FavoritesService {
   }
 
   removeFromFavorites(drink) {
-    console.log(drink);
+    console.log('service', drink);
 
     // let index = this.favorites.findIndex(
     //   (fav) => fav.idDrink === drink.idDrink

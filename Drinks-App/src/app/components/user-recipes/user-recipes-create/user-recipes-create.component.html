@@ -1,89 +1,85 @@
-<div class="background">
-  <div class="body">
-    <h1>Add Recipe</h1>
-    <form [formGroup]="userRecipe" (ngSubmit)="onSubmit()">
-      <div class="form-group">
-        <label>Drink Name</label>
-        <input type="text" formControlName="name" />
-      </div>
-      <!-- ratings slider -->
-      <div class="form-group">
-        <input
-          type="range"
-          min="1"
-          max="5"
-          value="0"
-          step=".5"
-          class="slider"
-          id="rating-slider"
-          formControlName="rating"
-        />
-        <span>Rating: {{ ratingDisplay }}</span>
-      </div>
-      <!-- glassware dropdown -->
-      <div class="form-group">
-        <select formControlName="glassware" name="glassware" id="glassware">
-          <option value="">Glassware</option>
-          <option
-            *ngFor="let glass of glassware"
-            value="{{ glass.strGlass }}"
-            >{{ glass.strGlass }}</option
-          >
-        </select>
-      </div>
-      <!-- location -->
-      <div class="form-group">
-        <button (click)="getLocation()">Get Location</button>
-        <p>
-          Latitude: <span>{{ latitude }}</span>
-        </p>
-        <p>
-          Longitude: <span>{{ longitude }}</span>
-        </p>
-      </div>
-      <!-- method -->
-      <div class="form-group">
-        <label for="method">Method:</label>
-        <textarea
-          name="method"
-          class="methodInput"
-          formControlName="method"
-          id="method"
-          cols="1"
-          rows="1"
-        ></textarea>
-      </div>
-      <!-- ingredient -->
-      <div class="formGroupLabel">
-        <label class="amount" for="amount">Amount:</label>
-        <label class="ingredient" for="ingredient">Ingredient:</label>
-      </div>
-      <div class="formFields">
-        <div formGroupName="ingredient1">
-          <input type="text" formControlName="amount" />
-          <input type="text" formControlName="ingredient" />
-        </div>
-
-        <div formGroupName="ingredient2">
-          <input class="" type="text" formControlName="amount" />
-          <input type="text" formControlName="ingredient" />
-        </div>
-        <div formGroupName="ingredient3">
-          <input type="text" formControlName="amount" />
-          <input type="text" formControlName="ingredient" />
-        </div>
-        <div formGroupName="ingredient4">
-          <input type="text" formControlName="amount" />
-          <input type="text" formControlName="ingredient" />
-        </div>
-        <div formGroupName="ingredient5">
-          <input type="text" formControlName="amount" />
-          <input type="text" formControlName="ingredient" />
-        </div>
+<div class="background-img">
+  <h1>Add Recipe</h1>
+  <form [formGroup]="userRecipe" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Drink Name</label>
+      <input type="text" formControlName="name" />
+    </div>
+    <!-- ratings slider -->
+    <div class="form-group">
+      <input
+        type="range"
+        min="1"
+        max="5"
+        value="0"
+        step=".5"
+        class="slider"
+        id="rating-slider"
+        formControlName="rating"
+      />
+      <span>Rating: {{ ratingDisplay }}</span>
+    </div>
+    <!-- glassware dropdown -->
+    <div class="form-group">
+      <select formControlName="glassware" name="glassware" id="glassware">
+        <option value="">Glassware</option>
+        <option *ngFor="let glass of glassware" value="{{ glass.strGlass }}">{{
+          glass.strGlass
+        }}</option>
+      </select>
+    </div>
+    <!-- location -->
+    <div class="form-group">
+      <button (click)="getLocation()">Get Location</button>
+      <p>
+        Latitude: <span>{{ latitude }}</span>
+      </p>
+      <p>
+        Longitude: <span>{{ longitude }}</span>
+      </p>
+    </div>
+    <!-- method -->
+    <div class="form-group">
+      <label for="method">Method:</label>
+      <textarea
+        name="method"
+        class="methodInput"
+        formControlName="method"
+        id="method"
+        cols="1"
+        rows="1"
+      ></textarea>
+    </div>
+    <!-- ingredient -->
+    <div class="formGroupLabel">
+      <label class="amount" for="amount">Amount:</label>
+      <label class="ingredient" for="ingredient">Ingredient:</label>
+    </div>
+    <div class="formFields">
+      <div formGroupName="ingredient1">
+        <input type="text" formControlName="amount" />
+        <input type="text" formControlName="ingredient" />
       </div>
 
-      <!-- submit button -->
-      <button type="submit">Submit</button>
-    </form>
-  </div>
+      <div formGroupName="ingredient2">
+        <input class="" type="text" formControlName="amount" />
+        <input type="text" formControlName="ingredient" />
+      </div>
+      <div formGroupName="ingredient3">
+        <input type="text" formControlName="amount" />
+        <input type="text" formControlName="ingredient" />
+      </div>
+      <div formGroupName="ingredient4">
+        <input type="text" formControlName="amount" />
+        <input type="text" formControlName="ingredient" />
+      </div>
+      <div formGroupName="ingredient5">
+        <input type="text" formControlName="amount" />
+        <input type="text" formControlName="ingredient" />
+      </div>
+    </div>
+
+    <!-- submit button -->
+    <button type="submit">Submit</button>
+  </form>
 </div>

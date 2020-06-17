@@ -19,13 +19,13 @@ app.use(express.urlencoded({ extended: false }));
 // be able to read json
 app.use(express.json());
 
-// app.use(
-//   session({
-//     secret: "secret",
-//     resave: false,
-//     saveUninitialized: false,
-//   })
-// );
+app.use(
+  session({
+    secret: "secret",
+    resave: false,
+    saveUninitialized: false,
+  })
+);
 // app.use(passport.initialize);
 // app.use(passport.session);
 
