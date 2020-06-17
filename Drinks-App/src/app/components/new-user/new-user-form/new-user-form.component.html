@@ -49,6 +49,7 @@
         <span *ngIf="email.touched && email.errors?.required">
           Email is required
         </span>
+        <!-- bio - not required -->
 
         <!-- password -1 - required -->
         <div class="form-group">
@@ -78,26 +79,29 @@
           <span *ngIf="password2.touched && password2.errors?.passwordMismatch">
             Passwords do not match
           </span>
+          <!-- bio - not required -->
+          <div class="form-group">
+            <label for="bio" for="label-control" rows="9" cols="50"
+              >Biography:</label
+            >
+            <textarea
+              formControlName="bio"
+              class="form-control"
+              placeholder="Limit 140 Characters"
+            >
+            </textarea>
+          </div>
+          <!-- submit button -->
+          <button [disabled]="newUserForm.invalid" type="submit">
+            Submit
+          </button>
         </div>
-        <!-- bio - not required -->
-        <div class="form-group">
-          <label for="bio" for="label-control" rows="9" cols="50"
-            >Biography:</label
-          >
-          <textarea
-            formControlName="bio"
-            class="form-control"
-            placeholder="Limit 140 Characters"
-          >
-          </textarea>
-        </div>
-        <!-- submit button -->
-        <button type="submit">Submit</button>
+
+        <!-- Back to login screen -->
+        <p class="center">
+          Already registered? Click <a href="#"> here </a> to login
+        </p>
       </div>
-      <!-- Back to login screen -->
-      <p class="center">
-        Already registered? Click <a href="#"> here </a> to login
-      </p>
     </div>
   </form>
 </div>

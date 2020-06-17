@@ -2,6 +2,8 @@
   <section>
     <div class="details" *ngFor="let recipe of recipes">
       <div class="name">{{ recipe.strDrink }}</div>
+      <span> <a routerLink="/recipe-book">Back to search</a></span>
+
       <img
         class="image"
         src="{{ recipe.strDrinkThumb }}"
