@@ -76,7 +76,7 @@ export class UserRecipesCreateComponent implements OnInit {
   // }
 
   onSubmit() {
-    console.log(this.userRecipe.value);
+    // console.log(this.userRecipe.value);
 
     this.favService.userRecipes(this.userRecipe.value);
   }

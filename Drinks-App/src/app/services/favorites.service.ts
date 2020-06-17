@@ -26,6 +26,8 @@ export class FavoritesService {
   }
 
   userRecipes(recipe) {
+    console.log('service', recipe);
+
     this.http
       .post<{ message: string; items: any }>('/api/recipes/created', recipe)
       .subscribe((response) => {
