@@ -75,6 +75,17 @@ users.post("/register", async (req, res) => {
 });
 
 // login in
-users.post("/login");
+users.post("/login", (req, res) => {
+  const { userName, password } = req.body;
+  database.query(
+    "SELECT * FROM users WHERE userName = $1",
+    [userName],
+    (response) => {
+      if (response.rows.length > 0) {
+        res.status(200).json({ message: "userName found" });
+      }
+    }
+  );
+});
 
 module.exports = users;
