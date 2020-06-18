@@ -5,7 +5,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-question',
-  templateUrl: './question.component.html'
+  templateUrl: './question.component.html',
+  styleUrls: ['./question.component.css']
 })
 export class QuestionComponent implements OnInit {
   @Output() question: QuizQuestion;
@@ -83,9 +84,10 @@ export class QuestionComponent implements OnInit {
     }
   ];
 
-  constructor(private route: ActivatedRoute, private router: Router) { 
+  constructor(private route: ActivatedRoute, private router: Router) {
     this.route.paramMap.subscribe(params => {
-
+      this.setQuestionID(+params.get('questionId'));  // get the question ID and store it
+      this.question = this.getQuestion;
     });
   }
 
