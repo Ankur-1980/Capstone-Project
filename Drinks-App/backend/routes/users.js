@@ -1,12 +1,7 @@
 const users = require("express").Router();
 const database = require("../connection");
 const bcrypt = require("bcrypt");
-const { response } = require("express");
-// const session = require("express-session");
-// const passport = require();
-// const initializePassport = require("./passportConfig");
-
-// initializePassport(passport);
+const jwt = require("jsonwebtoken");
 
 // get all users
 users.get("/", (req, res) => {
@@ -51,7 +46,7 @@ users.post("/register", async (req, res) => {
           .json({ message: "email already exists", goodToGo: false });
       } else {
         database.query(
-          `INSERT INTO users (user_id, first_name, last_name, username, email, password, bio, birthday, join_date) VALUES (uuid_generate_v4(), $1::text, $2::text,$3::text, $5::text, $6::text, $7::text, $4::date, $8::date) RETURNING user_id, password`,
+          `INSERT INTO users (user_id, first_name, last_name, username, email, password, bio, birthday, join_date) VALUES (uuid_generate_v4(), $1::text, $2::text,$3::text, $5::text, $6::text, $7::text, $4::text, $8::date) RETURNING user_id, password`,
           [
             firstName,
             lastName,

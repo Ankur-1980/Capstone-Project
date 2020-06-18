@@ -1,6 +1,7 @@
 <div class="background-img"></div>
 <div class="global-parent">
   <h1 class="center">New User Form</h1>
+  <!-- <div class="error" *ngIf="warning">{{ errorMessage }}</div> -->
   <form [formGroup]="newUserForm" (ngSubmit)="onSubmit()">
     <!-- first name & last name- required-->
     <div class="form-group inline">
