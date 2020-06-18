@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Subject } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +10,7 @@ export class FavoritesService {
   favorites: any[] = [];
   favoritesUpdated = new Subject<any[]>();
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   addToFavorites(drink) {
     console.log('service', drink);
@@ -35,6 +36,7 @@ export class FavoritesService {
         this.favorites.push(recipe);
 
         this.favoritesUpdated.next([...this.favorites]);
+        this.router.navigate(['/preferences']);
         // console.log('service', this.favorites);
       });
   }
@@ -86,5 +88,11 @@ export class FavoritesService {
 
   containsFavorite(drink) {
     return this.favorites.includes(drink);
+  }
+
+  savedRecipeDetails(recipeID) {
+    console.log(recipeID);
+
+    return this.http.get(`/api/recipes/${recipeID}`);
   }
 }

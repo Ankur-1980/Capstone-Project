@@ -8,6 +8,8 @@ import { FormGroup, AbstractControl } from '@angular/forms';
 })
 export class UsersService {
   userNameList = [];
+  errorMessage: string;
+  warning: boolean;
 
   constructor(private http: HttpClient, private router: Router) {}
 
@@ -17,15 +19,33 @@ export class UsersService {
 
   addNewUser(formValue) {
     this.http
-      .post<{ message: string }>('/api/users/register', formValue)
+      .post<{ message: string; goodToGo: false }>(
+        '/api/users/register',
+        formValue
+      )
       .subscribe((response) => {
-        console.log(response.message);
+        if (!response.goodToGo) {
+          this.errorMessage = response.message;
+          console.log(this.errorMessage);
+          this.warning = response.goodToGo;
+        } else {
+          console.log(response.message);
+
+          this.router.navigate(['/login']);
+        }
       });
-    this.router.navigate(['/login']);
   }
 
-  login() {
-    this.router.navigate(['/the-feed']);
+  login(formValue) {
+    this.http
+      .post<{ message: string; goodToGo: boolean; user: any }>(
+        'api/users/login',
+        formValue
+      )
+      .subscribe((response) => {
+        console.log('service', response.user);
+      });
+    // this.router.navigate(['/the-feed']);
   }
 
   PasswordValidation(password: string, password2: string) {
@@ -52,20 +72,4 @@ export class UsersService {
       }
     };
   }
-
-  // userNameDuplicated(userControl: AbstractControl) {
-  //   return new Promise((resolve) => {
-  //     setTimeout(() => {
-  //       if (this.checkUserName(userControl.value)) {
-  //         resolve({ userNameNotAvailable: true });
-  //       } else {
-  //         resolve(null);
-  //       }
-  //     }, 1000);
-  //   });
-  // }
-
-  // checkUserName(userName: string) {
-  //   return this.userNameList.indexOf(userName) > -1;
-  // }
 }
