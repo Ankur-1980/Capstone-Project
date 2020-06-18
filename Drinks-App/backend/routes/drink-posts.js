@@ -30,8 +30,12 @@ drinkPosts.get("/", (req, res) => {
     .then((response) => res.status(200).json(response.rows));
 });
 
-drinkPosts.post("/", multer(storage).single("image"), (req, res, next) => {
-  database.query("");
-});
+drinkPosts.post(
+  "/",
+  multer({ storage: storage }).single("image"),
+  (req, res, next) => {
+    console.log("server", req.body);
+  }
+);
 
 module.exports = drinkPosts;
