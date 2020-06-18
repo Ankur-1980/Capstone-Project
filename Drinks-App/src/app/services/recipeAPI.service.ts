@@ -11,7 +11,9 @@ export class RecipeApiService {
 
   // list the categories
   getCategories() {
-    return this.http.get(`${this.baseUrl}list.php?c=list`);
+    return this.http.get(`${this.baseUrl}list.php?c=list`, {
+      headers: { 'Access-Control-Allow-Headers': '*' },
+    });
   }
 
   // glassware

@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  FormGroup,
-  FormBuilder,
-  Validators,
-  NG_ASYNC_VALIDATORS,
-} from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RecipeApiService } from 'src/app/services/recipeAPI.service';
 import { DrinkPostService } from 'src/app/services/drink-post.service';
 import { mimeType } from './mime-type.validator';
@@ -37,7 +32,7 @@ export class PostDrinkFormComponent implements OnInit {
       glassware: [''],
       description: [''],
       location: [''],
-      image: [null],
+      image: [null, [Validators.required]],
     });
   }
 
