@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MainComponent } from './components/main/main.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { NewUserFormComponent } from './components/new-user/new-user-form/new-user-form.component';
@@ -19,6 +19,7 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
 import { TheFeedPostsComponent } from './components/the-feed/the-feed-posts/the-feed-posts.component';
 import { QuizComponent } from './components/quiz/quiz.component';
 import { QuestionComponent } from './components/quiz/question/question.component';
+import { TokenInterceptorService } from './services/token-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,13 @@ import { QuestionComponent } from './components/quiz/question/question.component
     PreferencesModule,
     UserRecipesModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptorService,
+      multi: true,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

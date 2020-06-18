@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { FormGroup, AbstractControl } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
 
 @Injectable({
   providedIn: 'root',
@@ -32,8 +32,9 @@ export class UsersService {
         } else {
           console.log(response.message);
           console.log(response.token);
+          localStorage.setItem('token', response.token);
 
-          this.router.navigate(['/login']);
+          this.router.navigate(['/the-feed']);
         }
       });
   }
@@ -55,10 +56,26 @@ export class UsersService {
         } else {
           console.log(response.message);
           console.log(response.token);
+          localStorage.setItem('token', response.token);
 
           this.router.navigate(['/the-feed']);
         }
       });
+  }
+
+  loggedIn() {
+    // looks for token in local storage
+    // returns true/false
+    return !!localStorage.getItem('token');
+  }
+
+  logOutUser() {
+    localStorage.removeItem('token');
+    this.router.navigate(['/login']);
+  }
+
+  getToken() {
+    return localStorage.getItem('token');
   }
 
   PasswordValidation(password: string, password2: string) {

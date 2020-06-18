@@ -8,6 +8,7 @@ import { LoginFormComponent } from './components/new-user/login-form/login-form.
 import { NewUserFormComponent } from './components/new-user/new-user-form/new-user-form.component';
 import { PostDrinkFormComponent } from './components/post-drink-form/post-drink-form.component';
 import { TheFeedPostsComponent } from './components/the-feed/the-feed-posts/the-feed-posts.component';
+import { AuthGuard } from './guard/auth.guard';
 
 const routes: Routes = [
   { path: '', component: LoginFormComponent },
@@ -35,6 +36,13 @@ const routes: Routes = [
     path: 'drink-post',
     component: PostDrinkFormComponent,
   },
+  // // path to other users
+  // {
+  //   path: 'other_user',
+  //   component: <nameOfComponent>,
+  //   canActivate: [AuthGuard]
+  // },
+
   {
     path: 'preferences',
     loadChildren: () =>
