@@ -1,7 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import {
+  FormGroup,
+  FormBuilder,
+  Validators,
+  NG_ASYNC_VALIDATORS,
+} from '@angular/forms';
 import { RecipeApiService } from 'src/app/services/recipeAPI.service';
 import { DrinkPostService } from 'src/app/services/drink-post.service';
+import { mimeType } from './mime-type.validator';
 
 @Component({
   selector: 'post-drink-form',
@@ -11,7 +17,7 @@ import { DrinkPostService } from 'src/app/services/drink-post.service';
 export class PostDrinkFormComponent implements OnInit {
   drinkPostForm: FormGroup;
   glassware: string;
-  ratingsDisplay: number;
+  imagePreview;
 
   constructor(
     private fb: FormBuilder,
@@ -31,16 +37,27 @@ export class PostDrinkFormComponent implements OnInit {
       glassware: [''],
       description: [''],
       location: [''],
-    });
-
-    this.drinkPostForm.valueChanges.subscribe((value) => {
-      // console.log(value);
-      this.ratingsDisplay = value.rating;
-      // console.log('rating', this.ratingsDisplay);
+      image: [null],
     });
   }
 
   onSubmit() {
     this.drinkPostService.postADrink(this.drinkPostForm.value);
+  }
+
+  pickImage(event: Event) {
+    // casting as HTMLInputElement tells typescript to give access to the files method
+    const file = (event.target as HTMLInputElement).files[0];
+    this.drinkPostForm.patchValue({ image: file });
+    // updates the form
+    this.drinkPostForm.get('image').updateValueAndValidity();
+    // FileReader is built into JS
+    const reader = new FileReader();
+    // function will get called after the file is done loading
+    reader.onload = () => {
+      this.imagePreview = reader.result;
+    };
+    // load the file
+    reader.readAsDataURL(file);
   }
 }
