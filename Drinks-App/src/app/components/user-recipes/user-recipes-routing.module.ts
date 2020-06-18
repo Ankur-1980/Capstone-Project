@@ -12,6 +12,10 @@ const routes: Routes = [
     path: 'user-recipe-form',
     component: UserRecipesCreateComponent,
   },
+  {
+    path: 'saved-drinks/:recipeID',
+    component: UserRecipesCreateComponent,
+  },
 ];
 
 @NgModule({

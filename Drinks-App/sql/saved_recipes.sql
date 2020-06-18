@@ -273,9 +273,10 @@
 --         '686abb99-a94a-47f1-aa12-22b24a41e2ee');
 
 
--- DELETE
--- FROM saved_recipes_api
--- where saved_id = 'ad4b4e32-931e-4d5e-aab0-2bc755278f63';
+-- DELEsved_id = 'db410c9a-6fb1-48d1-9827-44ae32d06ecb';
 
 
--- select * from saved_recipes_api;
+
+select * from saved_recipes_api;
+
+
