@@ -12,10 +12,10 @@ export class RecipeMainComponent implements OnInit {
   constructor(private recipeApi: RecipeApiService) {}
 
   ngOnInit(): void {
-    this.recipeApi.getLetterA().subscribe((data) => {
-      this.recipes = data['drinks'];
-      console.log(this.recipes);
-    });
+    // this.recipeApi.getLetterA().subscribe((data) => {
+    //   this.recipes = data['drinks'];
+    //   console.log(this.recipes);
+    // });
   }
 
   nameSearch(results) {
