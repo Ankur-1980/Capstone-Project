@@ -19,7 +19,7 @@ export class UsersService {
 
   addNewUser(formValue) {
     this.http
-      .post<{ message: string; goodToGo: false }>(
+      .post<{ message: string; goodToGo: boolean; token }>(
         '/api/users/register',
         formValue
       )
@@ -28,8 +28,10 @@ export class UsersService {
           this.errorMessage = response.message;
           console.log(this.errorMessage);
           this.warning = response.goodToGo;
+          console.log(this.warning);
         } else {
           console.log(response.message);
+          console.log(response.token);
 
           this.router.navigate(['/login']);
         }
@@ -38,14 +40,25 @@ export class UsersService {
 
   login(formValue) {
     this.http
-      .post<{ message: string; goodToGo: boolean; user: any }>(
-        'api/users/login',
-        formValue
-      )
+      .post<{
+        message: string;
+        goodToGo: boolean;
+        user: any;
+        token: any;
+      }>('api/users/login', formValue)
       .subscribe((response) => {
-        console.log('service', response.user);
+        // console.log('service', response.user);
+        if (!response.goodToGo) {
+          console.log(response.goodToGo);
+
+          console.log(response.message);
+        } else {
+          console.log(response.message);
+          console.log(response.token);
+
+          this.router.navigate(['/the-feed']);
+        }
       });
-    // this.router.navigate(['/the-feed']);
   }
 
   PasswordValidation(password: string, password2: string) {
