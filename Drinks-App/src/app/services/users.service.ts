@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { FormGroup, AbstractControl } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
 
 @Injectable({
   providedIn: 'root',
@@ -19,7 +19,7 @@ export class UsersService {
 
   addNewUser(formValue) {
     this.http
-      .post<{ message: string; goodToGo: false }>(
+      .post<{ message: string; goodToGo: boolean; token }>(
         '/api/users/register',
         formValue
       )
@@ -28,24 +28,54 @@ export class UsersService {
           this.errorMessage = response.message;
           console.log(this.errorMessage);
           this.warning = response.goodToGo;
+          console.log(this.warning);
         } else {
           console.log(response.message);
+          console.log(response.token);
+          localStorage.setItem('token', response.token);
 
-          this.router.navigate(['/login']);
+          this.router.navigate(['/the-feed']);
         }
       });
   }
 
   login(formValue) {
     this.http
-      .post<{ message: string; goodToGo: boolean; user: any }>(
-        'api/users/login',
-        formValue
-      )
+      .post<{
+        message: string;
+        goodToGo: boolean;
+        user: any;
+        token: any;
+      }>('api/users/login', formValue)
       .subscribe((response) => {
-        console.log('service', response.user);
+        // console.log('service', response.user);
+        if (!response.goodToGo) {
+          console.log(response.goodToGo);
+
+          console.log(response.message);
+        } else {
+          console.log(response.message);
+          console.log(response.token);
+          localStorage.setItem('token', response.token);
+
+          this.router.navigate(['/the-feed']);
+        }
       });
-    // this.router.navigate(['/the-feed']);
+  }
+
+  loggedIn() {
+    // looks for token in local storage
+    // returns true/false
+    return !!localStorage.getItem('token');
+  }
+
+  logOutUser() {
+    localStorage.removeItem('token');
+    this.router.navigate(['/login']);
+  }
+
+  getToken() {
+    return localStorage.getItem('token');
   }
 
   PasswordValidation(password: string, password2: string) {

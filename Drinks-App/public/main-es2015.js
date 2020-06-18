@@ -2225,7 +2225,7 @@ class NewUserFormComponent {
     onSubmit() {
         this.registered = true;
         if (this.newUserForm.valid) {
-            console.log('form', this.newUserForm.value);
+            // console.log('form', this.newUserForm.value);
             this.usersService.addNewUser(this.newUserForm.value);
         }
     }
@@ -2692,6 +2692,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var src_app_services_favorites_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/favorites.service */ "./src/app/services/favorites.service.ts");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+
 
 
 
@@ -2702,15 +2704,20 @@ function PreferencesDrinksComponent_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PreferencesDrinksComponent_div_3_Template_button_click_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3); const item_r1 = ctx.$implicit; const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r2.onDelete(item_r1.id_drink); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "x");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "a", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "details");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "button", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PreferencesDrinksComponent_div_3_Template_button_click_5_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3); const item_r1 = ctx.$implicit; const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r2.onDelete(item_r1.id_drink); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "x");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const item_r1 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r1.drink_name);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("routerLink", "saved-drinks/", item_r1.id_drink, "");
 } }
 class PreferencesDrinksComponent {
     constructor(favoriteService) {
@@ -2734,17 +2741,17 @@ class PreferencesDrinksComponent {
     }
 }
 PreferencesDrinksComponent.ɵfac = function PreferencesDrinksComponent_Factory(t) { return new (t || PreferencesDrinksComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_favorites_service__WEBPACK_IMPORTED_MODULE_1__["FavoritesService"])); };
-PreferencesDrinksComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PreferencesDrinksComponent, selectors: [["preferences-drinks"]], decls: 4, vars: 1, consts: [[4, "ngFor", "ngForOf"], [3, "click"]], template: function PreferencesDrinksComponent_Template(rf, ctx) { if (rf & 1) {
+PreferencesDrinksComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PreferencesDrinksComponent, selectors: [["preferences-drinks"]], decls: 4, vars: 1, consts: [[4, "ngFor", "ngForOf"], [3, "routerLink"], [3, "click"]], template: function PreferencesDrinksComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Saved Recipes ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, PreferencesDrinksComponent_div_3_Template, 5, 1, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, PreferencesDrinksComponent_div_3_Template, 7, 2, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.favorites);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtZHJpbmtzL3ByZWZlcmVuY2VzLWRyaW5rcy5jb21wb25lbnQuY3NzIn0= */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterLinkWithHref"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtZHJpbmtzL3ByZWZlcmVuY2VzLWRyaW5rcy5jb21wb25lbnQuY3NzIn0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PreferencesDrinksComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -4481,6 +4488,51 @@ UserProfileComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
 
 /***/ }),
 
+/***/ "./src/app/components/user-recipes/user-recipe-details/user-recipe-details.component.ts":
+/*!**********************************************************************************************!*\
+  !*** ./src/app/components/user-recipes/user-recipe-details/user-recipe-details.component.ts ***!
+  \**********************************************************************************************/
+/*! exports provided: UserRecipeDetailsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserRecipeDetailsComponent", function() { return UserRecipeDetailsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var src_app_services_recipeAPI_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/recipeAPI.service */ "./src/app/services/recipeAPI.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+
+
+
+
+class UserRecipeDetailsComponent {
+    constructor(recipeApi, route) {
+        this.recipeApi = recipeApi;
+        this.route = route;
+    }
+    ngOnInit() {
+        this.recipeID = this.route.snapshot.params.recipeID;
+        console.log('component', this.recipeID);
+    }
+}
+UserRecipeDetailsComponent.ɵfac = function UserRecipeDetailsComponent_Factory(t) { return new (t || UserRecipeDetailsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_recipeAPI_service__WEBPACK_IMPORTED_MODULE_1__["RecipeApiService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"])); };
+UserRecipeDetailsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: UserRecipeDetailsComponent, selectors: [["app-user-recipe-details"]], decls: 2, vars: 0, template: function UserRecipeDetailsComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "user-recipe-details works!");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdXNlci1yZWNpcGVzL3VzZXItcmVjaXBlLWRldGFpbHMvdXNlci1yZWNpcGUtZGV0YWlscy5jb21wb25lbnQuY3NzIn0= */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](UserRecipeDetailsComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-user-recipe-details',
+                templateUrl: './user-recipe-details.component.html',
+                styleUrls: ['./user-recipe-details.component.css'],
+            }]
+    }], function () { return [{ type: src_app_services_recipeAPI_service__WEBPACK_IMPORTED_MODULE_1__["RecipeApiService"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] }]; }, null); })();
+
+
+/***/ }),
+
 /***/ "./src/app/components/user-recipes/user-recipes-create/user-recipes-create.component.ts":
 /*!**********************************************************************************************!*\
   !*** ./src/app/components/user-recipes/user-recipes-create/user-recipes-create.component.ts ***!
@@ -4857,6 +4909,10 @@ const routes = [
         path: 'user-recipe-form',
         component: _user_recipes_create_user_recipes_create_component__WEBPACK_IMPORTED_MODULE_3__["UserRecipesCreateComponent"],
     },
+    {
+        path: 'saved-drinks/:recipeID',
+        component: _user_recipes_create_user_recipes_create_component__WEBPACK_IMPORTED_MODULE_3__["UserRecipesCreateComponent"],
+    },
 ];
 class UserRecipesRoutingModule {
 }
@@ -4892,6 +4948,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _user_recipes_create_user_recipes_create_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./user-recipes-create/user-recipes-create.component */ "./src/app/components/user-recipes/user-recipes-create/user-recipes-create.component.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
 /* harmony import */ var _user_recipes_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./user-recipes-routing.module */ "./src/app/components/user-recipes/user-recipes-routing.module.ts");
+/* harmony import */ var _user_recipe_details_user_recipe_details_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./user-recipe-details/user-recipe-details.component */ "./src/app/components/user-recipes/user-recipe-details/user-recipe-details.component.ts");
+
 
 
 
@@ -4903,11 +4961,17 @@ class UserRecipesModule {
 }
 UserRecipesModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: UserRecipesModule });
 UserRecipesModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function UserRecipesModule_Factory(t) { return new (t || UserRecipesModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"], _user_recipes_routing_module__WEBPACK_IMPORTED_MODULE_5__["UserRecipesRoutingModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](UserRecipesModule, { declarations: [_user_recipes_main_user_recipes_main_component__WEBPACK_IMPORTED_MODULE_2__["UserRecipesMainComponent"], _user_recipes_create_user_recipes_create_component__WEBPACK_IMPORTED_MODULE_3__["UserRecipesCreateComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"], _user_recipes_routing_module__WEBPACK_IMPORTED_MODULE_5__["UserRecipesRoutingModule"]] }); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](UserRecipesModule, { declarations: [_user_recipes_main_user_recipes_main_component__WEBPACK_IMPORTED_MODULE_2__["UserRecipesMainComponent"],
+        _user_recipes_create_user_recipes_create_component__WEBPACK_IMPORTED_MODULE_3__["UserRecipesCreateComponent"],
+        _user_recipe_details_user_recipe_details_component__WEBPACK_IMPORTED_MODULE_6__["UserRecipeDetailsComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"], _user_recipes_routing_module__WEBPACK_IMPORTED_MODULE_5__["UserRecipesRoutingModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](UserRecipesModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
-                declarations: [_user_recipes_main_user_recipes_main_component__WEBPACK_IMPORTED_MODULE_2__["UserRecipesMainComponent"], _user_recipes_create_user_recipes_create_component__WEBPACK_IMPORTED_MODULE_3__["UserRecipesCreateComponent"]],
+                declarations: [
+                    _user_recipes_main_user_recipes_main_component__WEBPACK_IMPORTED_MODULE_2__["UserRecipesMainComponent"],
+                    _user_recipes_create_user_recipes_create_component__WEBPACK_IMPORTED_MODULE_3__["UserRecipesCreateComponent"],
+                    _user_recipe_details_user_recipe_details_component__WEBPACK_IMPORTED_MODULE_6__["UserRecipeDetailsComponent"],
+                ],
                 imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"], _user_recipes_routing_module__WEBPACK_IMPORTED_MODULE_5__["UserRecipesRoutingModule"]],
             }]
     }], null, null); })();
@@ -5013,13 +5077,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+
 
 
 
 
 class FavoritesService {
-    constructor(http) {
+    constructor(http, router) {
         this.http = http;
+        this.router = router;
         this.favorites = [];
         this.favoritesUpdated = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
     }
@@ -5042,6 +5109,7 @@ class FavoritesService {
             console.log(response.message);
             this.favorites.push(recipe);
             this.favoritesUpdated.next([...this.favorites]);
+            this.router.navigate(['/preferences']);
             // console.log('service', this.favorites);
         });
     }
@@ -5083,15 +5151,19 @@ class FavoritesService {
     containsFavorite(drink) {
         return this.favorites.includes(drink);
     }
+    savedRecipeDetails(recipeID) {
+        console.log(recipeID);
+        return this.http.get(`/api/recipes/${recipeID}`);
+    }
 }
-FavoritesService.ɵfac = function FavoritesService_Factory(t) { return new (t || FavoritesService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"])); };
+FavoritesService.ɵfac = function FavoritesService_Factory(t) { return new (t || FavoritesService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"])); };
 FavoritesService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: FavoritesService, factory: FavoritesService.ɵfac, providedIn: 'root' });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](FavoritesService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
                 providedIn: 'root',
             }]
-    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }]; }, null); })();
+    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }]; }, null); })();
 
 
 /***/ }),
@@ -5170,7 +5242,7 @@ class RecipeApiService {
         return this.http.get(`${this.baseUrl}list.php?i=list`);
     }
     getDetails(recipeID) {
-        console.log('service', recipeID);
+        // console.log('service', recipeID);
         return this.http.get(`${this.baseUrl}lookup.php?i=${recipeID}`);
     }
     filterNA(something) {
@@ -5229,15 +5301,22 @@ class UsersService {
         this.http
             .post('/api/users/register', formValue)
             .subscribe((response) => {
-            console.log(response.message);
+            if (!response.goodToGo) {
+                this.errorMessage = response.message;
+                console.log(this.errorMessage);
+                this.warning = response.goodToGo;
+            }
+            else {
+                console.log(response.message);
+                this.router.navigate(['/login']);
+            }
         });
-        this.router.navigate(['/login']);
     }
     login(formValue) {
         this.http
             .post('api/users/login', formValue)
             .subscribe((response) => {
-            console.log(response.message);
+            console.log('service', response.user);
         });
         // this.router.navigate(['/the-feed']);
     }

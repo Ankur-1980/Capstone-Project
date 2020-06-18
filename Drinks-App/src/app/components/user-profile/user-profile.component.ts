@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DrinkPostService } from 'src/app/services/drink-post.service';
 import { MOCK_POSTS } from 'src/app/MOCK_DATA/mock-posts';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'user-profile',
@@ -11,7 +12,10 @@ export class UserProfileComponent implements OnInit {
   posts;
   mockPosts = MOCK_POSTS;
 
-  constructor(private drinkPosts: DrinkPostService) {}
+  constructor(
+    private drinkPosts: DrinkPostService,
+    public userService: UsersService
+  ) {}
 
   ngOnInit(): void {
     // this.drinkPosts.getDrinks().subscribe((data) => {
@@ -20,4 +24,8 @@ export class UserProfileComponent implements OnInit {
     //   console.log(this.posts);
     // });
   }
+
+  // logOut(){
+  //   this.userSe
+  // }
 }
