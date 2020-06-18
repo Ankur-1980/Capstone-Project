@@ -2,10 +2,10 @@ import { Component, OnInit, Output } from '@angular/core';
 import { QuizQuestion } from './QuizQuestion';
 import { ActivatedRoute, Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-question',
-  templateUrl: './question.component.html'
+  templateUrl: './question.component.html',
+  styleUrls: ['./question.component.css'],
 })
 export class QuestionComponent implements OnInit {
   @Output() question: QuizQuestion;
@@ -18,7 +18,6 @@ export class QuestionComponent implements OnInit {
   disabled: boolean;
   quizIsOver: boolean;
 
-
   allQuestions: QuizQuestion[] = [
     {
       questionId: 1,
@@ -28,9 +27,9 @@ export class QuestionComponent implements OnInit {
         { optionValue: '2', optionText: 'Italian' },
         { optionValue: '3', optionText: 'Greek' },
         { optionValue: '4', optionText: 'American' },
-        { optionValue: '5', optionText: 'Asian' }
+        { optionValue: '5', optionText: 'Asian' },
       ],
-      selectedOption: ''
+      selectedOption: '',
     },
     {
       questionId: 2,
@@ -39,9 +38,9 @@ export class QuestionComponent implements OnInit {
         { optionValue: '1', optionText: 'Vacation mode' },
         { optionValue: '2', optionText: 'Sunday funday' },
         { optionValue: '3', optionText: 'Casual night out' },
-        { optionValue: '4', optionText: 'Permanent Homebody' }      
+        { optionValue: '4', optionText: 'Permanent Homebody' },
       ],
-      selectedOption: ''
+      selectedOption: '',
     },
     {
       questionId: 3,
@@ -50,9 +49,9 @@ export class QuestionComponent implements OnInit {
         { optionValue: '1', optionText: 'The Classic' },
         { optionValue: '2', optionText: 'The Explorer' },
         { optionValue: '3', optionText: 'The Tried and True' },
-        { optionValue: '4', optionText: 'The Novice' }
+        { optionValue: '4', optionText: 'The Novice' },
       ],
-      selectedOption: ''
+      selectedOption: '',
     },
     {
       questionId: 4,
@@ -62,9 +61,12 @@ export class QuestionComponent implements OnInit {
         { optionValue: '2', optionText: 'Lunch' },
         { optionValue: '3', optionText: 'Dinner' },
         { optionValue: '4', optionText: 'Happy Hour' },
-        { optionValue: '5', optionText: 'Nothing, the drink experience is the main event' }
+        {
+          optionValue: '5',
+          optionText: 'Nothing, the drink experience is the main event',
+        },
       ],
-      selectedOption: ''
+      selectedOption: '',
     },
     {
       questionId: 5,
@@ -76,42 +78,41 @@ export class QuestionComponent implements OnInit {
         { optionValue: '4', optionText: 'Whiskey' },
         { optionValue: '5', optionText: 'Rum' },
         { optionValue: '6', optionText: 'Bourbon' },
-        { optionValue: '7', optionText: 'IDK, surprise me' }
-
+        { optionValue: '7', optionText: 'IDK, surprise me' },
       ],
-      selectedOption: ''
-    }
+      selectedOption: '',
+    },
   ];
 
-  constructor(private route: ActivatedRoute, private router: Router) { 
-    this.route.paramMap.subscribe(params => {
-
+  constructor(private route: ActivatedRoute, private router: Router) {
+    this.route.paramMap.subscribe((params) => {
+      this.setQuestionID(+params.get('questionId')); // get the question ID and store it
+      this.question = this.getQuestion;
     });
   }
 
-  ngOnInit(): void {
-  }
-  
+  ngOnInit(): void {}
+
   // METHODS
-    getQuestionID() {
-      return this.questionID;
-    }
-  
-    setQuestionID(id: number) {
-      return this.questionID = id;
-    }
-  
-    isThereAnotherQuestion(): boolean {
-      return this.questionID <= this.allQuestions.length;
-    }
-  
-    isFinalQuestion(): boolean {
-      return this.currentQuestion === this.totalQuestions;
-    }
-  
-    get getQuestion(): QuizQuestion {
-      return this.allQuestions.filter(
-        question => question.questionId === this.questionID
-      )[0];
-    }
+  getQuestionID() {
+    return this.questionID;
+  }
+
+  setQuestionID(id: number) {
+    return (this.questionID = id);
+  }
+
+  isThereAnotherQuestion(): boolean {
+    return this.questionID <= this.allQuestions.length;
+  }
+
+  isFinalQuestion(): boolean {
+    return this.currentQuestion === this.totalQuestions;
+  }
+
+  get getQuestion(): QuizQuestion {
+    return this.allQuestions.filter(
+      (question) => question.questionId === this.questionID
+    )[0];
+  }
 }

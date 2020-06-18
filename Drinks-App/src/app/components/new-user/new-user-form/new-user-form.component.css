@@ -1,6 +1,12 @@
-/* .nav-parent {
-  visibility: hidden;
-} */
+/* Set background Image */
+.background-img {
+  background-image: url(../login-form/Margarita/margarita.svg);
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 
 /*  */
 .two-col {
@@ -15,20 +21,10 @@
   margin-left: 8px;
 }
 .last-name {
-  width: 100%;
+  width: 110%;
 }
 span {
   flex-wrap: wrap;
-}
-
-/* Set background Image */
-.background-img {
-  background-image: url(../login-form/Margarita/margarita.svg);
-  background-repeat: no-repeat;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
 }
 
 /* .style {
@@ -49,29 +45,7 @@ form {
 }
 
 /* media Query for Tablets */
-/* @media screen and (max-width: 768px) {
-      .background {
-        margin-top: 10vh;
-        height: 80vh;
-        width: 100vw;
-      }
-    
-      .body {
-        width: 100vw;
-        height: 50vw;
-      }
-      .form-group {
-        margin-top: 10px;
-      }
-    
-      form {
-        width: 30vw;
-      }
-    
-      label {
-        font-size: 30px;
-      }
-    } */
+/* @media screen and (max-width: 768px) {}
 
 /* Media Query for phone */
 @media screen and (max-width: 360px) {
@@ -80,13 +54,10 @@ form {
     height: 80vh;
     width: 100vw;
   }
-  form {
-    margin-top: 5px;
-    width: 70%;
+  .last-name {
+    width: 100%;
   }
-  .form-group {
-    margin-top: 5px;
-  }
+
   .center {
     font-size: 12px;
   }

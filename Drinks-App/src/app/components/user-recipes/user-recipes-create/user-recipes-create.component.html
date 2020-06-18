@@ -1,8 +1,9 @@
-<div class="background-img">
+<div class="background-img"></div>
+<div class="global-parent">
   <h1>Add Recipe</h1>
   <form [formGroup]="userRecipe" (ngSubmit)="onSubmit()">
     <div class="form-group">
-      <label>Drink Name</label>
+      <h3>Drink Name</h3>
       <input type="text" formControlName="name" />
     </div>
     <!-- ratings slider
@@ -21,6 +22,7 @@
     </div> -->
     <!-- glassware dropdown -->
     <div class="form-group">
+      <h3>Pick a Glass</h3>
       <select formControlName="glassware" name="glassware" id="glassware">
         <option value="">Glassware</option>
         <option *ngFor="let glass of glassware" value="{{ glass.strGlass }}">{{
@@ -39,59 +41,93 @@
       </p>
     </div> -->
     <!-- ingredients -->
-    <div class="formFields">
-      <div>
-        <label class="amount" for="amount1">Amount:</label>
-        <input type="text" formControlName="amount1" />
-        <label class="ingredient" for="ingredient1">Ingredient:</label>
-        <input type="text" formControlName="ingredient1" />
+    <div class="parts">
+      <h3>Enter Measurements & Ingredients</h3>
+      <div class="table-parent">
+        <div class="table-amount">
+          <label for="amount1">Amount:</label>
+          <input type="text" formControlName="amount1" />
+        </div>
+        <div class="table-ingredient">
+          <label class="ingredient" for="ingredient1">Ingredient:</label>
+          <input type="text" formControlName="ingredient1" />
+        </div>
       </div>
-      <div>
-        <label class="amount" for="amount2">Amount:</label>
-        <input type="text" formControlName="amount2" />
-        <label class="ingredient" for="ingredient2">Ingredient:</label>
-        <input type="text" formControlName="ingredient2" />
+      <div class="table-parent">
+        <div class="table-amount">
+          <!-- <label for="amount2">Amount:</label> -->
+          <input type="text" formControlName="amount2" />
+        </div>
+        <div class="table-ingredient">
+          <!-- <label for="ingredient2">Ingredient:</label> -->
+          <input type="text" formControlName="ingredient2" />
+        </div>
       </div>
-      <div>
-        <label class="amount" for="amount3">Amount:</label>
-        <input type="text" formControlName="amount3" />
-        <label class="ingredient" for="ingredient3">Ingredient:</label>
-        <input type="text" formControlName="ingredient3" />
+      <div class="table-parent">
+        <div class="table-amount">
+          <!-- <label for="amount3">Amount:</label> -->
+          <input type="text" formControlName="amount3" />
+        </div>
+        <div class="table-ingredient">
+          <!-- <label for="ingredient3">Ingredient:</label> -->
+          <input type="text" formControlName="ingredient3" />
+        </div>
       </div>
-      <div>
-        <label class="amount" for="amount4">Amount:</label>
-        <input type="text" formControlName="amount4" />
-        <label class="ingredient" for="ingredient4">Ingredient:</label>
-        <input type="text" formControlName="ingredient4" />
+      <div class="table-parent">
+        <div class="table-amount">
+          <!-- <label for="amount3">Amount:</label> -->
+          <input type="text" formControlName="amount4" />
+        </div>
+        <div class="table-ingredient">
+          <!-- <label for="ingredient3">Ingredient:</label> -->
+          <input type="text" formControlName="ingredient4" />
+        </div>
       </div>
-      <div>
-        <label class="amount" for="amount5">Amount:</label>
-        <input type="text" formControlName="amount5" />
-        <label class="ingredient" for="ingredient5">Ingredient:</label>
-        <input type="text" formControlName="ingredient5" />
+      <div class="table-parent">
+        <div class="table-amount">
+          <!-- <label for="amount3">Amount:</label> -->
+          <input type="text" formControlName="amount5" />
+        </div>
+        <div class="table-ingredient">
+          <!-- <label for="ingredient3">Ingredient:</label> -->
+          <input type="text" formControlName="ingredient5" />
+        </div>
       </div>
-      <div>
-        <label class="amount" for="amount6">Amount:</label>
-        <input type="text" formControlName="amount6" />
-        <label class="ingredient" for="ingredient6">Ingredient:</label>
-        <input type="text" formControlName="ingredient6" />
+      <div class="table-parent">
+        <div class="table-amount">
+          <!-- <label for="amount3">Amount:</label> -->
+          <input type="text" formControlName="amount6" />
+        </div>
+        <div class="table-ingredient">
+          <!-- <label for="ingredient3">Ingredient:</label> -->
+          <input type="text" formControlName="ingredient6" />
+        </div>
       </div>
-      <div>
-        <label class="amount" for="amount7">Amount:</label>
-        <input type="text" formControlName="amount7" />
-        <label class="ingredient" for="ingredient7">Ingredient:</label>
-        <input type="text" formControlName="ingredient7" />
+      <div class="table-parent">
+        <div class="table-amount">
+          <!-- <label for="amount3">Amount:</label> -->
+          <input type="text" formControlName="amount7" />
+        </div>
+        <div class="table-ingredient">
+          <!-- <label for="ingredient3">Ingredient:</label> -->
+          <input type="text" formControlName="ingredient7" />
+        </div>
       </div>
-      <div>
-        <label class="amount" for="amount8">Amount:</label>
-        <input type="text" formControlName="amount8" />
-        <label class="ingredient" for="ingredient8">Ingredient:</label>
-        <input type="text" formControlName="ingredient8" />
+      <div class="table-parent">
+        <div class="table-amount">
+          <!-- <label for="amount3">Amount:</label> -->
+          <input type="text" formControlName="amount8" />
+        </div>
+        <div class="table-ingredient">
+          <!-- <label for="ingredient3">Ingredient:</label> -->
+          <input type="text" formControlName="ingredient8" />
+        </div>
       </div>
     </div>
     <!-- method -->
     <div class="form-group">
-      <label for="method">Method:</label>
+      <!-- <label for="method">Method:</label> -->
+      <h3>Method</h3>
       <textarea
         name="method"
         class="methodInput"

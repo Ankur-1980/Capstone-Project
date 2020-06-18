@@ -42,7 +42,11 @@ const routes: Routes = [
   //   component: <nameOfComponent>,
   //   canActivate: [AuthGuard]
   // },
-
+  {
+    path: 'quiz',
+    loadChildren: () =>
+      import('./components/quiz/quiz.module').then((m) => m.QuizModule),
+  },
   {
     path: 'preferences',
     loadChildren: () =>
