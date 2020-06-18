@@ -113,13 +113,13 @@ button:hover {
   padding: 20px;
 }
 
-@media screen and (max-width: 360px) {
+/* @media screen and (max-width: 360px) {
   .background {
     margin-top: 10vh;
     /* height: 100vh; */
     /* width: 50vh; */
-  }
-}
+  /* }
+} */
   /* tablet sizing */
 @media screen and (max-width: 768px) {
   /* .global-parent {
