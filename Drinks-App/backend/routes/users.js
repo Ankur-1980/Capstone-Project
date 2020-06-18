@@ -61,7 +61,11 @@ users.post("/register", async (req, res) => {
             if (err) {
               throw err;
             }
+            let user = response.rows[0];
+            let payload = { subject: user.user_id };
+            let token = jwt.sign(payload, "secretKey");
             console.log(response.rows);
+            res.status(200).send({ token });
             res.status(201).json({
               message: "You successfully registered, please log in",
               goodToGo: true,
