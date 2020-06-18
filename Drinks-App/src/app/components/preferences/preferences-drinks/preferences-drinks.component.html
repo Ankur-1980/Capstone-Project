@@ -1,1 +1,9 @@
-<h1>WORK IN PROGRESS</h1>
+<section>
+  <h1>
+    Saved Recipes
+  </h1>
+  <div *ngFor="let item of favorites">
+    <p>{{ item.drink_name }}</p>
+    <button (click)="onDelete(item.id_drink)">x</button>
+  </div>
+</section>

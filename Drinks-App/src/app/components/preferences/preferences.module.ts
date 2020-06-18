@@ -9,6 +9,7 @@ import { PreferencesBartendersComponent } from './preferences-bartenders/prefere
 import { PreferencesLocationsComponent } from './preferences-locations/preferences-locations.component';
 import { PreferencesNavigationComponent } from './preferences-navigation/preferences-navigation.component';
 import { PreferencesDrinksComponent } from './preferences-drinks/preferences-drinks.component';
+import { RecipeBookModule } from '../recipe-book/recipe-book.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { PreferencesDrinksComponent } from './preferences-drinks/preferences-dri
     PreferencesRoutingModule,
     ReactiveFormsModule,
     FormsModule,
+    RecipeBookModule,
   ],
 })
 export class PreferencesModule {}

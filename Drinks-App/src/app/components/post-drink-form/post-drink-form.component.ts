@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RecipeApiService } from 'src/app/services/recipeAPI.service';
+import { DrinkPostService } from 'src/app/services/drink-post.service';
 
 @Component({
   selector: 'post-drink-form',
@@ -9,9 +10,14 @@ import { RecipeApiService } from 'src/app/services/recipeAPI.service';
 })
 export class PostDrinkFormComponent implements OnInit {
   drinkPostForm: FormGroup;
-  glassware;
+  glassware: string;
+  ratingsDisplay: number;
 
-  constructor(private fb: FormBuilder, private recipeApi: RecipeApiService) {}
+  constructor(
+    private fb: FormBuilder,
+    private recipeApi: RecipeApiService,
+    private drinkPostService: DrinkPostService
+  ) {}
 
   ngOnInit(): void {
     this.recipeApi.getGlassware().subscribe((data) => {
@@ -26,9 +32,15 @@ export class PostDrinkFormComponent implements OnInit {
       description: [''],
       location: [''],
     });
+
+    this.drinkPostForm.valueChanges.subscribe((value) => {
+      // console.log(value);
+      this.ratingsDisplay = value.rating;
+      // console.log('rating', this.ratingsDisplay);
+    });
   }
 
   onSubmit() {
-    console.log(this.drinkPostForm.value);
+    this.drinkPostService.postADrink(this.drinkPostForm.value);
   }
 }

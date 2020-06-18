@@ -1,16 +1,25 @@
-<div>
-  <h1>Profile Page</h1>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas expedita
-    voluptatum velit quod quos, nisi vitae illo voluptate sint, sapiente
-    deleniti animi nemo perspiciatis ut!
-  </p>
-
-  <div *ngFor="let post of mockPosts">
-    <img
-      width="200px"
-      src="../../../assets/lefteris-kallergis-QsmdVT5pTMw-unsplash.jpg"
-      alt=""
-    />
+<div class="background-img"></div>
+<div class="global-parent">
+  <div class="info-container">
+    <img class="profile-pic" width="200px" src="#" alt="" />
+    <div class="user-info-container">
+      <h1>Users Name</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+        expedita voluptatum velit quod quos, nisi vitae illo voluptate sint,
+        sapiente deleniti animi nemo perspiciatis ut!
+      </p>
+    </div>
+  </div>
+  <!-- Feed -->
+  <div class="feed-parent">
+    <div *ngFor="let post of mockPosts">
+      <img
+        class="feed-images"
+        width="200px"
+        src="../../../assets/lefteris-kallergis-QsmdVT5pTMw-unsplash.jpg"
+        alt=""
+      />
+    </div>
   </div>
 </div>

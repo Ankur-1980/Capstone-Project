@@ -8,13 +8,8 @@ import { Subject } from 'rxjs';
 })
 export class PreferencesService {
   items: Item[] = [];
-  bartenders = [];
-  homeBar = [];
-  locations = [];
-  locationsUpdated = new Subject<Item[]>();
-  homeBarUpdated = new Subject<Item[]>();
   itemsUpdated = new Subject<Item[]>();
-  bartendersUpdated = new Subject<Item[]>();
+
   constructor(private http: HttpClient) {}
 
   getItems() {
@@ -25,49 +20,6 @@ export class PreferencesService {
         this.items = data.items;
         this.itemsUpdated.next([...this.items]);
       });
-  }
-
-  getBartenders() {
-    this.http
-      .get<{ message: string; items: any }>('/api/preferences/bartenders')
-      .subscribe((data) => {
-        console.log(data.message);
-        this.bartenders = data.items;
-        this.bartendersUpdated.next([...this.bartenders]);
-      });
-  }
-
-  getBartenderUpdateListener() {
-    return this.bartendersUpdated.asObservable();
-  }
-
-  getLocations() {
-    this.http
-      .get<{ message: string; items: any }>('/api/preferences/locations')
-      .subscribe((data) => {
-        console.log(data.message);
-        this.locations = data.items;
-        this.locationsUpdated.next([...this.locations]);
-        console.log('service', this.locations);
-      });
-  }
-
-  getLocationsUpdateListener() {
-    return this.locationsUpdated.asObservable();
-  }
-
-  getHomeBar() {
-    this.http
-      .get<{ message: string; items: any }>('/api/preferences/home-bar')
-      .subscribe((data) => {
-        console.log(data.message);
-        this.homeBar = data.items;
-        this.homeBarUpdated.next([...this.homeBar]);
-      });
-  }
-
-  getHomeBarUpdateListener() {
-    return this.homeBarUpdated.asObservable();
   }
 
   getItemUpdateListener() {
@@ -88,11 +40,7 @@ export class PreferencesService {
   deleteItem(itemId) {
     this.http
       .delete<{ message: string; items: any }>(`/api/preferences/${itemId}`)
-      .subscribe((response) => {
-        // console.log(response.message);
-        // console.log('service', response.items);
-
-        this.items = response.items;
+      .subscribe(() => {
         this.items = this.items.filter((item) => item.preference_id !== itemId);
         this.itemsUpdated.next([...this.items]);
       });

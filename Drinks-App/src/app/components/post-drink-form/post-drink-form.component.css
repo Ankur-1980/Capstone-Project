@@ -1,28 +1,13 @@
-.background {
-  margin-top: 30px;
+.background-img {
   background-image: url(./Highball/Highball.svg);
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
-}
-
-.body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 60vw;
-}
-h1 {
-  font-size: 50px;
-  color: rgb(236, 184, 92);
+  width: 100%;
+  height: 100%;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 30vw;
   height: auto;
 }
 .form-group {
@@ -46,40 +31,10 @@ select {
   border-style: none;
 }
 
-/* Input Styling */
-input {
-  padding: 10px 5px;
-  color: hsl(0, 0%, 100%);
-  background-color: rgb(236, 184, 92, 0.5);
-  border: 2pt solid rgb(236, 184, 92);
-}
-input:hover {
-  border: 2pt solid #80bdad;
+/* Media Query for Tablet */
+@media screen and (max-width: 768px) {
 }
 
-::placeholder {
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-}
-/* Textarea */
-
-textarea {
-  padding: 10px 5px;
-  color: hsl(0, 0%, 100%);
-  background-color: rgb(236, 184, 92, 0.5);
-  border: 2pt solid rgb(236, 184, 92);
-}
-textarea:hover {
-  border: 2pt solid #80bdad;
-}
-
-/* button Style */
-button {
-  margin-top: 30px;
-  padding: 10px 0px;
-  background-color: rgb(236, 184, 92);
-  /* box-shadow: black -1pt 1pt 3pt; */
-}
-button:hover {
-  background-color: #80bdad;
+/* Media Query for phone */
+@media screen and (max-width: 360px) {
 }
