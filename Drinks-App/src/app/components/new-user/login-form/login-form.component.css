@@ -7,28 +7,11 @@
   height: 100%;
   z-index: -1;
 }
-/* form styling */
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 40%;
-}
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
 /* New to ?  */
 .linkInfo {
   margin-top: 10px;
   align-self: center;
 }
-
-/* link tag need work */
-/* a {
-  flex-wrap: wrap;
-  align-self: center;
-} */
 
 /* media Query for Tablets */
 @media screen and (max-width: 768px) {
@@ -37,18 +20,11 @@ form {
 /* Media Query for phone */
 
 @media screen and (max-width: 640px) {
-  .register-container {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media screen and (max-width: 360px) {
   .background-img {
     width: 80%;
     height: 80%;
-  }
-  form {
-    width: 40%;
   }
 }
