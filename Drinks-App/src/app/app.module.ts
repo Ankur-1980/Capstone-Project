@@ -17,9 +17,9 @@ import { PostDrinkFormComponent } from './components/post-drink-form/post-drink-
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 import { TheFeedPostsComponent } from './components/the-feed/the-feed-posts/the-feed-posts.component';
-import { QuizComponent } from './components/quiz/quiz.component';
-import { QuestionComponent } from './components/quiz/question/question.component';
+
 import { TokenInterceptorService } from './services/token-interceptor.service';
+import { QuizModule } from './components/quiz/quiz.module';
 
 @NgModule({
   declarations: [
@@ -32,8 +32,6 @@ import { TokenInterceptorService } from './services/token-interceptor.service';
     UserProfileComponent,
 
     TheFeedPostsComponent,
-    QuizComponent,
-    QuestionComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +42,7 @@ import { TokenInterceptorService } from './services/token-interceptor.service';
     RecipeBookModule,
     PreferencesModule,
     UserRecipesModule,
+    QuizModule,
   ],
   providers: [
     {
