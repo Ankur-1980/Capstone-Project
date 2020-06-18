@@ -105,14 +105,29 @@ button:hover {
   justify-content: space-between;
 } */
 
-/* tablet sizing */
-/* @media screen and (max-width: 768px) {
-  .global-parent {
-  }
+.quiz-container {
+  width: 40%;
+  margin: auto;
+  border: 2px solid  rgb(236, 184, 92, 0.5);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+/* @media screen and (max-width: 360px) {
+  .background {
+    margin-top: 10vh;
+    /* height: 100vh; */
+    /* width: 50vh; */
+  /* }
 } */
+  /* tablet sizing */
+@media screen and (max-width: 768px) {
+  /* .global-parent {
+  } */
+} 
 
 /* Phone sizing */
-/* @media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .global-parent {
     margin-top: 10vh;
     padding: 0;
@@ -144,7 +159,7 @@ button:hover {
   .center-mob {
     text-align: center;
   } 
-} */
+}
 
 @media screen and (max-width: 360px) {
   .global-parent {
@@ -170,5 +185,11 @@ button:hover {
     font-weight: bold;
     margin-top: 0px;
     font-size: 12px;
+  }
+  
+  .quiz-container {
+    width: 100%;
+    border: none;
+    padding: 0;
   }
 }

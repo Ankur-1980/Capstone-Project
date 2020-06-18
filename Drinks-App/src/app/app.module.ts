@@ -17,8 +17,7 @@ import { PostDrinkFormComponent } from './components/post-drink-form/post-drink-
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 import { TheFeedPostsComponent } from './components/the-feed/the-feed-posts/the-feed-posts.component';
-import { QuizComponent } from './components/quiz/quiz.component';
-import { QuestionComponent } from './components/quiz/question/question.component';
+import { QuizModule } from './components/quiz/quiz.module';
 
 @NgModule({
   declarations: [
@@ -29,10 +28,7 @@ import { QuestionComponent } from './components/quiz/question/question.component
     NavbarComponent,
     PostDrinkFormComponent,
     UserProfileComponent,
-
-    TheFeedPostsComponent,
-    QuizComponent,
-    QuestionComponent,
+    TheFeedPostsComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +39,7 @@ import { QuestionComponent } from './components/quiz/question/question.component
     RecipeBookModule,
     PreferencesModule,
     UserRecipesModule,
+    QuizModule
   ],
   providers: [],
   bootstrap: [AppComponent],

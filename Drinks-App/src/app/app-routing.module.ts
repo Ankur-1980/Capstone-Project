@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
-
+// import { TheFeedMainComponent } from './components/the-feed/the-feed-main/the-feed-main.component';
 import { QuizComponent } from './components/quiz/quiz.component';
 import { LoginFormComponent } from './components/new-user/login-form/login-form.component';
 import { NewUserFormComponent } from './components/new-user/new-user-form/new-user-form.component';
@@ -40,6 +40,13 @@ const routes: Routes = [
     loadChildren: () =>
       import('./components/preferences/preferences.module').then(
         (module) => module.PreferencesModule
+      ),
+  },
+  {
+    path: 'quiz',
+    loadChildren: () =>
+      import('./components/quiz/quiz.module').then(
+        (module) => module.QuizModule
       ),
   },
   {
