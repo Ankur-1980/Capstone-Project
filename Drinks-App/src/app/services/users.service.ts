@@ -17,18 +17,24 @@ export class UsersService {
 
   addNewUser(formValue) {
     this.http
-      .post<{ message: string }>('/api/users/register', formValue)
+      .post<{ message: string; goodToGo: false }>(
+        '/api/users/register',
+        formValue
+      )
       .subscribe((response) => {
         console.log(response.message);
+        if (response.goodToGo) this.router.navigate(['/login']);
       });
-    this.router.navigate(['/login']);
   }
 
   login(formValue) {
     this.http
-      .post<{ message: string }>('api/users/login', formValue)
+      .post<{ message: string; goodToGo: boolean; user: any }>(
+        'api/users/login',
+        formValue
+      )
       .subscribe((response) => {
-        console.log(response.message);
+        console.log('service', response.user);
       });
     // this.router.navigate(['/the-feed']);
   }
