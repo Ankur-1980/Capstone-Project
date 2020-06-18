@@ -11,43 +11,12 @@ export class RecipeApiService {
 
   // list the categories
   getCategories() {
-    return this.http.get(`${this.baseUrl}list.php?c=list`, {
-      headers: { 'Access-Control-Allow-Headers': '*' },
-    });
+    return this.http.get(`${this.baseUrl}list.php?c=list`);
   }
 
   // glassware
   getGlassware() {
     return this.http.get(`${this.baseUrl}list.php?g=list`);
-  }
-
-  getAlcoholic() {
-    return this.http.get(`${this.baseUrl}list.php?a=list`);
-  }
-  getLetterA() {
-    return this.http.get(`${this.baseUrl}search.php?f=a`);
-  }
-
-  getLetter(letter) {
-    return this.http.get(`${this.baseUrl}search.php?f=${letter}`);
-  }
-
-  getIngredients() {
-    return this.http.get(`${this.baseUrl}list.php?i=list`);
-  }
-
-  getDetails(recipeID) {
-    // console.log('service', recipeID);
-
-    return this.http.get(`${this.baseUrl}lookup.php?i=${recipeID}`);
-  }
-
-  filterNA(something) {
-    return this.http.get(`${this.baseUrl}filter.php?a=Alcoholic`);
-  }
-
-  filterCocktailType() {
-    return this.http.get(`${this.baseUrl}filter.php?g=Cocktail_glass`);
   }
 
   searchByName(name) {
@@ -58,4 +27,36 @@ export class RecipeApiService {
     // console.log(letter);
     return this.http.get(`${this.baseUrl}search.php?f=${letter.letter}`);
   }
+
+  getRandom() {
+    return this.http.get(`${this.baseUrl}randomselection.php`);
+  }
+
+  getDetails(recipeID) {
+    // console.log('service', recipeID);
+    return this.http.get(`${this.baseUrl}lookup.php?i=${recipeID}`);
+  }
+
+  // getAlcoholic() {
+  //   return this.http.get(`${this.baseUrl}list.php?a=list`);
+  // }
+  // getLetterA() {
+  //   return this.http.get(`${this.baseUrl}search.php?f=a`);
+  // }
+
+  // getLetter(letter) {
+  //   return this.http.get(`${this.baseUrl}search.php?f=${letter}`);
+  // }
+
+  // getIngredients() {
+  //   return this.http.get(`${this.baseUrl}list.php?i=list`);
+  // }
+
+  // filterNA(something) {
+  //   return this.http.get(`${this.baseUrl}filter.php?a=Alcoholic`);
+  // }
+
+  // filterCocktailType() {
+  //   return this.http.get(`${this.baseUrl}filter.php?g=Cocktail_glass`);
+  // }
 }
