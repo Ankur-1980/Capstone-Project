@@ -21,26 +21,20 @@ export class RecipeSearchComponent implements OnInit {
   constructor(private fb: FormBuilder, private recipeAPI: RecipeApiService) {}
 
   ngOnInit(): void {
-    this.recipeAPI.getGlassware().subscribe((data) => {
-      this.glassware = data['drinks'];
-    });
-    this.recipeAPI.getAlcoholic().subscribe((data) => {
-      this.alcoholic = data['drinks'];
-    });
-    this.recipeAPI.getCategories().subscribe((data) => {
-      this.categories = data['drinks'];
-    });
-
-    this.recipeAPI.filterCocktailType().subscribe((data) => {
-      console.log('filter cocktails', data['drinks']);
-    });
-
-    // this.filterForm = this.fb.group({
-    //   glassware: [''],
-    //   categories: [''],
-    //   booze: [''],
-    //   alphabet: [''],
+    // this.recipeAPI.getGlassware().subscribe((data) => {
+    //   this.glassware = data['drinks'];
     // });
+    // this.recipeAPI.getAlcoholic().subscribe((data) => {
+    //   this.alcoholic = data['drinks'];
+    // });
+    // this.recipeAPI.getCategories().subscribe((data) => {
+    //   this.categories = data['drinks'];
+    // });
+
+    // this.recipeAPI.filterCocktailType().subscribe((data) => {
+    //   console.log('filter cocktails', data['drinks']);
+    // });
+
     this.nameSearch = this.fb.group({
       searchName: [''],
     });
