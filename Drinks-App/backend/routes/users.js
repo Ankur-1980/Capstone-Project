@@ -87,14 +87,14 @@ users.post("/login", (req, res) => {
       // console.log("rows", response.rows);
       if (response.rows.length <= 0) {
         res.status(404).json({
-          message: err.message,
+          message: "username not found",
           goodToGo: false,
           user,
         });
-      }
-      if (user.password != password) {
+        return;
+      } else if (user.password != password) {
         res.status(404).json({
-          message: err.message,
+          message: "password incorrect",
           goodToGo: false,
           user,
         });
