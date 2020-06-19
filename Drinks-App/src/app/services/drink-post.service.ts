@@ -12,12 +12,22 @@ export class DrinkPostService {
     return this.http.get('/api/drink-posts');
   }
 
-  postADrink(formValue) {
-    this.http.post('/api/drink-posts', formValue);
-    console.log('service', formValue);
+  postADrink({ name, description, glassware, image, location, rating }) {
+    // this.http.post('/api/drink-posts', formValue);
 
-    // const postData = new FormData();
-    // postData.append('title')
+    // console.log(formValue);
+    // console.log(description);
+
+    const postData = new FormData();
+    postData.append('name', name);
+    // postData.append('description', formValue.description);
+    // postData.append('glassware', formValue.glassware);
+    // postData.append('image', formValue.image);
+    // postData.append('location', formValue.location);
+    // postData.append('rating', formValue.rating);
+
+    console.log('postData:', postData);
+
     // this.router.navigate(['/the-feed']);
   }
 }

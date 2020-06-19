@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RecipeApiService } from 'src/app/services/recipeAPI.service';
 import { DrinkPostService } from 'src/app/services/drink-post.service';
-import { mimeType } from './mime-type.validator';
+// import { mimeType } from './mime-type.validator';
 
 @Component({
   selector: 'post-drink-form',
