@@ -626,6 +626,230 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/app/MOCK_DATA/mock-preferences.ts":
+  /*!***********************************************!*\
+    !*** ./src/app/MOCK_DATA/mock-preferences.ts ***!
+    \***********************************************/
+
+  /*! exports provided: MOCK_PREFER */
+
+  /***/
+  function srcAppMOCK_DATAMockPreferencesTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "MOCK_PREFER", function () {
+      return MOCK_PREFER;
+    });
+
+    var MOCK_PREFER = [{
+      preferences_id: 1,
+      preferences_info: 'Cross-platform scalable time-frame',
+      preferences_cat: 'Training'
+    }, {
+      preferences_id: 2,
+      preferences_info: 'Mandatory motivating protocol',
+      preferences_cat: 'Human Resources'
+    }, {
+      preferences_id: 3,
+      preferences_info: 'Multi-channelled secondary functionalities',
+      preferences_cat: 'Sales'
+    }, {
+      preferences_id: 4,
+      preferences_info: 'Versatile didactic contingency',
+      preferences_cat: 'Human Resources'
+    }, {
+      preferences_id: 5,
+      preferences_info: 'Object-based actuating definition',
+      preferences_cat: 'Legal'
+    }, {
+      preferences_id: 6,
+      preferences_info: 'Future-proofed attitude-oriented superstructure',
+      preferences_cat: 'Sales'
+    }, {
+      preferences_id: 7,
+      preferences_info: 'Synergistic dedicated access',
+      preferences_cat: 'Sales'
+    }, {
+      preferences_id: 8,
+      preferences_info: 'Progressive national local area network',
+      preferences_cat: 'Engineering'
+    }, {
+      preferences_id: 9,
+      preferences_info: 'Multi-channelled directional paradigm',
+      preferences_cat: 'Human Resources'
+    }, {
+      preferences_id: 10,
+      preferences_info: 'Organized cohesive flexibility',
+      preferences_cat: 'Accounting'
+    }, {
+      preferences_id: 11,
+      preferences_info: 'Compatible 6th generation product',
+      preferences_cat: 'Legal'
+    }, {
+      preferences_id: 12,
+      preferences_info: 'Function-based clear-thinking hardware',
+      preferences_cat: 'Engineering'
+    }, {
+      preferences_id: 13,
+      preferences_info: 'Streamlined disintermediate leverage',
+      preferences_cat: 'Sales'
+    }, {
+      preferences_id: 14,
+      preferences_info: 'Upgradable didactic local area network',
+      preferences_cat: 'Marketing'
+    }, {
+      preferences_id: 15,
+      preferences_info: 'Universal optimizing attitude',
+      preferences_cat: 'Support'
+    }, {
+      preferences_id: 16,
+      preferences_info: 'Diverse eco-centric migration',
+      preferences_cat: 'Sales'
+    }, {
+      preferences_id: 17,
+      preferences_info: 'Integrated multi-tasking protocol',
+      preferences_cat: 'Engineering'
+    }, {
+      preferences_id: 18,
+      preferences_info: 'Organic tangible help-desk',
+      preferences_cat: 'Product Management'
+    }, {
+      preferences_id: 19,
+      preferences_info: 'Robust zero tolerance pricing structure',
+      preferences_cat: 'Research and Development'
+    }, {
+      preferences_id: 20,
+      preferences_info: 'Persistent client-driven attitude',
+      preferences_cat: 'Services'
+    }, {
+      preferences_id: 21,
+      preferences_info: 'Sharable bifurcated portal',
+      preferences_cat: 'Marketing'
+    }, {
+      preferences_id: 22,
+      preferences_info: 'Optimized tangible artificial intelligence',
+      preferences_cat: 'Business Development'
+    }, {
+      preferences_id: 23,
+      preferences_info: 'Fundamental mission-critical concept',
+      preferences_cat: 'Accounting'
+    }, {
+      preferences_id: 24,
+      preferences_info: 'Persistent exuding benchmark',
+      preferences_cat: 'Product Management'
+    }, {
+      preferences_id: 25,
+      preferences_info: 'Integrated full-range algorithm',
+      preferences_cat: 'Human Resources'
+    }, {
+      preferences_id: 26,
+      preferences_info: 'Reverse-engineered modular attitude',
+      preferences_cat: 'Training'
+    }, {
+      preferences_id: 27,
+      preferences_info: 'Pre-emptive 4th generation productivity',
+      preferences_cat: 'Sales'
+    }, {
+      preferences_id: 28,
+      preferences_info: 'Reactive secondary migration',
+      preferences_cat: 'Human Resources'
+    }, {
+      preferences_id: 29,
+      preferences_info: 'Re-engineered bandwidth-monitored budgetary management',
+      preferences_cat: 'Legal'
+    }, {
+      preferences_id: 30,
+      preferences_info: 'Organized intermediate Graphic Interface',
+      preferences_cat: 'Legal'
+    }, {
+      preferences_id: 31,
+      preferences_info: 'Automated content-based approach',
+      preferences_cat: 'Business Development'
+    }, {
+      preferences_id: 32,
+      preferences_info: 'Down-sized contextually-based project',
+      preferences_cat: 'Sales'
+    }, {
+      preferences_id: 33,
+      preferences_info: 'User-friendly bi-directional secured line',
+      preferences_cat: 'Business Development'
+    }, {
+      preferences_id: 34,
+      preferences_info: 'Adaptive regional paradigm',
+      preferences_cat: 'Services'
+    }, {
+      preferences_id: 35,
+      preferences_info: 'Cloned 4th generation frame',
+      preferences_cat: 'Accounting'
+    }, {
+      preferences_id: 36,
+      preferences_info: 'Sharable multi-state policy',
+      preferences_cat: 'Product Management'
+    }, {
+      preferences_id: 37,
+      preferences_info: 'Robust encompassing middleware',
+      preferences_cat: 'Training'
+    }, {
+      preferences_id: 38,
+      preferences_info: 'Multi-layered solution-oriented conglomeration',
+      preferences_cat: 'Engineering'
+    }, {
+      preferences_id: 39,
+      preferences_info: 'Centralized context-sensitive moratorium',
+      preferences_cat: 'Legal'
+    }, {
+      preferences_id: 40,
+      preferences_info: 'Up-sized bottom-line protocol',
+      preferences_cat: 'Sales'
+    }, {
+      preferences_id: 41,
+      preferences_info: 'Configurable coherent analyzer',
+      preferences_cat: 'Human Resources'
+    }, {
+      preferences_id: 42,
+      preferences_info: 'Synergistic coherent model',
+      preferences_cat: 'Engineering'
+    }, {
+      preferences_id: 43,
+      preferences_info: 'Enhanced discrete help-desk',
+      preferences_cat: 'Services'
+    }, {
+      preferences_id: 44,
+      preferences_info: 'Quality-focused value-added internet solution',
+      preferences_cat: 'Sales'
+    }, {
+      preferences_id: 45,
+      preferences_info: 'User-centric 3rd generation approach',
+      preferences_cat: 'Marketing'
+    }, {
+      preferences_id: 46,
+      preferences_info: 'Universal exuding focus group',
+      preferences_cat: 'Marketing'
+    }, {
+      preferences_id: 47,
+      preferences_info: 'Future-proofed national frame',
+      preferences_cat: 'Research and Development'
+    }, {
+      preferences_id: 48,
+      preferences_info: 'Distributed zero defect core',
+      preferences_cat: 'Sales'
+    }, {
+      preferences_id: 49,
+      preferences_info: 'Open-architected reciprocal initiative',
+      preferences_cat: 'Accounting'
+    }, {
+      preferences_id: 50,
+      preferences_info: 'Reduced non-volatile collaboration',
+      preferences_cat: 'Legal'
+    }];
+    /***/
+  },
+
+  /***/
   "./src/app/MOCK_DATA/mock-recipes.ts":
   /*!*******************************************!*\
     !*** ./src/app/MOCK_DATA/mock-recipes.ts ***!
@@ -1973,13 +2197,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _services_token_interceptor_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
-    /*! ./services/token-interceptor.service */
-    "./src/app/services/token-interceptor.service.ts");
-    /* harmony import */
-
-
-    var _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    var _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! ./components/quiz/quiz.module */
     "./src/app/components/quiz/quiz.module.ts");
 
@@ -1995,18 +2213,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       factory: function AppModule_Factory(t) {
         return new (t || AppModule)();
       },
-      providers: [{
-        provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HTTP_INTERCEPTORS"],
-        useClass: _services_token_interceptor_service__WEBPACK_IMPORTED_MODULE_17__["TokenInterceptorService"],
-        multi: true
-      }],
-      imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"], _components_recipe_book_recipe_book_module__WEBPACK_IMPORTED_MODULE_11__["RecipeBookModule"], _components_preferences_preferences_module__WEBPACK_IMPORTED_MODULE_12__["PreferencesModule"], _components_user_recipes_user_recipes_module__WEBPACK_IMPORTED_MODULE_13__["UserRecipesModule"], _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_18__["QuizModule"]]]
+      providers: [],
+      imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"], _components_recipe_book_recipe_book_module__WEBPACK_IMPORTED_MODULE_11__["RecipeBookModule"], _components_preferences_preferences_module__WEBPACK_IMPORTED_MODULE_12__["PreferencesModule"], _components_user_recipes_user_recipes_module__WEBPACK_IMPORTED_MODULE_13__["UserRecipesModule"], _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_17__["QuizModule"]]]
     });
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
         declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_main_main_component__WEBPACK_IMPORTED_MODULE_5__["MainComponent"], _components_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_7__["NewUserFormComponent"], _components_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_9__["LoginFormComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_10__["NavbarComponent"], _components_post_drink_form_post_drink_form_component__WEBPACK_IMPORTED_MODULE_14__["PostDrinkFormComponent"], _components_user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_15__["UserProfileComponent"], _components_the_feed_the_feed_posts_the_feed_posts_component__WEBPACK_IMPORTED_MODULE_16__["TheFeedPostsComponent"]],
-        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"], _components_recipe_book_recipe_book_module__WEBPACK_IMPORTED_MODULE_11__["RecipeBookModule"], _components_preferences_preferences_module__WEBPACK_IMPORTED_MODULE_12__["PreferencesModule"], _components_user_recipes_user_recipes_module__WEBPACK_IMPORTED_MODULE_13__["UserRecipesModule"], _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_18__["QuizModule"]]
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"], _components_recipe_book_recipe_book_module__WEBPACK_IMPORTED_MODULE_11__["RecipeBookModule"], _components_preferences_preferences_module__WEBPACK_IMPORTED_MODULE_12__["PreferencesModule"], _components_user_recipes_user_recipes_module__WEBPACK_IMPORTED_MODULE_13__["UserRecipesModule"], _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_17__["QuizModule"]]
       });
     })();
     /*@__PURE__*/
@@ -2017,12 +2231,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
           declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_main_main_component__WEBPACK_IMPORTED_MODULE_5__["MainComponent"], _components_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_7__["NewUserFormComponent"], _components_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_9__["LoginFormComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_10__["NavbarComponent"], _components_post_drink_form_post_drink_form_component__WEBPACK_IMPORTED_MODULE_14__["PostDrinkFormComponent"], _components_user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_15__["UserProfileComponent"], _components_the_feed_the_feed_posts_the_feed_posts_component__WEBPACK_IMPORTED_MODULE_16__["TheFeedPostsComponent"]],
-          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"], _components_recipe_book_recipe_book_module__WEBPACK_IMPORTED_MODULE_11__["RecipeBookModule"], _components_preferences_preferences_module__WEBPACK_IMPORTED_MODULE_12__["PreferencesModule"], _components_user_recipes_user_recipes_module__WEBPACK_IMPORTED_MODULE_13__["UserRecipesModule"], _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_18__["QuizModule"]],
-          providers: [{
-            provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HTTP_INTERCEPTORS"],
-            useClass: _services_token_interceptor_service__WEBPACK_IMPORTED_MODULE_17__["TokenInterceptorService"],
-            multi: true
-          }],
+          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"], _components_recipe_book_recipe_book_module__WEBPACK_IMPORTED_MODULE_11__["RecipeBookModule"], _components_preferences_preferences_module__WEBPACK_IMPORTED_MODULE_12__["PreferencesModule"], _components_user_recipes_user_recipes_module__WEBPACK_IMPORTED_MODULE_13__["UserRecipesModule"], _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_17__["QuizModule"]],
+          providers: [],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         }]
       }], null, null);
@@ -3023,7 +3233,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](glass_r3.strGlass);
       }
-    }
+    } // import { mimeType } from './mime-type.validator';
+
 
     var PostDrinkFormComponent = /*#__PURE__*/function () {
       function PostDrinkFormComponent(fb, recipeApi, drinkPostService) {
@@ -3311,13 +3522,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _preferences_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var src_app_MOCK_DATA_mock_preferences__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! src/app/MOCK_DATA/mock-preferences */
+    "./src/app/MOCK_DATA/mock-preferences.ts");
+    /* harmony import */
+
+
+    var _preferences_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ../preferences.service */
     "./src/app/components/preferences/preferences.service.ts");
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
@@ -3333,21 +3550,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 4);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p");
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 4);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PreferencesBartendersComponent_div_3_div_1_Template_button_click_7_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PreferencesBartendersComponent_div_3_div_1_Template_button_click_3_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5);
 
           var item_r3 = ctx.$implicit;
@@ -3357,7 +3562,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return ctx_r4.onDelete(item_r3.preference_id);
         });
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Delete");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Delete");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -3369,15 +3574,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r3.preference_id);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r3.preference_info);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r3.preference_cat);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r3.preferences_info);
       }
     }
 
@@ -3385,7 +3582,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PreferencesBartendersComponent_div_3_div_1_Template, 9, 3, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PreferencesBartendersComponent_div_3_div_1_Template, 5, 1, "div", 3);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -3414,20 +3611,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, PreferencesBartendersComponent);
 
         this.preferService = preferService;
-        this.bartenders = [];
+        this.bartenders = src_app_MOCK_DATA_mock_preferences__WEBPACK_IMPORTED_MODULE_1__["MOCK_PREFER"];
       }
 
       _createClass(PreferencesBartendersComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {
-          var _this3 = this;
-
-          this.preferService.getItems();
-          this.itemsSub = this.preferService.getItemUpdateListener().subscribe(function (items) {
-            _this3.bartenders = items.filter(function (item) {
-              return item.preference_cat === 'bartenders';
-            });
-          });
+        value: function ngOnInit() {// this.preferService.getItems();
+          // this.itemsSub = this.preferService
+          //   .getItemUpdateListener()
+          //   .subscribe((items) => {
+          //     this.bartenders = items.filter(
+          //       (item) => item.preference_cat === 'bartenders'
+          //     );
+          //   });
         }
       }, {
         key: "onDelete",
@@ -3445,7 +3641,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     PreferencesBartendersComponent.ɵfac = function PreferencesBartendersComponent_Factory(t) {
-      return new (t || PreferencesBartendersComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_preferences_service__WEBPACK_IMPORTED_MODULE_1__["PreferencesService"]));
+      return new (t || PreferencesBartendersComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_preferences_service__WEBPACK_IMPORTED_MODULE_2__["PreferencesService"]));
     };
 
     PreferencesBartendersComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -3481,7 +3677,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.bartenders.length < 0);
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"]],
+      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]],
       styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtYmFydGVuZGVycy9wcmVmZXJlbmNlcy1iYXJ0ZW5kZXJzLmNvbXBvbmVudC5jc3MifQ== */", ".container[_ngcontent-%COMP%] {\r\n  border: 2px solid black;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcmVmZXJlbmNlcy9wcmVmZXJlbmNlcy1wYWdlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx1QkFBdUI7QUFDekIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3ByZWZlcmVuY2VzL3ByZWZlcmVuY2VzLXBhZ2VzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xyXG4gIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xyXG59XHJcbiJdfQ== */"]
     });
     /*@__PURE__*/
@@ -3496,7 +3692,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }]
       }], function () {
         return [{
-          type: _preferences_service__WEBPACK_IMPORTED_MODULE_1__["PreferencesService"]
+          type: _preferences_service__WEBPACK_IMPORTED_MODULE_2__["PreferencesService"]
         }];
       }, null);
     })();
@@ -3792,12 +3988,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PreferencesDrinksComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this4 = this;
+          var _this3 = this;
 
           this.favoriteService.getFavorites();
           this.favSub = this.favoriteService.getFavoriteUpdateListener().subscribe(function (data) {
-            _this4.favorites = data;
-            console.log(_this4.favorites);
+            _this3.favorites = data;
+            console.log(_this3.favorites);
           });
         }
       }, {
@@ -4006,11 +4202,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PreferencesHomeBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this5 = this;
+          var _this4 = this;
 
           this.preferService.getItems();
           this.itemsSub = this.preferService.getItemUpdateListener().subscribe(function (items) {
-            _this5.homeBar = items.filter(function (item) {
+            _this4.homeBar = items.filter(function (item) {
               return item.preference_cat === 'home_bar';
             });
           });
@@ -4227,11 +4423,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PreferencesLocationsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this6 = this;
+          var _this5 = this;
 
           this.preferService.getItems();
           this.itemsSub = this.preferService.getItemUpdateListener().subscribe(function (items) {
-            _this6.locations = items.filter(function (item) {
+            _this5.locations = items.filter(function (item) {
               return item.preference_cat === 'places';
             });
           });
@@ -4993,13 +5189,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PreferencesService, [{
         key: "getItems",
         value: function getItems() {
-          var _this7 = this;
+          var _this6 = this;
 
           this.http.get('/api/preferences').subscribe(function (data) {
             console.log(data.message);
-            _this7.items = data.items;
+            _this6.items = data.items;
 
-            _this7.itemsUpdated.next(_toConsumableArray(_this7.items));
+            _this6.itemsUpdated.next(_toConsumableArray(_this6.items));
           });
         }
       }, {
@@ -5010,26 +5206,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "addItems",
         value: function addItems(formValue) {
-          var _this8 = this;
+          var _this7 = this;
 
           console.log(formValue);
           this.http.post('/api/preferences', formValue).subscribe(function (response) {
             console.log(response.message);
 
-            _this8.itemsUpdated.next(response.items);
+            _this7.itemsUpdated.next(response.items);
           });
         }
       }, {
         key: "deleteItem",
         value: function deleteItem(itemId) {
-          var _this9 = this;
+          var _this8 = this;
 
           this.http["delete"]("/api/preferences/".concat(itemId)).subscribe(function () {
-            _this9.items = _this9.items.filter(function (item) {
+            _this8.items = _this8.items.filter(function (item) {
               return item.preference_id !== itemId;
             });
 
-            _this9.itemsUpdated.next(_toConsumableArray(_this9.items));
+            _this8.itemsUpdated.next(_toConsumableArray(_this8.items));
           });
         }
       }]);
@@ -5211,7 +5407,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var QuestionComponent = /*#__PURE__*/function () {
       function QuestionComponent(route, router) {
-        var _this10 = this;
+        var _this9 = this;
 
         _classCallCheck(this, QuestionComponent);
 
@@ -5321,10 +5517,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           selectedOption: ''
         }];
         this.route.paramMap.subscribe(function (params) {
-          _this10.setQuestionID(+params.get('questionId')); // get the question ID and store it
+          _this9.setQuestionID(+params.get('questionId')); // get the question ID and store it
 
 
-          _this10.question = _this10.getQuestion;
+          _this9.question = _this9.getQuestion;
         });
       }
 
@@ -5355,10 +5551,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getQuestion",
         get: function get() {
-          var _this11 = this;
+          var _this10 = this;
 
           return this.allQuestions.filter(function (question) {
-            return question.questionId === _this11.questionID;
+            return question.questionId === _this10.questionID;
           })[0];
         }
       }]);
@@ -6584,13 +6780,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this12 = this;
+          var _this11 = this;
 
           this.recipeID = this.route.snapshot.params.recipeID;
           console.log('component', this.recipeID);
           this.recipeAPI.getDetails(this.recipeID).subscribe(function (data) {
-            _this12.recipes = data['drinks'];
-            console.log('details', _this12.recipes);
+            _this11.recipes = data['drinks'];
+            console.log('details', _this11.recipes);
           });
         }
       }]);
@@ -6801,10 +6997,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeMainComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this13 = this;
+          var _this12 = this;
 
           this.recipeApi.getRandom().subscribe(function (data) {
-            _this13.recipes = data['drinks']; // console.log(this.recipes);
+            _this12.recipes = data['drinks']; // console.log(this.recipes);
           });
         }
       }, {
@@ -7019,19 +7215,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "searchByName",
         value: function searchByName() {
-          var _this14 = this;
+          var _this13 = this;
 
           this.recipeAPI.searchByName(this.nameSearch.value).subscribe(function (data) {
-            return _this14.searchResults.emit(data['drinks']);
+            return _this13.searchResults.emit(data['drinks']);
           });
         }
       }, {
         key: "searchByLetter",
         value: function searchByLetter() {
-          var _this15 = this;
+          var _this14 = this;
 
           this.recipeAPI.searchByLetter(this.letterSearch.value).subscribe(function (data) {
-            _this15.searchResults.emit(data['drinks']);
+            _this14.searchResults.emit(data['drinks']);
           });
         }
       }, {
@@ -7815,10 +8011,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(UserRecipesCreateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this16 = this;
+          var _this15 = this;
 
           this.recipeAPI.getGlassware().subscribe(function (data) {
-            _this16.glassware = data['drinks'];
+            _this15.glassware = data['drinks'];
           });
           this.userRecipe = this.fb.group({
             name: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
@@ -7845,7 +8041,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             amount8: ['']
           });
           this.userRecipe.valueChanges.subscribe(function (value) {
-            _this16.ratingDisplay = value.rating;
+            _this15.ratingDisplay = value.rating;
           });
         } // removeIngredient(i) {
         //   let ingredientsArray = this.userRecipe.controls.ingredients as FormArray;
@@ -7870,11 +8066,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getLocation",
         value: function getLocation() {
-          var _this17 = this;
+          var _this16 = this;
 
           navigator.geolocation.getCurrentPosition(function (position) {
-            _this17.latitude = position.coords.latitude;
-            _this17.longitude = position.coords.longitude;
+            _this16.latitude = position.coords.latitude;
+            _this16.longitude = position.coords.longitude;
           });
         }
       }]);
@@ -8339,11 +8535,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(UserRecipesMainComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this18 = this;
+          var _this17 = this;
 
           this.userRecipeService.getRecipes().subscribe(function (data) {
-            _this18.recipes = data;
-            console.log(_this18.recipes);
+            _this17.recipes = data;
+            console.log(_this17.recipes);
           });
         }
       }]);
@@ -8732,11 +8928,24 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       }, {
         key: "postADrink",
-        value: function postADrink(formValue) {
-          this.http.post('/api/drink-posts', formValue);
-          console.log('service', formValue); // const postData = new FormData();
-          // postData.append('title')
-          // this.router.navigate(['/the-feed']);
+        value: function postADrink(_ref) {
+          var name = _ref.name,
+              description = _ref.description,
+              glassware = _ref.glassware,
+              image = _ref.image,
+              location = _ref.location,
+              rating = _ref.rating;
+          // this.http.post('/api/drink-posts', formValue);
+          // console.log(formValue);
+          // console.log(description);
+          var postData = new FormData();
+          postData.append('name', name); // postData.append('description', formValue.description);
+          // postData.append('glassware', formValue.glassware);
+          // postData.append('image', formValue.image);
+          // postData.append('location', formValue.location);
+          // postData.append('rating', formValue.rating);
+
+          console.log('postData:', postData); // this.router.navigate(['/the-feed']);
         }
       }]);
 
@@ -8829,45 +9038,45 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(FavoritesService, [{
         key: "addToFavorites",
         value: function addToFavorites(drink) {
-          var _this19 = this;
+          var _this18 = this;
 
           console.log('service', drink);
           this.http.post('/api/recipes', drink).subscribe(function (response) {
             console.log(response.message);
 
-            _this19.favorites.push(drink);
+            _this18.favorites.push(drink);
 
-            _this19.favoritesUpdated.next(_toConsumableArray(_this19.favorites)); // console.log('service', this.favorites);
+            _this18.favoritesUpdated.next(_toConsumableArray(_this18.favorites)); // console.log('service', this.favorites);
 
           });
         }
       }, {
         key: "userRecipes",
         value: function userRecipes(recipe) {
-          var _this20 = this;
+          var _this19 = this;
 
           console.log('service', recipe);
           this.http.post('/api/recipes/created', recipe).subscribe(function (response) {
             console.log(response.message);
 
-            _this20.favorites.push(recipe);
+            _this19.favorites.push(recipe);
 
-            _this20.favoritesUpdated.next(_toConsumableArray(_this20.favorites));
+            _this19.favoritesUpdated.next(_toConsumableArray(_this19.favorites));
 
-            _this20.router.navigate(['/preferences']); // console.log('service', this.favorites);
+            _this19.router.navigate(['/preferences']); // console.log('service', this.favorites);
 
           });
         }
       }, {
         key: "getFavorites",
         value: function getFavorites() {
-          var _this21 = this;
+          var _this20 = this;
 
           this.http.get('/api/recipes').subscribe(function (response) {
             console.log(response.message);
-            _this21.favorites = response.items;
+            _this20.favorites = response.items;
 
-            _this21.favoritesUpdated.next(_toConsumableArray(_this21.favorites));
+            _this20.favoritesUpdated.next(_toConsumableArray(_this20.favorites));
           });
         }
       }, {
@@ -8878,31 +9087,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "removeFromFavorites",
         value: function removeFromFavorites(drink) {
-          var _this22 = this;
+          var _this21 = this;
 
           // console.log('service', drinkId);
           var parsedId = drink.idDrink;
           this.http["delete"]("/api/recipes/".concat(parsedId)).subscribe(function (response) {
             console.log(response.message);
-            _this22.favorites = _this22.favorites.filter(function (fav) {
+            _this21.favorites = _this21.favorites.filter(function (fav) {
               return fav.id_drink !== parsedId;
             });
 
-            _this22.favoritesUpdated.next(_toConsumableArray(_this22.favorites));
+            _this21.favoritesUpdated.next(_toConsumableArray(_this21.favorites));
           });
         }
       }, {
         key: "deleteFromPref",
         value: function deleteFromPref(drinkId) {
-          var _this23 = this;
+          var _this22 = this;
 
           this.http["delete"]("/api/recipes/".concat(drinkId)).subscribe(function (response) {
             console.log(response.message);
-            _this23.favorites = _this23.favorites.filter(function (fav) {
+            _this22.favorites = _this22.favorites.filter(function (fav) {
               return fav.id_drink !== drinkId;
             });
 
-            _this23.favoritesUpdated.next(_toConsumableArray(_this23.favorites));
+            _this22.favoritesUpdated.next(_toConsumableArray(_this22.favorites));
           });
         } // getFavorites() {
         //   return this.favorites;
@@ -9128,87 +9337,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/app/services/token-interceptor.service.ts":
-  /*!*******************************************************!*\
-    !*** ./src/app/services/token-interceptor.service.ts ***!
-    \*******************************************************/
-
-  /*! exports provided: TokenInterceptorService */
-
-  /***/
-  function srcAppServicesTokenInterceptorServiceTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "TokenInterceptorService", function () {
-      return TokenInterceptorService;
-    });
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-    /* harmony import */
-
-
-    var _services_users_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! ../services/users.service */
-    "./src/app/services/users.service.ts");
-
-    var TokenInterceptorService = /*#__PURE__*/function () {
-      function TokenInterceptorService(userService) {
-        _classCallCheck(this, TokenInterceptorService);
-
-        this.userService = userService;
-      }
-
-      _createClass(TokenInterceptorService, [{
-        key: "intercept",
-        value: function intercept(req, next) {
-          var tokenizedReq = req.clone({
-            setHeaders: {
-              Authorization: "Bearer ".concat(this.userService.getToken())
-            }
-          });
-          return next.handle(tokenizedReq);
-        }
-      }]);
-
-      return TokenInterceptorService;
-    }();
-
-    TokenInterceptorService.ɵfac = function TokenInterceptorService_Factory(t) {
-      return new (t || TokenInterceptorService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_services_users_service__WEBPACK_IMPORTED_MODULE_1__["UsersService"]));
-    };
-
-    TokenInterceptorService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
-      token: TokenInterceptorService,
-      factory: TokenInterceptorService.ɵfac,
-      providedIn: 'root'
-    });
-    /*@__PURE__*/
-
-    (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TokenInterceptorService, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
-        args: [{
-          providedIn: 'root'
-        }]
-      }], function () {
-        return [{
-          type: _services_users_service__WEBPACK_IMPORTED_MODULE_1__["UsersService"]
-        }];
-      }, null);
-    })();
-    /***/
-
-  },
-
-  /***/
   "./src/app/services/users.service.ts":
   /*!*******************************************!*\
     !*** ./src/app/services/users.service.ts ***!
@@ -9263,27 +9391,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "addNewUser",
         value: function addNewUser(formValue) {
-          var _this24 = this;
+          var _this23 = this;
 
           this.http.post('/api/users/register', formValue).subscribe(function (response) {
             if (!response.goodToGo) {
-              _this24.errorMessage = response.message;
-              console.log(_this24.errorMessage);
-              _this24.warning = response.goodToGo;
-              console.log(_this24.warning);
+              _this23.errorMessage = response.message;
+              console.log(_this23.errorMessage);
+              _this23.warning = response.goodToGo;
+              console.log(_this23.warning);
             } else {
               console.log(response.message);
               console.log(response.token);
               localStorage.setItem('token', response.token);
 
-              _this24.router.navigate(['/the-feed']);
+              _this23.router.navigate(['/the-feed']);
             }
           });
         }
       }, {
         key: "login",
         value: function login(formValue) {
-          var _this25 = this;
+          var _this24 = this;
 
           this.http.post('api/users/login', formValue).subscribe(function (response) {
             // console.log('service', response.user);
@@ -9295,7 +9423,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               console.log(response.token);
               localStorage.setItem('token', response.token);
 
-              _this25.router.navigate(['/the-feed']);
+              _this24.router.navigate(['/the-feed']);
             }
           });
         }

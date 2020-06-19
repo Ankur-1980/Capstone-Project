@@ -645,6 +645,272 @@ const MOCK_POSTS = [
 
 /***/ }),
 
+/***/ "./src/app/MOCK_DATA/mock-preferences.ts":
+/*!***********************************************!*\
+  !*** ./src/app/MOCK_DATA/mock-preferences.ts ***!
+  \***********************************************/
+/*! exports provided: MOCK_PREFER */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MOCK_PREFER", function() { return MOCK_PREFER; });
+const MOCK_PREFER = [
+    {
+        preferences_id: 1,
+        preferences_info: 'Cross-platform scalable time-frame',
+        preferences_cat: 'Training',
+    },
+    {
+        preferences_id: 2,
+        preferences_info: 'Mandatory motivating protocol',
+        preferences_cat: 'Human Resources',
+    },
+    {
+        preferences_id: 3,
+        preferences_info: 'Multi-channelled secondary functionalities',
+        preferences_cat: 'Sales',
+    },
+    {
+        preferences_id: 4,
+        preferences_info: 'Versatile didactic contingency',
+        preferences_cat: 'Human Resources',
+    },
+    {
+        preferences_id: 5,
+        preferences_info: 'Object-based actuating definition',
+        preferences_cat: 'Legal',
+    },
+    {
+        preferences_id: 6,
+        preferences_info: 'Future-proofed attitude-oriented superstructure',
+        preferences_cat: 'Sales',
+    },
+    {
+        preferences_id: 7,
+        preferences_info: 'Synergistic dedicated access',
+        preferences_cat: 'Sales',
+    },
+    {
+        preferences_id: 8,
+        preferences_info: 'Progressive national local area network',
+        preferences_cat: 'Engineering',
+    },
+    {
+        preferences_id: 9,
+        preferences_info: 'Multi-channelled directional paradigm',
+        preferences_cat: 'Human Resources',
+    },
+    {
+        preferences_id: 10,
+        preferences_info: 'Organized cohesive flexibility',
+        preferences_cat: 'Accounting',
+    },
+    {
+        preferences_id: 11,
+        preferences_info: 'Compatible 6th generation product',
+        preferences_cat: 'Legal',
+    },
+    {
+        preferences_id: 12,
+        preferences_info: 'Function-based clear-thinking hardware',
+        preferences_cat: 'Engineering',
+    },
+    {
+        preferences_id: 13,
+        preferences_info: 'Streamlined disintermediate leverage',
+        preferences_cat: 'Sales',
+    },
+    {
+        preferences_id: 14,
+        preferences_info: 'Upgradable didactic local area network',
+        preferences_cat: 'Marketing',
+    },
+    {
+        preferences_id: 15,
+        preferences_info: 'Universal optimizing attitude',
+        preferences_cat: 'Support',
+    },
+    {
+        preferences_id: 16,
+        preferences_info: 'Diverse eco-centric migration',
+        preferences_cat: 'Sales',
+    },
+    {
+        preferences_id: 17,
+        preferences_info: 'Integrated multi-tasking protocol',
+        preferences_cat: 'Engineering',
+    },
+    {
+        preferences_id: 18,
+        preferences_info: 'Organic tangible help-desk',
+        preferences_cat: 'Product Management',
+    },
+    {
+        preferences_id: 19,
+        preferences_info: 'Robust zero tolerance pricing structure',
+        preferences_cat: 'Research and Development',
+    },
+    {
+        preferences_id: 20,
+        preferences_info: 'Persistent client-driven attitude',
+        preferences_cat: 'Services',
+    },
+    {
+        preferences_id: 21,
+        preferences_info: 'Sharable bifurcated portal',
+        preferences_cat: 'Marketing',
+    },
+    {
+        preferences_id: 22,
+        preferences_info: 'Optimized tangible artificial intelligence',
+        preferences_cat: 'Business Development',
+    },
+    {
+        preferences_id: 23,
+        preferences_info: 'Fundamental mission-critical concept',
+        preferences_cat: 'Accounting',
+    },
+    {
+        preferences_id: 24,
+        preferences_info: 'Persistent exuding benchmark',
+        preferences_cat: 'Product Management',
+    },
+    {
+        preferences_id: 25,
+        preferences_info: 'Integrated full-range algorithm',
+        preferences_cat: 'Human Resources',
+    },
+    {
+        preferences_id: 26,
+        preferences_info: 'Reverse-engineered modular attitude',
+        preferences_cat: 'Training',
+    },
+    {
+        preferences_id: 27,
+        preferences_info: 'Pre-emptive 4th generation productivity',
+        preferences_cat: 'Sales',
+    },
+    {
+        preferences_id: 28,
+        preferences_info: 'Reactive secondary migration',
+        preferences_cat: 'Human Resources',
+    },
+    {
+        preferences_id: 29,
+        preferences_info: 'Re-engineered bandwidth-monitored budgetary management',
+        preferences_cat: 'Legal',
+    },
+    {
+        preferences_id: 30,
+        preferences_info: 'Organized intermediate Graphic Interface',
+        preferences_cat: 'Legal',
+    },
+    {
+        preferences_id: 31,
+        preferences_info: 'Automated content-based approach',
+        preferences_cat: 'Business Development',
+    },
+    {
+        preferences_id: 32,
+        preferences_info: 'Down-sized contextually-based project',
+        preferences_cat: 'Sales',
+    },
+    {
+        preferences_id: 33,
+        preferences_info: 'User-friendly bi-directional secured line',
+        preferences_cat: 'Business Development',
+    },
+    {
+        preferences_id: 34,
+        preferences_info: 'Adaptive regional paradigm',
+        preferences_cat: 'Services',
+    },
+    {
+        preferences_id: 35,
+        preferences_info: 'Cloned 4th generation frame',
+        preferences_cat: 'Accounting',
+    },
+    {
+        preferences_id: 36,
+        preferences_info: 'Sharable multi-state policy',
+        preferences_cat: 'Product Management',
+    },
+    {
+        preferences_id: 37,
+        preferences_info: 'Robust encompassing middleware',
+        preferences_cat: 'Training',
+    },
+    {
+        preferences_id: 38,
+        preferences_info: 'Multi-layered solution-oriented conglomeration',
+        preferences_cat: 'Engineering',
+    },
+    {
+        preferences_id: 39,
+        preferences_info: 'Centralized context-sensitive moratorium',
+        preferences_cat: 'Legal',
+    },
+    {
+        preferences_id: 40,
+        preferences_info: 'Up-sized bottom-line protocol',
+        preferences_cat: 'Sales',
+    },
+    {
+        preferences_id: 41,
+        preferences_info: 'Configurable coherent analyzer',
+        preferences_cat: 'Human Resources',
+    },
+    {
+        preferences_id: 42,
+        preferences_info: 'Synergistic coherent model',
+        preferences_cat: 'Engineering',
+    },
+    {
+        preferences_id: 43,
+        preferences_info: 'Enhanced discrete help-desk',
+        preferences_cat: 'Services',
+    },
+    {
+        preferences_id: 44,
+        preferences_info: 'Quality-focused value-added internet solution',
+        preferences_cat: 'Sales',
+    },
+    {
+        preferences_id: 45,
+        preferences_info: 'User-centric 3rd generation approach',
+        preferences_cat: 'Marketing',
+    },
+    {
+        preferences_id: 46,
+        preferences_info: 'Universal exuding focus group',
+        preferences_cat: 'Marketing',
+    },
+    {
+        preferences_id: 47,
+        preferences_info: 'Future-proofed national frame',
+        preferences_cat: 'Research and Development',
+    },
+    {
+        preferences_id: 48,
+        preferences_info: 'Distributed zero defect core',
+        preferences_cat: 'Sales',
+    },
+    {
+        preferences_id: 49,
+        preferences_info: 'Open-architected reciprocal initiative',
+        preferences_cat: 'Accounting',
+    },
+    {
+        preferences_id: 50,
+        preferences_info: 'Reduced non-volatile collaboration',
+        preferences_cat: 'Legal',
+    },
+];
+
+
+/***/ }),
+
 /***/ "./src/app/MOCK_DATA/mock-recipes.ts":
 /*!*******************************************!*\
   !*** ./src/app/MOCK_DATA/mock-recipes.ts ***!
@@ -1823,9 +2089,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_post_drink_form_post_drink_form_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/post-drink-form/post-drink-form.component */ "./src/app/components/post-drink-form/post-drink-form.component.ts");
 /* harmony import */ var _components_user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/user-profile/user-profile.component */ "./src/app/components/user-profile/user-profile.component.ts");
 /* harmony import */ var _components_the_feed_the_feed_posts_the_feed_posts_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/the-feed/the-feed-posts/the-feed-posts.component */ "./src/app/components/the-feed/the-feed-posts/the-feed-posts.component.ts");
-/* harmony import */ var _services_token_interceptor_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./services/token-interceptor.service */ "./src/app/services/token-interceptor.service.ts");
-/* harmony import */ var _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/quiz/quiz.module */ "./src/app/components/quiz/quiz.module.ts");
-
+/* harmony import */ var _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/quiz/quiz.module */ "./src/app/components/quiz/quiz.module.ts");
 
 
 
@@ -1848,13 +2112,7 @@ __webpack_require__.r(__webpack_exports__);
 class AppModule {
 }
 AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]] });
-AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [
-        {
-            provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HTTP_INTERCEPTORS"],
-            useClass: _services_token_interceptor_service__WEBPACK_IMPORTED_MODULE_17__["TokenInterceptorService"],
-            multi: true,
-        },
-    ], imports: [[
+AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [], imports: [[
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
@@ -1863,7 +2121,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
             _components_recipe_book_recipe_book_module__WEBPACK_IMPORTED_MODULE_11__["RecipeBookModule"],
             _components_preferences_preferences_module__WEBPACK_IMPORTED_MODULE_12__["PreferencesModule"],
             _components_user_recipes_user_recipes_module__WEBPACK_IMPORTED_MODULE_13__["UserRecipesModule"],
-            _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_18__["QuizModule"],
+            _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_17__["QuizModule"],
         ]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
         _components_main_main_component__WEBPACK_IMPORTED_MODULE_5__["MainComponent"],
@@ -1880,7 +2138,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _components_recipe_book_recipe_book_module__WEBPACK_IMPORTED_MODULE_11__["RecipeBookModule"],
         _components_preferences_preferences_module__WEBPACK_IMPORTED_MODULE_12__["PreferencesModule"],
         _components_user_recipes_user_recipes_module__WEBPACK_IMPORTED_MODULE_13__["UserRecipesModule"],
-        _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_18__["QuizModule"]] }); })();
+        _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_17__["QuizModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
@@ -1903,15 +2161,9 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _components_recipe_book_recipe_book_module__WEBPACK_IMPORTED_MODULE_11__["RecipeBookModule"],
                     _components_preferences_preferences_module__WEBPACK_IMPORTED_MODULE_12__["PreferencesModule"],
                     _components_user_recipes_user_recipes_module__WEBPACK_IMPORTED_MODULE_13__["UserRecipesModule"],
-                    _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_18__["QuizModule"],
+                    _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_17__["QuizModule"],
                 ],
-                providers: [
-                    {
-                        provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HTTP_INTERCEPTORS"],
-                        useClass: _services_token_interceptor_service__WEBPACK_IMPORTED_MODULE_17__["TokenInterceptorService"],
-                        multi: true,
-                    },
-                ],
+                providers: [],
                 bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]],
             }]
     }], null, null); })();
@@ -2409,6 +2661,7 @@ function PostDrinkFormComponent_option_23_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](glass_r3.strGlass);
 } }
+// import { mimeType } from './mime-type.validator';
 class PostDrinkFormComponent {
     constructor(fb, recipeApi, drinkPostService) {
         this.fb = fb;
@@ -2551,8 +2804,10 @@ const CATEGORIES = [
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PreferencesBartendersComponent", function() { return PreferencesBartendersComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _preferences_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../preferences.service */ "./src/app/components/preferences/preferences.service.ts");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony import */ var src_app_MOCK_DATA_mock_preferences__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/MOCK_DATA/mock-preferences */ "./src/app/MOCK_DATA/mock-preferences.ts");
+/* harmony import */ var _preferences_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../preferences.service */ "./src/app/components/preferences/preferences.service.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+
 
 
 
@@ -2563,29 +2818,19 @@ function PreferencesBartendersComponent_div_3_div_1_Template(rf, ctx) { if (rf &
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PreferencesBartendersComponent_div_3_div_1_Template_button_click_7_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const item_r3 = ctx.$implicit; const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r4.onDelete(item_r3.preference_id); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Delete");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PreferencesBartendersComponent_div_3_div_1_Template_button_click_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const item_r3 = ctx.$implicit; const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r4.onDelete(item_r3.preference_id); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Delete");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const item_r3 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r3.preference_id);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r3.preference_info);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r3.preference_cat);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r3.preferences_info);
 } }
 function PreferencesBartendersComponent_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PreferencesBartendersComponent_div_3_div_1_Template, 9, 3, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PreferencesBartendersComponent_div_3_div_1_Template, 5, 1, "div", 3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
@@ -2600,15 +2845,17 @@ function PreferencesBartendersComponent_p_4_Template(rf, ctx) { if (rf & 1) {
 class PreferencesBartendersComponent {
     constructor(preferService) {
         this.preferService = preferService;
-        this.bartenders = [];
+        this.bartenders = src_app_MOCK_DATA_mock_preferences__WEBPACK_IMPORTED_MODULE_1__["MOCK_PREFER"];
     }
     ngOnInit() {
-        this.preferService.getItems();
-        this.itemsSub = this.preferService
-            .getItemUpdateListener()
-            .subscribe((items) => {
-            this.bartenders = items.filter((item) => item.preference_cat === 'bartenders');
-        });
+        // this.preferService.getItems();
+        // this.itemsSub = this.preferService
+        //   .getItemUpdateListener()
+        //   .subscribe((items) => {
+        //     this.bartenders = items.filter(
+        //       (item) => item.preference_cat === 'bartenders'
+        //     );
+        //   });
     }
     onDelete(itemId) {
         this.preferService.deleteItem(itemId);
@@ -2617,7 +2864,7 @@ class PreferencesBartendersComponent {
         this.itemsSub.unsubscribe();
     }
 }
-PreferencesBartendersComponent.ɵfac = function PreferencesBartendersComponent_Factory(t) { return new (t || PreferencesBartendersComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_preferences_service__WEBPACK_IMPORTED_MODULE_1__["PreferencesService"])); };
+PreferencesBartendersComponent.ɵfac = function PreferencesBartendersComponent_Factory(t) { return new (t || PreferencesBartendersComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_preferences_service__WEBPACK_IMPORTED_MODULE_2__["PreferencesService"])); };
 PreferencesBartendersComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PreferencesBartendersComponent, selectors: [["preferences-bartenders"]], decls: 5, vars: 2, consts: [["class", "container", 4, "ngIf"], [4, "ngIf"], [1, "container"], [4, "ngFor", "ngForOf"], [3, "click"]], template: function PreferencesBartendersComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1");
@@ -2631,7 +2878,7 @@ PreferencesBartendersComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0_
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.bartenders.length > 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.bartenders.length < 0);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtYmFydGVuZGVycy9wcmVmZXJlbmNlcy1iYXJ0ZW5kZXJzLmNvbXBvbmVudC5jc3MifQ== */", ".container[_ngcontent-%COMP%] {\r\n  border: 2px solid black;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcmVmZXJlbmNlcy9wcmVmZXJlbmNlcy1wYWdlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx1QkFBdUI7QUFDekIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3ByZWZlcmVuY2VzL3ByZWZlcmVuY2VzLXBhZ2VzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xyXG4gIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xyXG59XHJcbiJdfQ== */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJlZmVyZW5jZXMvcHJlZmVyZW5jZXMtYmFydGVuZGVycy9wcmVmZXJlbmNlcy1iYXJ0ZW5kZXJzLmNvbXBvbmVudC5jc3MifQ== */", ".container[_ngcontent-%COMP%] {\r\n  border: 2px solid black;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcmVmZXJlbmNlcy9wcmVmZXJlbmNlcy1wYWdlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx1QkFBdUI7QUFDekIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3ByZWZlcmVuY2VzL3ByZWZlcmVuY2VzLXBhZ2VzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xyXG4gIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xyXG59XHJcbiJdfQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PreferencesBartendersComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -2642,7 +2889,7 @@ PreferencesBartendersComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0_
                     '../preferences-pages.css',
                 ],
             }]
-    }], function () { return [{ type: _preferences_service__WEBPACK_IMPORTED_MODULE_1__["PreferencesService"] }]; }, null); })();
+    }], function () { return [{ type: _preferences_service__WEBPACK_IMPORTED_MODULE_2__["PreferencesService"] }]; }, null); })();
 
 
 /***/ }),
@@ -5258,11 +5505,18 @@ class DrinkPostService {
     getDrinks() {
         return this.http.get('/api/drink-posts');
     }
-    postADrink(formValue) {
-        this.http.post('/api/drink-posts', formValue);
-        console.log('service', formValue);
-        // const postData = new FormData();
-        // postData.append('title')
+    postADrink({ name, description, glassware, image, location, rating }) {
+        // this.http.post('/api/drink-posts', formValue);
+        // console.log(formValue);
+        // console.log(description);
+        const postData = new FormData();
+        postData.append('name', name);
+        // postData.append('description', formValue.description);
+        // postData.append('glassware', formValue.glassware);
+        // postData.append('image', formValue.image);
+        // postData.append('location', formValue.location);
+        // postData.append('rating', formValue.rating);
+        console.log('postData:', postData);
         // this.router.navigate(['/the-feed']);
     }
 }
@@ -5466,46 +5720,6 @@ RecipeApiService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
                 providedIn: 'root',
             }]
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }]; }, null); })();
-
-
-/***/ }),
-
-/***/ "./src/app/services/token-interceptor.service.ts":
-/*!*******************************************************!*\
-  !*** ./src/app/services/token-interceptor.service.ts ***!
-  \*******************************************************/
-/*! exports provided: TokenInterceptorService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TokenInterceptorService", function() { return TokenInterceptorService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _services_users_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/users.service */ "./src/app/services/users.service.ts");
-
-
-
-class TokenInterceptorService {
-    constructor(userService) {
-        this.userService = userService;
-    }
-    intercept(req, next) {
-        const tokenizedReq = req.clone({
-            setHeaders: {
-                Authorization: `Bearer ${this.userService.getToken()}`,
-            },
-        });
-        return next.handle(tokenizedReq);
-    }
-}
-TokenInterceptorService.ɵfac = function TokenInterceptorService_Factory(t) { return new (t || TokenInterceptorService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_services_users_service__WEBPACK_IMPORTED_MODULE_1__["UsersService"])); };
-TokenInterceptorService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: TokenInterceptorService, factory: TokenInterceptorService.ɵfac, providedIn: 'root' });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TokenInterceptorService, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
-        args: [{
-                providedIn: 'root',
-            }]
-    }], function () { return [{ type: _services_users_service__WEBPACK_IMPORTED_MODULE_1__["UsersService"] }]; }, null); })();
 
 
 /***/ }),

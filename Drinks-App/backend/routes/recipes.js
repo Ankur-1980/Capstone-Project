@@ -1,5 +1,5 @@
 const recipes = require("express").Router();
-const database = require("../connection");
+const database = require("../services/connection");
 
 recipes.get("/", (req, res) => {
   database.query("SELECT * FROM saved_recipes_api").then((result) => {

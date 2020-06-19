@@ -1,5 +1,5 @@
 const users = require("express").Router();
-const database = require("../connection");
+const database = require("../services/connection");
 // const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
@@ -87,14 +87,14 @@ users.post("/login", (req, res) => {
       // console.log("rows", response.rows);
       if (response.rows.length <= 0) {
         res.status(404).json({
-          message: "user not found",
+          message: err.message,
           goodToGo: false,
           user,
         });
       }
       if (user.password != password) {
         res.status(404).json({
-          message: "Password incorrect",
+          message: err.message,
           goodToGo: false,
           user,
         });

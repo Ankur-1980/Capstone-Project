@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RecipeApiService } from 'src/app/services/recipeAPI.service';
 import { DrinkPostService } from 'src/app/services/drink-post.service';
+import { ImageSnippet } from '../../interfaces/image-snippet';
 // import { mimeType } from './mime-type.validator';
 
 @Component({
@@ -26,7 +27,6 @@ export class PostDrinkFormComponent implements OnInit {
     });
 
     this.drinkPostForm = this.fb.group({
-      // drinkPic: [''],
       name: ['', [Validators.required]],
       rating: [''],
       glassware: [''],
@@ -40,19 +40,30 @@ export class PostDrinkFormComponent implements OnInit {
     this.drinkPostService.postADrink(this.drinkPostForm.value);
   }
 
+  // pickImage(event: Event) {
+  //   // casting as HTMLInputElement tells typescript to give access to the files method
+  //   const file = (event.target as HTMLInputElement).files[0];
+  //   this.drinkPostForm.patchValue({ image: file });
+  //   // updates the form
+  //   this.drinkPostForm.get('image').updateValueAndValidity();
+  //   // FileReader is built into JS
+  //   const reader = new FileReader();
+  //   // function will get called after the file is done loading
+  //   reader.onload = () => {
+  //     this.imagePreview = reader.result;
+  //   };
+  //   // load the file
+  //   reader.readAsDataURL(file);
+  // }
+
   pickImage(event: Event) {
-    // casting as HTMLInputElement tells typescript to give access to the files method
-    const file = (event.target as HTMLInputElement).files[0];
-    this.drinkPostForm.patchValue({ image: file });
-    // updates the form
-    this.drinkPostForm.get('image').updateValueAndValidity();
-    // FileReader is built into JS
+    selectedFile;
+
+    const file: File = (event.target as HTMLInputElement).files[0];
     const reader = new FileReader();
-    // function will get called after the file is done loading
-    reader.onload = () => {
-      this.imagePreview = reader.result;
-    };
-    // load the file
+
+    reader.addEventListener('load', () => {});
+
     reader.readAsDataURL(file);
   }
 }

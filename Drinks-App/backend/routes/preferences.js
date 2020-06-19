@@ -1,5 +1,5 @@
 const preferences = require("express").Router();
-const database = require("../connection");
+const database = require("../services/connection");
 
 preferences.get("/", (req, res) => {
   database.query("SELECT * FROM preferences").then((result) => {
