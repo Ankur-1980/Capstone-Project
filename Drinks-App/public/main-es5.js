@@ -1695,7 +1695,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     //   canActivate: [AuthGuard]
     // },
     {
-<<<<<<< HEAD
       path: 'quiz',
       loadChildren: function loadChildren() {
         return Promise.resolve().then(__webpack_require__.bind(null,
@@ -1705,8 +1704,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         });
       }
     }, {
-=======
->>>>>>> uploadImage
       path: 'preferences',
       loadChildren: function loadChildren() {
         return Promise.resolve().then(__webpack_require__.bind(null,
@@ -1982,21 +1979,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-<<<<<<< HEAD
     var _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
     /*! ./components/quiz/quiz.module */
     "./src/app/components/quiz/quiz.module.ts");
-=======
-    var _components_quiz_question_question_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
-    /*! ./components/quiz/question/question.component */
-    "./src/app/components/quiz/question/question.component.ts");
-    /* harmony import */
-
-
-    var _services_token_interceptor_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
-    /*! ./services/token-interceptor.service */
-    "./src/app/services/token-interceptor.service.ts");
->>>>>>> uploadImage
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -2012,17 +1997,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       },
       providers: [{
         provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HTTP_INTERCEPTORS"],
-<<<<<<< HEAD
         useClass: _services_token_interceptor_service__WEBPACK_IMPORTED_MODULE_17__["TokenInterceptorService"],
         multi: true
       }],
       imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"], _components_recipe_book_recipe_book_module__WEBPACK_IMPORTED_MODULE_11__["RecipeBookModule"], _components_preferences_preferences_module__WEBPACK_IMPORTED_MODULE_12__["PreferencesModule"], _components_user_recipes_user_recipes_module__WEBPACK_IMPORTED_MODULE_13__["UserRecipesModule"], _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_18__["QuizModule"]]]
-=======
-        useClass: _services_token_interceptor_service__WEBPACK_IMPORTED_MODULE_19__["TokenInterceptorService"],
-        multi: true
-      }],
-      imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"], _components_recipe_book_recipe_book_module__WEBPACK_IMPORTED_MODULE_11__["RecipeBookModule"], _components_preferences_preferences_module__WEBPACK_IMPORTED_MODULE_12__["PreferencesModule"], _components_user_recipes_user_recipes_module__WEBPACK_IMPORTED_MODULE_13__["UserRecipesModule"]]]
->>>>>>> uploadImage
     });
 
     (function () {
@@ -2038,19 +2016,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-<<<<<<< HEAD
           declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_main_main_component__WEBPACK_IMPORTED_MODULE_5__["MainComponent"], _components_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_7__["NewUserFormComponent"], _components_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_9__["LoginFormComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_10__["NavbarComponent"], _components_post_drink_form_post_drink_form_component__WEBPACK_IMPORTED_MODULE_14__["PostDrinkFormComponent"], _components_user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_15__["UserProfileComponent"], _components_the_feed_the_feed_posts_the_feed_posts_component__WEBPACK_IMPORTED_MODULE_16__["TheFeedPostsComponent"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"], _components_recipe_book_recipe_book_module__WEBPACK_IMPORTED_MODULE_11__["RecipeBookModule"], _components_preferences_preferences_module__WEBPACK_IMPORTED_MODULE_12__["PreferencesModule"], _components_user_recipes_user_recipes_module__WEBPACK_IMPORTED_MODULE_13__["UserRecipesModule"], _components_quiz_quiz_module__WEBPACK_IMPORTED_MODULE_18__["QuizModule"]],
           providers: [{
             provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HTTP_INTERCEPTORS"],
             useClass: _services_token_interceptor_service__WEBPACK_IMPORTED_MODULE_17__["TokenInterceptorService"],
-=======
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_main_main_component__WEBPACK_IMPORTED_MODULE_5__["MainComponent"], _components_new_user_new_user_form_new_user_form_component__WEBPACK_IMPORTED_MODULE_7__["NewUserFormComponent"], _components_new_user_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_9__["LoginFormComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_10__["NavbarComponent"], _components_post_drink_form_post_drink_form_component__WEBPACK_IMPORTED_MODULE_14__["PostDrinkFormComponent"], _components_user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_15__["UserProfileComponent"], _components_the_feed_the_feed_posts_the_feed_posts_component__WEBPACK_IMPORTED_MODULE_16__["TheFeedPostsComponent"], _components_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_17__["QuizComponent"], _components_quiz_question_question_component__WEBPACK_IMPORTED_MODULE_18__["QuestionComponent"]],
-          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_google_maps__WEBPACK_IMPORTED_MODULE_6__["GoogleMapsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"], _components_recipe_book_recipe_book_module__WEBPACK_IMPORTED_MODULE_11__["RecipeBookModule"], _components_preferences_preferences_module__WEBPACK_IMPORTED_MODULE_12__["PreferencesModule"], _components_user_recipes_user_recipes_module__WEBPACK_IMPORTED_MODULE_13__["UserRecipesModule"]],
-          providers: [{
-            provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HTTP_INTERCEPTORS"],
-            useClass: _services_token_interceptor_service__WEBPACK_IMPORTED_MODULE_19__["TokenInterceptorService"],
->>>>>>> uploadImage
             multi: true
           }],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -4506,15 +4476,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, " What's at Home ");
-<<<<<<< HEAD
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-=======
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
->>>>>>> uploadImage
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "button", 6);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PreferencesMainComponent_Template_button_click_14_listener() {
@@ -4522,15 +4486,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, " Favorite Places ");
-<<<<<<< HEAD
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-=======
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
->>>>>>> uploadImage
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "button", 7);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PreferencesMainComponent_Template_button_click_16_listener() {
@@ -4538,15 +4496,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, " Favorite Bartenders ");
-<<<<<<< HEAD
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-=======
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
->>>>>>> uploadImage
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "button", 8);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PreferencesMainComponent_Template_button_click_18_listener() {
@@ -4554,19 +4506,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, " Saved Recipes ");
-<<<<<<< HEAD
-=======
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
->>>>>>> uploadImage
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "preferences-create");
-
-<<<<<<< HEAD
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "preferences-create");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](21, PreferencesMainComponent_preferences_locations_21_Template, 1, 0, "preferences-locations", 9);
@@ -4575,14 +4521,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](23, PreferencesMainComponent_preferences_drinks_23_Template, 1, 0, "preferences-drinks", 9);
 
-=======
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](21, PreferencesMainComponent_preferences_locations_21_Template, 1, 0, "preferences-locations", 9);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](22, PreferencesMainComponent_preferences_home_bar_22_Template, 1, 0, "preferences-home-bar", 9);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](23, PreferencesMainComponent_preferences_drinks_23_Template, 1, 0, "preferences-drinks", 9);
-
->>>>>>> uploadImage
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](24, PreferencesMainComponent_preferences_bartenders_24_Template, 1, 0, "preferences-bartenders", 9);
         }
 
@@ -5273,7 +5211,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var QuestionComponent = /*#__PURE__*/function () {
       function QuestionComponent(route, router) {
-        var _this9 = this;
+        var _this10 = this;
 
         _classCallCheck(this, QuestionComponent);
 
@@ -5383,10 +5321,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           selectedOption: ''
         }];
         this.route.paramMap.subscribe(function (params) {
-          _this9.setQuestionID(+params.get('questionId')); // get the question ID and store it
+          _this10.setQuestionID(+params.get('questionId')); // get the question ID and store it
 
 
-          _this9.question = _this9.getQuestion;
+          _this10.question = _this10.getQuestion;
         });
       }
 
@@ -5417,10 +5355,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getQuestion",
         get: function get() {
-          var _this10 = this;
+          var _this11 = this;
 
           return this.allQuestions.filter(function (question) {
-            return question.questionId === _this10.questionID;
+            return question.questionId === _this11.questionID;
           })[0];
         }
       }]);
@@ -5924,11 +5862,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
       },
-<<<<<<< HEAD
       styles: [".results[_ngcontent-%COMP%]   .btn[_ngcontent-%COMP%] {\r\n  margin-right: 10px;\r\n  padding: 10px 10px 8px 42px;\r\n  background-repeat: no-repeat;\r\n  background-position: 10px 5px;\r\n  background-size: 25px 25px;\r\n  border-radius: 4px;\r\n  color: #342b38;\r\n  width: 180px;\r\n}\r\n\r\n.results[_ngcontent-%COMP%]   .btn.email[_ngcontent-%COMP%] {\r\n  background-image: url('mail.svg');\r\n  background-color: white;\r\n  padding-right: 16px;\r\n}\r\n\r\n.results[_ngcontent-%COMP%]   .btn.twitter[_ngcontent-%COMP%] {\r\n  background-image: url('twitter.svg');\r\n  background-color: white;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9xdWl6L3Jlc3VsdHMvcmVzdWx0cy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGFBQWE7O0FBRWI7RUFDRSxrQkFBa0I7RUFDbEIsMkJBQTJCO0VBQzNCLDRCQUE0QjtFQUM1Qiw2QkFBNkI7RUFDN0IsMEJBQTBCO0VBQzFCLGtCQUFrQjtFQUNsQixjQUFjO0VBQ2QsWUFBWTtBQUNkOztBQUNBO0VBQ0UsaUNBQTJDO0VBQzNDLHVCQUF1QjtFQUN2QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxvQ0FBOEM7RUFDOUMsdUJBQXVCO0FBQ3pCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9xdWl6L3Jlc3VsdHMvcmVzdWx0cy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogUmVzdWx0cyAgKi9cclxuXHJcbi5yZXN1bHRzIC5idG4ge1xyXG4gIG1hcmdpbi1yaWdodDogMTBweDtcclxuICBwYWRkaW5nOiAxMHB4IDEwcHggOHB4IDQycHg7XHJcbiAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiAxMHB4IDVweDtcclxuICBiYWNrZ3JvdW5kLXNpemU6IDI1cHggMjVweDtcclxuICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgY29sb3I6ICMzNDJiMzg7XHJcbiAgd2lkdGg6IDE4MHB4O1xyXG59XHJcbi5yZXN1bHRzIC5idG4uZW1haWwge1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcIi4uL2ltYWdlcy9tYWlsLnN2Z1wiKTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICBwYWRkaW5nLXJpZ2h0OiAxNnB4O1xyXG59XHJcblxyXG4ucmVzdWx0cyAuYnRuLnR3aXR0ZXIge1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcIi4uL2ltYWdlcy90d2l0dGVyLnN2Z1wiKTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxufVxyXG4iXX0= */"]
-=======
-      styles: [".quiz-container[_ngcontent-%COMP%] {\r\n  width: 40%;\r\n  margin: 13vh auto;\r\n  border: 2px solid rgb(236, 184, 92, 0.5);\r\n  border-radius: 6px;\r\n  padding: 20px;\r\n}\r\n\r\n\r\n\r\n.progress[_ngcontent-%COMP%]   div[_ngcontent-%COMP%] {\r\n  display: inline-block;\r\n  width: 20px;\r\n  height: 20px;\r\n  border-radius: 50%;\r\n  background-color: rgb(236, 184, 92, 0.5);\r\n  margin-right: 15px;\r\n  margin-top: 15px;\r\n}\r\n\r\n.progress[_ngcontent-%COMP%]   div.on[_ngcontent-%COMP%], .progress[_ngcontent-%COMP%]   div.answered[_ngcontent-%COMP%] {\r\n  background-color: rgb(236, 184, 92);\r\n}\r\n\r\n\r\n\r\n.ans-container[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: center;\r\n}\r\n\r\n.ans[_ngcontent-%COMP%] {\r\n  display: inline-block;\r\n  border: 2px solid rgb(236, 184, 92);\r\n  border-radius: 6px;\r\n  padding: 10px;\r\n  margin: 0px 15px 15px 0px;\r\n}\r\n\r\n.ans.selected[_ngcontent-%COMP%] {\r\n  border-color: #80bdad;\r\n}\r\n\r\n.unanswered[_ngcontent-%COMP%]   .ans[_ngcontent-%COMP%] {\r\n  cursor: pointer;\r\n}\r\n\r\n.unanswered[_ngcontent-%COMP%]   .ans[_ngcontent-%COMP%]:hover {\r\n  background-color: rgb(236, 184, 92, 0.5);\r\n  transition: all 0.3s ease 0s;\r\n}\r\n\r\n.answered[_ngcontent-%COMP%]   .ans[_ngcontent-%COMP%] {\r\n  cursor: default;\r\n}\r\n\r\n\r\n\r\n.feedback[_ngcontent-%COMP%] {\r\n  margin-top: 50px;\r\n  transition: opacity 1.5s, margin-top 1.5s;\r\n  visibility: hidden;\r\n  opacity: 0;\r\n}\r\n\r\n.feedback[_ngcontent-%COMP%]   .btn[_ngcontent-%COMP%] {\r\n  cursor: pointer;\r\n  background: #80bdad;\r\n}\r\n\r\n.feedback[_ngcontent-%COMP%]   .btn[_ngcontent-%COMP%]:hover {\r\n  background: #80bdad;\r\n  background-color: rgb(236, 184, 92);\r\n  transition: all 0.3s ease 0s;\r\n}\r\n\r\n.answered[_ngcontent-%COMP%]   .feedback[_ngcontent-%COMP%] {\r\n  visibility: visible;\r\n  opacity: 1;\r\n  margin-top: 10px;\r\n}\r\n\r\n\r\n\r\n.results[_ngcontent-%COMP%]   .btn[_ngcontent-%COMP%] {\r\n  margin-right: 10px;\r\n  padding: 10px 10px 8px 42px;\r\n  background-repeat: no-repeat;\r\n  background-position: 10px 5px;\r\n  background-size: 25px 25px;\r\n  border-radius: 4px;\r\n  color: #342b38;\r\n  width: 180px;\r\n}\r\n\r\n.results[_ngcontent-%COMP%]   .btn.email[_ngcontent-%COMP%] {\r\n  background-image: url('mail.svg');\r\n  background-color: white;\r\n  padding-right: 16px;\r\n}\r\n\r\n.results[_ngcontent-%COMP%]   .btn.twitter[_ngcontent-%COMP%] {\r\n  background-image: url('twitter.svg');\r\n  background-color: white;\r\n}\r\n\r\n@media screen and (max-width: 768px) {\r\n  .ans-container[_ngcontent-%COMP%] {\r\n    flex-direction: column;\r\n  }\r\n  .quiz-container[_ngcontent-%COMP%] {\r\n    width: 100%;\r\n    border: none;\r\n    padding: 0;\r\n  }\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9xdWl6L3F1aXouY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7OztJQWFJOztBQUVKO0VBQ0UsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQix3Q0FBd0M7RUFDeEMsa0JBQWtCO0VBQ2xCLGFBQWE7QUFDZjs7QUFFQSxjQUFjOztBQUVkO0VBQ0UscUJBQXFCO0VBQ3JCLFdBQVc7RUFDWCxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLHdDQUF3QztFQUN4QyxrQkFBa0I7RUFDbEIsZ0JBQWdCO0FBQ2xCOztBQUVBOztFQUVFLG1DQUFtQztBQUNyQzs7QUFFQSxhQUFhOztBQUNiO0VBQ0UsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQix1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsbUNBQW1DO0VBQ25DLGtCQUFrQjtFQUNsQixhQUFhO0VBQ2IseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLHdDQUF3QztFQUN4Qyw0QkFBNEI7QUFDOUI7O0FBQ0E7RUFDRSxlQUFlO0FBQ2pCOztBQUVBLGFBQWE7O0FBRWI7RUFDRSxnQkFBZ0I7RUFDaEIseUNBQXlDO0VBQ3pDLGtCQUFrQjtFQUNsQixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsbUJBQW1CO0VBQ25CLG1DQUFtQztFQUNuQyw0QkFBNEI7QUFDOUI7O0FBRUE7RUFDRSxtQkFBbUI7RUFDbkIsVUFBVTtFQUNWLGdCQUFnQjtBQUNsQjs7QUFFQSxhQUFhOztBQUViO0VBQ0Usa0JBQWtCO0VBQ2xCLDJCQUEyQjtFQUMzQiw0QkFBNEI7RUFDNUIsNkJBQTZCO0VBQzdCLDBCQUEwQjtFQUMxQixrQkFBa0I7RUFDbEIsY0FBYztFQUNkLFlBQVk7QUFDZDs7QUFDQTtFQUNFLGlDQUF3QztFQUN4Qyx1QkFBdUI7RUFDdkIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0Usb0NBQTJDO0VBQzNDLHVCQUF1QjtBQUN6Qjs7QUFFQTtFQUNFO0lBQ0Usc0JBQXNCO0VBQ3hCO0VBQ0E7SUFDRSxXQUFXO0lBQ1gsWUFBWTtJQUNaLFVBQVU7RUFDWjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9xdWl6L3F1aXouY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIC5xdWVzdGlvbiB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBsZWZ0OiAxNTAwcHg7XHJcbn1cclxuXHJcbi5yZXN1bHRzIHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGxlZnQ6IDE1MDBweDtcclxufVxyXG5cclxuLmludHJvIHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGxlZnQ6IDE1MDBweDtcclxufSAgKi9cclxuXHJcbi5xdWl6LWNvbnRhaW5lciB7XHJcbiAgd2lkdGg6IDQwJTtcclxuICBtYXJnaW46IDEzdmggYXV0bztcclxuICBib3JkZXI6IDJweCBzb2xpZCByZ2IoMjM2LCAxODQsIDkyLCAwLjUpO1xyXG4gIGJvcmRlci1yYWRpdXM6IDZweDtcclxuICBwYWRkaW5nOiAyMHB4O1xyXG59XHJcblxyXG4vKiBQcm9ncmVzcyAgKi9cclxuXHJcbi5wcm9ncmVzcyBkaXYge1xyXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICB3aWR0aDogMjBweDtcclxuICBoZWlnaHQ6IDIwcHg7XHJcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMzYsIDE4NCwgOTIsIDAuNSk7XHJcbiAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xyXG4gIG1hcmdpbi10b3A6IDE1cHg7XHJcbn1cclxuXHJcbi5wcm9ncmVzcyBkaXYub24sXHJcbi5wcm9ncmVzcyBkaXYuYW5zd2VyZWQge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMzYsIDE4NCwgOTIpO1xyXG59XHJcblxyXG4vKiBRdWVzdGlvbiAqL1xyXG4uYW5zLWNvbnRhaW5lciB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59XHJcblxyXG4uYW5zIHtcclxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgYm9yZGVyOiAycHggc29saWQgcmdiKDIzNiwgMTg0LCA5Mik7XHJcbiAgYm9yZGVyLXJhZGl1czogNnB4O1xyXG4gIHBhZGRpbmc6IDEwcHg7XHJcbiAgbWFyZ2luOiAwcHggMTVweCAxNXB4IDBweDtcclxufVxyXG5cclxuLmFucy5zZWxlY3RlZCB7XHJcbiAgYm9yZGVyLWNvbG9yOiAjODBiZGFkO1xyXG59XHJcblxyXG4udW5hbnN3ZXJlZCAuYW5zIHtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbn1cclxuXHJcbi51bmFuc3dlcmVkIC5hbnM6aG92ZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMzYsIDE4NCwgOTIsIDAuNSk7XHJcbiAgdHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZSAwcztcclxufVxyXG4uYW5zd2VyZWQgLmFucyB7XHJcbiAgY3Vyc29yOiBkZWZhdWx0O1xyXG59XHJcblxyXG4vKiBGZWVkYmFjayAqL1xyXG5cclxuLmZlZWRiYWNrIHtcclxuICBtYXJnaW4tdG9wOiA1MHB4O1xyXG4gIHRyYW5zaXRpb246IG9wYWNpdHkgMS41cywgbWFyZ2luLXRvcCAxLjVzO1xyXG4gIHZpc2liaWxpdHk6IGhpZGRlbjtcclxuICBvcGFjaXR5OiAwO1xyXG59XHJcblxyXG4uZmVlZGJhY2sgLmJ0biB7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG4gIGJhY2tncm91bmQ6ICM4MGJkYWQ7XHJcbn1cclxuXHJcbi5mZWVkYmFjayAuYnRuOmhvdmVyIHtcclxuICBiYWNrZ3JvdW5kOiAjODBiZGFkO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMzYsIDE4NCwgOTIpO1xyXG4gIHRyYW5zaXRpb246IGFsbCAwLjNzIGVhc2UgMHM7XHJcbn1cclxuXHJcbi5hbnN3ZXJlZCAuZmVlZGJhY2sge1xyXG4gIHZpc2liaWxpdHk6IHZpc2libGU7XHJcbiAgb3BhY2l0eTogMTtcclxuICBtYXJnaW4tdG9wOiAxMHB4O1xyXG59XHJcblxyXG4vKiBSZXN1bHRzICAqL1xyXG5cclxuLnJlc3VsdHMgLmJ0biB7XHJcbiAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG4gIHBhZGRpbmc6IDEwcHggMTBweCA4cHggNDJweDtcclxuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gIGJhY2tncm91bmQtcG9zaXRpb246IDEwcHggNXB4O1xyXG4gIGJhY2tncm91bmQtc2l6ZTogMjVweCAyNXB4O1xyXG4gIGJvcmRlci1yYWRpdXM6IDRweDtcclxuICBjb2xvcjogIzM0MmIzODtcclxuICB3aWR0aDogMTgwcHg7XHJcbn1cclxuLnJlc3VsdHMgLmJ0bi5lbWFpbCB7XHJcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4vaW1hZ2VzL21haWwuc3ZnKTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICBwYWRkaW5nLXJpZ2h0OiAxNnB4O1xyXG59XHJcblxyXG4ucmVzdWx0cyAuYnRuLnR3aXR0ZXIge1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCguL2ltYWdlcy90d2l0dGVyLnN2Zyk7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbn1cclxuXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDc2OHB4KSB7XHJcbiAgLmFucy1jb250YWluZXIge1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICB9XHJcbiAgLnF1aXotY29udGFpbmVyIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgYm9yZGVyOiBub25lO1xyXG4gICAgcGFkZGluZzogMDtcclxuICB9XHJcbn1cclxuIl19 */"]
->>>>>>> uploadImage
     });
     /*@__PURE__*/
 
@@ -6650,13 +6584,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this11 = this;
+          var _this12 = this;
 
           this.recipeID = this.route.snapshot.params.recipeID;
           console.log('component', this.recipeID);
           this.recipeAPI.getDetails(this.recipeID).subscribe(function (data) {
-            _this11.recipes = data['drinks'];
-            console.log('details', _this11.recipes);
+            _this12.recipes = data['drinks'];
+            console.log('details', _this12.recipes);
           });
         }
       }]);
@@ -6867,11 +6801,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeMainComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this12 = this;
+          var _this13 = this;
 
-          this.recipeApi.getLetterA().subscribe(function (data) {
-            _this12.recipes = data['drinks'];
-            console.log(_this12.recipes);
+          this.recipeApi.getRandom().subscribe(function (data) {
+            _this13.recipes = data['drinks']; // console.log(this.recipes);
           });
         }
       }, {
@@ -7064,26 +6997,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeSearchComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this13 = this;
-
-          this.recipeAPI.getGlassware().subscribe(function (data) {
-            _this13.glassware = data['drinks'];
-          });
-          this.recipeAPI.getAlcoholic().subscribe(function (data) {
-            _this13.alcoholic = data['drinks'];
-          });
-          this.recipeAPI.getCategories().subscribe(function (data) {
-            _this13.categories = data['drinks'];
-          });
-          this.recipeAPI.filterCocktailType().subscribe(function (data) {
-            console.log('filter cocktails', data['drinks']);
-          }); // this.filterForm = this.fb.group({
-          //   glassware: [''],
-          //   categories: [''],
-          //   booze: [''],
-          //   alphabet: [''],
+          // this.recipeAPI.getGlassware().subscribe((data) => {
+          //   this.glassware = data['drinks'];
           // });
-
+          // this.recipeAPI.getAlcoholic().subscribe((data) => {
+          //   this.alcoholic = data['drinks'];
+          // });
+          // this.recipeAPI.getCategories().subscribe((data) => {
+          //   this.categories = data['drinks'];
+          // });
+          // this.recipeAPI.filterCocktailType().subscribe((data) => {
+          //   console.log('filter cocktails', data['drinks']);
+          // });
           this.nameSearch = this.fb.group({
             searchName: ['']
           });
@@ -8030,7 +7955,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 9);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "div", 10);
-<<<<<<< HEAD
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "label", 11);
 
@@ -8038,15 +7962,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-=======
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "label", 11);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "Amount:");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
->>>>>>> uploadImage
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "input", 12);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -8818,8 +8733,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "postADrink",
         value: function postADrink(formValue) {
-          console.log('service', formValue);
-          this.router.navigate(['/the-feed']);
+          this.http.post('/api/drink-posts', formValue);
+          console.log('service', formValue); // const postData = new FormData();
+          // postData.append('title')
+          // this.router.navigate(['/the-feed']);
         }
       }]);
 
@@ -9148,53 +9065,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeApiService, [{
         key: "getCategories",
         value: function getCategories() {
-          return this.http.get("".concat(this.baseUrl, "list.php?c=list"), {
-            headers: {
-              'Access-Control-Allow-Headers': '*'
-            }
-          });
+          return this.http.get("".concat(this.baseUrl, "list.php?c=list"));
         } // glassware
 
       }, {
         key: "getGlassware",
         value: function getGlassware() {
           return this.http.get("".concat(this.baseUrl, "list.php?g=list"));
-        }
-      }, {
-        key: "getAlcoholic",
-        value: function getAlcoholic() {
-          return this.http.get("".concat(this.baseUrl, "list.php?a=list"));
-        }
-      }, {
-        key: "getLetterA",
-        value: function getLetterA() {
-          return this.http.get("".concat(this.baseUrl, "search.php?f=a"));
-        }
-      }, {
-        key: "getLetter",
-        value: function getLetter(letter) {
-          return this.http.get("".concat(this.baseUrl, "search.php?f=").concat(letter));
-        }
-      }, {
-        key: "getIngredients",
-        value: function getIngredients() {
-          return this.http.get("".concat(this.baseUrl, "list.php?i=list"));
-        }
-      }, {
-        key: "getDetails",
-        value: function getDetails(recipeID) {
-          // console.log('service', recipeID);
-          return this.http.get("".concat(this.baseUrl, "lookup.php?i=").concat(recipeID));
-        }
-      }, {
-        key: "filterNA",
-        value: function filterNA(something) {
-          return this.http.get("".concat(this.baseUrl, "filter.php?a=Alcoholic"));
-        }
-      }, {
-        key: "filterCocktailType",
-        value: function filterCocktailType() {
-          return this.http.get("".concat(this.baseUrl, "filter.php?g=Cocktail_glass"));
         }
       }, {
         key: "searchByName",
@@ -9206,6 +9083,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function searchByLetter(letter) {
           // console.log(letter);
           return this.http.get("".concat(this.baseUrl, "search.php?f=").concat(letter.letter));
+        }
+      }, {
+        key: "getRandom",
+        value: function getRandom() {
+          return this.http.get("".concat(this.baseUrl, "randomselection.php"));
+        }
+      }, {
+        key: "getDetails",
+        value: function getDetails(recipeID) {
+          // console.log('service', recipeID);
+          return this.http.get("".concat(this.baseUrl, "lookup.php?i=").concat(recipeID));
         }
       }]);
 

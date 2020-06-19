@@ -17,8 +17,6 @@ import { PostDrinkFormComponent } from './components/post-drink-form/post-drink-
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 import { TheFeedPostsComponent } from './components/the-feed/the-feed-posts/the-feed-posts.component';
-
-import { TokenInterceptorService } from './services/token-interceptor.service';
 import { QuizModule } from './components/quiz/quiz.module';
 
 @NgModule({
@@ -44,13 +42,7 @@ import { QuizModule } from './components/quiz/quiz.module';
     UserRecipesModule,
     QuizModule,
   ],
-  providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: TokenInterceptorService,
-      multi: true,
-    },
-  ],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
