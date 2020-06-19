@@ -3,6 +3,8 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { UsersService } from '../../../services/users.service';
 import { NavbarService } from 'src/app/services/navbar.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
+import { ApiError } from 'src/app/interfaces/api-error';
 
 @Component({
   selector: 'login-form',
@@ -12,10 +14,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class LoginFormComponent implements OnInit, OnDestroy {
   loginForm: FormGroup;
   message: string;
-  messageTimeout;
+  messageTimeout: number;
+  errors: ApiError[] = [];
 
   constructor(
     private usersService: UsersService,
+    private auth: AuthService,
     private fb: FormBuilder,
     public nav: NavbarService,
     private route: ActivatedRoute,
@@ -33,11 +37,27 @@ export class LoginFormComponent implements OnInit, OnDestroy {
     });
   }
 
+  onSubmit() {
+    // console.log(this.loginForm.value);
+    if (this.loginForm.invalid) {
+      return;
+    }
+    this.errors = [];
+    this.auth.login(this.loginForm.value).subscribe(
+      (token: string) => {
+        console.log(token);
+      },
+      (errors: ApiError[]) => {
+        this.errors = errors;
+      }
+    );
+  }
+
   checkLoginMessage() {
     this.route.queryParams.subscribe((params) => {
       this.message = params['message'] ? params['message'] : null;
 
-      this.messageTimeout = setTimeout(() => {
+      this.messageTimeout = window.setTimeout(() => {
         this.router.navigate([], {
           replaceUrl: true,
           queryParams: { message: null },
@@ -62,12 +82,7 @@ export class LoginFormComponent implements OnInit, OnDestroy {
   //   return this.loginForm.controls;
   // }
 
-  onSubmit() {
-    // console.log(this.loginForm.value);
-    this.usersService.login(this.loginForm.value);
-  }
-
   ngOnDestroy() {
-    this.messageTimeout && clearTimeout(this.messageTimeout);
+    this.messageTimeout && window.clearTimeout(this.messageTimeout);
   }
 }

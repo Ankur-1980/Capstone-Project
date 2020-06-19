@@ -10,14 +10,6 @@ import { extractError } from '../helpers/functions';
 export class AuthService {
   constructor(private http: HttpClient) {}
 
-  // register(formData): Observable<any> {
-  //   return this.http.post('/api/users/register', formData).pipe(
-  //     catchError((responseError): any => {
-  //       throwError(extractError(responseError));
-  //     })
-  //   );
-  // }
-
   register(formData): Observable<any> {
     return this.http
       .post('/api/users/register', formData)
@@ -28,5 +20,13 @@ export class AuthService {
       );
   }
 
-  login() {}
+  login(formData: any) {
+    return this.http
+      .post('/api/users/login', formData)
+      .pipe(
+        catchError((resError: HttpErrorResponse) =>
+          throwError(extractError(resError))
+        )
+      );
+  }
 }

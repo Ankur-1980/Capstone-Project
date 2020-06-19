@@ -84,14 +84,6 @@ export class NewUserFormComponent implements OnInit {
   //   return this.newUserForm.controls;
   // }
 
-  // onSubmit() {
-  //   this.registered = true;
-  //   if (this.newUserForm.valid) {
-  //     // console.log('form', this.newUserForm.value);
-  //     this.usersService.addNewUser(this.newUserForm.value);
-  //   }
-  // }
-
   register() {
     if (this.newUserForm.invalid) {
       return;
@@ -104,7 +96,7 @@ export class NewUserFormComponent implements OnInit {
           queryParams: { message: 'You have been successfully registered!' },
         });
       },
-      (errors) => {
+      (errors: ApiError[]) => {
         this.errors = errors;
         console.log(this.errors);
       }
