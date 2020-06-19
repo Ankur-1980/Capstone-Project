@@ -44,3 +44,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+#Access Keys
+backend\services\s3.env.js
+backend\.env

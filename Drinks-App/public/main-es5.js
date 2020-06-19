@@ -3254,7 +3254,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             _this.glassware = data['drinks'];
           });
           this.drinkPostForm = this.fb.group({
-            // drinkPic: [''],
             name: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
             rating: [''],
             glassware: [''],
@@ -8928,23 +8927,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       }, {
         key: "postADrink",
-        value: function postADrink(_ref) {
-          var name = _ref.name,
-              description = _ref.description,
-              glassware = _ref.glassware,
-              image = _ref.image,
-              location = _ref.location,
-              rating = _ref.rating;
-          // this.http.post('/api/drink-posts', formValue);
-          // console.log(formValue);
-          // console.log(description);
+        value: function postADrink(formValue) {
+          console.log('formvalue', formValue);
           var postData = new FormData();
-          postData.append('name', name); // postData.append('description', formValue.description);
-          // postData.append('glassware', formValue.glassware);
-          // postData.append('image', formValue.image);
-          // postData.append('location', formValue.location);
-          // postData.append('rating', formValue.rating);
-
+          postData.append('name', formValue.name);
+          postData.append('description', formValue.description);
+          postData.append('glassware', formValue.glassware);
+          postData.append('image', formValue.image);
+          postData.append('location', formValue.location);
+          postData.append('rating', formValue.rating);
           console.log('postData:', postData); // this.router.navigate(['/the-feed']);
         }
       }]);

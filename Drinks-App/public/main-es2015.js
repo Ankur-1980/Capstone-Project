@@ -2673,7 +2673,6 @@ class PostDrinkFormComponent {
             this.glassware = data['drinks'];
         });
         this.drinkPostForm = this.fb.group({
-            // drinkPic: [''],
             name: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
             rating: [''],
             glassware: [''],
@@ -5505,17 +5504,15 @@ class DrinkPostService {
     getDrinks() {
         return this.http.get('/api/drink-posts');
     }
-    postADrink({ name, description, glassware, image, location, rating }) {
-        // this.http.post('/api/drink-posts', formValue);
-        // console.log(formValue);
-        // console.log(description);
+    postADrink(formValue) {
+        console.log('formvalue', formValue);
         const postData = new FormData();
-        postData.append('name', name);
-        // postData.append('description', formValue.description);
-        // postData.append('glassware', formValue.glassware);
-        // postData.append('image', formValue.image);
-        // postData.append('location', formValue.location);
-        // postData.append('rating', formValue.rating);
+        postData.append('name', formValue.name);
+        postData.append('description', formValue.description);
+        postData.append('glassware', formValue.glassware);
+        postData.append('image', formValue.image);
+        postData.append('location', formValue.location);
+        postData.append('rating', formValue.rating);
         console.log('postData:', postData);
         // this.router.navigate(['/the-feed']);
     }
