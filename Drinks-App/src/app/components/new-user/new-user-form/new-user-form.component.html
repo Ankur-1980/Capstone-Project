@@ -1,8 +1,11 @@
 <div class="background-img"></div>
 <div class="global-parent">
   <h1 class="center">New User Form</h1>
+  <div class="errors" *ngIf="errors.length > 0">
+    <span *ngFor="let error of errors">{{ error.message }}</span>
+  </div>
   <!-- <div class="error" *ngIf="warning">{{ errorMessage }}</div> -->
-  <form [formGroup]="newUserForm" (ngSubmit)="onSubmit()">
+  <form [formGroup]="newUserForm" (ngSubmit)="register()">
     <!-- first name & last name- required-->
     <div class="form-group">
       <div class="two-col">
@@ -50,6 +53,7 @@
         <span *ngIf="email.touched && email.errors?.required">
           Email is required
         </span>
+
         <!-- bio - not required -->
 
         <!-- password -1 - required -->
@@ -67,7 +71,7 @@
         </div>
         <!-- password -2- required -->
         <div class="form-group">
-          <label for="password2" for="label-control">Password:</label>
+          <label for="password2" for="label-control">Confirm Password:</label>
           <input
             type="password"
             formControlName="password2"

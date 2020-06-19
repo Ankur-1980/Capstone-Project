@@ -26,12 +26,12 @@ export class UsersService {
       .subscribe((response) => {
         if (!response.goodToGo) {
           this.errorMessage = response.message;
-          console.log(this.errorMessage);
+          // console.log(this.errorMessage);
           this.warning = response.goodToGo;
-          console.log(this.warning);
+          // console.log(this.warning);
         } else {
-          console.log(response.message);
-          console.log(response.token);
+          // console.log(response.message);
+          // console.log(response.token);
           localStorage.setItem('token', response.token);
 
           this.router.navigate(['/the-feed']);

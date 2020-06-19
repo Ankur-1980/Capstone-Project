@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators, NgForm } from '@angular/forms';
 import { UsersService } from '../../../services/users.service';
 import { NavbarService } from 'src/app/services/navbar.service';
+import { AuthService } from 'src/app/services/auth.service';
+import { Router } from '@angular/router';
+import { ApiError } from 'src/app/interfaces/api-error';
 
 @Component({
   selector: 'new-user-form',
@@ -11,11 +14,14 @@ import { NavbarService } from 'src/app/services/navbar.service';
 export class NewUserFormComponent implements OnInit {
   newUserForm: FormGroup;
   registered: boolean = false;
+  errors: ApiError[] = [];
 
   constructor(
     private fb: FormBuilder,
     private usersService: UsersService,
-    public nav: NavbarService
+    public nav: NavbarService,
+    private auth: AuthService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -78,11 +84,28 @@ export class NewUserFormComponent implements OnInit {
   //   return this.newUserForm.controls;
   // }
 
-  onSubmit() {
-    this.registered = true;
-    if (this.newUserForm.valid) {
-      // console.log('form', this.newUserForm.value);
-      this.usersService.addNewUser(this.newUserForm.value);
+  // onSubmit() {
+  //   this.registered = true;
+  //   if (this.newUserForm.valid) {
+  //     // console.log('form', this.newUserForm.value);
+  //     this.usersService.addNewUser(this.newUserForm.value);
+  //   }
+  // }
+
+  register() {
+    if (this.newUserForm.invalid) {
+      return;
     }
+    // empty errors array on submit
+    this.errors = [];
+    this.auth.register(this.newUserForm.value).subscribe(
+      (data) => {
+        this.router.navigate(['/login']);
+      },
+      (errors) => {
+        this.errors = errors;
+        console.log(this.errors);
+      }
+    );
   }
 }

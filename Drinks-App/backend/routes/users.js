@@ -42,7 +42,7 @@ users.post("/register", async (req, res) => {
 
       if (response.rows.length > 0) {
         res
-          .status(200)
+          .status(422)
           .json({ message: "email already exists", goodToGo: false });
       } else {
         database.query(

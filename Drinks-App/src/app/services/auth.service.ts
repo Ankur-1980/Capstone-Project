@@ -1,12 +1,32 @@
 import { Injectable } from '@angular/core';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Observable, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+import { extractError } from '../helpers/functions';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
-  register(formData) {}
+  // register(formData): Observable<any> {
+  //   return this.http.post('/api/users/register', formData).pipe(
+  //     catchError((responseError): any => {
+  //       throwError(extractError(responseError));
+  //     })
+  //   );
+  // }
+
+  register(formData): Observable<any> {
+    return this.http
+      .post('/api/users/register', formData)
+      .pipe(
+        catchError((resError: HttpErrorResponse) =>
+          throwError(extractError(resError))
+        )
+      );
+  }
 
   login() {}
 }
