@@ -49,9 +49,9 @@ export class LoginFormComponent implements OnInit, OnDestroy {
       return;
     }
     this.errors = [];
-    this.auth.login(this.loginForm.value).subscribe(
+    return this.auth.login(this.loginForm.value).subscribe(
       (data: Login) => {
-        console.log(data);
+        console.log(data.token);
       },
       (errors: ApiError[]) => {
         this.errors = errors;
