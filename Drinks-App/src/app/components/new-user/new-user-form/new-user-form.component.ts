@@ -100,7 +100,9 @@ export class NewUserFormComponent implements OnInit {
     this.errors = [];
     this.auth.register(this.newUserForm.value).subscribe(
       (data) => {
-        this.router.navigate(['/login']);
+        this.router.navigate(['/login'], {
+          queryParams: { message: 'You have been successfully registered!' },
+        });
       },
       (errors) => {
         this.errors = errors;
