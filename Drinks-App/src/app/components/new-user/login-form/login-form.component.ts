@@ -5,12 +5,7 @@ import { NavbarService } from 'src/app/services/navbar.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 import { ApiError } from 'src/app/interfaces/api-error';
-
-interface Login {
-  message: string;
-  goodToGo: boolean;
-  token: string;
-}
+import { Login } from '../../../interfaces/login';
 
 @Component({
   selector: 'login-form',

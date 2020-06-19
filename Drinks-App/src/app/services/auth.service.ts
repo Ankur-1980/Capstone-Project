@@ -3,6 +3,9 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { extractError } from '../helpers/functions';
+import { JwtHelperService } from '@auth0/angular-jwt';
+
+const jwt = new JwtHelperService();
 
 @Injectable({
   providedIn: 'root',
