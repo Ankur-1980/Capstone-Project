@@ -6,6 +6,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 import { ApiError } from 'src/app/interfaces/api-error';
 
+interface Login {
+  message: string;
+  goodToGo: boolean;
+  token: string;
+}
+
 @Component({
   selector: 'login-form',
   templateUrl: './login-form.component.html',
@@ -44,8 +50,8 @@ export class LoginFormComponent implements OnInit, OnDestroy {
     }
     this.errors = [];
     this.auth.login(this.loginForm.value).subscribe(
-      (token: string) => {
-        console.log(token);
+      (data: Login) => {
+        console.log(data);
       },
       (errors: ApiError[]) => {
         this.errors = errors;
