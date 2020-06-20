@@ -1,22 +1,24 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, Input } from '@angular/core';
 import { QuizQuestion } from './QuizQuestion';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-question',
   templateUrl: './question.component.html',
-  styleUrls: ['./question.component.css'],
+  styleUrls: ['./question.component.css', '../quiz.component.css'],
 })
 export class QuestionComponent implements OnInit {
+  @Input() answer: string;
   @Output() question: QuizQuestion;
+  
   totalQuestions: number;
   questionID = 0;
   currentQuestion = 0;
   questionIndex: number;
-  correctAnswer: boolean;
   hasAnswer: boolean;
   disabled: boolean;
   quizIsOver: boolean;
+  progressValue: number;
 
   allQuestions: QuizQuestion[] = [
     {
@@ -70,7 +72,7 @@ export class QuestionComponent implements OnInit {
     },
     {
       questionId: 5,
-      questionText: 'What type of cocktail driWhat is your preferred liquor?',
+      questionText: 'What is your preferred liquor?',
       options: [
         { optionValue: '1', optionText: 'Vodka' },
         { optionValue: '2', optionText: 'Tequila' },
@@ -91,7 +93,34 @@ export class QuestionComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.question = this.getQuestion;
+    this.totalQuestions = this.allQuestions.length;
+  }
+
+  displayNextQuestion() {
+    this.questionIndex = this.questionID++;
+    if (typeof document.getElementById('question') !== 'undefined' && this.getQuestionID() <= this.totalQuestions) {
+      document.getElementById('question').innerHTML = this.allQuestions[this.questionIndex]['questionText'];
+    } else {
+      this.navigateToResults();
+    }
+  }
+
+  navigateToNextQuestion(): void {
+    this.router.navigate(['quiz/question', this.getQuestionID() + 1]);
+    this.displayNextQuestion();
+  }
+
+  navigateToResults(): void {
+    this.router.navigate(['/results'], { state:
+      {
+        totalQuestions: this.totalQuestions,
+        allQuestions: this.allQuestions
+      }
+    });
+  }
+
 
   // METHODS
   getQuestionID() {

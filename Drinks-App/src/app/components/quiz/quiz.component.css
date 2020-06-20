@@ -14,11 +14,12 @@
 }  */
 
 .quiz-container {
-  width: 40%;
+  width: 50%;
   margin: 13vh auto;
   border: 2px solid rgb(236, 184, 92, 0.5);
   border-radius: 6px;
   padding: 20px;
+  margin-top: 120px;
 }
 
 /* Progress  */
@@ -43,6 +44,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .ans {
@@ -50,7 +52,7 @@
   border: 2px solid rgb(236, 184, 92);
   border-radius: 6px;
   padding: 10px;
-  margin: 0px 15px 15px 0px;
+  margin: 0px 7.5px 15px 7.5px;
 }
 
 .ans.selected {

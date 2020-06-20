@@ -7,16 +7,12 @@
     <div></div>
   </div>
   <div class="question answered">
-    <p class="txt">Question</p>
+    <p class="txt">{{question.questionText}}</p>
     <div class="ans-container">
-      <p class="ans">Answer 1</p>
-      <p class="ans selected">Answer 2</p>
-      <p class="ans">Answer 3</p>
-      <p class="ans">Answer 4</p>
+      <p class="ans" *ngFor="let option of question.options">{{option.optionText}}</p>
     </div>
-    <div class="feedback">
-      <p>Additional Feedback</p>
-      <button class="continue btn">Continue</button>
+    <div class="feedback" *ngIf="question && question.questionId !== totalQuestions">
+      <button (click)="navigateToNextQuestion()" class="continue btn">Continue</button>
     </div>
   </div>
 </div>

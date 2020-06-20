@@ -21,10 +21,6 @@ const routes: Routes = [
     component: TheFeedPostsComponent,
   },
   {
-    path: 'quiz',
-    component: QuizComponent,
-  },
-  {
     path: 'login',
     component: LoginFormComponent,
   },
