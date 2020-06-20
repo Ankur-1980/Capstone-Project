@@ -55,7 +55,7 @@ users.post("/register", async (req, res) => {
             const user = response.rows[0];
 
             const token = jwt.sign(
-              { sub: user.user_id, userName: user.userName },
+              { sub: user.user_id, username: user.username },
               "secretKey",
               { expiresIn: "2h" }
             );
@@ -103,8 +103,8 @@ users.post("/login", (req, res) => {
           user,
         });
       } else {
-        console.log("user", user);
-        const payload = { sub: user.user_id, username: user.userName };
+        console.log("user", user.username);
+        const payload = { sub: user.user_id, username: user.username };
         const token = jwt.sign(payload, "secretKey", { expiresIn: "2h" });
         res.status(200).json({
           message: "login successful",
