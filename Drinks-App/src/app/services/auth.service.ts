@@ -59,8 +59,13 @@ export class AuthService {
   }
 
   // gets the username from the encoded token
-  get userName(): string {
+  get username(): string {
     return this.decodedToken.username || null;
+  }
+
+  // gets userID from the encoded token
+  get userID(): string {
+    return this.decodedToken.userId || null;
   }
 
   // checks to see if token expiration is before current time
