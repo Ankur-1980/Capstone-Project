@@ -5,6 +5,7 @@ import { catchError, map } from 'rxjs/operators';
 import { extractError } from '../helpers/functions';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Login } from '../interfaces/login';
+import * as moment from 'moment';
 
 const jwt = new JwtHelperService();
 
@@ -46,7 +47,7 @@ export class AuthService {
     );
   }
 
-  private saveToken(token: string) {
+  private saveToken(token: string): string | null {
     const decodedToken = jwt.decodeToken(token);
     if (!decodedToken) {
       return null;
@@ -55,5 +56,19 @@ export class AuthService {
     this.decodedToken = decodedToken;
     localStorage.setItem('topShelf_token', token);
     return token;
+  }
+
+  // gets the username from the encoded token
+  get userName(): string {
+    return this.decodedToken.username || null;
+  }
+
+  // checks to see if token expiration is before current time
+  get isAuthenticated(): boolean {
+    return moment().isBefore(this.decodedToken.exp);
+  }
+
+  private get expiration() {
+    return moment.unix(this.decodedToken.exp);
   }
 }
