@@ -103,11 +103,9 @@ users.post("/login", (req, res) => {
           user,
         });
       } else {
-        const token = jwt.sign(
-          { sub: user.user_id, userName: user.userName },
-          "secretKey",
-          { expiresIn: "2h" }
-        );
+        console.log("user", user);
+        const payload = { sub: user.user_id, username: user.userName };
+        const token = jwt.sign(payload, "secretKey", { expiresIn: "2h" });
         res.status(200).json({
           message: "login successful",
           goodToGo: true,

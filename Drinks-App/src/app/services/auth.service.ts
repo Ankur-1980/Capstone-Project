@@ -12,7 +12,7 @@ const jwt = new JwtHelperService();
 class DecodedToken {
   exp: number = 0;
   username: string = '';
-  userId: string = '';
+  sub: string = '';
 }
 
 @Injectable({
@@ -55,22 +55,24 @@ export class AuthService {
 
     this.decodedToken = decodedToken;
     localStorage.setItem('topShelf_token', token);
+    console.log('decoded token', this.decodedToken);
+
     return token;
   }
 
   // gets the username from the encoded token
   get username(): string {
-    return this.decodedToken.username || null;
+    return this.decodedToken.username;
   }
 
   // gets userID from the encoded token
   get userID(): string {
-    return this.decodedToken.userId || null;
+    return this.decodedToken.sub;
   }
 
   // checks to see if token expiration is before current time
   get isAuthenticated(): boolean {
-    return moment().isBefore(this.decodedToken.exp);
+    return moment().isBefore(this.expiration);
   }
 
   private get expiration() {
