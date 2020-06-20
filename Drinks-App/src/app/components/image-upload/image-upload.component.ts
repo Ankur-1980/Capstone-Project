@@ -45,7 +45,9 @@ export class ImageUploadComponent implements OnInit, OnDestroy {
     this.selectedImage.status = 'LOADED';
   };
 
-  uploadImage() {}
+  uploadImage() {
+    this.selectedImage.status = 'PENDING';
+  }
 
   cancelImage() {}
 }
