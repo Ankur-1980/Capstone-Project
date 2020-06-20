@@ -26,4 +26,6 @@ export class UserProfileComponent implements OnInit {
   logOut() {
     this.auth.logOut();
   }
+
+  deletePost(postId) {}
 }

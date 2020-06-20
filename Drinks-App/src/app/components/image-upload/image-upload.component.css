@@ -1,0 +1,32 @@
+input[type="file"] {
+  display: none;
+}
+
+.btn {
+  padding: 5px;
+  background-color: rgb(236, 184, 92);
+  margin: 10px;
+}
+
+.image-upload-container {
+  cursor: pointer;
+}
+
+.img-preview-container {
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.img-loading-overlay {
+  padding: 20px;
+}
+
+.img-preview {
+  background: center center no-repeat;
+  background-size: contain;
+  height: 100px;
+}
+
+img {
+  height: 100%;
+}

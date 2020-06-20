@@ -21,6 +21,12 @@
         src="../../../assets/lefteris-kallergis-QsmdVT5pTMw-unsplash.jpg"
         alt=""
       />
+      <!-- post actions -->
+      <div class="post-actions">
+        <a routerLink="/post-details/{{ post.postID }}">More Details</a>
+        <a routerLink="/post-details/{{ post.postID }}/edit">Edit</a>
+        <button (click)="deletePost(post.postID)">Delete</button>
+      </div>
     </div>
   </div>
 </div>

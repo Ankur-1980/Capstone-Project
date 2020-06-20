@@ -1,0 +1,18 @@
+<div>
+  <label class="image-upload-container btn">
+    <span>Select an Image</span>
+    <input type="file" accept="image/*" (change)="loadImage($event)" />
+  </label>
+
+  <div *ngIf="selectedImage" class="img-preview-container">
+    <div class="img-preview">
+      <img [src]="selectedImage?.src" alt="image preview" />
+    </div>
+  </div>
+  <div *ngIf="selectedImage">
+    <button (click)="uploadImage()" type="button">Upload Image</button>
+  </div>
+  <div (click)="cancelImage()" *ngIf="selectedImage">
+    <button type="button">Cancel</button>
+  </div>
+</div>
