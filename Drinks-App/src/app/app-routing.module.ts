@@ -8,33 +8,36 @@ import { LoginFormComponent } from './components/new-user/login-form/login-form.
 import { NewUserFormComponent } from './components/new-user/new-user-form/new-user-form.component';
 import { PostDrinkFormComponent } from './components/post-drink-form/post-drink-form.component';
 import { TheFeedPostsComponent } from './components/the-feed/the-feed-posts/the-feed-posts.component';
-import { AuthGuard } from './guard/auth.guard';
+import { AuthGuard } from './services/auth-guard.guard';
+import { GuestGuard } from './services/guest.guard';
 
 const routes: Routes = [
   { path: '', component: LoginFormComponent },
   {
     path: 'profile',
     component: UserProfileComponent,
+    canActivate: [AuthGuard],
   },
   {
     path: 'the-feed',
     component: TheFeedPostsComponent,
+    canActivate: [AuthGuard],
   },
-  {
-    path: 'quiz',
-    component: QuizComponent,
-  },
+
   {
     path: 'login',
     component: LoginFormComponent,
+    canActivate: [GuestGuard],
   },
   {
     path: 'register',
     component: NewUserFormComponent,
+    canActivate: [GuestGuard],
   },
   {
     path: 'drink-post',
     component: PostDrinkFormComponent,
+    canActivate: [AuthGuard],
   },
   // // path to other users
   // {
@@ -46,6 +49,7 @@ const routes: Routes = [
     path: 'quiz',
     loadChildren: () =>
       import('./components/quiz/quiz.module').then((m) => m.QuizModule),
+    canActivate: [AuthGuard],
   },
   {
     path: 'preferences',
@@ -53,6 +57,7 @@ const routes: Routes = [
       import('./components/preferences/preferences.module').then(
         (module) => module.PreferencesModule
       ),
+    canActivate: [AuthGuard],
   },
   {
     path: 'recipe-book',
@@ -60,6 +65,7 @@ const routes: Routes = [
       import('./components/recipe-book/recipe-book.module').then(
         (module) => module.RecipeBookModule
       ),
+    canActivate: [AuthGuard],
   },
   {
     path: 'user-recipes',
@@ -67,6 +73,7 @@ const routes: Routes = [
       import('./components/user-recipes/user-recipes.module').then(
         (module) => module.UserRecipesModule
       ),
+    canActivate: [AuthGuard],
   },
 
   {

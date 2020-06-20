@@ -42,7 +42,7 @@ users.post("/register", async (req, res) => {
 
       if (response.rows.length > 0) {
         res
-          .status(200)
+          .status(422)
           .json({ message: "email already exists", goodToGo: false });
       } else {
         database.query(
@@ -53,11 +53,15 @@ users.post("/register", async (req, res) => {
               throw err;
             }
             const user = response.rows[0];
-            const payload = { subject: user.user_id };
-            const token = jwt.sign(payload, "secretKey");
+
+            const token = jwt.sign(
+              { sub: user.user_id, username: user.username },
+              "secretKey",
+              { expiresIn: "2h" }
+            );
             // console.log(response.rows);
             // res.status(200).send({ token });
-            res.send({
+            res.status(200).json({
               message: "You successfully registered, please log in",
               goodToGo: true,
               token,
@@ -87,20 +91,21 @@ users.post("/login", (req, res) => {
       // console.log("rows", response.rows);
       if (response.rows.length <= 0) {
         res.status(404).json({
-          message: err.message,
+          message: "username not found",
           goodToGo: false,
           user,
         });
-      }
-      if (user.password != password) {
+        return;
+      } else if (user.password != password) {
         res.status(404).json({
-          message: err.message,
+          message: "password incorrect",
           goodToGo: false,
           user,
         });
       } else {
-        const payload = { subject: user.user_id };
-        const token = jwt.sign(payload, "secretKey");
+        console.log("user", user.username);
+        const payload = { sub: user.user_id, username: user.username };
+        const token = jwt.sign(payload, "secretKey", { expiresIn: "2h" });
         res.status(200).json({
           message: "login successful",
           goodToGo: true,
@@ -109,5 +114,24 @@ users.post("/login", (req, res) => {
       }
     });
 });
+
+// const parseToken = (token) => {
+//   try {
+//     return jwt.verify(token.split(" ")[1], config.JWT_SECRET);
+//   } catch (error) {
+//     return null;
+//   }
+// };
+
+// const notAuthorized = (res) => {
+//   return res.status(401).send({
+//     errors: [
+//       {
+//         title: "Not Authorized!",
+//         detail: "You need to log in to get an access!",
+//       },
+//     ],
+//   });
+// };
 
 module.exports = users;
