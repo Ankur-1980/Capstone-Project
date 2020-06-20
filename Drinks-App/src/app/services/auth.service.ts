@@ -37,12 +37,7 @@ export class AuthService {
   login(formData: any) {
     return this.http.post('/api/users/login', formData).pipe(
       map((data: Login) => {
-        const savedToken = this.saveToken(data.token);
-        if (!savedToken) {
-          console.log('ERROR');
-          return null;
-        }
-
+        this.saveToken(data.token);
         return data.token;
       }),
       catchError((resError: HttpErrorResponse) =>
@@ -58,7 +53,7 @@ export class AuthService {
     }
 
     this.decodedToken = decodedToken;
-    localStorage.setItem('topShelf', token);
+    localStorage.setItem('topShelf_token', token);
     return token;
   }
 }
