@@ -1,15 +1,9 @@
-input[type="file"] {
+input {
   display: none;
 }
 
-.btn {
-  padding: 5px;
-  background-color: rgb(236, 184, 92);
-  margin: 10px;
-}
-
-.image-upload-container {
-  cursor: pointer;
+.spinner-container {
+  padding: 20px;
 }
 
 .img-preview-container {
@@ -24,7 +18,15 @@ input[type="file"] {
 .img-preview {
   background: center center no-repeat;
   background-size: contain;
-  height: 100px;
+  height: 116px;
+}
+
+/* &-error {
+      height: 0;
+    } */
+
+img {
+  height: 100%;
 }
 
 img {
