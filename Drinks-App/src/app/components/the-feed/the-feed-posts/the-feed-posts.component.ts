@@ -14,15 +14,15 @@ export class TheFeedPostsComponent implements OnInit {
   constructor(public auth: AuthService) {}
 
   ngOnInit(): void {
-    this.isAuth();
+    // this.isAuth();
   }
 
   toggle() {
     this.hide = !this.hide;
   }
-  isAuth() {
-    console.log(this.auth.username);
-    console.log(this.auth.isAuthenticated);
-    console.log(this.auth.userID);
-  }
+  // isAuth() {
+  //   console.log(this.auth.decodedToken);
+  //   // console.log(this.auth.isAuthenticated);
+  //   // console.log(this.auth.userID);
+  // }
 }

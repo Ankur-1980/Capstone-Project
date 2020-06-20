@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DrinkPostService } from 'src/app/services/drink-post.service';
 import { MOCK_POSTS } from 'src/app/MOCK_DATA/mock-posts';
 import { UsersService } from 'src/app/services/users.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'user-profile',
@@ -12,10 +13,7 @@ export class UserProfileComponent implements OnInit {
   posts;
   mockPosts = MOCK_POSTS;
 
-  constructor(
-    private drinkPosts: DrinkPostService,
-    public userService: UsersService
-  ) {}
+  constructor(private drinkPosts: DrinkPostService, public auth: AuthService) {}
 
   ngOnInit(): void {
     // this.drinkPosts.getDrinks().subscribe((data) => {
@@ -25,7 +23,7 @@ export class UserProfileComponent implements OnInit {
     // });
   }
 
-  // logOut(){
-  //   this.userSe
-  // }
+  logOut() {
+    this.auth.logOut();
+  }
 }

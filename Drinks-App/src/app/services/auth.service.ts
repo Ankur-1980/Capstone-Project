@@ -6,6 +6,7 @@ import { extractError } from '../helpers/functions';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Login } from '../interfaces/login';
 import * as moment from 'moment';
+import { Router } from '@angular/router';
 
 const jwt = new JwtHelperService();
 
@@ -19,9 +20,9 @@ class DecodedToken {
   providedIn: 'root',
 })
 export class AuthService {
-  private decodedToken: DecodedToken;
+  decodedToken: DecodedToken;
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private router: Router) {
     this.decodedToken = new DecodedToken();
   }
 
@@ -45,6 +46,29 @@ export class AuthService {
         throwError(extractError(resError))
       )
     );
+  }
+
+  logOut() {
+    localStorage.removeItem('topShelf_token');
+    this.decodedToken = new DecodedToken();
+    this.router.navigate(['/login'], {
+      queryParams: { message: 'You are logged out' },
+    });
+  }
+
+  checkAuth(): boolean {
+    const authToken = localStorage.getItem('topShelf_token');
+    if (!authToken) {
+      return false;
+    }
+    const decodedToken = jwt.decodeToken(authToken);
+    if (!decodedToken) {
+      return false;
+    }
+
+    this.decodedToken = decodedToken;
+
+    return true;
   }
 
   private saveToken(token: string): string | null {

@@ -45,9 +45,8 @@ export class LoginFormComponent implements OnInit, OnDestroy {
     }
     this.errors = [];
     return this.auth.login(this.loginForm.value).subscribe(
-      (data) => {
+      () => {
         this.router.navigate(['/the-feed']);
-        console.log(data);
       },
       (errors: ApiError[]) => {
         this.errors = errors;
@@ -67,7 +66,7 @@ export class LoginFormComponent implements OnInit, OnDestroy {
         });
 
         this.message = '';
-      }, 2000);
+      }, 3000);
     });
   }
 
