@@ -2338,14 +2338,15 @@ class LoginFormComponent {
             loginDate: this.fb.control(new Date()),
         });
     }
-    onSubmit() {
+    onLogin() {
         // console.log(this.loginForm.value);
         if (this.loginForm.invalid) {
             return;
         }
         this.errors = [];
         return this.auth.login(this.loginForm.value).subscribe((data) => {
-            console.log(data.token);
+            this.router.navigate(['/the-feed']);
+            console.log(data);
         }, (errors) => {
             this.errors = errors;
         });
@@ -2387,7 +2388,7 @@ LoginFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, LoginFormComponent_div_4_Template, 2, 1, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, LoginFormComponent_div_5_Template, 2, 1, "div", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "form", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function LoginFormComponent_Template_form_ngSubmit_6_listener() { return ctx.onSubmit(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function LoginFormComponent_Template_form_ngSubmit_6_listener() { return ctx.onLogin(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "label", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Username");
@@ -5626,6 +5627,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const jwt = new _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_4__["JwtHelperService"]();
+class DecodedToken {
+    constructor() {
+        this.exp = 0;
+        this.username = '';
+        this.userId = '';
+    }
+}
 class AuthService {
     constructor(http) {
         this.http = http;
@@ -5636,9 +5644,16 @@ class AuthService {
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])((resError) => Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["throwError"])(Object(_helpers_functions__WEBPACK_IMPORTED_MODULE_3__["extractError"])(resError))));
     }
     login(formData) {
-        return this.http
-            .post('/api/users/login', formData)
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])((resError) => Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["throwError"])(Object(_helpers_functions__WEBPACK_IMPORTED_MODULE_3__["extractError"])(resError))));
+        return this.http.post('/api/users/login', formData).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])((data) => {
+            this.saveToken(data.token);
+            return data.token;
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])((resError) => Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["throwError"])(Object(_helpers_functions__WEBPACK_IMPORTED_MODULE_3__["extractError"])(resError))));
+    }
+    saveToken(token) {
+        const decodedToken = jwt.decodeToken(token);
+        if (!decodedToken) {
+            return null;
+        }
     }
 }
 AuthService.ɵfac = function AuthService_Factory(t) { return new (t || AuthService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClient"])); };

@@ -20,7 +20,9 @@ class DecodedToken {
 export class AuthService {
   private decodedToken: DecodedToken;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    this.decodedToken = new DecodedToken();
+  }
 
   register(formData): Observable<any> {
     return this.http
@@ -35,7 +37,12 @@ export class AuthService {
   login(formData: any) {
     return this.http.post('/api/users/login', formData).pipe(
       map((data: Login) => {
-        this.saveToken(data.token);
+        const savedToken = this.saveToken(data.token);
+        if (!savedToken) {
+          console.log('ERROR');
+          return null;
+        }
+
         return data.token;
       }),
       catchError((resError: HttpErrorResponse) =>
@@ -44,7 +51,14 @@ export class AuthService {
     );
   }
 
-  private saveToken(token) {
-    alert('I am saving token!');
+  private saveToken(token: string) {
+    const decodedToken = jwt.decodeToken(token);
+    if (!decodedToken) {
+      return null;
+    }
+
+    this.decodedToken = decodedToken;
+    localStorage.setItem('topShelf', token);
+    return token;
   }
 }

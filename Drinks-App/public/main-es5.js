@@ -2594,8 +2594,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           });
         }
       }, {
-        key: "onSubmit",
-        value: function onSubmit() {
+        key: "onLogin",
+        value: function onLogin() {
           var _this = this;
 
           // console.log(this.loginForm.value);
@@ -2605,7 +2605,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this.errors = [];
           return this.auth.login(this.loginForm.value).subscribe(function (data) {
-            console.log(data.token);
+            _this.router.navigate(['/the-feed']);
+
+            console.log(data);
           }, function (errors) {
             _this.errors = errors;
           });
@@ -2683,7 +2685,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "form", 4);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function LoginFormComponent_Template_form_ngSubmit_6_listener() {
-            return ctx.onSubmit();
+            return ctx.onLogin();
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 5);
@@ -9163,6 +9165,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var jwt = new _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_4__["JwtHelperService"]();
 
+    var DecodedToken = function DecodedToken() {
+      _classCallCheck(this, DecodedToken);
+
+      this.exp = 0;
+      this.username = '';
+      this.userId = '';
+    };
+
     var AuthService = /*#__PURE__*/function () {
       function AuthService(http) {
         _classCallCheck(this, AuthService);
@@ -9180,9 +9190,24 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "login",
         value: function login(formData) {
-          return this.http.post('/api/users/login', formData).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(function (resError) {
+          var _this21 = this;
+
+          return this.http.post('/api/users/login', formData).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (data) {
+            _this21.saveToken(data.token);
+
+            return data.token;
+          }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(function (resError) {
             return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["throwError"])(Object(_helpers_functions__WEBPACK_IMPORTED_MODULE_3__["extractError"])(resError));
           }));
+        }
+      }, {
+        key: "saveToken",
+        value: function saveToken(token) {
+          var decodedToken = jwt.decodeToken(token);
+
+          if (!decodedToken) {
+            return null;
+          }
         }
       }]);
 
@@ -9371,45 +9396,45 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(FavoritesService, [{
         key: "addToFavorites",
         value: function addToFavorites(drink) {
-          var _this21 = this;
+          var _this22 = this;
 
           console.log('service', drink);
           this.http.post('/api/recipes', drink).subscribe(function (response) {
             console.log(response.message);
 
-            _this21.favorites.push(drink);
+            _this22.favorites.push(drink);
 
-            _this21.favoritesUpdated.next(_toConsumableArray(_this21.favorites)); // console.log('service', this.favorites);
+            _this22.favoritesUpdated.next(_toConsumableArray(_this22.favorites)); // console.log('service', this.favorites);
 
           });
         }
       }, {
         key: "userRecipes",
         value: function userRecipes(recipe) {
-          var _this22 = this;
+          var _this23 = this;
 
           console.log('service', recipe);
           this.http.post('/api/recipes/created', recipe).subscribe(function (response) {
             console.log(response.message);
 
-            _this22.favorites.push(recipe);
+            _this23.favorites.push(recipe);
 
-            _this22.favoritesUpdated.next(_toConsumableArray(_this22.favorites));
+            _this23.favoritesUpdated.next(_toConsumableArray(_this23.favorites));
 
-            _this22.router.navigate(['/preferences']); // console.log('service', this.favorites);
+            _this23.router.navigate(['/preferences']); // console.log('service', this.favorites);
 
           });
         }
       }, {
         key: "getFavorites",
         value: function getFavorites() {
-          var _this23 = this;
+          var _this24 = this;
 
           this.http.get('/api/recipes').subscribe(function (response) {
             console.log(response.message);
-            _this23.favorites = response.items;
+            _this24.favorites = response.items;
 
-            _this23.favoritesUpdated.next(_toConsumableArray(_this23.favorites));
+            _this24.favoritesUpdated.next(_toConsumableArray(_this24.favorites));
           });
         }
       }, {
@@ -9420,31 +9445,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "removeFromFavorites",
         value: function removeFromFavorites(drink) {
-          var _this24 = this;
+          var _this25 = this;
 
           // console.log('service', drinkId);
           var parsedId = drink.idDrink;
           this.http["delete"]("/api/recipes/".concat(parsedId)).subscribe(function (response) {
             console.log(response.message);
-            _this24.favorites = _this24.favorites.filter(function (fav) {
+            _this25.favorites = _this25.favorites.filter(function (fav) {
               return fav.id_drink !== parsedId;
             });
 
-            _this24.favoritesUpdated.next(_toConsumableArray(_this24.favorites));
+            _this25.favoritesUpdated.next(_toConsumableArray(_this25.favorites));
           });
         }
       }, {
         key: "deleteFromPref",
         value: function deleteFromPref(drinkId) {
-          var _this25 = this;
+          var _this26 = this;
 
           this.http["delete"]("/api/recipes/".concat(drinkId)).subscribe(function (response) {
             console.log(response.message);
-            _this25.favorites = _this25.favorites.filter(function (fav) {
+            _this26.favorites = _this26.favorites.filter(function (fav) {
               return fav.id_drink !== drinkId;
             });
 
-            _this25.favoritesUpdated.next(_toConsumableArray(_this25.favorites));
+            _this26.favoritesUpdated.next(_toConsumableArray(_this26.favorites));
           });
         } // getFavorites() {
         //   return this.favorites;
@@ -9724,26 +9749,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "addNewUser",
         value: function addNewUser(formValue) {
-          var _this26 = this;
+          var _this27 = this;
 
           this.http.post('/api/users/register', formValue).subscribe(function (response) {
             if (!response.goodToGo) {
-              _this26.errorMessage = response.message; // console.log(this.errorMessage);
+              _this27.errorMessage = response.message; // console.log(this.errorMessage);
 
-              _this26.warning = response.goodToGo; // console.log(this.warning);
+              _this27.warning = response.goodToGo; // console.log(this.warning);
             } else {
               // console.log(response.message);
               // console.log(response.token);
               localStorage.setItem('token', response.token);
 
-              _this26.router.navigate(['/the-feed']);
+              _this27.router.navigate(['/the-feed']);
             }
           });
         }
       }, {
         key: "login",
         value: function login(formValue) {
-          var _this27 = this;
+          var _this28 = this;
 
           this.http.post('api/users/login', formValue).subscribe(function (response) {
             // console.log('service', response.user);
@@ -9755,7 +9780,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               console.log(response.token);
               localStorage.setItem('token', response.token);
 
-              _this27.router.navigate(['/the-feed']);
+              _this28.router.navigate(['/the-feed']);
             }
           });
         }
