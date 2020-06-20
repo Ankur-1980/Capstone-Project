@@ -1,11 +1,6 @@
 import { Injectable } from '@angular/core';
 import {
   CanActivate,
-  CanActivateChild,
-  CanDeactivate,
-  CanLoad,
-  Route,
-  UrlSegment,
   ActivatedRouteSnapshot,
   RouterStateSnapshot,
   UrlTree,
@@ -17,7 +12,7 @@ import { AuthService } from './auth.service';
 @Injectable({
   providedIn: 'root',
 })
-export class AuthGuard implements CanActivate {
+export class GuestGuard implements CanActivate {
   constructor(private auth: AuthService, private router: Router) {}
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
@@ -26,10 +21,10 @@ export class AuthGuard implements CanActivate {
 
   checkIfCanNavigate(url: string): boolean {
     if (this.auth.isAuthenticated) {
-      return true;
+      this.router.navigate(['/the-feed']);
+      return false;
     }
-    this.auth.redirectUrl = url;
-    this.router.navigate(['/login']);
-    return false;
+
+    return true;
   }
 }

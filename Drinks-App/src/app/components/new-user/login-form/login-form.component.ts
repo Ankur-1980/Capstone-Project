@@ -46,7 +46,12 @@ export class LoginFormComponent implements OnInit, OnDestroy {
     this.errors = [];
     return this.auth.login(this.loginForm.value).subscribe(
       () => {
-        this.router.navigate(['/the-feed']);
+        if (this.auth.redirectUrl) {
+          this.router.navigate([this.auth.redirectUrl]);
+          this.auth.redirectUrl = null;
+        } else {
+          this.router.navigate(['/the-feed']);
+        }
       },
       (errors: ApiError[]) => {
         this.errors = errors;

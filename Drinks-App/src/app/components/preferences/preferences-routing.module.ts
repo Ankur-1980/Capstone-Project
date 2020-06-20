@@ -5,28 +5,33 @@ import { PreferencesBartendersComponent } from './preferences-bartenders/prefere
 import { PreferencesHomeBarComponent } from './preferences-home-bar/preferences-home-bar.component';
 import { PreferencesLocationsComponent } from './preferences-locations/preferences-locations.component';
 import { PreferencesDrinksComponent } from './preferences-drinks/preferences-drinks.component';
+import { AuthGuard } from 'src/app/services/auth-guard.guard';
 
 const routes: Routes = [
   {
     path: '',
     component: PreferencesMainComponent,
   },
-  {
-    path: 'bartenders',
-    component: PreferencesBartendersComponent,
-  },
-  {
-    path: 'home-bar',
-    component: PreferencesHomeBarComponent,
-  },
-  {
-    path: 'locations',
-    component: PreferencesLocationsComponent,
-  },
-  {
-    path: 'drinks',
-    component: PreferencesDrinksComponent,
-  },
+  // {
+  //   path: 'bartenders',
+  //   component: PreferencesBartendersComponent,
+  //   canActivate: [AuthGuard],
+  // },
+  // {
+  //   path: 'home-bar',
+  //   component: PreferencesHomeBarComponent,
+  //   canActivate: [AuthGuard],
+  // },
+  // {
+  //   path: 'locations',
+  //   component: PreferencesLocationsComponent,
+  //   canActivate: [AuthGuard],
+  // },
+  // {
+  //   path: 'drinks',
+  //   component: PreferencesDrinksComponent,
+  //   canActivate: [AuthGuard],
+  // },
 ];
 
 @NgModule({
