@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Item } from './item';
 import { Subject } from 'rxjs';
 import { AuthService } from 'src/app/services/auth.service';
@@ -14,8 +14,14 @@ export class PreferencesService {
   constructor(private http: HttpClient, private auth: AuthService) {}
 
   getItems() {
+    let headers = new HttpHeaders();
+    headers = headers.set(
+      'authorization',
+      localStorage.getItem('topShelf_token')
+    );
+
     this.http
-      .get<{ message: string; items: any }>('/api/preferences')
+      .get<{ message: string; items: any }>('/api/preferences', { headers })
       .subscribe((data) => {
         console.log(data.message);
         this.items = data.items;
@@ -29,9 +35,16 @@ export class PreferencesService {
 
   addItems(formValue) {
     console.log('service', formValue);
+    let headers = new HttpHeaders();
+    headers = headers.set(
+      'authorization',
+      localStorage.getItem('topShelf_token')
+    );
 
     this.http
-      .post<{ message: string; items: any }>('/api/preferences', formValue)
+      .post<{ message: string; items: any }>('/api/preferences', formValue, {
+        headers,
+      })
       .subscribe((response) => {
         console.log(response.message);
         this.itemsUpdated.next(response.items);

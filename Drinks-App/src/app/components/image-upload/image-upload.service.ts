@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ImageSnippet } from './image-upload.component';
 
 @Injectable({
@@ -16,9 +16,18 @@ export class ImageUploadService {
 
     formData.append('image', file);
 
-    console.log(formData);
+    let headers = new HttpHeaders();
+    headers = headers.set('content-type', 'multipart/form-data');
 
-    return this.http.post('/api/drink-posts', formData);
+    return this.http
+      .post('/api/drink-posts/images', formData, { headers })
+      .subscribe((response) => {
+        console.log(response);
+      });
+
+    // console.log('getImage', formData.get('image'));
+
+    // return this.http.post('/api/drink-posts/images', formData.get('image'));
   }
 }
 

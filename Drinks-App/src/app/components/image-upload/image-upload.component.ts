@@ -36,7 +36,7 @@ export class ImageUploadComponent {
     console.log('component firing?');
 
     this.selectedImage.status = 'PENDING';
-
+    // hello
     this.imageService.uploadImage(this.selectedImage);
     // .subscribe(
     //   (uploadedImage: any) => {

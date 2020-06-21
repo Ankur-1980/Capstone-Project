@@ -1,35 +1,12 @@
 const preferences = require("express").Router();
 const database = require("../services/connection");
+const verifyToken = require("../services/verifyToken");
 
-preferences.get("/", (req, res) => {
+preferences.get("/", verifyToken, (req, res) => {
   database.query("SELECT * FROM preferences").then((result) => {
     res.status(200).json({ message: "Fetched Items", items: result.rows });
   });
 });
-
-// preferences.get("/home-bar", (req, res) => {
-//   database
-//     .query("SELECT * FROM preferences WHERE preference_cat = 'home_bar'")
-//     .then((result) => {
-//       res.status(200).json({ message: "Fetched Items", items: result.rows });
-//     });
-// });
-
-// preferences.get("/locations", (req, res) => {
-//   database
-//     .query("SELECT * FROM preferences WHERE preference_cat = 'places'")
-//     .then((result) => {
-//       res.status(200).json({ message: "Fetched Items", items: result.rows });
-//     });
-// });
-
-// preferences.get("/bartenders", (req, res) => {
-//   database
-//     .query("SELECT * FROM preferences WHERE preference_cat = 'bartenders'")
-//     .then((result) => {
-//       res.status(200).json({ message: "Fetched Items", items: result.rows });
-//     });
-// });
 
 preferences.post("/", (req, res) => {
   console.log(req.body);
@@ -59,3 +36,27 @@ preferences.delete("/:id", (req, res) => {
 });
 
 module.exports = preferences;
+
+// preferences.get("/home-bar", (req, res) => {
+//   database
+//     .query("SELECT * FROM preferences WHERE preference_cat = 'home_bar'")
+//     .then((result) => {
+//       res.status(200).json({ message: "Fetched Items", items: result.rows });
+//     });
+// });
+
+// preferences.get("/locations", (req, res) => {
+//   database
+//     .query("SELECT * FROM preferences WHERE preference_cat = 'places'")
+//     .then((result) => {
+//       res.status(200).json({ message: "Fetched Items", items: result.rows });
+//     });
+// });
+
+// preferences.get("/bartenders", (req, res) => {
+//   database
+//     .query("SELECT * FROM preferences WHERE preference_cat = 'bartenders'")
+//     .then((result) => {
+//       res.status(200).json({ message: "Fetched Items", items: result.rows });
+//     });
+// });

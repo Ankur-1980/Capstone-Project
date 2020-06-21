@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const upload = require("./services/file-upload");
 
 const PORT = process.env.PORT || 3000;
 
@@ -7,6 +8,8 @@ const recipes = require("./routes/recipes");
 const users = require("./routes/users");
 const preferences = require("./routes/preferences");
 const drinkPosts = require("./routes/drink-posts");
+
+// app.use(upload.array("filepond", 1));
 
 // things coming from front end will be secure
 app.use(express.urlencoded({ extended: false }));

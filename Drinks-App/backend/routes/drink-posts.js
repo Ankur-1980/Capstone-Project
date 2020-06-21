@@ -10,16 +10,20 @@ drinkPosts.get("/", (req, res) => {
     .then((response) => res.status(200).json(response.rows));
 });
 
-drinkPosts.post("/", (req, res) => {
-  console.log(req);
+drinkPosts.post("/", singleUpload, (req, res) => {
+  console.log("working?");
 
-  // // console.log("Drink Posts Post working?");
-  // singleUpload(req, res, (err) => {
-  //   if (err) {
-  //     return res.status(422).send({ message: err.message });
-  //   }
-  //   return res.json({ imageUrl: req.file.location });
-  // });
+  console.log("req.body", req.body);
+});
+
+drinkPosts.post("/images", (req, res) => {
+  console.log("Images?");
+  console.log("req.body", req.body);
+  console.log("req.header", req.headers);
+  console.log("req.file", req.file);
+  console.log("req.files", req.files);
+
+  // console.log(req.body);
 });
 
 module.exports = drinkPosts;

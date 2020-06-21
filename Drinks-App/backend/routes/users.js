@@ -26,11 +26,6 @@ users.post("/register", async (req, res) => {
     date,
   } = req.body;
 
-  // const dbErrors = [];
-
-  // const hashedPassword = await bcrypt.hash(password, 10);
-  // console.log(hashedPassword);
-
   database.query(
     "SELECT * FROM users WHERE email = $1",
     [email],

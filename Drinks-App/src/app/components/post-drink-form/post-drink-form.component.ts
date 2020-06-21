@@ -2,8 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RecipeApiService } from 'src/app/services/recipeAPI.service';
 import { DrinkPostService } from 'src/app/services/drink-post.service';
-import { ImageSnippet } from '../../interfaces/image-snippet';
-// import { mimeType } from './mime-type.validator';
+import { AuthService } from 'src/app/services/auth.service';
+
+export class ImageSnippet {
+  constructor(public src: string, public file: File) {}
+}
 
 @Component({
   selector: 'post-drink-form',
@@ -13,13 +16,12 @@ import { ImageSnippet } from '../../interfaces/image-snippet';
 export class PostDrinkFormComponent implements OnInit {
   drinkPostForm: FormGroup;
   glassware: string;
-  imagePreview;
-  selectedFile: ImageSnippet;
 
   constructor(
     private fb: FormBuilder,
     private recipeApi: RecipeApiService,
-    private drinkPostService: DrinkPostService
+    private drinkPostService: DrinkPostService,
+    private auth: AuthService
   ) {}
 
   ngOnInit(): void {
@@ -33,43 +35,12 @@ export class PostDrinkFormComponent implements OnInit {
       glassware: [''],
       description: [''],
       location: [''],
-      image: [null, [Validators.required]],
+      image: [null],
+      user_id: [this.auth.userID],
     });
   }
 
   onSubmit() {
     this.drinkPostService.postADrink(this.drinkPostForm.value);
   }
-
-  pickImage(event: Event) {
-    // casting as HTMLInputElement tells typescript to give access to the files method
-    const file = (event.target as HTMLInputElement).files[0];
-    this.drinkPostForm.patchValue({ image: file });
-    // updates the form
-    this.drinkPostForm.get('image').updateValueAndValidity();
-    // FileReader is built into JS
-    const reader = new FileReader();
-    // function will get called after the file is done loading
-    reader.onload = () => {
-      this.imagePreview = reader.result;
-    };
-    // load the file
-    reader.readAsDataURL(file);
-  }
-
-  // pickImage(event: Event) {
-  //   const file: File = (event.target as HTMLInputElement).files[0];
-  //   this.drinkPostForm.patchValue({ image: file });
-  //   // updates the form
-  //   this.drinkPostForm.get('image').updateValueAndValidity();
-
-  //   const reader = new FileReader();
-
-  //   reader.addEventListener('load', (event: any) => {
-  //     console.log('event Target', event.target.result);
-
-  //     this.selectedFile = new ImageSnippet(event.target.result, file);
-  //   });
-  //   reader.readAsDataURL(file);
-  // }
 }

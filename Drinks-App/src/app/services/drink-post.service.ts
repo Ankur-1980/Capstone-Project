@@ -14,16 +14,19 @@ export class DrinkPostService {
 
   postADrink(formValue) {
     console.log('formvalue', formValue);
+    this.http.post('/api/drink-posts', formValue).subscribe((response) => {
+      console.log(response);
+    });
 
-    const postData = new FormData();
-    postData.append('name', formValue.name);
-    postData.append('description', formValue.description);
-    postData.append('glassware', formValue.glassware);
-    postData.append('image', formValue.image);
-    postData.append('location', formValue.location);
-    postData.append('rating', formValue.rating);
+    // const postData = new FormData();
+    // postData.append('name', formValue.name);
+    // postData.append('description', formValue.description);
+    // postData.append('glassware', formValue.glassware);
+    // postData.append('image', formValue.image);
+    // postData.append('location', formValue.location);
+    // postData.append('rating', formValue.rating);
 
-    console.log('postData:', postData);
+    // console.log('postData:', postData);
 
     // this.router.navigate(['/the-feed']);
   }
