@@ -1,16 +1,16 @@
 const jwt = require("jsonwebtoken");
 
 const verifyToken = (req, res, next) => {
-  console.log("verify", req.headers.authorization);
+  // console.log("verify", req.headers.authorization);
 
   if (!req.headers.authorization) {
     return res.status(401).send("unauthorized request");
   }
   let token = req.headers.authorization.split(" ")[0];
-  console.log("token", token);
+  // console.log("token", token);
 
   if (token === "null") {
-    console.log("if working?");
+    // console.log("if working?");
 
     return res.status(401).send("unauthorized request");
   }
@@ -29,7 +29,7 @@ const verifyToken = (req, res, next) => {
     }
   });
 
-  console.log("payload", payload);
+  // console.log("payload", payload);
   if (!payload) {
     return res.status(401).send("unauthorized request");
   }

@@ -80,7 +80,7 @@ export class AuthService {
 
     this.decodedToken = decodedToken;
     localStorage.setItem('topShelf_token', token);
-    console.log('decoded token', this.decodedToken);
+    // console.log('decoded token', this.decodedToken);
 
     return token;
   }

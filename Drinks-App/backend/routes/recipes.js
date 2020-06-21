@@ -1,10 +1,13 @@
 const recipes = require("express").Router();
 const database = require("../services/connection");
+const verifyToken = require("../services/verifyToken");
 
 recipes.get("/", (req, res) => {
-  database.query("SELECT * FROM saved_recipes_api").then((result) => {
-    res.status(200).json({ message: "Fetched Items", items: result.rows });
-  });
+  database
+    .query("SELECT * FROM saved_recipes_api where user_id = $1", [req.userId])
+    .then((result) => {
+      res.status(200).json({ message: "Fetched Recipes", items: result.rows });
+    });
 });
 
 recipes.post("/", (req, res) => {
@@ -86,11 +89,17 @@ recipes.post("/", (req, res) => {
       ]
     )
     .then(() => {
-      database.query("SELECT * FROM saved_recipes_api").then((response) => {
-        // console.log(response.rows);
+      database
+        .query("SELECT * FROM saved_recipes_api where user_id = $1", [
+          req.userId,
+        ])
+        .then((response) => {
+          // console.log(response.rows);
 
-        res.status(201).json({ message: "Item Added", items: response.rows });
-      });
+          res
+            .status(201)
+            .json({ message: "Recipe Added", items: response.rows });
+        });
     });
 });
 
@@ -100,9 +109,15 @@ recipes.delete("/:id", (req, res) => {
   database
     .query(`DELETE FROM saved_recipes_api WHERE id_drink=$1`, [req.params.id])
     .then(() => {
-      database.query("SELECT * FROM saved_recipes_api").then((response) => {
-        res.status(200).json({ message: "Item Deleted", items: response.rows });
-      });
+      database
+        .query("SELECT * FROM saved_recipes_api where user_id = $1", [
+          req.userId,
+        ])
+        .then((response) => {
+          res
+            .status(200)
+            .json({ message: "Recipe Deleted", items: response.rows });
+        });
     });
 });
 
@@ -157,11 +172,17 @@ recipes.post("/created", (req, res) => {
       ]
     )
     .then(() => {
-      database.query("SELECT * FROM saved_recipes_api").then((response) => {
-        // console.log(response.rows);
+      database
+        .query("SELECT * FROM saved_recipes_api where user_id = $1", [
+          req.userId,
+        ])
+        .then((response) => {
+          // console.log(response.rows);
 
-        res.status(201).json({ message: "Item Added", items: response.rows });
-      });
+          res
+            .status(201)
+            .json({ message: "Recipe Added", items: response.rows });
+        });
     });
 });
 

@@ -2,24 +2,31 @@ const preferences = require("express").Router();
 const database = require("../services/connection");
 const verifyToken = require("../services/verifyToken");
 
+// get items for specific user
 preferences.get("/", verifyToken, (req, res) => {
-  database.query("SELECT * FROM preferences").then((result) => {
-    res.status(200).json({ message: "Fetched Items", items: result.rows });
-  });
+  // console.log("userid", req.userId);
+
+  database
+    .query("SELECT * FROM preferences WHERE user_id = $1", [req.userId])
+    .then((result) => {
+      res.status(200).json({ message: "Fetched Items", items: result.rows });
+    });
 });
 
-preferences.post("/", (req, res) => {
-  console.log(req.body);
-  const { info, category, user_id } = req.body;
+preferences.post("/", verifyToken, (req, res) => {
+  // console.log("req.userid", req.userId);
+  const { info, category } = req.body;
   database
     .query(
       "INSERT INTO preferences (preference_info, preference_cat, user_id) VALUES($1::text, $2::text, $3::uuid)",
-      [info, category, user_id]
+      [info, category, req.userId]
     )
     .then(() => {
-      database.query("SELECT * FROM preferences").then((response) => {
-        res.status(201).json({ message: "Item Added", items: response.rows });
-      });
+      database
+        .query("SELECT * FROM preferences WHERE user_id = $1", [req.userId])
+        .then((response) => {
+          res.status(201).json({ message: "Item Added", items: response.rows });
+        });
     });
 });
 

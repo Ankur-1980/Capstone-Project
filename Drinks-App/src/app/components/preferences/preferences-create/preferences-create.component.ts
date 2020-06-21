@@ -29,7 +29,7 @@ export class PreferencesCreateComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log('component', this.itemForm.value);
+    // console.log('component', this.itemForm.value);
     this.preferService.addItems(this.itemForm.value);
     this.itemForm.reset();
   }

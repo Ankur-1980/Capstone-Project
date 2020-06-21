@@ -24,6 +24,7 @@ export class PreferencesService {
       .get<{ message: string; items: any }>('/api/preferences', { headers })
       .subscribe((data) => {
         console.log(data.message);
+        // console.log(data.items);
         this.items = data.items;
         this.itemsUpdated.next([...this.items]);
       });
@@ -34,7 +35,7 @@ export class PreferencesService {
   }
 
   addItems(formValue) {
-    console.log('service', formValue);
+    // console.log('service', formValue);
     let headers = new HttpHeaders();
     headers = headers.set(
       'authorization',
@@ -47,6 +48,7 @@ export class PreferencesService {
       })
       .subscribe((response) => {
         console.log(response.message);
+        // console.log('additems', response.items);
         this.itemsUpdated.next(response.items);
       });
   }
