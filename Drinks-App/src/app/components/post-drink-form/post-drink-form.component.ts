@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RecipeApiService } from 'src/app/services/recipeAPI.service';
 import { DrinkPostService } from 'src/app/services/drink-post.service';
-import { ImageSnippet } from '../../interfaces/image-snippet';
-// import { mimeType } from './mime-type.validator';
 
 @Component({
   selector: 'post-drink-form',
@@ -13,8 +11,6 @@ import { ImageSnippet } from '../../interfaces/image-snippet';
 export class PostDrinkFormComponent implements OnInit {
   drinkPostForm: FormGroup;
   glassware: string;
-  imagePreview;
-  selectedFile: ImageSnippet;
 
   constructor(
     private fb: FormBuilder,
@@ -40,36 +36,4 @@ export class PostDrinkFormComponent implements OnInit {
   onSubmit() {
     this.drinkPostService.postADrink(this.drinkPostForm.value);
   }
-
-  pickImage(event: Event) {
-    // casting as HTMLInputElement tells typescript to give access to the files method
-    const file = (event.target as HTMLInputElement).files[0];
-    this.drinkPostForm.patchValue({ image: file });
-    // updates the form
-    this.drinkPostForm.get('image').updateValueAndValidity();
-    // FileReader is built into JS
-    const reader = new FileReader();
-    // function will get called after the file is done loading
-    reader.onload = () => {
-      this.imagePreview = reader.result;
-    };
-    // load the file
-    reader.readAsDataURL(file);
-  }
-
-  // pickImage(event: Event) {
-  //   const file: File = (event.target as HTMLInputElement).files[0];
-  //   this.drinkPostForm.patchValue({ image: file });
-  //   // updates the form
-  //   this.drinkPostForm.get('image').updateValueAndValidity();
-
-  //   const reader = new FileReader();
-
-  //   reader.addEventListener('load', (event: any) => {
-  //     console.log('event Target', event.target.result);
-
-  //     this.selectedFile = new ImageSnippet(event.target.result, file);
-  //   });
-  //   reader.readAsDataURL(file);
-  // }
 }
