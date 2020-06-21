@@ -15,6 +15,7 @@ export class ImageSnippet {
 })
 export class ImageUploadComponent {
   @Output() imageUploaded = new EventEmitter();
+  @Output() imageCanceled = new EventEmitter();
 
   selectedImage: ImageSnippet;
   imageChangedEvent: any = '';
@@ -32,27 +33,29 @@ export class ImageUploadComponent {
   }
 
   uploadImage() {
+    console.log('component firing?');
+
     this.selectedImage.status = 'PENDING';
 
-    this.imageService.uploadImage(this.selectedImage).subscribe(
-      (uploadedImage: any) => {
-        console.log(uploadedImage);
-
-        // this.imageUploaded.emit(uploadedImage._id);
-        // this.selectedImage.status = 'UPLOADED';
-        // this.imageChangedEvent = null;
-      },
-      () => {
-        this.selectedImage.status = 'ERROR';
-        this.imageChangedEvent = null;
-      }
-    );
+    this.imageService.uploadImage(this.selectedImage);
+    // .subscribe(
+    //   (uploadedImage: any) => {
+    //     this.imageUploaded.emit(uploadedImage._id);
+    //     this.selectedImage.status = 'UPLOADED';
+    //     this.imageChangedEvent = null;
+    //   },
+    //   () => {
+    //     this.selectedImage.status = 'ERROR';
+    //     this.imageChangedEvent = null;
+    //   }
+    // );
   }
 
   cancelImage(fileInput: any) {
     this.selectedImage = null;
     fileInput.value = null;
     this.imageChangedEvent = null;
+    this.imageCanceled.emit();
   }
 
   onImageLoad(event: any) {
@@ -60,6 +63,7 @@ export class ImageUploadComponent {
     const file: File = event.target.files[0];
 
     this.selectedImage = new ImageSnippet(file.name, file.type);
+
     // this will fire 'load' event
     this.fileReader.readAsDataURL(file);
   }
@@ -70,13 +74,8 @@ export class ImageUploadComponent {
     this.selectedImage.status = 'LOADED';
   };
 
-<<<<<<< HEAD
   private listenToFileLoading() {
     this.fileReader.addEventListener('load', this.handleImageLoad);
-=======
-  uploadImage() {
-    this.selectedImage.status = 'PENDING';
->>>>>>> uploadImage
   }
 
   private removeFileLoadListener() {

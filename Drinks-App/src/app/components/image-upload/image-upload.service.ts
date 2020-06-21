@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
 import { ImageSnippet } from './image-upload.component';
 
 @Injectable({
@@ -9,11 +8,15 @@ import { ImageSnippet } from './image-upload.component';
 export class ImageUploadService {
   constructor(private http: HttpClient) {}
 
-  uploadImage(image: ImageSnippet): Observable<any> {
+  uploadImage(image: ImageSnippet) {
     const { src, type, name } = image;
     const file = b64ToFile(src, type, name);
     const formData = new FormData();
+    console.log('file', file);
+
     formData.append('image', file);
+
+    console.log(formData);
 
     return this.http.post('/api/drink-posts', formData);
   }

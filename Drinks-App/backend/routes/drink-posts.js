@@ -11,13 +11,15 @@ drinkPosts.get("/", (req, res) => {
 });
 
 drinkPosts.post("/", (req, res) => {
-  // console.log("Drink Posts Post working?");
-  singleUpload(req, res, (err) => {
-    if (err) {
-      return res.status(422).send({ message: err.message });
-    }
-    return res.json({ imageUrl: req.file.location });
-  });
+  console.log(req);
+
+  // // console.log("Drink Posts Post working?");
+  // singleUpload(req, res, (err) => {
+  //   if (err) {
+  //     return res.status(422).send({ message: err.message });
+  //   }
+  //   return res.json({ imageUrl: req.file.location });
+  // });
 });
 
 module.exports = drinkPosts;
