@@ -12,6 +12,7 @@
   height: 120vh;
   width: 80vw;
 }
+
 img {
   margin-bottom: 10px;
   width: 400px;
@@ -31,6 +32,7 @@ img {
   font-size: 20px;
   flex-wrap: wrap;
 }
+
 .how {
   justify-content: center;
   color: #fff;
@@ -38,6 +40,7 @@ img {
   flex-wrap: wrap;
   margin-bottom: 20vh;
 }
+
 ul {
   justify-content: center;
   margin-top: 10px;
