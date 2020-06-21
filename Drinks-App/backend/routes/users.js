@@ -13,9 +13,6 @@ users.get("/", verifyToken, (req, res) => {
     });
 });
 
-// path for register
-users.get("/register"), (req, res) => {};
-
 users.post("/register", async (req, res) => {
   // console.log("server", req.body);
   const {

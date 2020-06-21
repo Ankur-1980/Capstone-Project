@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MainComponent } from './components/main/main.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
-
-import { QuizComponent } from './components/quiz/quiz.component';
 import { LoginFormComponent } from './components/new-user/login-form/login-form.component';
 import { NewUserFormComponent } from './components/new-user/new-user-form/new-user-form.component';
 import { PostDrinkFormComponent } from './components/post-drink-form/post-drink-form.component';
@@ -12,7 +9,8 @@ import { AuthGuard } from './services/auth-guard.guard';
 import { GuestGuard } from './services/guest.guard';
 
 const routes: Routes = [
-  { path: '', component: LoginFormComponent },
+  { path: '', component: LoginFormComponent, canActivate: [GuestGuard] },
+
   {
     path: 'profile',
     component: UserProfileComponent,

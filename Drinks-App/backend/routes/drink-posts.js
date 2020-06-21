@@ -1,8 +1,5 @@
 const drinkPosts = require("express").Router();
 const database = require("../services/connection");
-const upload = require("../services/file-upload");
-
-const singleUpload = upload.single("image");
 
 drinkPosts.get("/", (req, res) => {
   database
@@ -10,7 +7,7 @@ drinkPosts.get("/", (req, res) => {
     .then((response) => res.status(200).json(response.rows));
 });
 
-drinkPosts.post("/", singleUpload, (req, res) => {
+drinkPosts.post("/", (req, res) => {
   console.log("working?");
 
   console.log("req.body", req.body);
