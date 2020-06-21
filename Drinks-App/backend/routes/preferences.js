@@ -32,11 +32,12 @@ preferences.get("/", (req, res) => {
 // });
 
 preferences.post("/", (req, res) => {
-  // console.log(req.body);
+  console.log(req.body);
+  const { info, category, user_id } = req.body;
   database
     .query(
-      "INSERT INTO preferences (preference_info, preference_cat) VALUES($1::text, $2::text)",
-      [req.body.info, req.body.category]
+      "INSERT INTO preferences (preference_info, preference_cat, user_id) VALUES($1::text, $2::text, $3::uuid)",
+      [info, category, user_id]
     )
     .then(() => {
       database.query("SELECT * FROM preferences").then((response) => {

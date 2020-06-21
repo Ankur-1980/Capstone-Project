@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Item } from './item';
 import { Subject } from 'rxjs';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Injectable({
   providedIn: 'root',
@@ -10,7 +11,7 @@ export class PreferencesService {
   items: Item[] = [];
   itemsUpdated = new Subject<Item[]>();
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private auth: AuthService) {}
 
   getItems() {
     this.http
@@ -27,7 +28,7 @@ export class PreferencesService {
   }
 
   addItems(formValue) {
-    console.log(formValue);
+    console.log('service', formValue);
 
     this.http
       .post<{ message: string; items: any }>('/api/preferences', formValue)
