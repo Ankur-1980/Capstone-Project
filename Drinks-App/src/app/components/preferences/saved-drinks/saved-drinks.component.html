@@ -1,0 +1,36 @@
+<div class="background-img">
+  <section>
+    <div class="details" *ngFor="let recipe of recipes">
+      <div class="name">{{ recipe.drink_name }}</div>
+      <span> <a routerLink="/preferences">Back to search</a></span>
+
+      <label>Glassware:</label>
+      <div class="info">{{ recipe.glassware }}</div>
+      <label>Ingredients</label>
+      <ul>
+        <li>
+          <span>{{ recipe.measure1 }}</span>
+          <span>{{ recipe.ingredient1 }}</span>
+        </li>
+        <li>{{ recipe.measure2 }} {{ recipe.ingredient2 }}</li>
+        <li>{{ recipe.measure3 }} {{ recipe.ingredient3 }}</li>
+        <li *ngIf="recipe.measure4 === !null; or: recipe.ingredient4 === !null">
+          {{ recipe.measure4 }} {{ recipe.ingredient4 }}
+        </li>
+        <li>{{ recipe.measure5 }} {{ recipe.ingredient5 }}</li>
+        <li>{{ recipe.measure6 }} {{ recipe.ingredient6 }}</li>
+        <li>{{ recipe.measure7 }} {{ recipe.ingredient7 }}</li>
+        <li>{{ recipe.measure8 }} {{ recipe.ingredient8 }}</li>
+        <li>{{ recipe.measure9 }} {{ recipe.ingredient9 }}</li>
+        <li>{{ recipe.measure10 }} {{ recipe.ingredient10 }}</li>
+        <li>{{ recipe.measure11 }} {{ recipe.ingredient11 }}</li>
+        <li>{{ recipe.measure12 }} {{ recipe.ingredient12 }}</li>
+        <li>{{ recipe.measure13 }} {{ recipe.ingredient13 }}</li>
+        <li>{{ recipe.measure14 }} {{ recipe.ingredient14 }}</li>
+        <li>{{ recipe.measure15 }} {{ recipe.ingredient15 }}</li>
+      </ul>
+      <label>Method:</label>
+      <div class="how">{{ recipe.instructions }}</div>
+    </div>
+  </section>
+</div>

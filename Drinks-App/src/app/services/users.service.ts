@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { FormGroup } from '@angular/forms';
-import { getToken } from '../helpers/functions';
 
 @Injectable({
   providedIn: 'root',
