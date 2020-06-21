@@ -15,7 +15,7 @@ export class ImageUploadService {
     const formData = new FormData();
     formData.append('image', file);
 
-    return this.http.post('/api/v1/image-upload', formData);
+    return this.http.post('/api/drink-posts', formData);
   }
 }
 

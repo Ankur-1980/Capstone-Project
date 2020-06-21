@@ -15,8 +15,7 @@ export class ImageSnippet {
 })
 export class ImageUploadComponent {
   @Output() imageUploaded = new EventEmitter();
-  @Output() imageLoaded = new EventEmitter();
-  @Output() imageCanceled = new EventEmitter();
+
   selectedImage: ImageSnippet;
   imageChangedEvent: any = '';
 
@@ -37,9 +36,11 @@ export class ImageUploadComponent {
 
     this.imageService.uploadImage(this.selectedImage).subscribe(
       (uploadedImage: any) => {
-        this.imageUploaded.emit(uploadedImage._id);
-        this.selectedImage.status = 'UPLOADED';
-        this.imageChangedEvent = null;
+        console.log(uploadedImage);
+
+        // this.imageUploaded.emit(uploadedImage._id);
+        // this.selectedImage.status = 'UPLOADED';
+        // this.imageChangedEvent = null;
       },
       () => {
         this.selectedImage.status = 'ERROR';
@@ -52,11 +53,9 @@ export class ImageUploadComponent {
     this.selectedImage = null;
     fileInput.value = null;
     this.imageChangedEvent = null;
-    this.imageCanceled.emit();
   }
 
   onImageLoad(event: any) {
-    this.imageLoaded.emit();
     this.imageChangedEvent = event;
     const file: File = event.target.files[0];
 

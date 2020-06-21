@@ -1,6 +1,5 @@
 const drinkPosts = require("express").Router();
 const database = require("../services/connection");
-
 const upload = require("../services/file-upload");
 
 const singleUpload = upload.single("image");
