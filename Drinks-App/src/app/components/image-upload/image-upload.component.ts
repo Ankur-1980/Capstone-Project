@@ -1,13 +1,5 @@
-import {
-  Component,
-  OnInit,
-  OnDestroy,
-  EventEmitter,
-  Output,
-} from '@angular/core';
-import { Image } from 'src/app/interfaces/image';
-import { ImageUploadService } from 'src/app/services/image-upload.service';
-import { ImageCroppedEvent } from 'ngx-image-cropper';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { ImageUploadService } from './image-upload.service';
 
 export class ImageSnippet {
   src: string;
@@ -21,7 +13,7 @@ export class ImageSnippet {
   templateUrl: './image-upload.component.html',
   styleUrls: ['./image-upload.component.css'],
 })
-export class ImageUploadComponent implements OnInit, OnDestroy {
+export class ImageUploadComponent {
   @Output() imageUploaded = new EventEmitter();
   @Output() imageLoaded = new EventEmitter();
   @Output() imageCanceled = new EventEmitter();
@@ -29,6 +21,7 @@ export class ImageUploadComponent implements OnInit, OnDestroy {
   imageChangedEvent: any = '';
 
   private fileReader = new FileReader();
+
   constructor(private imageService: ImageUploadService) {}
 
   ngOnInit() {
@@ -37,10 +30,6 @@ export class ImageUploadComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.removeFileLoadListener();
-  }
-
-  imageCropped(event: ImageCroppedEvent) {
-    this.selectedImage.src = event.base64;
   }
 
   uploadImage() {

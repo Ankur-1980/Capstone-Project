@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { ImageSnippet } from '../components/image-upload/image-upload.component';
+import { ImageSnippet } from './image-upload.component';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ImageUploadService {
   constructor(private http: HttpClient) {}
+
   uploadImage(image: ImageSnippet): Observable<any> {
     const { src, type, name } = image;
     const file = b64ToFile(src, type, name);
