@@ -13,7 +13,11 @@ export class DrinkPostService {
   }
 
   postADrink(formValue) {
+    this.http.post('/api/drink-posts', formValue);
     console.log('service', formValue);
-    this.router.navigate(['/the-feed']);
+
+    // const postData = new FormData();
+    // postData.append('title')
+    // this.router.navigate(['/the-feed']);
   }
 }

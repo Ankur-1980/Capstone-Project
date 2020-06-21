@@ -3,13 +3,25 @@
 <div class="global-parent">
   <h1>Add a Drink</h1>
   <form [formGroup]="drinkPostForm" (ngSubmit)="onSubmit()">
-    <!-- <div>
-            upload/take a picture
-        </div> -->
     <!-- drink name -->
     <div class="form-group">
       <label for="name">Drink Name</label>
       <input type="text" formControlName="name" placeholder="Drink Name" />
+    </div>
+    <!-- add an image -->
+    <div>
+      <button type="button" (click)="filePicker.click()">Add an Image</button>
+      <!-- proxy file input with the local variable # -->
+      <input
+        type="file"
+        name="images"
+        id="images"
+        #filePicker
+        (change)="pickImage($event)"
+      />
+    </div>
+    <div class="image-preview" *ngIf="imagePreview !== '' && imagePreview">
+      <img [src]="imagePreview" alt="drinkPostForm.value.name" />
     </div>
     <!-- ratings slider -->
     <div class="form-group">
@@ -23,7 +35,7 @@
         id="rating-slider"
         formControlName="rating"
       />
-      <span> Rating: {{ ratingsDisplay }}</span>
+      <span> Rating: {{ drinkPostForm.value.rating }}</span>
     </div>
     <!-- glassware dropdown -->
     <div class="form-group">

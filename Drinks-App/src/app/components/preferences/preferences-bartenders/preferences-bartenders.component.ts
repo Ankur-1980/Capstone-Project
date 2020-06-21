@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { PreferencesService } from '../preferences.service';
 import { Subscription } from 'rxjs';
+import { MOCK_PREFER } from 'src/app/MOCK_DATA/mock-preferences';
 
 @Component({
   selector: 'preferences-bartenders',
@@ -11,20 +12,20 @@ import { Subscription } from 'rxjs';
   ],
 })
 export class PreferencesBartendersComponent implements OnInit, OnDestroy {
-  bartenders = [];
+  bartenders = MOCK_PREFER;
   itemsSub: Subscription;
 
   constructor(private preferService: PreferencesService) {}
 
   ngOnInit(): void {
-    this.preferService.getItems();
-    this.itemsSub = this.preferService
-      .getItemUpdateListener()
-      .subscribe((items) => {
-        this.bartenders = items.filter(
-          (item) => item.preference_cat === 'bartenders'
-        );
-      });
+    // this.preferService.getItems();
+    // this.itemsSub = this.preferService
+    //   .getItemUpdateListener()
+    //   .subscribe((items) => {
+    //     this.bartenders = items.filter(
+    //       (item) => item.preference_cat === 'bartenders'
+    //     );
+    //   });
   }
 
   onDelete(itemId) {
