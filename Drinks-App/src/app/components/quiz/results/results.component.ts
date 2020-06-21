@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { RecipeApiService } from '../../../services/recipeAPI.service';
+// import { RecipeApiService } from '../../../services/recipeAPI.service';
 
 @Component({
   selector: 'app-results',
@@ -12,7 +12,7 @@ export class ResultsComponent implements OnInit {
   recipeID: number;
 
   constructor(
-    private recipeAPI: RecipeApiService,
+    // private recipeAPI: RecipeApiService,
     private route: ActivatedRoute
     ) {}
 
