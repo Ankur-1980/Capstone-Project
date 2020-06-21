@@ -1,5 +1,15 @@
 <div class="quiz-container">
   <div class="results">
+    <div>
+      <section>
+        <div class="details" *ngFor="let recipe of recipes">
+          <div class="name">{{ recipe.strDrink }}</div>
+          <span> <a routerLink="/recipe-book">Back to search</a></span>
+          <img class="image" src="{{ recipe.strDrinkThumb }}" alt="{{ recipe.strDrink }}" width="125px">
+          <div class="how">{{ recipe.strInstructions }}</div>
+        </div>
+      </section>
+    </div>       
     <h3>Results</h3>
     <p>X</p>
     <p class="center">Use the links below to share with your friends.</p>
@@ -20,5 +30,4 @@
       ></script>
     </div>
   </div>
-  
 </div>

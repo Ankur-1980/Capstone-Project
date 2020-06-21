@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, Input } from '@angular/core';
+import { Component, OnInit, Output, Input, ɵChangeDetectorStatus } from '@angular/core';
 import { QuizQuestion } from './QuizQuestion';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -18,10 +18,8 @@ export class QuestionComponent implements OnInit {
   hasAnswer: boolean;
   disabled: boolean;
   quizIsOver: boolean;
-  progressValue: number;
   status: boolean = false;
-  selectedIndex: number = null;
-  
+  selectedIndex: number;  
 
   allQuestions: QuizQuestion[] = [
     {
@@ -60,7 +58,7 @@ export class QuestionComponent implements OnInit {
     },
     {
       questionId: 4,
-      questionText: 'What type of cocktail drinker are you?',
+      questionText: 'What meal is this accompanying?',
       options: [
         { optionValue: '1', optionText: 'Brunch' },
         { optionValue: '2', optionText: 'Lunch' },
@@ -68,7 +66,7 @@ export class QuestionComponent implements OnInit {
         { optionValue: '4', optionText: 'Happy Hour' },
         {
           optionValue: '5',
-          optionText: 'Nothing, the drink experience is the main event',
+          optionText: 'Nothing, the cocktail is the main event',
         },
       ],
       selectedOption: '',
@@ -102,13 +100,20 @@ export class QuestionComponent implements OnInit {
     this.currentQuestion = this.questionID;
   }
 
-  setIndex(index: number) {
+  changeStatus() {
+    this.status = !this.status;
+  }
+
+  onSelect(index: number) {
      this.selectedIndex = index;
+     this.changeStatus();
   }
 
   displayNextQuestion() {
     this.questionIndex = this.questionID++;
-    this.increaseProgressValue()
+    this.currentQuestion === this.currentQuestion++
+    this.selectedIndex = null;
+    this.changeStatus();
     if (typeof document.getElementById('question') !== 'undefined' && this.getQuestionID() <= this.totalQuestions) {
       document.getElementById('question').innerHTML = this.allQuestions[this.questionIndex]['questionText'];
     } else {
@@ -122,6 +127,7 @@ export class QuestionComponent implements OnInit {
   }
 
   navigateToResults(): void {
+    this.changeStatus();
     this.router.navigate(['quiz/results'], { state:
       {
         totalQuestions: this.totalQuestions,
@@ -129,10 +135,6 @@ export class QuestionComponent implements OnInit {
       }
     });
   }
-
-  increaseProgressValue() {
-    return this.currentQuestion === this.currentQuestion++;
-    }
 
   // METHODS
   getQuestionID() {
