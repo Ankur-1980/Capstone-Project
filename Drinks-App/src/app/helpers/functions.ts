@@ -1,4 +1,4 @@
-import { HttpErrorResponse } from '@angular/common/http';
+import { HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { ApiError } from '../interfaces/api-error';
 
 export const extractError = (resError: HttpErrorResponse): ApiError[] => {
@@ -12,3 +12,11 @@ export const extractError = (resError: HttpErrorResponse): ApiError[] => {
   return errors;
 };
 //
+
+export const getToken = () => {
+  let headers = new HttpHeaders();
+  headers = headers.set(
+    'authorization',
+    localStorage.getItem('topShelf_token')
+  );
+};

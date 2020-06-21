@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { FormGroup } from '@angular/forms';
+import { getToken } from '../helpers/functions';
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +15,12 @@ export class UsersService {
   constructor(private http: HttpClient, private router: Router) {}
 
   getUsers(): any {
-    return this.http.get('/api/users');
+    let headers = new HttpHeaders();
+    headers = headers.set(
+      'authorization',
+      localStorage.getItem('topShelf_token')
+    );
+    return this.http.get('/api/users', { headers });
   }
 
   addNewUser(formValue) {

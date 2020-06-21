@@ -11,9 +11,14 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class UserProfileComponent implements OnInit {
   posts;
+  userInfo = [];
   mockPosts = MOCK_POSTS;
 
-  constructor(private drinkPosts: DrinkPostService, public auth: AuthService) {}
+  constructor(
+    private drinkPosts: DrinkPostService,
+    public auth: AuthService,
+    private userService: UsersService
+  ) {}
 
   ngOnInit(): void {
     // this.drinkPosts.getDrinks().subscribe((data) => {
@@ -21,6 +26,11 @@ export class UserProfileComponent implements OnInit {
     //   this.posts = data;
     //   console.log(this.posts);
     // });
+
+    this.userService.getUsers().subscribe((data) => {
+      this.userInfo = data.users;
+      console.log(this.userInfo);
+    });
   }
 
   logOut() {

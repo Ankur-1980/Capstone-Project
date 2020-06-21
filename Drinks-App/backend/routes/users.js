@@ -2,12 +2,15 @@ const users = require("express").Router();
 const database = require("../services/connection");
 // const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+const verifyToken = require("../services/verifyToken");
 
-// get all users
-users.get("/", (req, res) => {
-  database.query("SELECT * FROM users").then((response) => {
-    res.status(200).json({ message: "Users Fetched", users: response.rows });
-  });
+// get logged in user
+users.get("/", verifyToken, (req, res) => {
+  database
+    .query("SELECT * FROM users WHERE user_id = $1::UUID", [req.userId])
+    .then((response) => {
+      res.status(200).json({ message: "Users Fetched", users: response.rows });
+    });
 });
 
 // path for register

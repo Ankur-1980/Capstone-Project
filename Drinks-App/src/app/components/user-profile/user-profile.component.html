@@ -1,15 +1,19 @@
 <div class="background-img"></div>
 <div class="global-parent">
-  <div class="info-container">
-    <img class="profile-pic" width="200px" src="#" alt="" />
-    <div class="user-info-container">
-      <h1>Users Name</h1>
+  <div class="info-container" *ngFor="let item of userInfo">
+    <img
+      class="profile-pic"
+      width="200px"
+      src="{{ item.picture }}"
+      alt=""
+      *ngIf="item.picture === !null"
+    />
+    <div class="user-info-container" *ngFor="let item of userInfo">
+      <h1>User Name: {{ item.first_name }} {{ item.last_name }}</h1>
       <button (click)="logOut()">Log Out</button>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-        expedita voluptatum velit quod quos, nisi vitae illo voluptate sint,
-        sapiente deleniti animi nemo perspiciatis ut!
-      </p>
+      <p>Bio: {{ item.bio }}</p>
+      <p>Birthday: {{ item.birthday }}</p>
+      <p>userName: {{ item.bio }}</p>
     </div>
   </div>
   <!-- Feed -->
