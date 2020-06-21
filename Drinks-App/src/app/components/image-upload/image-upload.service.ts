@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { ImageSnippet } from './image-upload.component';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -8,47 +8,12 @@ import { ImageSnippet } from './image-upload.component';
 export class ImageUploadService {
   constructor(private http: HttpClient) {}
 
-  uploadImage(image: ImageSnippet) {
-    const { src, type, name } = image;
-    const file = b64ToFile(src, type, name);
+  uploadImage(image: File): any {
     const formData = new FormData();
-    console.log('file', file);
+    formData.get('image');
+    formData.append('image', image);
+    console.log('formData', formData.get('image'));
 
-    formData.append('image', file);
-
-    let headers = new HttpHeaders();
-    headers = headers.set('content-type', 'multipart/form-data');
-
-    return this.http
-      .post('/api/drink-posts/images', formData, { headers })
-      .subscribe((response) => {
-        console.log(response);
-      });
-
-    // console.log('getImage', formData.get('image'));
-
-    // return this.http.post('/api/drink-posts/images', formData.get('image'));
+    return this.http.post('/api/drink-posts/images', formData.get('image'));
   }
-}
-
-function b64ToFile(b64Data: string, type = 'image/jpeg', name: string): File {
-  let data;
-  const aux = b64Data.split(',');
-  if (aux.length > 1) {
-    data = aux[1];
-  } else {
-    data = b64Data;
-  }
-
-  const byteString = atob(data);
-  const ab = new ArrayBuffer(byteString.length);
-  const ia = new Uint8Array(ab);
-  for (let i = 0; i < byteString.length; i += 1) {
-    ia[i] = byteString.charCodeAt(i);
-  }
-  const blob = new Blob([ab], { type });
-  if (!blob) {
-    return null;
-  }
-  return new File([blob], name, { type });
 }

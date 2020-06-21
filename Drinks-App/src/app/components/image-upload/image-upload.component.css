@@ -2,25 +2,31 @@ input {
   display: none;
 }
 
-.spinner-container {
-  padding: 20px;
+.image-upload-container {
+  cursor: pointer;
 }
 
 .img-preview-container {
   background-color: #f7f7f7;
   position: relative;
 }
-
-.img-loading-overlay {
-  padding: 20px;
-}
-
 .img-preview {
   background: center center no-repeat;
   background-size: contain;
-  height: 116px;
+  height: 120px;
+  width: 120px;
 }
 
-img {
-  height: 100%;
+.error {
+  display: none;
+}
+
+.success {
+  color: green;
+  z-index: 1;
+}
+
+.fail {
+  color: red;
+  z-index: 1;
 }

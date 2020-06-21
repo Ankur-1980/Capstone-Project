@@ -1,11 +1,12 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { ImageUploadService } from './image-upload.service';
+// import { ImageSnippet } from 'src/app/interfaces/imageSnippet';
 
-export class ImageSnippet {
-  src: string;
-  status = 'INIT';
+class ImageSnippet {
+  pending: boolean = false;
+  status: string = 'init';
 
-  constructor(public name: string, public type: string) {}
+  constructor(public src: string, public file: File) {}
 }
 
 @Component({
@@ -14,71 +15,39 @@ export class ImageSnippet {
   styleUrls: ['./image-upload.component.css'],
 })
 export class ImageUploadComponent {
-  @Output() imageUploaded = new EventEmitter();
-  @Output() imageCanceled = new EventEmitter();
-
-  selectedImage: ImageSnippet;
-  imageChangedEvent: any = '';
-
-  private fileReader = new FileReader();
+  selectedFile: ImageSnippet;
 
   constructor(private imageService: ImageUploadService) {}
 
-  ngOnInit() {
-    this.listenToFileLoading();
+  private onSuccess() {
+    this.selectedFile.pending = false;
+    this.selectedFile.status = 'ok';
   }
 
-  ngOnDestroy() {
-    this.removeFileLoadListener();
+  private onError() {
+    this.selectedFile.pending = false;
+    this.selectedFile.status = 'fail';
+    this.selectedFile.src = '';
   }
 
-  uploadImage() {
-    console.log('component firing?');
+  processFile(imageInput: any) {
+    const file: File = imageInput.files[0];
+    const reader = new FileReader();
 
-    this.selectedImage.status = 'PENDING';
-    // hello
-    this.imageService.uploadImage(this.selectedImage);
-    // .subscribe(
-    //   (uploadedImage: any) => {
-    //     this.imageUploaded.emit(uploadedImage._id);
-    //     this.selectedImage.status = 'UPLOADED';
-    //     this.imageChangedEvent = null;
-    //   },
-    //   () => {
-    //     this.selectedImage.status = 'ERROR';
-    //     this.imageChangedEvent = null;
-    //   }
-    // );
-  }
+    reader.addEventListener('load', (event: any) => {
+      this.selectedFile = new ImageSnippet(event.target.result, file);
 
-  cancelImage(fileInput: any) {
-    this.selectedImage = null;
-    fileInput.value = null;
-    this.imageChangedEvent = null;
-    this.imageCanceled.emit();
-  }
+      this.selectedFile.pending = true;
+      this.imageService.uploadImage(this.selectedFile.file).subscribe(
+        (res) => {
+          this.onSuccess();
+        },
+        (err) => {
+          this.onError();
+        }
+      );
+    });
 
-  onImageLoad(event: any) {
-    this.imageChangedEvent = event;
-    const file: File = event.target.files[0];
-
-    this.selectedImage = new ImageSnippet(file.name, file.type);
-
-    // this will fire 'load' event
-    this.fileReader.readAsDataURL(file);
-  }
-
-  private handleImageLoad = (event: any) => {
-    const { result } = event.target;
-    this.selectedImage.src = result;
-    this.selectedImage.status = 'LOADED';
-  };
-
-  private listenToFileLoading() {
-    this.fileReader.addEventListener('load', this.handleImageLoad);
-  }
-
-  private removeFileLoadListener() {
-    this.fileReader.removeEventListener('load', this.handleImageLoad);
+    reader.readAsDataURL(file);
   }
 }

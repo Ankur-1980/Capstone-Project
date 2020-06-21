@@ -1,39 +1,28 @@
-<div>
-  <label class="image-upload-container">
-    <span>Select Image</span>
+<div class="img-upload-container">
+  <label>
+    <button type="button" class="file-select" (click)="fileInput.click()">
+      Select File
+    </button>
     <input
       #fileInput
+      #imgInput
       type="file"
       accept="image/*"
-      (change)="onImageLoad($event)"
+      (change)="processFile(imgInput)"
     />
   </label>
-
-  <div *ngIf="selectedImage" class="img-preview-container">
+  <!-- preview container -->
+  <div *ngIf="selectedFile" class="img-preview-container">
     <div
-      class="img-preview{{ selectedImage.status === 'ERROR' ? '-error' : '' }}"
-    >
-      <img *ngIf="selectedImage.src" [src]="selectedImage.src" />
-    </div>
+      class="img-preview{{ selectedFile.status === 'fail' ? 'error' : '' }}"
+      [ngStyle]="{ 'background-image': 'url(' + selectedFile.src + ')' }"
+    ></div>
 
-    <div *ngIf="selectedImage.status === 'UPLOADED'">
-      Image has been uploaded successfully!
+    <div *ngIf="selectedFile.status === 'ok'">
+      <h1 class="success">Image Uploaded Successfully!</h1>
     </div>
-    <div *ngIf="selectedImage.status === 'ERROR'">
-      Image uploaded failed!
+    <div *ngIf="selectedFile.status === 'fail'">
+      <h1 class="fail">Image Upload Failed!</h1>
     </div>
-  </div>
-
-  <div *ngIf="selectedImage">
-    <button
-      *ngIf="selectedImage.status === 'LOADED'"
-      (click)="uploadImage()"
-      type="button"
-    >
-      Upload Image
-    </button>
-    <button (click)="cancelImage(fileInput)" type="button">
-      Cancel
-    </button>
   </div>
 </div>
