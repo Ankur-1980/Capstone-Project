@@ -8,6 +8,7 @@ const recipes = require("./routes/recipes");
 const users = require("./routes/users");
 const preferences = require("./routes/preferences");
 const drinkPosts = require("./routes/drink-posts");
+const imageUpload = require("./routes/image-upload");
 
 // things coming from front end will be secure
 app.use(express.urlencoded({ extended: false }));
@@ -31,6 +32,7 @@ app.use("/api/users", users);
 app.use("/api/recipes", recipes);
 app.use("/api/preferences", preferences);
 app.use("/api/drink-posts", drinkPosts);
+app.use("/api/image-upload", imageUpload);
 
 // error handler
 app.use((err, req, res, next) => {

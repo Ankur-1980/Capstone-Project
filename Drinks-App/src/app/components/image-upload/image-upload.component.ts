@@ -70,8 +70,13 @@ export class ImageUploadComponent {
     this.selectedImage.status = 'LOADED';
   };
 
+<<<<<<< HEAD
   private listenToFileLoading() {
     this.fileReader.addEventListener('load', this.handleImageLoad);
+=======
+  uploadImage() {
+    this.selectedImage.status = 'PENDING';
+>>>>>>> uploadImage
   }
 
   private removeFileLoadListener() {
