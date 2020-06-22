@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MOCK_FEED } from 'src/app/MOCK_DATA/mock-feed';
 import { AuthService } from 'src/app/services/auth.service';
+import { DrinkPostService } from 'src/app/services/drink-post.service';
 
 @Component({
   selector: 'the-feed-posts',
@@ -8,21 +9,20 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./the-feed-posts.component.css'],
 })
 export class TheFeedPostsComponent implements OnInit {
-  theFeed = MOCK_FEED;
-  hide = true;
+  // theFeed = MOCK_FEED;
+  theFeed;
+  commentHide = true;
 
-  constructor(public auth: AuthService) {}
+  constructor(private postService: DrinkPostService) {}
 
   ngOnInit(): void {
-    // this.isAuth();
+    this.postService.getAllPosts().subscribe((data) => {
+      this.theFeed = data;
+      console.log(this.theFeed);
+    });
   }
 
   toggle() {
-    this.hide = !this.hide;
+    this.commentHide = !this.commentHide;
   }
-  // isAuth() {
-  //   console.log(this.auth.decodedToken);
-  //   // console.log(this.auth.isAuthenticated);
-  //   // console.log(this.auth.userID);
-  // }
 }

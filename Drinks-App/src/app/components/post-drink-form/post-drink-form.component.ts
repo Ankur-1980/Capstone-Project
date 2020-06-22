@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RecipeApiService } from 'src/app/services/recipeAPI.service';
 import { DrinkPostService } from 'src/app/services/drink-post.service';
 import { AuthService } from 'src/app/services/auth.service';
+import * as moment from 'moment';
 
 export class ImageSnippet {
   constructor(public src: string, public file: File) {}
@@ -31,16 +32,18 @@ export class PostDrinkFormComponent implements OnInit {
 
     this.drinkPostForm = this.fb.group({
       name: ['', [Validators.required]],
-      rating: [''],
+      rating: [0],
       glassware: [''],
       description: [''],
       location: [''],
-      image: [null],
-      user_id: [this.auth.userID],
+      imageLocation: [null],
+      dateAdded: [moment().format()],
+      userId: [this.auth.userID],
     });
   }
 
   onSubmit() {
+    // console.log(this.drinkPostForm.value);
     this.drinkPostService.postADrink(this.drinkPostForm.value);
   }
 }

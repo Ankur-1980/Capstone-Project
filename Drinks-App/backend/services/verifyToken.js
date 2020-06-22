@@ -4,7 +4,9 @@ const verifyToken = (req, res, next) => {
   // console.log("verify", req.headers.authorization);
 
   if (!req.headers.authorization) {
-    return res.status(401).send("unauthorized request");
+    return res
+      .status(401)
+      .send("Unauthorized Request: No Authorization in headers");
   }
   let token = req.headers.authorization.split(" ")[0];
   // console.log("token", token);
@@ -12,7 +14,7 @@ const verifyToken = (req, res, next) => {
   if (token === "null") {
     // console.log("if working?");
 
-    return res.status(401).send("unauthorized request");
+    return res.status(401).send("Unauthorized request: No Token");
   }
 
   // let payload = jwt.verify(token, "secretKey", (err, decoded) => {
@@ -31,7 +33,7 @@ const verifyToken = (req, res, next) => {
 
   // console.log("payload", payload);
   if (!payload) {
-    return res.status(401).send("unauthorized request");
+    return res.status(401).send("Unauthorized request: Paylod Broken");
   }
 
   req.userId = payload.sub;

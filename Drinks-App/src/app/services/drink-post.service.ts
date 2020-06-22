@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Injectable({
@@ -8,15 +8,33 @@ import { Router } from '@angular/router';
 export class DrinkPostService {
   constructor(private http: HttpClient, private router: Router) {}
 
-  getDrinks() {
+  // all posts
+  getAllPosts() {
     return this.http.get('/api/drink-posts');
   }
 
+  // Logged in users posts
+  getUserPosts() {
+    let headers = new HttpHeaders();
+    headers = headers.set(
+      'authorization',
+      localStorage.getItem('topShelf_token')
+    );
+    return this.http.get('/api/drink-posts', { headers });
+  }
+
   postADrink(formValue) {
-    console.log('formvalue', formValue);
-    this.http.post('/api/drink-posts', formValue).subscribe((response) => {
-      console.log(response);
-    });
+    // console.log('formValue', formValue);
+    let headers = new HttpHeaders();
+    headers = headers.set(
+      'authorization',
+      localStorage.getItem('topShelf_token')
+    );
+    this.http
+      .post('/api/drink-posts/users', formValue, { headers })
+      .subscribe((response) => {
+        console.log(response);
+      });
 
     // const postData = new FormData();
     // postData.append('name', formValue.name);
