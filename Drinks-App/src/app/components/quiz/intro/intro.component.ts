@@ -10,7 +10,7 @@ export class IntroComponent implements OnInit {
   constructor(private router: Router) {}
 
   startQuiz() {
-    this.router.navigateByUrl('quiz/question');
+    this.router.navigateByUrl('quiz/question/1');
   }
 
   ngOnInit(): void {}

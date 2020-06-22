@@ -1,22 +1,22 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, Input, ɵChangeDetectorStatus } from '@angular/core';
 import { QuizQuestion } from './QuizQuestion';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-question',
   templateUrl: './question.component.html',
-  styleUrls: ['./question.component.css'],
+  styleUrls: ['./question.component.css', '../quiz.component.css'],
 })
 export class QuestionComponent implements OnInit {
+  @Input() answer: string;
   @Output() question: QuizQuestion;
   totalQuestions: number;
   questionID = 0;
   currentQuestion = 0;
   questionIndex: number;
-  correctAnswer: boolean;
-  hasAnswer: boolean;
-  disabled: boolean;
-  quizIsOver: boolean;
+  optionIndex: number;
+  status: boolean = false;
+  selectedIndex: number;  
 
   allQuestions: QuizQuestion[] = [
     {
@@ -33,7 +33,7 @@ export class QuestionComponent implements OnInit {
     },
     {
       questionId: 2,
-      questionText: 'What mood describes?',
+      questionText: 'What mood describes you best right now?',
       options: [
         { optionValue: '1', optionText: 'Vacation mode' },
         { optionValue: '2', optionText: 'Sunday funday' },
@@ -55,7 +55,7 @@ export class QuestionComponent implements OnInit {
     },
     {
       questionId: 4,
-      questionText: 'What type of cocktail drinker are you?',
+      questionText: 'What meal is this accompanying?',
       options: [
         { optionValue: '1', optionText: 'Brunch' },
         { optionValue: '2', optionText: 'Lunch' },
@@ -63,14 +63,14 @@ export class QuestionComponent implements OnInit {
         { optionValue: '4', optionText: 'Happy Hour' },
         {
           optionValue: '5',
-          optionText: 'Nothing, the drink experience is the main event',
+          optionText: 'Nothing, the cocktail is the main event',
         },
       ],
       selectedOption: '',
     },
     {
       questionId: 5,
-      questionText: 'What type of cocktail driWhat is your preferred liquor?',
+      questionText: 'What is your preferred liquor?',
       options: [
         { optionValue: '1', optionText: 'Vodka' },
         { optionValue: '2', optionText: 'Tequila' },
@@ -91,7 +91,47 @@ export class QuestionComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.question = this.getQuestion;
+    this.totalQuestions = this.allQuestions.length;
+    this.currentQuestion = this.questionID;
+  }
+
+  changeStatus() {
+    this.status = !this.status;
+  }
+
+  onSelect(index: number) {
+     this.selectedIndex = index;
+     this.changeStatus();
+  }
+
+  displayNextQuestion() {
+    this.questionIndex = this.questionID++;
+    this.currentQuestion === this.currentQuestion++
+    this.selectedIndex = null;
+    this.changeStatus();
+    if (typeof document.getElementById('question') !== 'undefined' && this.getQuestionID() <= this.totalQuestions) {
+      document.getElementById('question').innerHTML = this.allQuestions[this.questionIndex]['questionText'];
+    } else {
+      this.navigateToResults();
+    }
+  }
+
+  navigateToNextQuestion(): void {
+    this.router.navigate(['quiz/question', this.getQuestionID() + 1]);
+    this.displayNextQuestion();
+  }
+
+  navigateToResults(): void {
+    this.changeStatus();
+    this.router.navigate(['quiz/results'], { state:
+      {
+        totalQuestions: this.totalQuestions,
+        allQuestions: this.allQuestions
+      }
+    });
+  }
 
   // METHODS
   getQuestionID() {
