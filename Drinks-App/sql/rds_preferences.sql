@@ -19,8 +19,7 @@
 -- 	picture VARCHAR
 -- );
 
-INSERT INTO users (user_id, first_name, last_name, username, email, password, bio, age, picture)
-VALUES (uuid_generate_v4(), 'John', 'Doe', 'johnnyBoy', 'john@gmail.com', 'password', 'This is my bio. I do not have much to say', '28', null);
+-- INSERT INTO users (user_id, first_name, last_name, username, email, password, bio, age, picture)
+-- VALUES (uuid_generate_v4(), 'John', 'Doe', 'johnnyBoy', 'john@gmail.com', 'password', 'This is my bio. I do not have much to say', '28', null);
 
-
-SELECT * FROM users;
+SELECT * FROM favorites;

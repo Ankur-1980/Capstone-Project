@@ -1,10 +1,10 @@
 const recipes = require("express").Router();
-const database = require("../services/connection");
+const database = require("../services/aws_connection");
 const verifyToken = require("../services/verifyToken");
 
 recipes.get("/", verifyToken, (req, res) => {
   database
-    .query("SELECT * FROM saved_recipes_api WHERE user_id = $1", [req.userId])
+    .query("SELECT * FROM saved_recipes WHERE user_id = $1", [req.userId])
     .then((response) => {
       res
         .status(200)
@@ -14,9 +14,7 @@ recipes.get("/", verifyToken, (req, res) => {
 
 recipes.get("/:id", verifyToken, (req, res) => {
   database
-    .query("SELECT * FROM saved_recipes_api WHERE id_drink = $1", [
-      req.params.id,
-    ])
+    .query("SELECT * FROM saved_recipes WHERE saved_id = $1", [req.params.id])
     .then((response) => {
       res
         .status(200)
@@ -26,7 +24,6 @@ recipes.get("/:id", verifyToken, (req, res) => {
 
 recipes.post("/", verifyToken, (req, res) => {
   let {
-    idDrink,
     strDrink,
     strGlass,
     strIngredient1,
@@ -64,9 +61,8 @@ recipes.post("/", verifyToken, (req, res) => {
 
   database
     .query(
-      "INSERT INTO saved_recipes_api (saved_id,id_drink,drink_name,glassware,ingredient1,ingredient2, ingredient3, ingredient4, ingredient5, ingredient6, ingredient7, ingredient8, ingredient9, ingredient10, ingredient11, ingredient12, ingredient13, ingredient14, ingredient15, instructions, measure1, measure2, measure3, measure4, measure5, measure6, measure7, measure8, measure9, measure10, measure11, measure12, measure13, measure14, measure15, user_id) VALUES(uuid_generate_v4(), $1, $2, $3, $4, $5, $6, $7,$8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35)",
+      "INSERT INTO saved_recipes (drink_name,glassware,ingredient1,ingredient2, ingredient3, ingredient4, ingredient5, ingredient6, ingredient7, ingredient8, ingredient9, ingredient10, ingredient11, ingredient12, ingredient13, ingredient14, ingredient15, instructions, measure1, measure2, measure3, measure4, measure5, measure6, measure7, measure8, measure9, measure10, measure11, measure12, measure13, measure14, measure15, user_id) VALUES( $1, $2, $3, $4, $5, $6, $7,$8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34)",
       [
-        idDrink,
         strDrink,
         strGlass,
         strIngredient1,
@@ -105,9 +101,7 @@ recipes.post("/", verifyToken, (req, res) => {
     )
     .then(() => {
       database
-        .query("SELECT * FROM saved_recipes_api where user_id = $1", [
-          req.userId,
-        ])
+        .query("SELECT * FROM saved_recipes where user_id = $1", [req.userId])
         .then((response) => {
           // console.log(response.rows);
 
@@ -122,12 +116,10 @@ recipes.delete("/:id", (req, res) => {
   console.log(req.params.id);
 
   database
-    .query(`DELETE FROM saved_recipes_api WHERE id_drink=$1`, [req.params.id])
+    .query(`DELETE FROM saved_recipes WHERE saved_id=$1`, [req.params.id])
     .then(() => {
       database
-        .query("SELECT * FROM saved_recipes_api where user_id = $1", [
-          req.userId,
-        ])
+        .query("SELECT * FROM saved_recipes where user_id = $1", [req.userId])
         .then((response) => {
           res
             .status(200)
@@ -163,7 +155,7 @@ recipes.post("/created", verifyToken, (req, res) => {
 
   database
     .query(
-      "INSERT INTO saved_recipes_api (saved_id,id_drink,drink_name,glassware,ingredient1,ingredient2, ingredient3, ingredient4, ingredient5, ingredient6, ingredient7, ingredient8, instructions, measure1, measure2, measure3, measure4, measure5, measure6, measure7, measure8, user_id) VALUES(uuid_generate_v4(), uuid_generate_v4(), $1, $2, $4, $5,$6,$7,$8,$9,$10,$11, $3, $12, $13, $14, $15, $16, $17, $18, $19, $20)",
+      "INSERT INTO saved_recipes (drink_name,glassware,ingredient1,ingredient2, ingredient3, ingredient4, ingredient5, ingredient6, ingredient7, ingredient8, instructions, measure1, measure2, measure3, measure4, measure5, measure6, measure7, measure8, user_id) VALUES($1, $2, $4, $5,$6,$7,$8,$9,$10,$11, $3, $12, $13, $14, $15, $16, $17, $18, $19, $20)",
       [
         name,
         glassware,
@@ -189,9 +181,7 @@ recipes.post("/created", verifyToken, (req, res) => {
     )
     .then(() => {
       database
-        .query("SELECT * FROM saved_recipes_api where user_id = $1", [
-          req.userId,
-        ])
+        .query("SELECT * FROM saved_recipes where user_id = $1", [req.userId])
         .then((response) => {
           // console.log(response.rows);
 

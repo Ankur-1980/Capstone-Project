@@ -87,21 +87,18 @@ export class FavoritesService {
   }
 
   deleteFromPref(drinkId) {
+    // console.log('drinkID', drinkId);
     this.http
       .delete<{ message: string; items: any }>(`/api/recipes/${drinkId}`)
       .subscribe((response) => {
         console.log(response.message);
 
         this.favorites = this.favorites.filter(
-          (fav) => fav.id_drink !== drinkId
+          (fav) => fav.saved_id !== drinkId
         );
         this.favoritesUpdated.next([...this.favorites]);
       });
   }
-
-  // getFavorites() {
-  //   return this.favorites;
-  // }
 
   containsFavorite(drink) {
     return this.favorites.includes(drink);

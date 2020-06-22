@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 const recipes = require("./routes/recipes");
 const users = require("./routes/users");
-const preferences = require("./routes/preferences");
+// const preferences = require("./routes/preferences");
 const drinkPosts = require("./routes/drink-posts");
 const favorites = require("./routes/favorites");
 
@@ -18,7 +18,7 @@ app.use(express.static(__dirname + "/public"));
 // where to send information from the front end to the back end
 app.use("/api/users", users);
 app.use("/api/recipes", recipes);
-app.use("/api/preferences", preferences);
+// app.use("/api/preferences", preferences);
 app.use("/api/drink-posts", drinkPosts);
 app.use("/api/favorites", favorites);
 
