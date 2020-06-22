@@ -12,11 +12,12 @@ drinkPosts.get("/", (req, res) => {
 
 drinkPosts.post("/", (req, res) => {
   console.log("working?");
-
-  console.log("req.body", req.body);
 });
 
 drinkPosts.post("/images", (req, res) => {
+  console.log("working?");
+  console.log("req.file", req.file);
+  console.log("req.body", req.body);
   singleUpload(req, res, (err) => {
     if (err) {
       return res.status(422).json({ message: err.message });
