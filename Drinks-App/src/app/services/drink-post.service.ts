@@ -20,7 +20,7 @@ export class DrinkPostService {
       'authorization',
       localStorage.getItem('topShelf_token')
     );
-    return this.http.get('/api/drink-posts', { headers });
+    return this.http.get('/api/drink-posts/users', { headers });
   }
 
   postADrink(formValue) {
@@ -30,6 +30,7 @@ export class DrinkPostService {
       'authorization',
       localStorage.getItem('topShelf_token')
     );
+
     this.http
       .post('/api/drink-posts/users', formValue, { headers })
       .subscribe((response) => {

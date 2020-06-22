@@ -14,11 +14,18 @@ drinkPosts.get("/", (req, res) => {
 
 // only logged in users posts
 drinkPosts.get("/users", verifyToken, (req, res) => {
-  database.query(
-    "SELECT * FROM drink_posts WHERE user_id = $1 ORDER BY date_added DESC"[
-      req.userId
-    ]
-  );
+  console.log(req.userId);
+
+  database
+    .query(
+      "SELECT * FROM drink_posts WHERE user_id = $1 ORDER BY date_added DESC",
+      [req.userId]
+    )
+    .then((response) => {
+      res
+        .status(200)
+        .json({ message: "User Posts Fetched", items: response.rows });
+    });
 });
 
 // logged in user post

@@ -24,15 +24,15 @@ export class UserProfileComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.drinkPosts.getUserPosts().subscribe((data) => {
-      // console.log(data);
-      this.posts = data;
-      console.log(this.posts);
+    this.drinkPosts.getUserPosts().subscribe((data: Data) => {
+      // console.log('data', data);
+      this.posts = data.items;
+      console.log('this.posts', this.posts);
     });
 
     this.userService.getUsers().subscribe((data) => {
       this.userInfo = data.users;
-      console.log(this.userInfo);
+      // console.log(this.userInfo);
     });
   }
 

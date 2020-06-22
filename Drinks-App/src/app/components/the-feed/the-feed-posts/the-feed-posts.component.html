@@ -3,7 +3,7 @@
   <div class="info-parent-container" *ngFor="let item of theFeed">
     <img
       width="400px"
-      src="../../../../assets/lefteris-kallergis-QsmdVT5pTMw-unsplash.jpg"
+      src="{{ item.image_location }}"
       alt="{{ item.drink_name }}"
       class="border"
     />
@@ -34,7 +34,8 @@
         <div class="item">{{ item.date_added | date }}</div>
       </div>
     </div>
-    <div class="comments-container">
+    <!-- comments container -->
+    <!-- <div class="comments-container">
       <button (click)="toggle()">read comments</button>
       <div *ngIf="!commentHide" class="comments">
         <p>
@@ -50,6 +51,6 @@
           dignissimos molestiae assumenda at, dolor voluptatum!
         </p>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
