@@ -20,10 +20,10 @@ const routes: Routes = [
     path: 'the-feed',
     component: TheFeedPostsComponent,
   },
-  {
-    path: 'quiz',
-    component: QuizComponent,
-  },
+  // {
+  //   path: 'quiz',
+  //   component: QuizComponent,
+  // },
   {
     path: 'login',
     component: LoginFormComponent,
