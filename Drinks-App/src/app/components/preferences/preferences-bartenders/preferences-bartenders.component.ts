@@ -19,14 +19,14 @@ export class PreferencesBartendersComponent implements OnInit, OnDestroy {
   constructor(private preferService: PreferencesService) {}
 
   ngOnInit(): void {
-    this.preferService.getItems();
-    this.itemsSub = this.preferService
-      .getItemUpdateListener()
-      .subscribe((items) => {
-        this.bartenders = items.filter(
-          (item) => item.preference_cat === 'bartenders'
-        );
-      });
+    // this.preferService.getItems();
+    // this.itemsSub = this.preferService
+    //   .getItemUpdateListener()
+    //   .subscribe((items) => {
+    //     this.bartenders = items.filter(
+    //       (item) => item.preference_cat === 'bartenders'
+    //     );
+    //   });
   }
 
   onDelete(itemId) {

@@ -18,14 +18,14 @@ export class PreferencesLocationsComponent implements OnInit {
   constructor(private preferService: PreferencesService) {}
 
   ngOnInit(): void {
-    this.preferService.getItems();
-    this.itemsSub = this.preferService
-      .getItemUpdateListener()
-      .subscribe((items) => {
-        this.locations = items.filter(
-          (item) => item.preference_cat === 'places'
-        );
-      });
+    // this.preferService.getItems();
+    // this.itemsSub = this.preferService
+    //   .getItemUpdateListener()
+    //   .subscribe((items) => {
+    //     this.locations = items.filter(
+    //       (item) => item.preference_cat === 'places'
+    //     );
+    //   });
   }
 
   onDelete(itemId) {

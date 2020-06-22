@@ -1,7 +1,6 @@
 const recipes = require("express").Router();
 const database = require("../services/connection");
 const verifyToken = require("../services/verifyToken");
-const { response } = require("express");
 
 recipes.get("/", verifyToken, (req, res) => {
   database

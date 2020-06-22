@@ -1,5 +1,5 @@
 const users = require("express").Router();
-const database = require("../services/connection");
+const database = require("../services/aws_connection");
 // const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const verifyToken = require("../services/verifyToken");
@@ -14,7 +14,7 @@ users.get("/", verifyToken, (req, res) => {
 });
 
 users.post("/register", async (req, res) => {
-  // console.log("server", req.body);
+  console.log("server", req.body);
   const {
     firstName,
     lastName,
@@ -23,7 +23,7 @@ users.post("/register", async (req, res) => {
     email,
     password,
     bio,
-    date,
+    picture,
   } = req.body;
 
   database.query(
@@ -41,8 +41,8 @@ users.post("/register", async (req, res) => {
           .json({ message: "email already exists", goodToGo: false });
       } else {
         database.query(
-          `INSERT INTO users (user_id, first_name, last_name, username, email, password, bio, birthday, join_date) VALUES (uuid_generate_v4(), $1::text, $2::text,$3::text, $5::text, $6::text, $7::text, $4::text, $8::date) RETURNING user_id, password`,
-          [firstName, lastName, userName, age, email, password, bio, date],
+          `INSERT INTO users (user_id, first_name, last_name, username, email, password, bio, age, picture) VALUES (uuid_generate_v4(), $1::text, $2::text,$3::text, $5::text, $6::text, $7::text, $4::int, $8::text) RETURNING user_id, password`,
+          [firstName, lastName, userName, age, email, password, bio, picture],
           (err, response) => {
             if (err) {
               throw err;
@@ -61,11 +61,6 @@ users.post("/register", async (req, res) => {
               goodToGo: true,
               token,
             });
-            // res.status(201).json({
-            //   message: "You successfully registered, please log in",
-            //   goodToGo: true,
-            //   token,
-            // });
           }
         );
       }
@@ -109,24 +104,5 @@ users.post("/login", (req, res) => {
       }
     });
 });
-
-// const parseToken = (token) => {
-//   try {
-//     return jwt.verify(token.split(" ")[1], config.JWT_SECRET);
-//   } catch (error) {
-//     return null;
-//   }
-// };
-
-// const notAuthorized = (res) => {
-//   return res.status(401).send({
-//     errors: [
-//       {
-//         title: "Not Authorized!",
-//         detail: "You need to log in to get an access!",
-//       },
-//     ],
-//   });
-// };
 
 module.exports = users;

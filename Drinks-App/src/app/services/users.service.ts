@@ -36,7 +36,7 @@ export class UsersService {
           // console.log(this.warning);
         } else {
           // console.log(response.message);
-          // console.log(response.token);
+          console.log(response.token);
           localStorage.setItem('token', response.token);
 
           this.router.navigate(['/the-feed']);
@@ -55,12 +55,11 @@ export class UsersService {
       .subscribe((response) => {
         // console.log('service', response.user);
         if (!response.goodToGo) {
-          console.log(response.goodToGo);
+          // console.log(response.goodToGo);
 
           console.log(response.message);
         } else {
           console.log(response.message);
-          console.log(response.token);
           localStorage.setItem('token', response.token);
 
           this.router.navigate(['/the-feed']);
