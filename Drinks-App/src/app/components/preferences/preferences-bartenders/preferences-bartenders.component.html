@@ -1,6 +1,6 @@
-<section>
+<div class="parent-container">
   <h1>Bartenders</h1>
-  <div class="container" *ngIf="bartenders.length > 0">
+  <div class="child-container" *ngIf="bartenders.length > 0">
     <div *ngFor="let item of bartenders">
       <!-- <p>{{ item.preference_id }}</p> -->
       <p>{{ item.preferences_info }}</p>
@@ -9,4 +9,4 @@
     </div>
   </div>
   <p *ngIf="bartenders.length < 0">No posts yet</p>
-</section>
+</div>
