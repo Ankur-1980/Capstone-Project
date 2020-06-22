@@ -7,14 +7,14 @@ import { HttpClient } from '@angular/common/http';
 export class ImageUploadService {
   constructor(private http: HttpClient) {}
 
-  uploadImage(image: File): any {
+  uploadImage(image: string): any {
     const formData = new FormData();
-    console.log('service', image);
 
-    formData.append('image', image);
+    // formData.append('image', image);
 
-    console.log('formData', formData.get('image'));
-
-    return this.http.post('/api/drink-posts/images', formData.get('image'));
+    // console.log('formData Get', formData.get('image'));
+    // console.log('formdata', formData);
+    console.log('service image', image);
+    return this.http.post('/api/drink-posts/images', 'image being sent');
   }
 }

@@ -8,6 +8,7 @@ imgRouter.post("/", (req, res) => {
     if (err) {
       return res.status(422).json({ message: err.message });
     }
+    console.log("helper", req.file);
 
     return res.json({ imgURL: req.file.location, imgKey: req.file.key });
   });

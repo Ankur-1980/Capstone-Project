@@ -87,8 +87,9 @@ drinkPosts.delete("/:id", verifyToken, (req, res) => {
 // image upload
 drinkPosts.post("/images", (req, res) => {
   console.log("working?");
-  console.log("req.file", req.file);
+  console.log("req", req.file);
   console.log("req.body", req.body);
+
   singleUpload(req, res, (err) => {
     if (err) {
       return res.status(422).json({ message: err.message });

@@ -6,7 +6,10 @@ class ImageSnippet {
   pending: boolean = false;
   status: string = 'init';
 
-  constructor(public src: string, public file: File) {}
+  constructor(public src: string, public file: File) {
+    this.src = src;
+    this.file = file;
+  }
 }
 
 @Component({
@@ -35,14 +38,21 @@ export class ImageUploadComponent {
     const reader = new FileReader();
 
     reader.addEventListener('load', (event: any) => {
+      console.log('event', event.target);
+
       this.selectedFile = new ImageSnippet(event.target.result, file);
+      console.log('selected file', this.selectedFile.src);
 
       this.selectedFile.pending = true;
-      this.imageService.uploadImage(this.selectedFile.file).subscribe(
+      this.imageService.uploadImage(this.selectedFile.src).subscribe(
         (res) => {
+          console.log('comp response', res);
+
           this.onSuccess();
         },
         (err) => {
+          console.log('component', err);
+
           this.onError();
         }
       );
