@@ -38,7 +38,7 @@ export class PostDrinkFormComponent implements OnInit {
       location: [''],
       imageLocation: [null],
       dateAdded: [moment().format()],
-      userId: [this.auth.userID],
+      username: [this.auth.username],
     });
   }
 

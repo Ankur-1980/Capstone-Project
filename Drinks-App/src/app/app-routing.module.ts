@@ -37,12 +37,7 @@ const routes: Routes = [
     component: PostDrinkFormComponent,
     canActivate: [AuthGuard],
   },
-  // // path to other users
-  // {
-  //   path: 'other_user',
-  //   component: <nameOfComponent>,
-  //   canActivate: [AuthGuard]
-  // },
+
   {
     path: 'quiz',
     loadChildren: () =>

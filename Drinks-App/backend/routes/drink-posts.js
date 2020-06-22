@@ -31,11 +31,12 @@ drinkPosts.post("/users", verifyToken, (req, res) => {
     location,
     imageLocation,
     dateAdded,
+    username,
   } = req.body;
 
   database
     .query(
-      "INSERT INTO drink_posts (post_id, drink_name, rating, glassware, description, location, image_location, date_added, user_id) VALUES (uuid_generate_v4(), $1, $2, $3, $4, $5, $6, $7, $8)",
+      "INSERT INTO drink_posts (post_id, drink_name, rating, glassware, description, location, image_location, date_added, user_id, username) VALUES (uuid_generate_v4(), $1, $2, $3, $4, $5, $6, $7, $8, $9)",
       [
         name,
         rating,
@@ -45,6 +46,7 @@ drinkPosts.post("/users", verifyToken, (req, res) => {
         imageLocation,
         dateAdded,
         req.userId,
+        username,
       ]
     )
     .then(() => {
@@ -60,8 +62,7 @@ drinkPosts.post("/users", verifyToken, (req, res) => {
 });
 
 drinkPosts.delete("/:id", verifyToken, (req, res) => {
-  console.log("params", req.params.id);
-  console.log("body", req.body);
+  // console.log("params", req.params.id);
 
   database
     .query("DELETE FROM drink_posts WHERE post_id = $1", [req.params.id])
