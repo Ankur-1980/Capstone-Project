@@ -10,13 +10,11 @@
       <ul>
         <li>
           <span>{{ recipe.measure1 }}</span>
-          <span>{{ recipe.ingredient1 }}</span>
+          <span> {{ recipe.ingredient1 }}</span>
         </li>
         <li>{{ recipe.measure2 }} {{ recipe.ingredient2 }}</li>
         <li>{{ recipe.measure3 }} {{ recipe.ingredient3 }}</li>
-        <li *ngIf="recipe.measure4 === !null; or: recipe.ingredient4 === !null">
-          {{ recipe.measure4 }} {{ recipe.ingredient4 }}
-        </li>
+        <li>{{ recipe.measure4 }} {{ recipe.ingredient4 }}</li>
         <li>{{ recipe.measure5 }} {{ recipe.ingredient5 }}</li>
         <li>{{ recipe.measure6 }} {{ recipe.ingredient6 }}</li>
         <li>{{ recipe.measure7 }} {{ recipe.ingredient7 }}</li>
