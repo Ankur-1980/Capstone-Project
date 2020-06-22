@@ -31,10 +31,7 @@ export class UserRecipesCreateComponent implements OnInit {
 
     this.userRecipe = this.fb.group({
       name: ['', [Validators.required]],
-      rating: [''],
       glassware: [''],
-      latitude: [''],
-      longitude: [''],
       method: [''],
       ingredient1: [''],
       ingredient2: [''],
