@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RecipeApiService } from '../../../services/recipeAPI.service';
 
@@ -8,21 +8,17 @@ import { RecipeApiService } from '../../../services/recipeAPI.service';
   styleUrls: ['./results.component.css','../quiz.component.css'],
 })
 export class ResultsComponent implements OnInit {
-  recipes;
-  recipeID: number;
+  recipes: any[];
 
-  constructor(
-    private recipeAPI: RecipeApiService,
-    private route: ActivatedRoute
-    ) {}
+  constructor(private recipeApi: RecipeApiService) {}
 
   ngOnInit(): void {
-    this.recipeID = this.route.snapshot.params.recipeID;
-    console.log('component', this.recipeID);
-
-    this.recipeAPI.getDetails(this.recipeID).subscribe((data) => {
+    this.recipeApi.getRandom().subscribe((data) => {
       this.recipes = data['drinks'];
-      console.log('details', this.recipes);
     });
+  }
+
+  nameSearch(results) {
+    this.recipes = results;
   }
 }

@@ -15,9 +15,6 @@ export class QuestionComponent implements OnInit {
   currentQuestion = 0;
   questionIndex: number;
   optionIndex: number;
-  hasAnswer: boolean;
-  disabled: boolean;
-  quizIsOver: boolean;
   status: boolean = false;
   selectedIndex: number;  
 
