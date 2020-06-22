@@ -31,7 +31,7 @@ favorites.post("/", verifyToken, (req, res) => {
 
 favorites.delete("/:id", (req, res) => {
   database
-    .query(`DELETE FROM favorites WHERE preference_id=$1::INT`, [req.params.id])
+    .query(`DELETE FROM favorites WHERE fav_id=$1::INT`, [req.params.id])
     .then(() => {
       database.query("SELECT * FROM favorites").then((response) => {
         res.status(200).json({ message: "Item Deleted", items: response.rows });

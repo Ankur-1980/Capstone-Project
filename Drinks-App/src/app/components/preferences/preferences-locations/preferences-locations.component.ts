@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Item } from '../item';
 import { PreferencesService } from '../preferences.service';
+import { ItemCloud } from '../item_cloud';
 
 @Component({
   selector: 'preferences-locations',
@@ -12,20 +13,18 @@ import { PreferencesService } from '../preferences.service';
   ],
 })
 export class PreferencesLocationsComponent implements OnInit {
-  locations: Item[] = [];
+  locations: ItemCloud[] = [];
   itemsSub: Subscription;
 
   constructor(private preferService: PreferencesService) {}
 
   ngOnInit(): void {
-    // this.preferService.getItems();
-    // this.itemsSub = this.preferService
-    //   .getItemUpdateListener()
-    //   .subscribe((items) => {
-    //     this.locations = items.filter(
-    //       (item) => item.preference_cat === 'places'
-    //     );
-    //   });
+    this.preferService.getItems();
+    this.itemsSub = this.preferService
+      .getItemUpdateListener()
+      .subscribe((items) => {
+        this.locations = items.filter((item) => item.fav_cat === 'places');
+      });
   }
 
   onDelete(itemId) {
