@@ -21,6 +21,7 @@ drinkPosts.get("/users", verifyToken, (req, res) => {
   );
 });
 
+// logged in user post
 drinkPosts.post("/users", verifyToken, (req, res) => {
   const {
     name,
@@ -54,6 +55,23 @@ drinkPosts.post("/users", verifyToken, (req, res) => {
         )
         .then((response) => {
           res.status(201).json({ message: "Post added", items: response.rows });
+        });
+    });
+});
+
+drinkPosts.delete("/:id", verifyToken, (req, res) => {
+  console.log("params", req.params.id);
+  console.log("body", req.body);
+
+  database
+    .query("DELETE FROM drink_posts WHERE post_id = $1", [req.params.id])
+    .then(() => {
+      database
+        .query("SELECT * FROM drink_posts WHERE user_id = $1", [req.userId])
+        .then((response) => {
+          res
+            .status(201)
+            .json({ message: "Post Deleted", items: response.rows });
         });
     });
 });

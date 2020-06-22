@@ -3,6 +3,8 @@ import { DrinkPostService } from 'src/app/services/drink-post.service';
 import { MOCK_POSTS } from 'src/app/MOCK_DATA/mock-posts';
 import { UsersService } from 'src/app/services/users.service';
 import { AuthService } from 'src/app/services/auth.service';
+import { Subscription } from 'rxjs';
+import { Data } from '@angular/router';
 
 @Component({
   selector: 'user-profile',
@@ -10,7 +12,8 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./user-profile.component.css'],
 })
 export class UserProfileComponent implements OnInit {
-  posts;
+  posts: Data;
+  // postSub: Subscription
   userInfo = [];
   mockPosts = MOCK_POSTS;
 
@@ -21,11 +24,11 @@ export class UserProfileComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // this.drinkPosts.getDrinks().subscribe((data) => {
-    //   // console.log(data);
-    //   this.posts = data;
-    //   console.log(this.posts);
-    // });
+    this.drinkPosts.getUserPosts().subscribe((data) => {
+      // console.log(data);
+      this.posts = data;
+      console.log(this.posts);
+    });
 
     this.userService.getUsers().subscribe((data) => {
       this.userInfo = data.users;
@@ -37,5 +40,10 @@ export class UserProfileComponent implements OnInit {
     this.auth.logOut();
   }
 
-  deletePost(postId) {}
+  deletePost(postId) {
+    console.log(postId);
+    this.drinkPosts.deletePost(postId).subscribe((data: Data) => {
+      this.posts = data.items;
+    });
+  }
 }

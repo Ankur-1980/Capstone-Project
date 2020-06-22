@@ -35,17 +35,16 @@ export class DrinkPostService {
       .subscribe((response) => {
         console.log(response);
       });
+  }
 
-    // const postData = new FormData();
-    // postData.append('name', formValue.name);
-    // postData.append('description', formValue.description);
-    // postData.append('glassware', formValue.glassware);
-    // postData.append('image', formValue.image);
-    // postData.append('location', formValue.location);
-    // postData.append('rating', formValue.rating);
+  deletePost(postId) {
+    let headers = new HttpHeaders();
+    headers = headers.set(
+      'authorization',
+      localStorage.getItem('topShelf_token')
+    );
+    console.log('service', postId);
 
-    // console.log('postData:', postData);
-
-    // this.router.navigate(['/the-feed']);
+    return this.http.delete(`api/drink-posts/${postId}`, { headers });
   }
 }
