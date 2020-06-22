@@ -2987,9 +2987,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
-    function PostDrinkFormComponent_option_17_Template(rf, ctx) {
+    function PostDrinkFormComponent_div_14_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "option", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 17);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 18);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+
+      if (rf & 2) {
+        var ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", ctx_r1.imagePreview, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+      }
+    }
+
+    function PostDrinkFormComponent_option_23_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "option", 19);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
 
@@ -2997,13 +3015,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       if (rf & 2) {
-        var glass_r1 = ctx.$implicit;
+        var glass_r3 = ctx.$implicit;
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("value", glass_r1.strGlass);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("value", glass_r3.strGlass);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](glass_r1.strGlass);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](glass_r3.strGlass);
       }
     }
 
@@ -3030,17 +3048,36 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             rating: [''],
             glassware: [''],
             description: [''],
-            location: ['']
-          });
-          this.drinkPostForm.valueChanges.subscribe(function (value) {
-            // console.log(value);
-            _this.ratingsDisplay = value.rating; // console.log('rating', this.ratingsDisplay);
+            location: [''],
+            image: [null, [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]]
           });
         }
       }, {
         key: "onSubmit",
         value: function onSubmit() {
           this.drinkPostService.postADrink(this.drinkPostForm.value);
+        }
+      }, {
+        key: "pickImage",
+        value: function pickImage(event) {
+          var _this2 = this;
+
+          // casting as HTMLInputElement tells typescript to give access to the files method
+          var file = event.target.files[0];
+          this.drinkPostForm.patchValue({
+            image: file
+          }); // updates the form
+
+          this.drinkPostForm.get('image').updateValueAndValidity(); // FileReader is built into JS
+
+          var reader = new FileReader(); // function will get called after the file is done loading
+
+          reader.onload = function () {
+            _this2.imagePreview = reader.result;
+          }; // load the file
+
+
+          reader.readAsDataURL(file);
         }
       }]);
 
@@ -3054,11 +3091,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     PostDrinkFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: PostDrinkFormComponent,
       selectors: [["post-drink-form"]],
-      decls: 24,
-      vars: 3,
-      consts: [[1, "background-img"], [1, "global-parent"], [3, "formGroup", "ngSubmit"], [1, "form-group"], ["for", "name"], ["type", "text", "formControlName", "name", "placeholder", "Drink Name"], ["type", "range", "min", "1", "max", "5", "value", "0", "step", ".5", "id", "rating-slider", "formControlName", "rating", 1, "slider"], ["formControlName", "glassware", "name", "glassware", "id", "glassware"], ["value", ""], [3, "value", 4, "ngFor", "ngForOf"], ["for", "description"], ["name", "description", "formControlName", "description", "id", "description", "cols", "25", "rows", "4", 1, "description"], ["type", "submit"], [3, "value"]],
+      decls: 30,
+      vars: 4,
+      consts: [[1, "background-img"], [1, "global-parent"], [3, "formGroup", "ngSubmit"], [1, "form-group"], ["for", "name"], ["type", "text", "formControlName", "name", "placeholder", "Drink Name"], ["type", "button", 3, "click"], ["type", "file", "name", "images", "id", "images", 3, "change"], ["filePicker", ""], ["class", "image-preview", 4, "ngIf"], ["type", "range", "min", "1", "max", "5", "value", "0", "step", ".5", "id", "rating-slider", "formControlName", "rating", 1, "slider"], ["formControlName", "glassware", "name", "glassware", "id", "glassware"], ["value", ""], [3, "value", 4, "ngFor", "ngForOf"], ["for", "description"], ["name", "description", "formControlName", "description", "id", "description", "cols", "25", "rows", "4", 1, "description"], ["type", "submit"], [1, "image-preview"], ["alt", "drinkPostForm.value.name", 3, "src"], [3, "value"]],
       template: function PostDrinkFormComponent_Template(rf, ctx) {
         if (rf & 1) {
+          var _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
@@ -3087,49 +3126,77 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "input", 6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "button", 6);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "span");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PostDrinkFormComponent_Template_button_click_10_listener() {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12);
+            var _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](13);
+
+            return _r0.click();
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Add an Image");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "input", 7, 8);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("change", function PostDrinkFormComponent_Template_input_change_12_listener($event) {
+            return ctx.pickImage($event);
+          });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](14, PostDrinkFormComponent_div_14_Template, 2, 1, "div", 9);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "select", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "option", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](16, "input", 10);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Glassware");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "span");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](17, PostDrinkFormComponent_option_17_Template, 2, 2, "option", 9);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "label", 10);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "select", 11);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Description:");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "option", 12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](21, "textarea", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "Glassware");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "button", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](23, PostDrinkFormComponent_option_23_Template, 2, 2, "option", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "Submit");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "div", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "label", 14);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "Description:");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](27, "textarea", 15);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "button", 16);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "Submit");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -3143,17 +3210,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.drinkPostForm);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Rating: ", ctx.ratingsDisplay, "");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.imagePreview !== "" && ctx.imagePreview);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Rating: ", ctx.drinkPostForm.value.rating, "");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.glassware);
         }
       },
-      directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["RangeValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["SelectControlValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgSelectOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_x"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"]],
-      styles: [".background-img[_ngcontent-%COMP%] {\r\n  background-image: url('Highball.svg');\r\n  background-repeat: no-repeat;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\nform[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: auto;\r\n}\r\n\r\n.form-group[_ngcontent-%COMP%] {\r\n  margin-top: 30px;\r\n  color: rgb(236, 184, 92);\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nselect[_ngcontent-%COMP%] {\r\n  width: 30vw;\r\n  background-color: #80bdad;\r\n  color: #204051;\r\n  border-style: none;\r\n}\r\n\r\n\r\n\r\n@media screen and (max-width: 768px) {\r\n}\r\n\r\n\r\n\r\n@media screen and (max-width: 360px) {\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wb3N0LWRyaW5rLWZvcm0vcG9zdC1kcmluay1mb3JtLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQ0FBOEM7RUFDOUMsNEJBQTRCO0VBQzVCLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLFlBQVk7QUFDZDs7QUFDQTtFQUNFLGdCQUFnQjtFQUNoQix3QkFBd0I7RUFDeEIsYUFBYTtFQUNiLHNCQUFzQjtBQUN4Qjs7QUFFQSxpQkFBaUI7O0FBQ2pCOzs7R0FHRzs7QUFFSCxhQUFhOztBQUNiO0VBQ0UsV0FBVztFQUNYLHlCQUF5QjtFQUN6QixjQUFjO0VBQ2Qsa0JBQWtCO0FBQ3BCOztBQUVBLDJCQUEyQjs7QUFDM0I7QUFDQTs7QUFFQSwwQkFBMEI7O0FBQzFCO0FBQ0EiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3Bvc3QtZHJpbmstZm9ybS9wb3N0LWRyaW5rLWZvcm0uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrZ3JvdW5kLWltZyB7XHJcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4vSGlnaGJhbGwvSGlnaGJhbGwuc3ZnKTtcclxuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogMTAwJTtcclxufVxyXG5cclxuZm9ybSB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIGhlaWdodDogYXV0bztcclxufVxyXG4uZm9ybS1ncm91cCB7XHJcbiAgbWFyZ2luLXRvcDogMzBweDtcclxuICBjb2xvcjogcmdiKDIzNiwgMTg0LCA5Mik7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG59XHJcblxyXG4vKiBzbGlkZXIgc3R5bGUgKi9cclxuLyogXHJcbi5zbGlkZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMzYsIDE4NCwgOTIpO1xyXG59ICovXHJcblxyXG4vKiBkcm9wZG93biAqL1xyXG5zZWxlY3Qge1xyXG4gIHdpZHRoOiAzMHZ3O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM4MGJkYWQ7XHJcbiAgY29sb3I6ICMyMDQwNTE7XHJcbiAgYm9yZGVyLXN0eWxlOiBub25lO1xyXG59XHJcblxyXG4vKiBNZWRpYSBRdWVyeSBmb3IgVGFibGV0ICovXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDc2OHB4KSB7XHJcbn1cclxuXHJcbi8qIE1lZGlhIFF1ZXJ5IGZvciBwaG9uZSAqL1xyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiAzNjBweCkge1xyXG59XHJcbiJdfQ== */"]
+      directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["RangeValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["SelectControlValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgSelectOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_x"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"]],
+      styles: [".background-img[_ngcontent-%COMP%] {\r\n  background-image: url('Highball.svg');\r\n  background-repeat: no-repeat;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\nform[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: auto;\r\n}\r\n\r\n.form-group[_ngcontent-%COMP%] {\r\n  margin-top: 30px;\r\n  color: rgb(236, 184, 92);\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\ninput[type=\"file\"][_ngcontent-%COMP%] {\r\n  visibility: hidden;\r\n}\r\n\r\n.image-preview[_ngcontent-%COMP%] {\r\n  height: 5rem;\r\n  margin: 1rem 0;\r\n}\r\n\r\n.image-preview[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\r\n  height: 100%;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nselect[_ngcontent-%COMP%] {\r\n  width: 30vw;\r\n  background-color: #80bdad;\r\n  color: #204051;\r\n  border-style: none;\r\n}\r\n\r\n\r\n\r\n@media screen and (max-width: 768px) {\r\n}\r\n\r\n\r\n\r\n@media screen and (max-width: 360px) {\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wb3N0LWRyaW5rLWZvcm0vcG9zdC1kcmluay1mb3JtLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQ0FBOEM7RUFDOUMsNEJBQTRCO0VBQzVCLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLFlBQVk7QUFDZDs7QUFDQTtFQUNFLGdCQUFnQjtFQUNoQix3QkFBd0I7RUFDeEIsYUFBYTtFQUNiLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLFlBQVk7RUFDWixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUNBLGlCQUFpQjs7QUFDakI7OztHQUdHOztBQUVILGFBQWE7O0FBQ2I7RUFDRSxXQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLGNBQWM7RUFDZCxrQkFBa0I7QUFDcEI7O0FBRUEsMkJBQTJCOztBQUMzQjtBQUNBOztBQUVBLDBCQUEwQjs7QUFDMUI7QUFDQSIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcG9zdC1kcmluay1mb3JtL3Bvc3QtZHJpbmstZm9ybS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmJhY2tncm91bmQtaW1nIHtcclxuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi9IaWdoYmFsbC9IaWdoYmFsbC5zdmcpO1xyXG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiAxMDAlO1xyXG59XHJcblxyXG5mb3JtIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgaGVpZ2h0OiBhdXRvO1xyXG59XHJcbi5mb3JtLWdyb3VwIHtcclxuICBtYXJnaW4tdG9wOiAzMHB4O1xyXG4gIGNvbG9yOiByZ2IoMjM2LCAxODQsIDkyKTtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbn1cclxuXHJcbmlucHV0W3R5cGU9XCJmaWxlXCJdIHtcclxuICB2aXNpYmlsaXR5OiBoaWRkZW47XHJcbn1cclxuXHJcbi5pbWFnZS1wcmV2aWV3IHtcclxuICBoZWlnaHQ6IDVyZW07XHJcbiAgbWFyZ2luOiAxcmVtIDA7XHJcbn1cclxuXHJcbi5pbWFnZS1wcmV2aWV3IGltZyB7XHJcbiAgaGVpZ2h0OiAxMDAlO1xyXG59XHJcbi8qIHNsaWRlciBzdHlsZSAqL1xyXG4vKiBcclxuLnNsaWRlciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIzNiwgMTg0LCA5Mik7XHJcbn0gKi9cclxuXHJcbi8qIGRyb3Bkb3duICovXHJcbnNlbGVjdCB7XHJcbiAgd2lkdGg6IDMwdnc7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzgwYmRhZDtcclxuICBjb2xvcjogIzIwNDA1MTtcclxuICBib3JkZXItc3R5bGU6IG5vbmU7XHJcbn1cclxuXHJcbi8qIE1lZGlhIFF1ZXJ5IGZvciBUYWJsZXQgKi9cclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY4cHgpIHtcclxufVxyXG5cclxuLyogTWVkaWEgUXVlcnkgZm9yIHBob25lICovXHJcbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDM2MHB4KSB7XHJcbn1cclxuIl19 */"]
     });
     /*@__PURE__*/
 
@@ -3349,11 +3420,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PreferencesBartendersComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this2 = this;
+          var _this3 = this;
 
           this.preferService.getItems();
           this.itemsSub = this.preferService.getItemUpdateListener().subscribe(function (items) {
-            _this2.bartenders = items.filter(function (item) {
+            _this3.bartenders = items.filter(function (item) {
               return item.preference_cat === 'bartenders';
             });
           });
@@ -3721,12 +3792,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PreferencesDrinksComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this3 = this;
+          var _this4 = this;
 
           this.favoriteService.getFavorites();
           this.favSub = this.favoriteService.getFavoriteUpdateListener().subscribe(function (data) {
-            _this3.favorites = data;
-            console.log(_this3.favorites);
+            _this4.favorites = data;
+            console.log(_this4.favorites);
           });
         }
       }, {
@@ -3935,11 +4006,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PreferencesHomeBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this4 = this;
+          var _this5 = this;
 
           this.preferService.getItems();
           this.itemsSub = this.preferService.getItemUpdateListener().subscribe(function (items) {
-            _this4.homeBar = items.filter(function (item) {
+            _this5.homeBar = items.filter(function (item) {
               return item.preference_cat === 'home_bar';
             });
           });
@@ -4156,11 +4227,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PreferencesLocationsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this5 = this;
+          var _this6 = this;
 
           this.preferService.getItems();
           this.itemsSub = this.preferService.getItemUpdateListener().subscribe(function (items) {
-            _this5.locations = items.filter(function (item) {
+            _this6.locations = items.filter(function (item) {
               return item.preference_cat === 'places';
             });
           });
@@ -4922,13 +4993,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PreferencesService, [{
         key: "getItems",
         value: function getItems() {
-          var _this6 = this;
+          var _this7 = this;
 
           this.http.get('/api/preferences').subscribe(function (data) {
             console.log(data.message);
-            _this6.items = data.items;
+            _this7.items = data.items;
 
-            _this6.itemsUpdated.next(_toConsumableArray(_this6.items));
+            _this7.itemsUpdated.next(_toConsumableArray(_this7.items));
           });
         }
       }, {
@@ -4939,26 +5010,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "addItems",
         value: function addItems(formValue) {
-          var _this7 = this;
+          var _this8 = this;
 
           console.log(formValue);
           this.http.post('/api/preferences', formValue).subscribe(function (response) {
             console.log(response.message);
 
-            _this7.itemsUpdated.next(response.items);
+            _this8.itemsUpdated.next(response.items);
           });
         }
       }, {
         key: "deleteItem",
         value: function deleteItem(itemId) {
-          var _this8 = this;
+          var _this9 = this;
 
           this.http["delete"]("/api/preferences/".concat(itemId)).subscribe(function () {
-            _this8.items = _this8.items.filter(function (item) {
+            _this9.items = _this9.items.filter(function (item) {
               return item.preference_id !== itemId;
             });
 
-            _this8.itemsUpdated.next(_toConsumableArray(_this8.items));
+            _this9.itemsUpdated.next(_toConsumableArray(_this9.items));
           });
         }
       }]);
@@ -5140,7 +5211,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var QuestionComponent = /*#__PURE__*/function () {
       function QuestionComponent(route, router) {
-        var _this9 = this;
+        var _this10 = this;
 
         _classCallCheck(this, QuestionComponent);
 
@@ -5250,10 +5321,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           selectedOption: ''
         }];
         this.route.paramMap.subscribe(function (params) {
-          _this9.setQuestionID(+params.get('questionId')); // get the question ID and store it
+          _this10.setQuestionID(+params.get('questionId')); // get the question ID and store it
 
 
-          _this9.question = _this9.getQuestion;
+          _this10.question = _this10.getQuestion;
         });
       }
 
@@ -5284,10 +5355,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getQuestion",
         get: function get() {
-          var _this10 = this;
+          var _this11 = this;
 
           return this.allQuestions.filter(function (question) {
-            return question.questionId === _this10.questionID;
+            return question.questionId === _this11.questionID;
           })[0];
         }
       }]);
@@ -6513,13 +6584,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this11 = this;
+          var _this12 = this;
 
           this.recipeID = this.route.snapshot.params.recipeID;
           console.log('component', this.recipeID);
           this.recipeAPI.getDetails(this.recipeID).subscribe(function (data) {
-            _this11.recipes = data['drinks'];
-            console.log('details', _this11.recipes);
+            _this12.recipes = data['drinks'];
+            console.log('details', _this12.recipes);
           });
         }
       }]);
@@ -6730,11 +6801,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeMainComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this12 = this;
+          var _this13 = this;
 
-          this.recipeApi.getLetterA().subscribe(function (data) {
-            _this12.recipes = data['drinks'];
-            console.log(_this12.recipes);
+          this.recipeApi.getRandom().subscribe(function (data) {
+            _this13.recipes = data['drinks']; // console.log(this.recipes);
           });
         }
       }, {
@@ -6927,26 +6997,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeSearchComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this13 = this;
-
-          this.recipeAPI.getGlassware().subscribe(function (data) {
-            _this13.glassware = data['drinks'];
-          });
-          this.recipeAPI.getAlcoholic().subscribe(function (data) {
-            _this13.alcoholic = data['drinks'];
-          });
-          this.recipeAPI.getCategories().subscribe(function (data) {
-            _this13.categories = data['drinks'];
-          });
-          this.recipeAPI.filterCocktailType().subscribe(function (data) {
-            console.log('filter cocktails', data['drinks']);
-          }); // this.filterForm = this.fb.group({
-          //   glassware: [''],
-          //   categories: [''],
-          //   booze: [''],
-          //   alphabet: [''],
+          // this.recipeAPI.getGlassware().subscribe((data) => {
+          //   this.glassware = data['drinks'];
           // });
-
+          // this.recipeAPI.getAlcoholic().subscribe((data) => {
+          //   this.alcoholic = data['drinks'];
+          // });
+          // this.recipeAPI.getCategories().subscribe((data) => {
+          //   this.categories = data['drinks'];
+          // });
+          // this.recipeAPI.filterCocktailType().subscribe((data) => {
+          //   console.log('filter cocktails', data['drinks']);
+          // });
           this.nameSearch = this.fb.group({
             searchName: ['']
           });
@@ -8671,8 +8733,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "postADrink",
         value: function postADrink(formValue) {
-          console.log('service', formValue);
-          this.router.navigate(['/the-feed']);
+          this.http.post('/api/drink-posts', formValue);
+          console.log('service', formValue); // const postData = new FormData();
+          // postData.append('title')
+          // this.router.navigate(['/the-feed']);
         }
       }]);
 
@@ -9010,42 +9074,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return this.http.get("".concat(this.baseUrl, "list.php?g=list"));
         }
       }, {
-        key: "getAlcoholic",
-        value: function getAlcoholic() {
-          return this.http.get("".concat(this.baseUrl, "list.php?a=list"));
-        }
-      }, {
-        key: "getLetterA",
-        value: function getLetterA() {
-          return this.http.get("".concat(this.baseUrl, "search.php?f=a"));
-        }
-      }, {
-        key: "getLetter",
-        value: function getLetter(letter) {
-          return this.http.get("".concat(this.baseUrl, "search.php?f=").concat(letter));
-        }
-      }, {
-        key: "getIngredients",
-        value: function getIngredients() {
-          return this.http.get("".concat(this.baseUrl, "list.php?i=list"));
-        }
-      }, {
-        key: "getDetails",
-        value: function getDetails(recipeID) {
-          // console.log('service', recipeID);
-          return this.http.get("".concat(this.baseUrl, "lookup.php?i=").concat(recipeID));
-        }
-      }, {
-        key: "filterNA",
-        value: function filterNA(something) {
-          return this.http.get("".concat(this.baseUrl, "filter.php?a=Alcoholic"));
-        }
-      }, {
-        key: "filterCocktailType",
-        value: function filterCocktailType() {
-          return this.http.get("".concat(this.baseUrl, "filter.php?g=Cocktail_glass"));
-        }
-      }, {
         key: "searchByName",
         value: function searchByName(name) {
           return this.http.get("".concat(this.baseUrl, "search.php?s=").concat(name.searchName));
@@ -9055,6 +9083,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function searchByLetter(letter) {
           // console.log(letter);
           return this.http.get("".concat(this.baseUrl, "search.php?f=").concat(letter.letter));
+        }
+      }, {
+        key: "getRandom",
+        value: function getRandom() {
+          return this.http.get("".concat(this.baseUrl, "randomselection.php"));
+        }
+      }, {
+        key: "getDetails",
+        value: function getDetails(recipeID) {
+          // console.log('service', recipeID);
+          return this.http.get("".concat(this.baseUrl, "lookup.php?i=").concat(recipeID));
         }
       }]);
 
