@@ -1,10 +1,15 @@
-<section>
+<div class="parent-container">
   <h1>Bartenders</h1>
-  <div class="container" *ngIf="bartenders.length > 0">
+  <div class="child-container" *ngIf="bartenders.length > 0">
     <div *ngFor="let item of bartenders">
       <p>{{ item.fav_info }}</p>
       <button (click)="onDelete(item.fav_id)">Delete</button>
     </div>
   </div>
+<<<<<<< HEAD
   <p *ngIf="bartenders.length <= 0">You don't like any bartenders?</p>
 </section>
+=======
+  <p *ngIf="bartenders.length < 0">No posts yet</p>
+</div>
+>>>>>>> c2b63ecf8562c77c38003214c72b2887a2eddc5e
