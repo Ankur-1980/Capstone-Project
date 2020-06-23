@@ -98,5 +98,6 @@ drinkPosts.post("/images", (req, res) => {
     return res.json({ imgURL: req.file.location, imgKey: req.file.key });
   });
 });
+// nothing of importance
 
 module.exports = drinkPosts;
