@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Item } from './item';
+
 import { Subject } from 'rxjs';
 import { AuthService } from 'src/app/services/auth.service';
 import { ItemCloud } from './item_cloud';
