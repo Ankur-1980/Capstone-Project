@@ -1,6 +1,6 @@
 <div class="global-parent">
   <h1>Search Drinks</h1>
-  <a routerLink="/preferences">Back to preferences</a>
+
   <form [formGroup]="nameSearch" (ngSubmit)="searchByName()">
     <div class="form-group">
       <input
@@ -24,4 +24,5 @@
     </div>
     <button type="submit">Submit</button>
   </form>
+  <a routerLink="/preferences">Back to preferences</a>
 </div>

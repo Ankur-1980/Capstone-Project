@@ -1,3 +1,10 @@
-h1 {
-  font-size: 40px;
+a {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #80bdad;
+  color: #204051;
+}
+
+button {
+  margin-bottom: 10px;
 }

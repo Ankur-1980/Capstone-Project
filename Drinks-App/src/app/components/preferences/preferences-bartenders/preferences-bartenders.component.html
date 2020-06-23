@@ -1,4 +1,4 @@
-<div class="parent-container">
+<div class="global-parent">
   <h1>Bartenders</h1>
   <div class="child-container" *ngIf="bartenders.length > 0">
     <div *ngFor="let item of bartenders">
@@ -7,5 +7,4 @@
     </div>
   </div>
   <p *ngIf="bartenders.length <= 0">You don't like any bartenders?</p>
-</section>
-
+</div>

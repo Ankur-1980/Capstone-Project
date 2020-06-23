@@ -9,12 +9,8 @@
     <div class="drink-name">{{ recipe.strDrink }}</div>
     <a routerLink="recipe-details/{{ recipe.idDrink }}">more details</a>
     <div class="saved" (click)="toggleAddRemove()">
-      <span *ngIf="show">
-        <p>Save Recipe</p>
-      </span>
-      <span *ngIf="!show">
-        Recipe Saved
-      </span>
+      <div class="unsaved" *ngIf="show"></div>
+      <div class="save" *ngIf="!show"></div>
     </div>
   </div>
 </div>

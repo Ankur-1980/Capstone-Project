@@ -8,31 +8,37 @@
   z-index: -1;
 }
 
-.search-container {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
+.card-container {
+  margin: 5vh 5vw;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 15px;
 }
 
-.card-container {
-  margin-top: 5vh;
-  display: grid;
-  grid-template-columns: repeat(6, auto);
-  gap: 10px;
-  justify-content: center;
+.drink-name {
+  align-self: center;
 }
 
 @media screen and (max-width: 768px) {
   .card-container {
     grid-template-columns: repeat(4, auto);
   }
+  .drink-name {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 411px) {
   .card-container {
-    margin: 5vh 2vh;
-    width: 300px;
+    margin: 10vh 5vw;
+    width: 400px;
     grid-template-columns: repeat(2, auto);
-    gap: 5px;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .card-container {
+    width: 320px;
   }
 }
