@@ -33,6 +33,6 @@ export class PreferencesBartendersComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.itemsSub.unsubscribe();
+    // this.itemsSub.unsubscribe();
   }
 }

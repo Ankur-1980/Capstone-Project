@@ -44,3 +44,53 @@
   border: 2px solid rgb(236, 184, 92);
   box-shadow: 3px 3px 5px black;
 }
+
+/* Tablet Sizing */
+@media screen and (max-width: 768px) {
+  .info-container {
+    /* flex-direction: column; */
+    /* justify-content: center; */
+  }
+
+  .profile-pic {
+    margin-right: 60px;
+    width: 500px;
+    height: 250px;
+  }
+
+  .feed-parent {
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .feed-images {
+    height: 230px;
+    width: auto;
+  }
+}
+
+/* Phone Sizing */
+@media screen and (max-width: 411px) {
+  .info-container {
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+
+  .profile-pic {
+    align-self: center;
+    width: 150px;
+    height: 150px;
+  }
+
+  .feed-parent {
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .feed-images {
+    height: 140px;
+    width: auto;
+  }
+}

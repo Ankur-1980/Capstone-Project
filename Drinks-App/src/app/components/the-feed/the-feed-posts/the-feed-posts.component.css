@@ -58,7 +58,7 @@ img.border {
 
 /* phone sizing */
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 411px) {
   .info-parent-container {
     margin-bottom: 30px;
     padding: 15px;

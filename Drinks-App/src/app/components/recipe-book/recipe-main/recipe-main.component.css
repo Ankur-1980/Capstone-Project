@@ -21,3 +21,18 @@
   gap: 10px;
   justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .card-container {
+    margin: 5vh 2vh;
+    width: 300px;
+    grid-template-columns: repeat(2, auto);
+    gap: 5px;
+  }
+}
