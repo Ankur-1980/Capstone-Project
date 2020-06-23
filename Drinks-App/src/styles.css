@@ -94,14 +94,6 @@ label {
   color: #ffffff;
 }
 
-.quiz-container {
-  width: 40%;
-  margin: auto;
-  border: 2px solid rgb(236, 184, 92, 0.5);
-  border-radius: 6px;
-  padding: 20px;
-}
-
 /* button Styling */
 button {
   margin-top: 10px;
@@ -176,10 +168,5 @@ button:hover {
     font-weight: bold;
     margin-top: 0px;
     font-size: 12px;
-  }
-  .quiz-container {
-    width: 100%;
-    border: none;
-    padding: 0;
   }
 }
