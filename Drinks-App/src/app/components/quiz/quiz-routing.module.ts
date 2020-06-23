@@ -11,15 +11,17 @@ const routes: Routes = [
     component: QuizComponent,
   },
   {
-    path: 'quiz/question',
+    path: 'question/:questionId',
     component: QuestionComponent,
     canActivate: [AuthGuard],
   },
   {
-    path: 'quiz/results',
+    path: 'results',
     component: ResultsComponent,
+
     canActivate: [AuthGuard],
   },
+
 ];
 
 @NgModule({

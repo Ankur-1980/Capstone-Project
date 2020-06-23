@@ -94,14 +94,6 @@ label {
   color: #ffffff;
 }
 
-.quiz-container {
-  width: 40%;
-  margin: auto;
-  border: 2px solid rgb(236, 184, 92, 0.5);
-  border-radius: 6px;
-  padding: 20px;
-}
-
 /* button Styling */
 button {
   margin-top: 10px;
@@ -132,47 +124,15 @@ button:hover {
 } */
 
 /* tablet sizing */
-/* @media screen and (max-width: 768px) {
-  .global-parent {
-  }
-} */
-
-/* Phone sizing */
-/* @media screen and (max-width: 640px) {
-  .global-parent {
-    margin-top: 10vh;
-    padding: 0;
-  }
-
+@media screen and (max-width: 768px) {
   input,
   textarea,
   select {
-    padding: 10px 30px;
-    width: 80%;
+    padding: 10px 5px;
   }
+}
 
-  h1 {
-    font-size: 18px;
-  }
-  label {
-    font-size: 12px;
-  }
-  ::placeholder {
-    margin-left: 2px;
-  }
-  p,
-  a {
-    font-size: 12px;
-  }
-  button {
-    width: 80%;
-  }
-  .center-mob {
-    text-align: center;
-  } 
-} */
-
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 411px) {
   .global-parent {
     margin-top: 2vh 0;
     padding: 0;
@@ -208,10 +168,5 @@ button:hover {
     font-weight: bold;
     margin-top: 0px;
     font-size: 12px;
-  }
-  .quiz-container {
-    width: 100%;
-    border: none;
-    padding: 0;
   }
 }
