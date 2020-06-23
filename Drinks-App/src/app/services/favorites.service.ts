@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Subject } from 'rxjs';
 import { Router } from '@angular/router';
 
@@ -13,10 +13,14 @@ export class FavoritesService {
   constructor(private http: HttpClient, private router: Router) {}
 
   addToFavorites(drink) {
-    console.log('service', drink);
+    let headers = new HttpHeaders();
+    headers = headers.set(
+      'authorization',
+      localStorage.getItem('topShelf_token')
+    );
 
     this.http
-      .post<{ message: string; items: any }>('/api/recipes', drink)
+      .post<{ message: string; items: any }>('/api/recipes', drink, { headers })
       .subscribe((response) => {
         console.log(response.message);
         this.favorites.push(drink);
@@ -28,9 +32,16 @@ export class FavoritesService {
 
   userRecipes(recipe) {
     console.log('service', recipe);
+    let headers = new HttpHeaders();
+    headers = headers.set(
+      'authorization',
+      localStorage.getItem('topShelf_token')
+    );
 
     this.http
-      .post<{ message: string; items: any }>('/api/recipes/created', recipe)
+      .post<{ message: string; items: any }>('/api/recipes/created', recipe, {
+        headers,
+      })
       .subscribe((response) => {
         console.log(response.message);
         this.favorites.push(recipe);
@@ -42,8 +53,14 @@ export class FavoritesService {
   }
 
   getFavorites() {
+    let headers = new HttpHeaders();
+    headers = headers.set(
+      'authorization',
+      localStorage.getItem('topShelf_token')
+    );
+
     this.http
-      .get<{ message: string; items: any }>('/api/recipes')
+      .get<{ message: string; items: any }>('/api/recipes', { headers })
       .subscribe((response) => {
         console.log(response.message);
         this.favorites = response.items;
@@ -70,21 +87,18 @@ export class FavoritesService {
   }
 
   deleteFromPref(drinkId) {
+    // console.log('drinkID', drinkId);
     this.http
       .delete<{ message: string; items: any }>(`/api/recipes/${drinkId}`)
       .subscribe((response) => {
         console.log(response.message);
 
         this.favorites = this.favorites.filter(
-          (fav) => fav.id_drink !== drinkId
+          (fav) => fav.saved_id !== drinkId
         );
         this.favoritesUpdated.next([...this.favorites]);
       });
   }
-
-  // getFavorites() {
-  //   return this.favorites;
-  // }
 
   containsFavorite(drink) {
     return this.favorites.includes(drink);
@@ -94,5 +108,15 @@ export class FavoritesService {
     console.log(recipeID);
 
     return this.http.get(`/api/recipes/${recipeID}`);
+  }
+
+  getDetails(recipeID) {
+    let headers = new HttpHeaders();
+    headers = headers.set(
+      'authorization',
+      localStorage.getItem('topShelf_token')
+    );
+    // console.log('service', recipeID);
+    return this.http.get(`/api/recipes/${recipeID}`, { headers });
   }
 }

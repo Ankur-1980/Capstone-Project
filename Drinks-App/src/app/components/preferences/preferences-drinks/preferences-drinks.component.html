@@ -3,9 +3,10 @@
     Saved Recipes
   </h1>
   <div *ngFor="let item of favorites">
-    <!-- <p>{{ item.drink_name }}</p> -->
-    <p>{{ item.preferences_info }}</p>
-    <a routerLink="saved-drinks/{{ item.id_drink }}">details</a>
-    <button (click)="onDelete(item.id_drink)">x</button>
+
+    <p>{{ item.drink_name }}</p>
+    <a routerLink="saved-drinks/{{ item.saved_id }}">details</a>
+    <button (click)="onDelete(item.saved_id)">x</button>
+
   </div>
 </section>

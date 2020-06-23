@@ -2,7 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RecipeApiService } from 'src/app/services/recipeAPI.service';
 import { DrinkPostService } from 'src/app/services/drink-post.service';
-import { mimeType } from './mime-type.validator';
+import { AuthService } from 'src/app/services/auth.service';
+import * as moment from 'moment';
+
+export class ImageSnippet {
+  constructor(public src: string, public file: File) {}
+}
 
 @Component({
   selector: 'post-drink-form',
@@ -12,12 +17,12 @@ import { mimeType } from './mime-type.validator';
 export class PostDrinkFormComponent implements OnInit {
   drinkPostForm: FormGroup;
   glassware: string;
-  imagePreview;
 
   constructor(
     private fb: FormBuilder,
     private recipeApi: RecipeApiService,
-    private drinkPostService: DrinkPostService
+    private drinkPostService: DrinkPostService,
+    private auth: AuthService
   ) {}
 
   ngOnInit(): void {
@@ -26,33 +31,19 @@ export class PostDrinkFormComponent implements OnInit {
     });
 
     this.drinkPostForm = this.fb.group({
-      // drinkPic: [''],
       name: ['', [Validators.required]],
-      rating: [''],
+      rating: [0],
       glassware: [''],
       description: [''],
       location: [''],
-      image: [null, [Validators.required]],
+      imageLocation: [null],
+      dateAdded: [moment().format()],
+      username: [this.auth.username],
     });
   }
 
   onSubmit() {
+    // console.log(this.drinkPostForm.value);
     this.drinkPostService.postADrink(this.drinkPostForm.value);
-  }
-
-  pickImage(event: Event) {
-    // casting as HTMLInputElement tells typescript to give access to the files method
-    const file = (event.target as HTMLInputElement).files[0];
-    this.drinkPostForm.patchValue({ image: file });
-    // updates the form
-    this.drinkPostForm.get('image').updateValueAndValidity();
-    // FileReader is built into JS
-    const reader = new FileReader();
-    // function will get called after the file is done loading
-    reader.onload = () => {
-      this.imagePreview = reader.result;
-    };
-    // load the file
-    reader.readAsDataURL(file);
   }
 }

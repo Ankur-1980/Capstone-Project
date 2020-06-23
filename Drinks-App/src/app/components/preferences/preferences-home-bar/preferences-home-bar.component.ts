@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Item } from '../item';
+import { ItemCloud } from '../item_cloud';
 import { Subscription } from 'rxjs';
 import { PreferencesService } from '../preferences.service';
 
@@ -12,7 +12,7 @@ import { PreferencesService } from '../preferences.service';
   ],
 })
 export class PreferencesHomeBarComponent implements OnInit, OnDestroy {
-  homeBar: Item[] = [];
+  homeBar: ItemCloud[] = [];
   itemsSub: Subscription;
 
   constructor(private preferService: PreferencesService) {}
@@ -22,9 +22,7 @@ export class PreferencesHomeBarComponent implements OnInit, OnDestroy {
     this.itemsSub = this.preferService
       .getItemUpdateListener()
       .subscribe((items) => {
-        this.homeBar = items.filter(
-          (item) => item.preference_cat === 'home_bar'
-        );
+        this.homeBar = items.filter((item) => item.fav_cat === 'home_bar');
       });
   }
 
