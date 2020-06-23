@@ -7,7 +7,7 @@ import { MOCK_PREFER } from 'src/app/MOCK_DATA/mock-preferences';
   selector: 'preferences-bartenders',
   templateUrl: './preferences-bartenders.component.html',
   styleUrls: [
-    './preferences-bartenders.component.css',
+    // './preferences-bartenders.component.css',
     '../preferences-pages.css',
   ],
 })
