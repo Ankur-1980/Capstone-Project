@@ -1,4 +1,4 @@
-<section>
+<div class="global-parent">
   <h1>home bar</h1>
   <p *ngIf="homeBar.length === 0">You have nothing to drink at home?</p>
   <div class="container" *ngIf="homeBar.length > 0">
@@ -7,4 +7,4 @@
       <button (click)="onDelete(item.fav_id)">Delete</button>
     </div>
   </div>
-</section>
+</div>

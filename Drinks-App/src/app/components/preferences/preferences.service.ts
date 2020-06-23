@@ -33,6 +33,8 @@ export class PreferencesService {
 
   // AWS
   getItems() {
+    // console.log('service working?');
+
     let headers = new HttpHeaders();
     headers = headers.set(
       'authorization',
@@ -43,7 +45,7 @@ export class PreferencesService {
       .get<{ message: string; items: any }>('/api/favorites', { headers })
       .subscribe((data) => {
         console.log(data.message);
-        // console.log(data.items);
+        // console.log(data.items, 'data working');
         this.items = data.items;
         this.itemsUpdated.next([...this.items]);
       });

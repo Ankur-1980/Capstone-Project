@@ -2,12 +2,21 @@ section {
   border: red 1px solid;
 }
 
-/* .details {
-  width: 100%;
-  height: auto;
-  display: flex;
-  /* flex-direction: column; */
+.child-container {
+  margin: 10px 0;
+}
+button {
+  margin-bottom: 15px;
+  padding: 5px 10px;
+}
 
+.child-container {
+  margin: 0;
+}
+
+.container {
+  flex-direction: row;
+}
 /* img {
   margin-bottom: 10px;
   width: 400px;

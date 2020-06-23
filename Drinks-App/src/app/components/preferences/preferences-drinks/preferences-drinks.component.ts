@@ -5,7 +5,10 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'preferences-drinks',
   templateUrl: './preferences-drinks.component.html',
-  styleUrls: ['./preferences-drinks.component.css', '../preferences-pages.css'],
+  styleUrls: [
+    // './preferences-drinks.component.css',
+    '../preferences-pages.css',
+  ],
 })
 export class PreferencesDrinksComponent implements OnInit, OnDestroy {
   favorites = [];

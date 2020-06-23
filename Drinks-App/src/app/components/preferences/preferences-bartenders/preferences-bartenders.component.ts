@@ -19,6 +19,8 @@ export class PreferencesBartendersComponent implements OnInit, OnDestroy {
   constructor(private preferService: PreferencesService) {}
 
   ngOnInit(): void {
+    // console.log('working');
+
     this.preferService.getItems();
     this.itemsSub = this.preferService
       .getItemUpdateListener()
