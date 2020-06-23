@@ -10,6 +10,7 @@ import { PreferencesLocationsComponent } from './preferences-locations/preferenc
 import { PreferencesNavigationComponent } from './preferences-navigation/preferences-navigation.component';
 import { PreferencesDrinksComponent } from './preferences-drinks/preferences-drinks.component';
 import { RecipeBookModule } from '../recipe-book/recipe-book.module';
+import { SavedDrinksComponent } from './saved-drinks/saved-drinks.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { RecipeBookModule } from '../recipe-book/recipe-book.module';
     PreferencesLocationsComponent,
     PreferencesNavigationComponent,
     PreferencesDrinksComponent,
+    SavedDrinksComponent,
   ],
   imports: [
     CommonModule,

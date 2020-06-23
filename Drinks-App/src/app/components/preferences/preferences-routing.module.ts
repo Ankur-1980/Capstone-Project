@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PreferencesMainComponent } from './preferences-main/preferences-main.component';
-import { PreferencesBartendersComponent } from './preferences-bartenders/preferences-bartenders.component';
-import { PreferencesHomeBarComponent } from './preferences-home-bar/preferences-home-bar.component';
-import { PreferencesLocationsComponent } from './preferences-locations/preferences-locations.component';
-import { PreferencesDrinksComponent } from './preferences-drinks/preferences-drinks.component';
+
+import { AuthGuard } from 'src/app/services/auth-guard.guard';
+import { SavedDrinksComponent } from './saved-drinks/saved-drinks.component';
 
 const routes: Routes = [
   {
@@ -12,20 +11,8 @@ const routes: Routes = [
     component: PreferencesMainComponent,
   },
   {
-    path: 'bartenders',
-    component: PreferencesBartendersComponent,
-  },
-  {
-    path: 'home-bar',
-    component: PreferencesHomeBarComponent,
-  },
-  {
-    path: 'locations',
-    component: PreferencesLocationsComponent,
-  },
-  {
-    path: 'drinks',
-    component: PreferencesDrinksComponent,
+    path: 'saved-drinks/:id',
+    component: SavedDrinksComponent,
   },
 ];
 

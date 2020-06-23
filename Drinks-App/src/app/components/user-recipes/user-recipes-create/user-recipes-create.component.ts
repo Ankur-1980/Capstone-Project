@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 import { RecipeApiService } from 'src/app/services/recipeAPI.service';
 import { UserRecipesService } from 'src/app/components/user-recipes/user-recipes.service';
 import { FavoritesService } from 'src/app/services/favorites.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'user-recipes-create',
@@ -19,7 +20,8 @@ export class UserRecipesCreateComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private recipeAPI: RecipeApiService,
-    private favService: FavoritesService
+    private favService: FavoritesService,
+    private auth: AuthService
   ) {}
 
   ngOnInit(): void {
@@ -29,10 +31,7 @@ export class UserRecipesCreateComponent implements OnInit {
 
     this.userRecipe = this.fb.group({
       name: ['', [Validators.required]],
-      rating: [''],
       glassware: [''],
-      latitude: [''],
-      longitude: [''],
       method: [''],
       ingredient1: [''],
       ingredient2: [''],
@@ -50,6 +49,7 @@ export class UserRecipesCreateComponent implements OnInit {
       amount6: [''],
       amount7: [''],
       amount8: [''],
+      user_id: [this.auth.userID],
       // date: this.fb.control(new Date()),
     });
 

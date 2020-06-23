@@ -12,20 +12,19 @@ import { MOCK_PREFER } from 'src/app/MOCK_DATA/mock-preferences';
   ],
 })
 export class PreferencesBartendersComponent implements OnInit, OnDestroy {
-  bartenders = MOCK_PREFER;
+  // bartenders = MOCK_PREFER;
+  bartenders = [];
   itemsSub: Subscription;
 
   constructor(private preferService: PreferencesService) {}
 
   ngOnInit(): void {
-    // this.preferService.getItems();
-    // this.itemsSub = this.preferService
-    //   .getItemUpdateListener()
-    //   .subscribe((items) => {
-    //     this.bartenders = items.filter(
-    //       (item) => item.preference_cat === 'bartenders'
-    //     );
-    //   });
+    this.preferService.getItems();
+    this.itemsSub = this.preferService
+      .getItemUpdateListener()
+      .subscribe((items) => {
+        this.bartenders = items.filter((item) => item.fav_cat === 'bartenders');
+      });
   }
 
   onDelete(itemId) {

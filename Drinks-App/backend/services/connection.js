@@ -1,6 +1,18 @@
 // require("dotenv").config();
+const pgEnv = require("./pg.env");
 
 const { Pool } = require("pg");
+
+const credentials = new Pool({
+  user: pgEnv.PG_USER,
+  password: pgEnv.PG_PASSWORD,
+  host: pgEnv.PG_HOST,
+  port: pgEnv.PG_PORT,
+  database: pgEnv.PG_DB,
+  ssl: pgEnv.PG_SSL,
+});
+
+module.exports = credentials;
 
 // // check to see if app is in production
 // const isProduction = process.env.NODE_ENV === "production";
@@ -22,13 +34,3 @@ const { Pool } = require("pg");
 // });
 
 // local server
-const credentials = new Pool({
-  user: "postgres",
-  password: "password",
-  host: "localhost",
-  port: 5432,
-  database: "Capstone",
-  ssl: false,
-});
-
-module.exports = credentials;

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { QuestionComponent } from './question/question.component';
 import { ResultsComponent } from './results/results.component';
 import { QuizComponent } from './quiz.component';
+import { AuthGuard } from 'src/app/services/auth-guard.guard';
 
 const routes: Routes = [
   {
@@ -12,11 +13,17 @@ const routes: Routes = [
   {
     path: 'question/:questionId',
     component: QuestionComponent,
+    canActivate: [AuthGuard],
   },
   {
     path: 'results',
     component: ResultsComponent,
+<<<<<<< HEAD
   }
+=======
+    canActivate: [AuthGuard],
+  },
+>>>>>>> ae0c326cd5086568be668435bc0d67109a781161
 ];
 
 @NgModule({

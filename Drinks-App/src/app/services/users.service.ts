@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { FormGroup } from '@angular/forms';
 
@@ -14,7 +14,12 @@ export class UsersService {
   constructor(private http: HttpClient, private router: Router) {}
 
   getUsers(): any {
-    return this.http.get('/api/users');
+    let headers = new HttpHeaders();
+    headers = headers.set(
+      'authorization',
+      localStorage.getItem('topShelf_token')
+    );
+    return this.http.get('/api/users', { headers });
   }
 
   addNewUser(formValue) {
@@ -26,11 +31,11 @@ export class UsersService {
       .subscribe((response) => {
         if (!response.goodToGo) {
           this.errorMessage = response.message;
-          console.log(this.errorMessage);
+          // console.log(this.errorMessage);
           this.warning = response.goodToGo;
-          console.log(this.warning);
+          // console.log(this.warning);
         } else {
-          console.log(response.message);
+          // console.log(response.message);
           console.log(response.token);
           localStorage.setItem('token', response.token);
 
@@ -50,12 +55,11 @@ export class UsersService {
       .subscribe((response) => {
         // console.log('service', response.user);
         if (!response.goodToGo) {
-          console.log(response.goodToGo);
+          // console.log(response.goodToGo);
 
           console.log(response.message);
         } else {
           console.log(response.message);
-          console.log(response.token);
           localStorage.setItem('token', response.token);
 
           this.router.navigate(['/the-feed']);
