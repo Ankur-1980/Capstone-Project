@@ -3019,6 +3019,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
+
+      if (rf & 2) {
+        var ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx_r0.userPic, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+      }
     }
 
     var NavbarComponent = /*#__PURE__*/function () {
@@ -3030,7 +3038,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass(NavbarComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          var _this2 = this;
+
+          this.nav.getUserPic().subscribe(function (response) {
+            var picture = response.pic[0].picture;
+            _this2.userPic = picture;
+            console.log(_this2.userPic);
+          });
+        }
       }]);
 
       return NavbarComponent;
@@ -3045,10 +3061,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-navbar"]],
       decls: 1,
       vars: 1,
-      consts: [["class", "nav-parent", 4, "ngIf"], [1, "nav-parent"], ["routerLink", "/the-feed", 1, "feed"], ["routerLink", "/drink-post", 1, "drink-post"], ["routerLink", "/profile", 1, "profile"], ["src", "#", "alt", " ", "width", "100px", "height", "300px"], ["routerLink", "/preferences", 1, "preferences"], ["routerLink", "/quiz", 1, "quiz"]],
+      consts: [["class", "nav-parent", 4, "ngIf"], [1, "nav-parent"], ["routerLink", "/the-feed", 1, "feed"], ["routerLink", "/drink-post", 1, "drink-post"], ["routerLink", "/profile", 1, "profile"], ["alt", " ", "width", "100px", "height", "300px", 3, "src"], ["routerLink", "/preferences", 1, "preferences"], ["routerLink", "/quiz", 1, "quiz"]],
       template: function NavbarComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NavbarComponent_div_0_Template, 7, 0, "div", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NavbarComponent_div_0_Template, 7, 1, "div", 0);
         }
 
         if (rf & 2) {
@@ -3241,7 +3257,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "onLogin",
         value: function onLogin() {
-          var _this2 = this;
+          var _this3 = this;
 
           // console.log(this.loginForm.value);
           if (this.loginForm.invalid) {
@@ -3250,26 +3266,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this.errors = [];
           return this.auth.login(this.loginForm.value).subscribe(function () {
-            if (_this2.auth.redirectUrl) {
-              _this2.router.navigate([_this2.auth.redirectUrl]);
+            if (_this3.auth.redirectUrl) {
+              _this3.router.navigate([_this3.auth.redirectUrl]);
 
-              _this2.auth.redirectUrl = null;
+              _this3.auth.redirectUrl = null;
             } else {
-              _this2.router.navigate(['/the-feed']);
+              _this3.router.navigate(['/the-feed']);
             }
           }, function (errors) {
-            _this2.errors = errors;
+            _this3.errors = errors;
           });
         }
       }, {
         key: "checkLoginMessage",
         value: function checkLoginMessage() {
-          var _this3 = this;
+          var _this4 = this;
 
           this.route.queryParams.subscribe(function (params) {
-            _this3.message = params['message'] ? params['message'] : null;
-            _this3.messageTimeout = window.setTimeout(function () {
-              _this3.router.navigate([], {
+            _this4.message = params['message'] ? params['message'] : null;
+            _this4.messageTimeout = window.setTimeout(function () {
+              _this4.router.navigate([], {
                 replaceUrl: true,
                 queryParams: {
                   message: null
@@ -3277,7 +3293,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 queryParamsHandling: 'merge'
               });
 
-              _this3.message = '';
+              _this4.message = '';
             }, 3000);
           });
         }
@@ -3675,7 +3691,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "register",
         value: function register() {
-          var _this4 = this;
+          var _this5 = this;
 
           if (this.newUserForm.invalid) {
             return;
@@ -3684,14 +3700,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this.errors = [];
           this.auth.register(this.newUserForm.value).subscribe(function (data) {
-            _this4.router.navigate(['/login'], {
+            _this5.router.navigate(['/login'], {
               queryParams: {
                 message: 'You have been successfully registered!'
               }
             });
           }, function (errors) {
-            _this4.errors = errors;
-            console.log(_this4.errors);
+            _this5.errors = errors;
+            console.log(_this5.errors);
           });
         }
       }, {
@@ -4108,10 +4124,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PostDrinkFormComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this5 = this;
+          var _this6 = this;
 
           this.recipeApi.getGlassware().subscribe(function (data) {
-            _this5.glassware = data['drinks'];
+            _this6.glassware = data['drinks'];
           });
           this.drinkPostForm = this.fb.group({
             name: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
@@ -4434,11 +4450,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PreferencesBartendersComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this6 = this;
+          var _this7 = this;
 
           this.preferService.getItems();
           this.itemsSub = this.preferService.getItemUpdateListener().subscribe(function (items) {
-            _this6.bartenders = items.filter(function (item) {
+            _this7.bartenders = items.filter(function (item) {
               return item.fav_cat === 'bartenders';
             });
           });
@@ -5026,11 +5042,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PreferencesHomeBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this7 = this;
+          var _this8 = this;
 
           this.preferService.getItems();
           this.itemsSub = this.preferService.getItemUpdateListener().subscribe(function (items) {
-            _this7.homeBar = items.filter(function (item) {
+            _this8.homeBar = items.filter(function (item) {
               return item.fav_cat === 'home_bar';
             });
           });
@@ -5231,11 +5247,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PreferencesLocationsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this8 = this;
+          var _this9 = this;
 
           this.preferService.getItems();
           this.itemsSub = this.preferService.getItemUpdateListener().subscribe(function (items) {
-            _this8.locations = items.filter(function (item) {
+            _this9.locations = items.filter(function (item) {
               return item.fav_cat === 'places';
             });
           });
@@ -6012,7 +6028,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PreferencesService, [{
         key: "getItems",
         value: function getItems() {
-          var _this9 = this;
+          var _this10 = this;
 
           var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]();
           headers = headers.set('authorization', localStorage.getItem('topShelf_token'));
@@ -6021,9 +6037,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }).subscribe(function (data) {
             console.log(data.message); // console.log(data.items);
 
-            _this9.items = data.items;
+            _this10.items = data.items;
 
-            _this9.itemsUpdated.next(_toConsumableArray(_this9.items));
+            _this10.itemsUpdated.next(_toConsumableArray(_this10.items));
           });
         }
       }, {
@@ -6053,7 +6069,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "addItems",
         value: function addItems(formValue) {
-          var _this10 = this;
+          var _this11 = this;
 
           // console.log('service', formValue);
           var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]();
@@ -6063,7 +6079,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }).subscribe(function (response) {
             console.log(response.message); // console.log('additems', response.items);
 
-            _this10.itemsUpdated.next(response.items);
+            _this11.itemsUpdated.next(response.items);
           });
         } // local
         // deleteItem(itemId) {
@@ -6079,14 +6095,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "deleteItem",
         value: function deleteItem(itemId) {
-          var _this11 = this;
+          var _this12 = this;
 
           this.http["delete"]("/api/favorites/".concat(itemId)).subscribe(function () {
-            _this11.items = _this11.items.filter(function (item) {
+            _this12.items = _this12.items.filter(function (item) {
               return item.fav_id !== itemId;
             });
 
-            _this11.itemsUpdated.next(_toConsumableArray(_this11.items));
+            _this12.itemsUpdated.next(_toConsumableArray(_this12.items));
           });
         }
       }]);
@@ -6416,13 +6432,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(SavedDrinksComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this12 = this;
+          var _this13 = this;
 
           this.recipeID = this.route.snapshot.params.id;
           console.log('component', this.recipeID);
           this.favService.getDetails(this.recipeID).subscribe(function (data) {
             console.log(data.items);
-            _this12.recipes = data.items;
+            _this13.recipes = data.items;
           });
         }
       }]);
@@ -6769,7 +6785,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var QuestionComponent = /*#__PURE__*/function () {
       function QuestionComponent(route, router) {
-        var _this13 = this;
+        var _this14 = this;
 
         _classCallCheck(this, QuestionComponent);
 
@@ -6880,10 +6896,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           selectedOption: ''
         }];
         this.route.paramMap.subscribe(function (params) {
-          _this13.setQuestionID(+params.get('questionId')); // get the question ID and store it
+          _this14.setQuestionID(+params.get('questionId')); // get the question ID and store it
 
 
-          _this13.question = _this13.getQuestion;
+          _this14.question = _this14.getQuestion;
         });
       }
 
@@ -6960,10 +6976,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getQuestion",
         get: function get() {
-          var _this14 = this;
+          var _this15 = this;
 
           return this.allQuestions.filter(function (question) {
-            return question.questionId === _this14.questionID;
+            return question.questionId === _this15.questionID;
           })[0];
         }
       }]);
@@ -7482,10 +7498,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ResultsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this15 = this;
+          var _this16 = this;
 
           this.recipeApi.getRandom().subscribe(function (data) {
-            _this15.recipes = data['drinks'];
+            _this16.recipes = data['drinks'];
           });
         }
       }, {
@@ -8284,13 +8300,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this16 = this;
+          var _this17 = this;
 
           this.recipeID = this.route.snapshot.params.recipeID;
           console.log('component', this.recipeID);
           this.recipeAPI.getDetails(this.recipeID).subscribe(function (data) {
-            _this16.recipes = data['drinks'];
-            console.log('details', _this16.recipes);
+            _this17.recipes = data['drinks'];
+            console.log('details', _this17.recipes);
           });
         }
       }]);
@@ -8501,10 +8517,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(RecipeMainComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this17 = this;
+          var _this18 = this;
 
           this.recipeApi.getRandom().subscribe(function (data) {
-            _this17.recipes = data['drinks']; // console.log(this.recipes);
+            _this18.recipes = data['drinks']; // console.log(this.recipes);
           });
         }
       }, {
@@ -8723,19 +8739,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "searchByName",
         value: function searchByName() {
-          var _this18 = this;
+          var _this19 = this;
 
           this.recipeAPI.searchByName(this.nameSearch.value).subscribe(function (data) {
-            return _this18.searchResults.emit(data['drinks']);
+            return _this19.searchResults.emit(data['drinks']);
           });
         }
       }, {
         key: "searchByLetter",
         value: function searchByLetter() {
-          var _this19 = this;
+          var _this20 = this;
 
           this.recipeAPI.searchByLetter(this.letterSearch.value).subscribe(function (data) {
-            _this19.searchResults.emit(data['drinks']);
+            _this20.searchResults.emit(data['drinks']);
           });
         }
       }, {
@@ -9088,11 +9104,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(TheFeedPostsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this20 = this;
+          var _this21 = this;
 
           this.postService.getAllPosts().subscribe(function (data) {
-            _this20.theFeed = data;
-            console.log(_this20.theFeed);
+            _this21.theFeed = data;
+            console.log(_this21.theFeed);
           });
         }
       }, {
@@ -9401,15 +9417,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(UserProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this21 = this;
+          var _this22 = this;
 
           this.drinkPosts.getUserPosts().subscribe(function (data) {
             // console.log('data', data);
-            _this21.posts = data.items;
-            console.log('this.posts', _this21.posts);
+            _this22.posts = data.items;
+            console.log('this.posts', _this22.posts);
           });
           this.userService.getUsers().subscribe(function (data) {
-            _this21.userInfo = data.users; // console.log(this.userInfo);
+            _this22.userInfo = data.users; // console.log(this.userInfo);
           });
         }
       }, {
@@ -9420,11 +9436,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "deletePost",
         value: function deletePost(postId) {
-          var _this22 = this;
+          var _this23 = this;
 
           console.log(postId);
           this.drinkPosts.deletePost(postId).subscribe(function (data) {
-            _this22.posts = data.items;
+            _this23.posts = data.items;
           });
         }
       }]);
@@ -9688,10 +9704,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(UserRecipesCreateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this23 = this;
+          var _this24 = this;
 
           this.recipeAPI.getGlassware().subscribe(function (data) {
-            _this23.glassware = data['drinks'];
+            _this24.glassware = data['drinks'];
           });
           this.userRecipe = this.fb.group({
             name: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
@@ -9716,7 +9732,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             user_id: [this.auth.userID]
           });
           this.userRecipe.valueChanges.subscribe(function (value) {
-            _this23.ratingDisplay = value.rating;
+            _this24.ratingDisplay = value.rating;
           });
         } // removeIngredient(i) {
         //   let ingredientsArray = this.userRecipe.controls.ingredients as FormArray;
@@ -9741,11 +9757,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getLocation",
         value: function getLocation() {
-          var _this24 = this;
+          var _this25 = this;
 
           navigator.geolocation.getCurrentPosition(function (position) {
-            _this24.latitude = position.coords.latitude;
-            _this24.longitude = position.coords.longitude;
+            _this25.latitude = position.coords.latitude;
+            _this25.longitude = position.coords.longitude;
           });
         }
       }]);
@@ -10216,11 +10232,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(UserRecipesMainComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this25 = this;
+          var _this26 = this;
 
           this.userRecipeService.getRecipes().subscribe(function (data) {
-            _this25.recipes = data;
-            console.log(_this25.recipes);
+            _this26.recipes = data;
+            console.log(_this26.recipes);
           });
         }
       }]);
@@ -10817,10 +10833,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "login",
         value: function login(formData) {
-          var _this26 = this;
+          var _this27 = this;
 
           return this.http.post('/api/users/login', formData).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (data) {
-            _this26.saveToken(data.token);
+            _this27.saveToken(data.token);
 
             return data.token;
           }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(function (resError) {
@@ -11102,7 +11118,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(FavoritesService, [{
         key: "addToFavorites",
         value: function addToFavorites(drink) {
-          var _this27 = this;
+          var _this28 = this;
 
           var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]();
           headers = headers.set('authorization', localStorage.getItem('topShelf_token'));
@@ -11111,16 +11127,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }).subscribe(function (response) {
             console.log(response.message);
 
-            _this27.favorites.push(drink);
+            _this28.favorites.push(drink);
 
-            _this27.favoritesUpdated.next(_toConsumableArray(_this27.favorites)); // console.log('service', this.favorites);
+            _this28.favoritesUpdated.next(_toConsumableArray(_this28.favorites)); // console.log('service', this.favorites);
 
           });
         }
       }, {
         key: "userRecipes",
         value: function userRecipes(recipe) {
-          var _this28 = this;
+          var _this29 = this;
 
           console.log('service', recipe);
           var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]();
@@ -11130,18 +11146,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }).subscribe(function (response) {
             console.log(response.message);
 
-            _this28.favorites.push(recipe);
+            _this29.favorites.push(recipe);
 
-            _this28.favoritesUpdated.next(_toConsumableArray(_this28.favorites));
+            _this29.favoritesUpdated.next(_toConsumableArray(_this29.favorites));
 
-            _this28.router.navigate(['/preferences']); // console.log('service', this.favorites);
+            _this29.router.navigate(['/preferences']); // console.log('service', this.favorites);
 
           });
         }
       }, {
         key: "getFavorites",
         value: function getFavorites() {
-          var _this29 = this;
+          var _this30 = this;
 
           var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]();
           headers = headers.set('authorization', localStorage.getItem('topShelf_token'));
@@ -11149,9 +11165,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             headers: headers
           }).subscribe(function (response) {
             console.log(response.message);
-            _this29.favorites = response.items;
+            _this30.favorites = response.items;
 
-            _this29.favoritesUpdated.next(_toConsumableArray(_this29.favorites));
+            _this30.favoritesUpdated.next(_toConsumableArray(_this30.favorites));
           });
         }
       }, {
@@ -11162,32 +11178,32 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "removeFromFavorites",
         value: function removeFromFavorites(drink) {
-          var _this30 = this;
+          var _this31 = this;
 
           // console.log('service', drinkId);
           var parsedId = drink.idDrink;
           this.http["delete"]("/api/recipes/".concat(parsedId)).subscribe(function (response) {
             console.log(response.message);
-            _this30.favorites = _this30.favorites.filter(function (fav) {
+            _this31.favorites = _this31.favorites.filter(function (fav) {
               return fav.id_drink !== parsedId;
             });
 
-            _this30.favoritesUpdated.next(_toConsumableArray(_this30.favorites));
+            _this31.favoritesUpdated.next(_toConsumableArray(_this31.favorites));
           });
         }
       }, {
         key: "deleteFromPref",
         value: function deleteFromPref(drinkId) {
-          var _this31 = this;
+          var _this32 = this;
 
           // console.log('drinkID', drinkId);
           this.http["delete"]("/api/recipes/".concat(drinkId)).subscribe(function (response) {
             console.log(response.message);
-            _this31.favorites = _this31.favorites.filter(function (fav) {
+            _this32.favorites = _this32.favorites.filter(function (fav) {
               return fav.saved_id !== drinkId;
             });
 
-            _this31.favoritesUpdated.next(_toConsumableArray(_this31.favorites));
+            _this32.favoritesUpdated.next(_toConsumableArray(_this32.favorites));
           });
         }
       }, {
@@ -11365,11 +11381,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
 
     var NavbarService = /*#__PURE__*/function () {
-      function NavbarService() {
+      function NavbarService(http) {
         _classCallCheck(this, NavbarService);
 
+        this.http = http;
         this.visible = true;
       }
 
@@ -11378,13 +11401,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function hide() {
           this.visible = false;
         }
+      }, {
+        key: "getUserPic",
+        value: function getUserPic() {
+          var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]();
+          headers = headers.set('authorization', localStorage.getItem('topShelf_token'));
+          return this.http.get('/api/users/pic', {
+            headers: headers
+          });
+        }
       }]);
 
       return NavbarService;
     }();
 
     NavbarService.ɵfac = function NavbarService_Factory(t) {
-      return new (t || NavbarService)();
+      return new (t || NavbarService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]));
     };
 
     NavbarService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
@@ -11401,7 +11433,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           providedIn: 'root'
         }]
       }], function () {
-        return [];
+        return [{
+          type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]
+        }];
       }, null);
     })();
     /***/
@@ -11573,26 +11607,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "addNewUser",
         value: function addNewUser(formValue) {
-          var _this32 = this;
+          var _this33 = this;
 
           this.http.post('/api/users/register', formValue).subscribe(function (response) {
             if (!response.goodToGo) {
-              _this32.errorMessage = response.message; // console.log(this.errorMessage);
+              _this33.errorMessage = response.message; // console.log(this.errorMessage);
 
-              _this32.warning = response.goodToGo; // console.log(this.warning);
+              _this33.warning = response.goodToGo; // console.log(this.warning);
             } else {
               // console.log(response.message);
               console.log(response.token);
               localStorage.setItem('token', response.token);
 
-              _this32.router.navigate(['/the-feed']);
+              _this33.router.navigate(['/the-feed']);
             }
           });
         }
       }, {
         key: "login",
         value: function login(formValue) {
-          var _this33 = this;
+          var _this34 = this;
 
           this.http.post('api/users/login', formValue).subscribe(function (response) {
             // console.log('service', response.user);
@@ -11603,7 +11637,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               console.log(response.message);
               localStorage.setItem('token', response.token);
 
-              _this33.router.navigate(['/the-feed']);
+              _this34.router.navigate(['/the-feed']);
             }
           });
         }
