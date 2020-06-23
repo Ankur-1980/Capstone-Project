@@ -15,10 +15,7 @@ users.get("/", verifyToken, (req, res) => {
 
 users.get("/pic", verifyToken, (req, res) => {
   database
-    .query(
-      "SELECT picture FROM users WHERE user_id = SELECT picture FROM users WHERE user_id = $1",
-      [req.userId]
-    )
+    .query("SELECT picture FROM users WHERE user_id = $1", [req.userId])
     .then((response) => {
       res.status(200).json({ message: "User pic fetched", pic: response.rows });
     });

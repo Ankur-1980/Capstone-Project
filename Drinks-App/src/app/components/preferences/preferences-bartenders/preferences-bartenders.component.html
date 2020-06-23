@@ -5,6 +5,6 @@
       <p>{{ item.fav_info }}</p>
       <button (click)="onDelete(item.fav_id)">Delete</button>
     </div>
+    <p *ngIf="bartenders.length <= 0">You don't like any bartenders?</p>
   </div>
-  <p *ngIf="bartenders.length <= 0">You don't like any bartenders?</p>
 </div>
