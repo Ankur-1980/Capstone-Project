@@ -6,106 +6,93 @@
   position: fixed;
   z-index: -1;
 }
-
+/* profile information */
 .info-container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
 }
-
+/* profile pic */
 .profile-pic {
-  margin-top: 10vh;
-  margin-right: 40px;
-  width: 300;
-  height: 300;
-  background-color: white;
-  border: 2px solid rgb(236, 184, 92);
-  box-shadow: 3px 3px 5px black;
+  margin-top: 20px;
+  width: 250px;
+  height: 250px;
   border-radius: 100%;
+  border: 2px solid rgb(236, 184, 92);
+  box-shadow: 3px 3px 5 px black;
 }
-
 .user-info-container {
-  margin-top: 10vh;
-  /* width: 30vw; */
-  height: auto;
+  margin: 30px 0 0 40px;
 }
 
+/* added drinks display */
 .feed-parent {
-  margin-top: 5vh;
-  margin-left: 3vw;
-  width: 800px;
-  height: auto;
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(5, auto);
-  gap: 40px;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+}
+
+.feed-info {
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feed-details {
+  margin-top: 10px;
+  text-align: center;
+  height: 200px;
+}
+
+.catagories {
+  margin: 8px 0;
+}
+button {
+  width: 190px;
 }
 
 .feed-images {
-  width: 180px;
-  height: 180px;
+  width: 190px;
+  height: 190px;
   border: 2px solid rgb(236, 184, 92);
   box-shadow: 3px 3px 5px black;
 }
 
 /* Tablet Sizing */
-@media screen and (max-width: 769px) {
-  .info-container {
-    width: 600px;
-  }
-
-  .profile-pic {
-    margin-top: 10vh;
-    width: 175px;
-    height: 175px;
-  }
-
+@media screen and (max-width: 768px) {
   .feed-parent {
-    width: 400px;
     grid-template-columns: repeat(3, auto);
     gap: 15px;
-  }
-
-  .feed-images {
-    height: 150px;
-    width: auto;
-  }
-  button {
-    width: 200px;
   }
 }
 
 /* Phone Sizing */
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
   .info-container {
     flex-direction: column;
-    /* justify-content: center; */
+  }
+
+  .user-info-container {
+    margin: 10px 0 0 30px;
   }
 
   .profile-pic {
-    margin-top: 15vh;
-    align-self: center;
-    width: 150px;
-    height: 150px;
-  }
-  .user-info-container {
-    margin-top: 4vh;
-    margin-left: 25px;
-    width: 300px;
+    margin-left: 30px;
+    width: 170px;
+    height: 170px;
   }
 
   .feed-parent {
-    margin-left: 25px;
-    width: 200px;
     grid-template-columns: repeat(2, auto);
-    gap: 20px;
+    gap: 10px;
   }
-
   .feed-images {
-    height: 100px;
-    width: 250px;
+    width: 150px;
+    height: 150px;
   }
-
   button {
-    width: 100px;
+    align-self: center;
+    width: 120px;
   }
 }
