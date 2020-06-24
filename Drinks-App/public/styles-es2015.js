@@ -441,11 +441,7 @@ module.exports = exported;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 module.exports = __webpack_require__(/*! /Users/katelynbooth/Desktop/Capstone-Project/Drinks-App/src/styles.css */"./src/styles.css");
-=======
-module.exports = __webpack_require__(/*! /Users/Janana_Kat/Desktop/DrinksOnMe/Capstone-Project/Drinks-App/src/styles.css */"./src/styles.css");
->>>>>>> 32b2fe50ad486abb4ab333a23c6ef9d40fac95f3
 
 
 /***/ })

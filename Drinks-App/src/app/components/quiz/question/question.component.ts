@@ -15,8 +15,10 @@ export class QuestionComponent implements OnInit {
   currentQuestion = 0;
   questionIndex: number;
   optionIndex: number;
+  selectedOption: string;
   status: boolean = false;
-  selectedIndex: number;  
+  selectedIndex: number; 
+  finalInput:  any = []; 
 
   allQuestions: QuizQuestion[] = [
     {
@@ -101,9 +103,23 @@ export class QuestionComponent implements OnInit {
     this.status = !this.status;
   }
 
-  onSelect(index: number) {
+  onAdd() {
+    this.finalInput.push(this.selectedOption);
+    console.log(this.finalInput);
+  }
+
+  onSelect(index: number, optionText: string) {
      this.selectedIndex = index;
+     this.selectedOption = optionText;
+     console.log(this.selectedOption);
      this.changeStatus();
+     this.onAdd();
+  }
+
+  generateResult() {
+    if (this.finalInput[4] === 'Bourbon') {
+      console.log("WORKING!")
+    }
   }
 
   displayNextQuestion() {
@@ -111,7 +127,7 @@ export class QuestionComponent implements OnInit {
     this.currentQuestion === this.currentQuestion++
     this.selectedIndex = null;
     this.changeStatus();
-    if (typeof document.getElementById('question') !== 'undefined' && this.getQuestionID() <= this.totalQuestions) {
+    if (typeof document.getElementsByClassName('question') !== 'undefined' && this.getQuestionID() <= this.totalQuestions) {
       document.getElementById('question').innerHTML = this.allQuestions[this.questionIndex]['questionText'];
     } else {
       this.navigateToResults();
@@ -125,6 +141,7 @@ export class QuestionComponent implements OnInit {
 
   navigateToResults(): void {
     this.changeStatus();
+    this.generateResult()
     this.router.navigate(['quiz/results'], { state:
       {
         totalQuestions: this.totalQuestions,

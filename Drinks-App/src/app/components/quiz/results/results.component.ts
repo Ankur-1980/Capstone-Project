@@ -9,16 +9,13 @@ import { RecipeApiService } from '../../../services/recipeAPI.service';
 })
 export class ResultsComponent implements OnInit {
   recipes: any[];
-
+  resultType: any[];
+  
   constructor(private recipeApi: RecipeApiService) {}
 
   ngOnInit(): void {
     this.recipeApi.getRandom().subscribe((data) => {
       this.recipes = data['drinks'];
     });
-  }
-
-  nameSearch(results) {
-    this.recipes = results;
   }
 }

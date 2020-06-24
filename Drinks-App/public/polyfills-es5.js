@@ -18899,11 +18899,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   /***/
   function _(module, exports, __webpack_require__) {
     __webpack_require__(
-<<<<<<< HEAD
     /*! /Users/katelynbooth/Desktop/Capstone-Project/Drinks-App/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js */
-=======
-    /*! /Users/Janana_Kat/Desktop/DrinksOnMe/Capstone-Project/Drinks-App/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js */
->>>>>>> 32b2fe50ad486abb4ab333a23c6ef9d40fac95f3
     "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js");
 
     __webpack_require__(
@@ -18911,11 +18907,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     "./node_modules/zone.js/dist/zone-legacy.js");
 
     module.exports = __webpack_require__(
-<<<<<<< HEAD
     /*! /Users/katelynbooth/Desktop/Capstone-Project/Drinks-App/src/polyfills.ts */
-=======
-    /*! /Users/Janana_Kat/Desktop/DrinksOnMe/Capstone-Project/Drinks-App/src/polyfills.ts */
->>>>>>> 32b2fe50ad486abb4ab333a23c6ef9d40fac95f3
     "./src/polyfills.ts");
     /***/
   }

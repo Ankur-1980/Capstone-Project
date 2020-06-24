@@ -3033,11 +3033,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 module.exports = __webpack_require__(/*! /Users/katelynbooth/Desktop/Capstone-Project/Drinks-App/src/polyfills.ts */"./src/polyfills.ts");
-=======
-module.exports = __webpack_require__(/*! /Users/Janana_Kat/Desktop/DrinksOnMe/Capstone-Project/Drinks-App/src/polyfills.ts */"./src/polyfills.ts");
->>>>>>> 32b2fe50ad486abb4ab333a23c6ef9d40fac95f3
 
 
 /***/ })
