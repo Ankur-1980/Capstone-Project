@@ -1,5 +1,7 @@
-<div class="nav-parent" *ngIf="nav.visible">
-  <a class="feed" routerLink="/the-feed"> </a>
+<div class="nav-parent" *ngIf="token">
+  <a class="feed" routerLink="/the-feed">
+    <!-- <img src="../Icons/NavBar_Feed/Feed.svg" width="100px" height="100px" /> -->
+  </a>
   <a class="drink-post" routerLink="/drink-post"></a>
   <a class="profile" routerLink="/profile">
     <img src="{{ userPic }}" alt=" " width=" " height=" " />
