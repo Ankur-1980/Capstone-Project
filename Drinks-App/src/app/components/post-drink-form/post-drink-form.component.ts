@@ -38,7 +38,7 @@ export class PostDrinkFormComponent implements OnInit {
       glassware: [''],
       description: [''],
       location: [''],
-      imageLocation: [null],
+      imageLocation: ['../../../assets/mockPics/default_bar-mixers.png'],
       dateAdded: [moment().format()],
       username: [this.auth.username],
     });

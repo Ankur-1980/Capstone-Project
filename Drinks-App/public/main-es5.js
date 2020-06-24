@@ -3930,7 +3930,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             glassware: [''],
             description: [''],
             location: [''],
-            imageLocation: [null],
+            imageLocation: ['../../../assets/mockPics/default_bar-mixers.png'],
             dateAdded: [moment__WEBPACK_IMPORTED_MODULE_2__().format()],
             username: [this.auth.username]
           });
@@ -12118,7 +12118,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! C:\Users\arvju\Desktop\Grand_Circus\Projects\Capstone2\Capstone-Project-clone\Drinks-App\src\main.ts */
+    /*! C:\Users\arvju\Desktop\Grand_Circus\Projects\Capstone-Project\Drinks-App\src\main.ts */
     "./src/main.ts");
     /***/
   }

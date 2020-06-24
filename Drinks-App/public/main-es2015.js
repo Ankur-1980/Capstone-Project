@@ -2949,7 +2949,7 @@ class PostDrinkFormComponent {
             glassware: [''],
             description: [''],
             location: [''],
-            imageLocation: [null],
+            imageLocation: ['../../../assets/mockPics/default_bar-mixers.png'],
             dateAdded: [moment__WEBPACK_IMPORTED_MODULE_2__().format()],
             username: [this.auth.username],
         });
@@ -7108,7 +7108,7 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["platformBrowser"]().boot
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\arvju\Desktop\Grand_Circus\Projects\Capstone2\Capstone-Project-clone\Drinks-App\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\arvju\Desktop\Grand_Circus\Projects\Capstone-Project\Drinks-App\src\main.ts */"./src/main.ts");
 
 
 /***/ })

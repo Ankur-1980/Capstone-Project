@@ -37,6 +37,7 @@ export class NewUserFormComponent implements OnInit {
         password2: ['', [Validators.required, ,]],
         bio: ['', [Validators.maxLength(255)]],
         date: this.fb.control(new Date()),
+        picture: ['../../../../assets/mockPics/default-profile.png'],
       },
       {
         validator: this.usersService.PasswordValidation(

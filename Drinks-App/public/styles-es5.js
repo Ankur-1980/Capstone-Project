@@ -464,7 +464,7 @@
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! C:\Users\arvju\Desktop\Grand_Circus\Projects\Capstone2\Capstone-Project-clone\Drinks-App\src\styles.css */
+    /*! C:\Users\arvju\Desktop\Grand_Circus\Projects\Capstone-Project\Drinks-App\src\styles.css */
     "./src/styles.css");
     /***/
   }
