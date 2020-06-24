@@ -4,6 +4,7 @@ import { RecipeApiService } from 'src/app/services/recipeAPI.service';
 import { DrinkPostService } from 'src/app/services/drink-post.service';
 import { AuthService } from 'src/app/services/auth.service';
 import * as moment from 'moment';
+import { Router } from '@angular/router';
 
 export class ImageSnippet {
   constructor(public src: string, public file: File) {}
@@ -22,7 +23,8 @@ export class PostDrinkFormComponent implements OnInit {
     private fb: FormBuilder,
     private recipeApi: RecipeApiService,
     private drinkPostService: DrinkPostService,
-    private auth: AuthService
+    private auth: AuthService,
+    private route: Router
   ) {}
 
   ngOnInit(): void {
@@ -45,5 +47,6 @@ export class PostDrinkFormComponent implements OnInit {
   onSubmit() {
     // console.log(this.drinkPostForm.value);
     this.drinkPostService.postADrink(this.drinkPostForm.value);
+    this.route.navigate(['/the-feed']);
   }
 }

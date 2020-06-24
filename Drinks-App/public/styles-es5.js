@@ -464,7 +464,11 @@
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
+<<<<<<< HEAD
     /*! /Users/katelynbooth/Desktop/Capstone-Project/Drinks-App/src/styles.css */
+=======
+    /*! /Users/Janana_Kat/Desktop/DrinksOnMe/Capstone-Project/Drinks-App/src/styles.css */
+>>>>>>> 32b2fe50ad486abb4ab333a23c6ef9d40fac95f3
     "./src/styles.css");
     /***/
   }

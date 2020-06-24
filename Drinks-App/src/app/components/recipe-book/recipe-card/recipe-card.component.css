@@ -1,6 +1,4 @@
 .card {
-  height: auto;
-  width: 150px;
   display: flex;
   flex-direction: column;
   /* justify-content: center;*/
@@ -18,7 +16,6 @@
 .unsaved {
   width: 15px;
   height: 15px;
-  margin-right: 10px;
   background-image: url(../../Icons/StarIconWhite/fav_white.svg);
   background-repeat: no-repeat;
 }
