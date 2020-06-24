@@ -61,7 +61,7 @@
   .feed-parent {
     grid-template-columns: repeat(4, auto);
     gap: 20px;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .feed-images {
