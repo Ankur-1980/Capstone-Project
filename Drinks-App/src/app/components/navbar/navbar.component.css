@@ -3,32 +3,24 @@
   position: fixed;
   width: 100%;
   height: 80px;
-  /* background-color: rgb(32, 64, 81, 0.95); */
   background-color: rgba(17, 31, 44, 0.75);
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   border-bottom: 2px solid rgb(236, 184, 94);
 }
 
-/* .nav-links {
-  margin: 3vh;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
-} */
 a {
   width: 50px;
   height: 50px;
   color: #80bdad;
 }
 
-a:hover {
-  width: 100px;
-  height: 100px;
-}
+/* a:hover {
+  width: 70px;
+  height: 70px;
+} */
 
 .feed {
   background-image: url(../Icons/NavBar_Feed/Feed.svg);
@@ -51,29 +43,30 @@ a:hover {
 
 img {
   width: 85px;
-  height: 90px;
+  height: auto;
   border-radius: 100%;
   background-color: white;
   border: 2px solid rgb(236, 184, 94);
 }
 
 /* Phone Sizing */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 411px) {
   .nav-parent {
     bottom: 0 !important;
     width: 100%;
-    height: 60px;
+    height: 80px;
+    position: fixed;
     border-top: 2px solid rgb(236, 184, 94);
   }
 
-  a {
-    width: 30px;
-    height: 30px;
-    margin-left: 3vh;
-  }
-
-  a:hover {
+  img {
     width: 50px;
     height: 50px;
+  }
+
+  a {
+    width: 40px;
+    height: 40px;
+    /* margin-left: 3vh; */
   }
 }
