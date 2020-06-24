@@ -8,7 +8,7 @@
     <label>Ingredients</label>
     <ul>
       <li>
-        <span>{{ recipe.measure1 }}</span>
+        <span *ngIf="!!recipe.measure1">{{ recipe.measure1 }}</span>
         <span> {{ recipe.ingredient1 }}</span>
       </li>
       <li>{{ recipe.measure2 }} {{ recipe.ingredient2 }}</li>

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Observable, throwError } from 'rxjs';
+import { Observable, throwError, BehaviorSubject } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { extractError } from '../helpers/functions';
 import { JwtHelperService } from '@auth0/angular-jwt';
@@ -22,6 +22,8 @@ class DecodedToken {
 export class AuthService {
   decodedToken: DecodedToken;
   redirectUrl: string;
+  private topShelfToken = new BehaviorSubject<any>('');
+  public sharedToken: Observable<string> = this.topShelfToken.asObservable();
 
   constructor(private http: HttpClient, private router: Router) {
     this.decodedToken = new DecodedToken();
@@ -52,6 +54,7 @@ export class AuthService {
   logOut() {
     localStorage.removeItem('topShelf_token');
     this.decodedToken = new DecodedToken();
+    this.topShelfToken.next('');
     this.router.navigate(['/login'], {
       queryParams: { message: 'You are logged out' },
     });
@@ -61,6 +64,8 @@ export class AuthService {
     const authToken = localStorage.getItem('topShelf_token');
     if (!authToken) {
       return false;
+    } else {
+      this.topShelfToken.next(authToken);
     }
     const decodedToken = jwt.decodeToken(authToken);
     if (!decodedToken) {
@@ -80,6 +85,7 @@ export class AuthService {
 
     this.decodedToken = decodedToken;
     localStorage.setItem('topShelf_token', token);
+    this.topShelfToken.next(token);
     // console.log('decoded token', this.decodedToken);
 
     return token;
