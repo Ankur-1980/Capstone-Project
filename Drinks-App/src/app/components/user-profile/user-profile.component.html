@@ -3,7 +3,7 @@
   <div class="info-container" *ngFor="let item of userInfo">
     <img class="profile-pic" width=" " src="{{ item.picture }}" alt="" />
     <div class="user-info-container" *ngFor="let item of userInfo">
-      <h1>User Name: {{ item.first_name }} {{ item.last_name }}</h1>
+      <h1>{{ item.first_name }} {{ item.last_name }}</h1>
       <div class="bio">Bio: {{ item.bio }}</div>
       <p>Age: {{ item.age }}</p>
       <p>username: {{ item.username }}</p>
