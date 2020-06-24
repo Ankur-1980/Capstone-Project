@@ -1,9 +1,9 @@
 <div class="quiz-container">
   <div class="results">
-    <h3>Results</h3>
-    <div class="details" *ngFor="let recipe of recipes">
+    <h1>Results</h1>
+    <div class="" *ngFor="let recipe of recipes">
       <div class="card-container">
-        <div class="drink-name">{{ recipe.strDrink }}</div>
+        <h3 class="drink-name">{{ recipe.strDrink }}</h3>
         <img class="image" src="{{ recipe.strDrinkThumb }}" alt="{{ recipe.strDrink }}"/>
         <a routerLink="/recipe-book/recipe-details/{{ recipe.idDrink }}">View More Details</a>
       </div>
